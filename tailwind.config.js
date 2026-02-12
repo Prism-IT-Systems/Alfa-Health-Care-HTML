@@ -19,10 +19,14 @@ export default {
         softAmber: "var(--Soft-Amber)",
         darkMustard: "var(--Dark-Mustard)",
         SunlitGold: "var(--Sunlit-Gold)",
-        WarmMarigold: "var(--Warm-Marigold)"
+        WarmMarigold: "var(--Warm-Marigold)",
+        neutralGray: "#E8E8E8",
+        neutralGrayHover: "#DDDDDD"
       },
       boxShadow: {
-        shadow_1 : "var(--shadow1)"
+        shadow_1: "var(--shadow1)",
+        productCard: "0px 2px 12px -2px rgba(66, 51, 36, 0.06)",
+        productCardHover: "0px 2px 24px -2px rgba(66, 51, 36, 0.25)"
       }
     },
   },
