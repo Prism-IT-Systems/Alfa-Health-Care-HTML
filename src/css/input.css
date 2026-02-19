@@ -612,6 +612,295 @@
                hover:bg-neutralGrayHover transition-colors;
     }
 
+    /* Product detail page */
+    .product-detail-page-section {
+        @apply pt-4 pb-10 md:pb-14 bg-pureWhite;
+    }
+
+    .product-breadcrumb {
+        @apply flex items-center flex-wrap gap-1.5 text-sm text-warmTaupe mb-6;
+    }
+
+    .product-breadcrumb a {
+        @apply hover:text-deepBrown duration-200;
+    }
+
+    .product-breadcrumb .separator {
+        @apply text-warmTaupe/60 text-xs;
+    }
+
+    .product-breadcrumb .current {
+        @apply text-deepBrown font-semibold;
+    }
+
+    .product-detail-layout {
+        @apply grid grid-cols-1 lg:grid-cols-[48%_1fr] gap-6 lg:gap-10;
+    }
+
+    .product-gallery {
+        @apply relative;
+    }
+
+    .product-main-image {
+        @apply rounded-xl overflow-hidden bg-pureWhite relative;
+    }
+
+    .product-main-image img {
+        @apply w-full h-auto object-cover transition-opacity duration-200 cursor-pointer;
+    }
+
+    .product-main-image .view-icon {
+        @apply absolute top-3 right-3 w-9 h-9 rounded-full bg-pureWhite/90 shadow-sm inline-flex items-center justify-center
+               text-warmTaupe text-base cursor-pointer hover:bg-pureWhite duration-200;
+    }
+
+    .product-thumb-row {
+        @apply flex items-center gap-2.5 mt-4;
+    }
+
+    .thumb-track {
+        @apply flex items-center gap-2.5 overflow-x-auto scroll-smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .thumb-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-thumb {
+        @apply w-[72px] h-[72px] rounded-md overflow-hidden border border-[rgba(132,115,98,0.2)] bg-pureWhite cursor-pointer
+               hover:border-goldenBrown duration-200 flex-shrink-0;
+    }
+
+    .product-thumb.active {
+        @apply border-goldenBrown;
+    }
+
+    .product-thumb img {
+        @apply w-full h-full object-cover;
+    }
+
+    .thumb-arrow {
+        @apply w-8 h-8 rounded-full border border-[rgba(132,115,98,0.2)] bg-pureWhite text-warmTaupe
+               inline-flex items-center justify-center text-xs cursor-pointer hover:border-goldenBrown duration-200 flex-shrink-0;
+    }
+
+    .thumb-arrow.hidden {
+        @apply invisible;
+    }
+
+    /* ── Lightbox ── */
+    .gallery-lightbox {
+        @apply fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300;
+    }
+
+    .gallery-lightbox.open {
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    .lightbox-backdrop {
+        @apply absolute inset-0 bg-black/80;
+    }
+
+    .lightbox-content {
+        @apply relative flex items-center justify-center max-w-[90vw] max-h-[90vh];
+    }
+
+    .lightbox-content img {
+        @apply max-w-full max-h-[85vh] rounded-lg object-contain transition-opacity duration-150;
+    }
+
+    .lightbox-close {
+        @apply absolute -top-10 right-0 w-9 h-9 rounded-full bg-pureWhite/20 text-pureWhite
+               inline-flex items-center justify-center text-lg hover:bg-pureWhite/40 duration-200 cursor-pointer;
+    }
+
+    .lightbox-nav {
+        @apply absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-pureWhite/20 text-pureWhite
+               inline-flex items-center justify-center text-lg hover:bg-pureWhite/40 duration-200 cursor-pointer;
+    }
+
+    .lightbox-prev {
+        @apply -left-14;
+    }
+
+    .lightbox-next {
+        @apply -right-14;
+    }
+
+    .lightbox-counter {
+        @apply absolute -bottom-8 left-1/2 -translate-x-1/2 text-pureWhite/70 text-sm;
+    }
+
+    .product-summary {
+        @apply flex flex-col;
+    }
+
+    .product-summary h1 {
+        @apply text-[26px] md:text-[32px] leading-[1.2] font-bold text-deepBrown mb-4;
+    }
+
+    .product-rating-row {
+        @apply flex items-center gap-2 mb-4;
+    }
+
+    .product-rating-stars {
+        @apply text-SunlitGold text-base leading-[1];
+    }
+
+    .product-review-count {
+        @apply text-sm leading-[1] text-warmTaupe;
+    }
+
+    .product-price-row {
+        @apply flex items-baseline gap-3 mb-5;
+    }
+
+    .product-price-row .price-now {
+        @apply text-[28px] leading-[1] font-bold text-goldenBrown;
+    }
+
+    .product-price-row .price-old {
+        @apply text-base leading-[1] text-warmTaupe line-through;
+    }
+
+    .product-short-desc {
+        @apply text-sm leading-[1.6] text-warmTaupe mb-5;
+    }
+
+    .product-stock-note {
+        @apply flex items-center gap-1.5 text-sm leading-[1] text-SunlitGold font-medium mb-6;
+    }
+
+    .product-stock-note i {
+        @apply text-SunlitGold text-sm;
+    }
+
+    .product-cart-row {
+        @apply grid grid-cols-[140px_1fr_48px] gap-3 mb-3;
+    }
+
+    .qty-picker {
+        @apply h-[48px] rounded-lg border border-[rgba(132,115,98,0.3)] bg-pureWhite
+               flex items-center justify-between overflow-hidden;
+    }
+
+    .qty-picker button {
+        @apply text-warmTaupe hover:text-deepBrown duration-200 h-full w-[40px]
+               inline-flex items-center justify-center text-base;
+    }
+
+    .qty-picker span {
+        @apply h-full flex-1 inline-flex items-center justify-center border-x border-[rgba(132,115,98,0.2)] text-sm font-medium;
+    }
+
+    .add-cart-btn {
+        @apply h-[48px] rounded-lg bg-[#ECE8E1] border border-[rgba(132,115,98,0.25)]
+               text-deepBrown text-sm font-medium hover:bg-[#e3ddd4] duration-200 cursor-pointer;
+    }
+
+    .wishlist-btn {
+        @apply h-[48px] w-[48px] rounded-lg border border-[rgba(132,115,98,0.3)] bg-pureWhite inline-flex items-center justify-center
+               text-warmTaupe hover:text-deepBrown duration-200 text-lg cursor-pointer;
+    }
+
+    .buy-now-btn {
+        @apply w-full h-[50px] rounded-lg bg-goldenBrown text-pureWhite text-sm font-semibold
+               hover:bg-[#87640d] duration-200 mb-5 cursor-pointer;
+    }
+
+    .secure-checkout {
+        @apply text-sm text-deepBrown mb-4 flex items-center gap-2 w-full justify-center font-medium;
+    }
+
+    .secure-checkout i {
+        @apply text-warmTaupe text-base;
+    }
+
+    .product-payments {
+        @apply flex items-center justify-center gap-2 mb-6;
+    }
+
+    .product-payments img {
+        @apply h-[30px] w-auto rounded-sm;
+    }
+
+    .detail-meta {
+        @apply border-t border-[rgba(132,115,98,0.15)] pt-5 mt-1;
+    }
+
+    .detail-meta p {
+        @apply text-sm leading-[1.8] text-warmTaupe mb-1;
+    }
+
+    .detail-meta strong {
+        @apply text-deepBrown font-bold;
+    }
+
+    .product-tabs-wrap {
+        @apply mt-10 md:mt-14;
+    }
+
+    .product-tab-nav {
+        @apply flex gap-2;
+    }
+
+    .product-tab-btn {
+        @apply px-8 md:px-12 py-3.5 text-sm font-semibold rounded-t-xl border border-b-0
+               border-[rgba(132,115,98,0.18)] bg-[#FBF7F1] text-goldenBrown cursor-pointer
+               hover:bg-[#f5efe5] duration-200;
+    }
+
+    .product-tab-btn.active {
+        @apply bg-goldenBrown text-pureWhite border-goldenBrown;
+    }
+
+    .product-tab-panel {
+        @apply border border-[rgba(132,115,98,0.18)] rounded-b-xl rounded-tr-xl bg-[#FBF7F1]
+               p-8 md:p-10 hidden text-deepBrown;
+    }
+
+    .product-tab-panel.active {
+        @apply block;
+    }
+
+    .additional-info-table {
+        @apply w-full text-sm;
+    }
+
+    .additional-info-table td {
+        @apply py-2.5 px-4 border-b border-[rgba(132,115,98,0.1)];
+    }
+
+    .additional-info-table .label-cell {
+        @apply font-semibold text-deepBrown w-[160px];
+    }
+
+    .related-products-section {
+        @apply py-14 md:py-16 bg-pureWhite;
+    }
+
+    .related-products-heading {
+        @apply flex items-center gap-4 mb-10;
+    }
+
+    .related-products-heading .line {
+        @apply flex-1 h-px bg-goldenBrown/30;
+    }
+
+    .related-products-heading h2 {
+        @apply text-2xl md:text-3xl font-semibold whitespace-nowrap;
+    }
+
+    .related-products-heading .hl {
+        @apply text-goldenBrown;
+    }
+
+    .related-products-grid {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[760px] mx-auto;
+    }
+
 }
 
 /* Tesimonial Widget */
