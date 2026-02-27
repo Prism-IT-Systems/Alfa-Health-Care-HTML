@@ -656,7 +656,7 @@
     }
 
     .info-card-widget .info-card .info-icon {
-         @apply w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full mb-4 sm:mb-7;
+         @apply w-[60px] h-[60px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full mb-4 sm:mb-7;
     }
 
     .info-card-widget .info-card .info-title {
@@ -1344,7 +1344,7 @@
 
 .introduction-section .content-media-grid .content-media-wrap img {
    @apply h-full sm:h-[405px] 
-
+}
 .introduction-section .content-media-grid .content-media-wrap {
     @apply rounded-[24px]
 }
@@ -1353,7 +1353,35 @@
    @apply items-center md:items-center lg:items-center xl:items-start
 }
 
+@layer components {
+  .icon-box-cards-widget {
+    @apply flex flex-wrap justify-center gap-8 ; 
+  }
+  .icon-box-cards-widget .icon-box-card {
+    @apply w-full sm:w-[280px] rounded-xl bg-pureWhite px-[25px] py-[22px] flex flex-col items-center gap-4 shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.05)] text-center;
+  }
+  .icon-box-cards-widget .icon-box-card .info-title {
+    @apply leading-6.5 font-medium text-xl;
+  }
+  .icon-box-cards-widget .icon-box-card .info-desc {
+  @apply text-sm leading-5 font-normal;
+}
 
+.icon-box-cards-widget .icon-box-card .info-icon {
+  @apply inline-flex items-center justify-center h-12 w-12 rounded-full bg-[rgba(223,176,58,0.3)];
+  background-color: rgba(223,176,58,0.3);
+}
+
+.icon-box-cards-widget .icon-box-card .info-icon img {
+  @apply w-[30px] h-[30px];
+}
+}
+
+
+ /* Insurers Partners Section  */
+ .insurers-partners-section .info-desc {
+    @apply mt-10 text-center;
+ }
 
 /* What We Do Section */
 
@@ -1362,7 +1390,7 @@
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
-    @apply w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]mb-0 rounded-[12px]
+    @apply mb-0 rounded-[12px] w-[50px] h-[50px] sm:w-[60px] sm:w-[60px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
@@ -1383,8 +1411,10 @@
 }
 
 .insurers-network-section .info-icon {
-    @apply w-[48px] h-[48px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full mb-2
+    @apply w-[48px] h-[48px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full;
 }
+
+
 
 /* Ordering Information Section */
 
@@ -1427,9 +1457,8 @@
   }
 }
 
-
 .introduction-section .intro-tag-one {
-    @apply flex flex-col gap-[6px] p-[24px];
+    @apply flex flex-col gap-[6px] p-[24px] h-[160px];
 }
 
 .introduction-section .heading-wrap  {
@@ -1487,8 +1516,8 @@
 .introduction-section .purpose-card p {
   @apply text-base text-[#847362] leading-[1.7] m-0;
 }
-.introduction-section .icon-circle img {
-  @apply w-[24px] h-[24px];
+.introduction-section .icon-circle svg {
+  @apply w-6 h-6;
 }
 
 .introduction-section {
@@ -1523,7 +1552,7 @@
 }
 
 .introduction-grid .intro-tag-icon {
-    @apply w-[48px] h-[48px] mx-auto rounded-full bg-[#EFE1B8] flex items-center justify-center
+    @apply w-[48px] h-[48px] mx-auto rounded-full bg-[#EFE1B8] flex items-center justify-center mb-2
 }
 
 .introduction-grid .info-title {
@@ -1541,7 +1570,7 @@
 /* What we can do section */
 
 .what-we-do-section .info-card-widget .info-title {
-    @apply mb-0 text-center sm:text-left text-[18px] sm:text-[20px] font-semibold
+    @apply text-center sm:text-left text-[18px] sm:text-[20px] font-semibold mb-0
 }
 
 .what-we-do-section .info-card-widget .info-desc {
@@ -1603,7 +1632,7 @@
 }
 
 .our-registry-section .our-registry-grid .our-registry-card {
-    @apply rounded-2xl flex flex-col items-center justify-start gap-4 border border-[#A17810] bg-white p-[20px] lg:p-10 text-center
+    @apply rounded-2xl flex flex-col items-center justify-start gap-4 border border-[#A17810] bg-white p-[15px] lg:p-10 text-center
 }
 
 .our-registry-section .our-registry-card .our-registry-image {
@@ -1648,7 +1677,7 @@
 }
 
 .workflow-section .info-title {
-    @apply text-[18px] sm:text-[20px] text-xl font-semibold
+    @apply text-[18px] sm:text-[18px] text-xl font-semibold
 }
 
 /* banner section */
