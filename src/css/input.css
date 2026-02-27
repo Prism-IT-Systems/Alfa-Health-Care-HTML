@@ -1363,7 +1363,7 @@
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
-    @apply rounded-[12px]
+    @apply mb-0 rounded-[12px] w-[50px] h-[50px] sm:w-[60px] sm:w-[60px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
@@ -1371,7 +1371,7 @@
 }
 
 .what-we-do-section .heading-wrap {
-    @apply items-start
+    @apply items-center sm:items-start
 }
 
 .introduction-section .heading-wrap {
@@ -1541,7 +1541,7 @@
 /* What we can do section */
 
 .what-we-do-section .info-card-widget .info-title {
-    @apply text-center sm:text-left text-[18px] sm:text-[20px] font-semibold
+    @apply text-center sm:text-left text-[18px] sm:text-[20px] font-semibold mb-0
 }
 
 .what-we-do-section .info-card-widget .info-desc {
