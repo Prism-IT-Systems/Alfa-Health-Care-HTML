@@ -3694,7 +3694,14 @@
   background-repeat: no-repeat;
 }
 .testimonials-section .heading-wrap {
-  margin-bottom: 74px;
+  margin-bottom: 34px;
+  width: 100%;
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 13.5);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: 74px;
+  }
 }
 .introduction-section .content-media-grid .content-media-col-left {
   width: 100%;

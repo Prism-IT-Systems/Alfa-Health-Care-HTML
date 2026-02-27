@@ -1039,7 +1039,7 @@
     @apply bg-[url("../images/testimonials-bg.webp")] bg-cover bg-no-repeat;
 }
 .testimonials-section .heading-wrap{
-    @apply mb-[74px];
+    @apply w-full mb-[34px] sm:mb-13.5 lg:mb-[74px];
 }
 
 
@@ -1084,13 +1084,13 @@
 .what-we-do-section .heading-wrap {
     @apply items-start
 }
+ 
 
 .introduction-section .heading-wrap {
    @apply items-center md:items-center lg:items-center xl:items-start text-center xl:text-start
 }
 
 .introduction-section .content-media-grid .content-media-col .list li {
- 
     @apply justify-center xl:justify-start
 }
 
