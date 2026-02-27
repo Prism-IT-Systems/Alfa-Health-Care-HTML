@@ -38,3 +38,33 @@ jQuery(document).ready(function () {
 });
 
 
+
+$(document).ready(function () {
+
+  // Open first by default
+  $(".accordion-item:first")
+    .addClass("active")
+    .find(".accordion-content")
+    .slideDown(300);
+  $(".accordion-item:first .accordion-icon").text("−");
+
+  $(".accordion-btn").click(function () {
+    var item = $(this).closest(".accordion-item");
+
+    if (item.hasClass("active")) {
+      item.removeClass("active");
+      item.find(".accordion-content").slideUp(300);
+      item.find(".accordion-icon").text("+");
+    } else {
+      $(".accordion-item").removeClass("active");
+      $(".accordion-content").slideUp(300);
+      $(".accordion-icon").text("+");
+
+      item.addClass("active");
+      item.find(".accordion-content").slideDown(300);
+      item.find(".accordion-icon").text("−");
+    }
+  });
+
+});
+
