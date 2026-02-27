@@ -1363,7 +1363,7 @@
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
-    @apply mb-0 rounded-[12px]
+    @apply w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]mb-0 rounded-[12px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
@@ -1430,7 +1430,7 @@
 
 
 .introduction-section .intro-tag-one {
-    @apply flex flex-col gap-[6px] p-[24px] h-[160px];
+    @apply flex flex-col gap-[6px] p-[24px];
 }
 
 .introduction-section .heading-wrap  {
@@ -1488,8 +1488,8 @@
 .introduction-section .purpose-card p {
   @apply text-base text-[#847362] leading-[1.7] m-0;
 }
-.introduction-section .icon-circle svg {
-  @apply w-6 h-6;
+.introduction-section .icon-circle img {
+  @apply w-[24px] h-[24px];
 }
 
 .introduction-section {
@@ -1649,7 +1649,7 @@
 }
 
 .workflow-section .info-title {
-    @apply text-[18px] sm:text-[18px] text-xl font-semibold
+    @apply text-[18px] sm:text-[20px] text-xl font-semibold
 }
 
 /* banner section */
