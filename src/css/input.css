@@ -1359,7 +1359,7 @@
 /* What We Do Section */
 
 .what-we-do-section .info-card-widget .info-card {
-    @apply items-start
+    @apply items-center sm:items-start
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
@@ -1428,3 +1428,255 @@
   }
 }
 
+.introduction-section .intro-tag-one {
+    @apply flex flex-col gap-[6px] p-[24px] h-[160px];
+}
+
+.introduction-section .heading-wrap  {
+   @apply gap-[16px]
+}
+
+.what-we-do-section .info-card-widget .info-card {
+   @apply p-[25px] gap-[16px]
+}
+
+.what-we-do-section {
+   @apply bg-[rgba(246,219,148,0.09)] 
+}
+
+.our-registry-section {
+     @apply bg-[rgba(246,219,148,0.09)]
+}
+
+.what-we-do-section .heading-wrap {
+   @apply text-center sm:text-left 
+}
+
+.introduction-section .content-purpose-section {
+  @apply mt-6;
+}
+
+/* Grid Layout */
+.introduction-section .purpose-grid {
+  @apply grid gap-8 md:grid-cols-[repeat(2,1fr)];
+}
+
+/* Card Design */
+.introduction-section .purpose-card {
+  @apply backdrop-blur border shadow-[0px_12px_35px_-12px_rgba(55,49,37,0.08)] transition-all duration-[0.3s] ease-[ease] p-8 rounded-3xl border-solid border-[rgba(231,226,218,0.5)] hover:shadow-[0px_18px_45px_-15px_rgba(55,49,37,0.12)] hover:-translate-y-1;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Header */
+.introduction-section .card-header {
+  @apply flex items-center gap-2.5 mb-4;
+}
+
+/* Icon Circle */
+.introduction-section .icon-circle {
+  @apply w-10 h-10 text-[#a17810] flex items-center justify-center font-semibold text-base rounded-[50%];
+  background: rgba(246, 219, 148, 0.3);
+}
+
+/* Heading */
+.introduction-section .purpose-card h3 {
+  @apply text-[18px] sm:text-xl font-semibold text-[#32261B] m-0;
+}
+
+/* Paragraph */
+.introduction-section .purpose-card p {
+  @apply text-base text-[#847362] leading-[1.7] m-0;
+}
+.introduction-section .icon-circle svg {
+  @apply w-6 h-6;
+}
+
+.introduction-section {
+     @apply bg-[#F5F1EA] relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
+     before:bg-[url('../images/Overlay+Blur.svg')] before:blur-md before:bg-no-repeat;
+}
+
+.what-we-do-section {
+     @apply relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
+     before:bg-[url('../images/wcd-before.svg')] before:blur-md before:bg-no-repeat;
+}
+
+.faq-section {
+    @apply relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
+     before:bg-[url('../images/faq-overlay-before.svg')] before:blur-md before:bg-no-repeat;
+}
+
+.introduction-section .content-media-grid {
+    @apply flex-col-reverse xl:flex-row gap-[58px]
+}
+
+.introduction-section .intro-tag {
+    @apply absolute top-4 left-4 bg-white rounded-[20px] p-[14px] flex items-center gap-[8px] shadow-sm
+}
+
+.introduction-grid {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-[16px] mt-[18px] 
+}
+
+.introduction-grid .intro-tag-one {
+    @apply bg-white rounded-xl border border-[rgba(231,226,218,0.5)] shadow-[0px_4px_20px_-4px_rgba(55,49,37,0.08)] w-full  text-center
+}
+
+.introduction-grid .intro-tag-icon {
+    @apply w-[48px] h-[48px] mx-auto rounded-full bg-[#EFE1B8] flex items-center justify-center mb-2
+}
+
+.introduction-grid .info-title {
+    @apply text-center text-[18px] sm:text-[20px] text-[#373125] font-bold
+}
+
+.introduction-grid .info-desc {
+    @apply text-[14px]  leading-[20px] text-center
+}
+
+.introduction-section .value-points {
+    @apply gap-[10px]
+}
+
+/* What we can do section */
+
+.what-we-do-section .info-card-widget .info-title {
+    @apply text-center sm:text-left text-[18px] sm:text-[20px] font-semibold
+}
+
+.what-we-do-section .info-card-widget .info-desc {
+    @apply text-center sm:text-left
+}
+
+/* How we work section */
+
+.how-we-work-section {
+    @apply   bg-[#F5F1EA] 
+}
+
+.how-we-work-section .steps {
+    @apply relative
+}
+
+.how-we-work-section .steps-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-[30px] sm:gap-[70px] relative
+}
+
+.how-we-work-section .steps-card {
+    @apply flex flex-col gap-4 text-center relative 
+
+   sm:after:content-['']
+   sm:after:absolute
+   sm:after:top-[52px]
+   sm:after:left-1/2
+   sm:after:translate-x-12
+   sm:after:w-full
+   sm:after:h-[1.5px]
+  sm:after:bg-[#E0C78A]
+  last:sm:after:hidden
+}
+
+.how-we-work-section .steps-card span{
+    @apply mt-[10px] block text-[16px] font-bold text-[#B8870B]
+}
+
+.how-we-work-section .steps-card .steps-image {
+  @apply  flex h-[56px] w-[56px] items-center justify-center rounded-full bg-[linear-gradient(315deg,_#5E4718_0%,_#AF7A10_49.52%)]
+}
+
+.how-we-work-section .steps-card .steps-content {
+    @apply relative mx-auto flex flex-col h-[128px] w-[128px] z-50 items-center justify-center rounded-full bg-white
+}
+
+.how-we-work-section .steps-card .info-title {
+    @apply text-[18px] sm:text-xl font-semibold
+}
+
+/* Our Registry section */
+
+.our-registry-section {
+    @apply relative overflow-hidden bg-[#F6DB940F]
+}
+
+.our-registry-section .our-registry-grid {
+    @apply mx-0 md:mx-0 lg:mx-[10px] xl:mx-[200px] grid gap-[20px] lg:gap-8 sm:grid-cols-2 lg:grid-cols-3
+}
+
+.our-registry-section .our-registry-grid .our-registry-card {
+    @apply rounded-2xl flex flex-col items-center justify-start gap-4 border border-[#A17810] bg-white p-[15px] lg:p-10 text-center
+}
+
+.our-registry-section .our-registry-card .our-registry-image {
+    @apply mx-auto h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full
+}
+
+.our-registry-section .info-title {
+    @apply text-[18px] sm:text-xl font-semibold
+}
+
+
+/* Faq section */
+
+.faq-section .faq-content {
+    @apply flex flex-col-reverse xl:flex-row gap-[67px] items-center
+}
+
+.faq-section .faq-content .faq-item {
+@apply flex-1 space-y-4
+}
+
+.faq-section .accordion-item {
+  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px]
+} 
+
+.faq-section .accordion-item .accordion-btn {
+  @apply flex w-full items-center justify-between
+}
+
+/* workflow section */
+
+.workflow-section {
+    @apply bg-[#F5F1EA]
+}
+
+.workflow-section .workflow-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-6 md:mb-12 lg:mb-12
+}
+
+.workflow-section .workflow-card {
+    @apply flex flex-col items-center relative 
+}
+
+.workflow-section .info-title {
+    @apply text-[18px] text-xl font-semibold
+}
+
+/* banner section */
+
+.banner-section {
+   @apply relative w-full h-auto
+}
+
+.banner-section .banner-content {
+    @apply relative z-10 h-full flex flex-col gap-[4px] lg:gap-[16px] items-center justify-center text-center px-4
+}
+
+.banner-section .banner-heading {
+  @apply  font-bold xl:text-[48px] lg:text-[36px] md:text-[32px] text-[32px] bg-[linear-gradient(360deg,#FFFFFF_-64.84%,#FFD56C_42.27%,#EAB52F_164.84%)] bg-clip-text text-transparent
+}
+
+.banner-section .breadcrumbs-content {
+    @apply mt-3 text-sm md:text-base text-white flex items-center gap-[4px]
+}
+
+.banner-section .breadcrumbs-one {
+    @apply opacity-90 font-medium
+}
+
+.banner-section .breadcrumbs-two {
+    @apply text-[#F4C76C] font-medium
+}
+
+.banner-section .banner-img {
+    @apply absolute inset-0 w-full h-full object-cover
+}
