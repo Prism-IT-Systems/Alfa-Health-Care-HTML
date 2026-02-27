@@ -5276,6 +5276,9 @@
   font-size: 18px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
+  @media (width >= 40rem) {
+    font-size: 18px;
+  }
 }
 .banner-section {
   position: relative;
