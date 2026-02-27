@@ -3165,14 +3165,20 @@
   .info-card-widget .info-card .info-icon {
     margin-bottom: calc(var(--spacing) * 4);
     display: inline-flex;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     align-items: center;
     justify-content: center;
     border-radius: calc(infinity * 1px);
     background-color: rgba(223,176,58,0.3);
     @media (width >= 40rem) {
       margin-bottom: calc(var(--spacing) * 7);
+    }
+    @media (width >= 40rem) {
+      height: 60px;
+    }
+    @media (width >= 40rem) {
+      width: 60px;
     }
   }
   .info-card-widget .info-card .info-title {
@@ -5167,7 +5173,7 @@
   border-width: 1px;
   border-color: #A17810;
   background-color: var(--color-white);
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   @media (width >= 64rem) {
     padding: calc(var(--spacing) * 10);
