@@ -4484,6 +4484,7 @@
   margin-bottom: 74px;
 }
 .introduction-section .content-media-grid .content-media-col-left {
+  height: 36.29%;
   width: 100%;
   @media (width >= 48rem) {
     width: 80%;
@@ -4492,14 +4493,14 @@
     width: 80%;
   }
   @media (width >= 80rem) {
-    width: 47.66%;
+    width: 43.43%;
   }
 }
 .introduction-section .content-media-grid .content-media-col-right {
   width: 100%;
   text-align: center;
   @media (width >= 80rem) {
-    width: 43.92%;
+    width: 45.64%;
   }
   @media (width >= 80rem) {
     text-align: right;

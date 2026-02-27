@@ -1335,16 +1335,15 @@
 /* Introduction Section */
 
 .introduction-section .content-media-grid .content-media-col-left {
-     @apply w-[100%] md:w-[80%] lg:w-[80%] xl:w-[47.66%]
+     @apply  w-[100%] md:w-[80%] lg:w-[80%] xl:w-[43.43%] h-[36.29%]
 }
 
 .introduction-section .content-media-grid .content-media-col-right {
-    @apply w-full xl:w-[43.92%] text-center xl:text-right
+    @apply w-full xl:w-[45.64%] text-center xl:text-right
 }
 
 .introduction-section .content-media-grid .content-media-wrap img {
-   @apply h-[350px] 
-}
+   @apply h-full sm:h-[405px] 
 
 .introduction-section .content-media-grid .content-media-wrap {
     @apply rounded-[24px]
