@@ -1647,7 +1647,7 @@
 }
 
 .workflow-section .info-title {
-    @apply text-[18px] text-xl font-semibold
+    @apply text-[18px] sm:text-[18px] text-xl font-semibold
 }
 
 /* banner section */
