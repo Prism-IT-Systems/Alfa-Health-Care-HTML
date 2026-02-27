@@ -4631,6 +4631,47 @@
     justify-content: flex-start;
   }
 }
+.insurers-network-section {
+  position: relative;
+  background-image: linear-gradient(148.65deg,rgba(223,176,58,0.07) 3.19%,rgba(223,176,58,0.07) 100.21%,rgba(252,250,248,0.7) 112.92%);
+  &::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::before {
+    content: var(--tw-content);
+    bottom: calc(146px * -1);
+  }
+  &::before {
+    content: var(--tw-content);
+    left: calc(195px * -1);
+  }
+  &::before {
+    content: var(--tw-content);
+    height: 520px;
+  }
+  &::before {
+    content: var(--tw-content);
+    width: 646px;
+  }
+  &::before {
+    content: var(--tw-content);
+    border-radius: 999px;
+  }
+  &::before {
+    content: var(--tw-content);
+    background-color: #ECDFC630;
+  }
+  &::before {
+    --tw-content: '';
+    content: var(--tw-content);
+  }
+  &::before {
+    content: var(--tw-content);
+    --tw-blur: blur(90px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+}
 .insurers-network-section .info-icon {
   display: inline-flex;
   height: 48px;
