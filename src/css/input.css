@@ -400,7 +400,7 @@
 } 
 
 .navigation-bar .search-form {
-    @apply ml-auto mr-2;
+    @apply ml-auto lg:ml-0 mr-2;
 }
 .navigation-bar .search-form .search-form-inner input[type="search"] {
     @apply p-[10px_10px_10px_36px] w-[200px] max-h-full;

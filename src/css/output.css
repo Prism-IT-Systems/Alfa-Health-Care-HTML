@@ -2520,6 +2520,9 @@
   .navigation-bar .search-form {
     margin-right: calc(var(--spacing) * 2);
     margin-left: auto;
+    @media (width >= 64rem) {
+      margin-left: calc(var(--spacing) * 0);
+    }
   }
   .navigation-bar .search-form .search-form-inner input[type="search"] {
     max-height: 100%;
