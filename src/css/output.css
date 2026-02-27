@@ -4534,7 +4534,10 @@
   border-color: #E7E2DA;
 }
 .what-we-do-section .heading-wrap {
-  align-items: flex-start;
+  align-items: center;
+  @media (width >= 40rem) {
+    align-items: flex-start;
+  }
 }
 .introduction-section .heading-wrap {
   align-items: center;
@@ -4981,10 +4984,13 @@
 }
 .what-we-do-section .info-card-widget .info-title {
   margin-bottom: calc(var(--spacing) * 0);
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
+  @media (width >= 40rem) {
+    text-align: left;
+  }
   @media (width >= 40rem) {
     font-size: 20px;
   }

@@ -1371,7 +1371,7 @@
 }
 
 .what-we-do-section .heading-wrap {
-    @apply items-start
+    @apply items-center sm:items-start
 }
 
 .introduction-section .heading-wrap {
@@ -1542,7 +1542,7 @@
 /* What we can do section */
 
 .what-we-do-section .info-card-widget .info-title {
-    @apply mb-0 text-left text-[18px] sm:text-[20px] font-semibold
+    @apply mb-0 text-center sm:text-left text-[18px] sm:text-[20px] font-semibold
 }
 
 .what-we-do-section .info-card-widget .info-desc {
