@@ -57,13 +57,15 @@
     @apply lg:text-[40px] lg:leading-[48px];
     }
 
+   h3 {
+    @apply text-xl leading-7 font-inter font-bold;
+    @apply md:text-2xl md:leading-8;
+    @apply lg:text-[28px] lg:leading-9;
+    }
+
     h4 {
     @apply text-xl leading-7 font-inter font-bold;
     @apply md:text-2xl md:leading-8;
-    }
-
-    h3 {
-    @apply font-inter font-bold;
     }
 
     h5 {
@@ -1220,7 +1222,7 @@
 }
 
 .info-detail-card {
-    @apply w-full sm:w-[496px] rounded-3xl border border-[#C49331] bg-pureWhite p-10.5 text-left;
+    @apply w-full sm:w-[496px] rounded-3xl border border-[#C49331] bg-pureWhite p-6 sm:p-10.5 text-left;
 }
 
 .info-detail-card > h3 { 
@@ -1243,7 +1245,11 @@
 
 
 .info-detail-card .info-detail-icon {
-    @apply flex h-8 w-8 items-center justify-center rounded-md  text-[#c49331];
+    @apply flex h-7.5 w-7.5 items-center justify-center rounded-md  text-[#c49331];
+}
+
+.info-detail-card .info-detail-icon svg {
+    @apply w-6 h-6;
 }
 
 .info-detail-card .info-label-text {
@@ -1255,7 +1261,7 @@
 }
 
 .info-detail-card .info-detail-text {
-    @apply font-medium text-[#3C2C20] leading-6;
+    @apply font-medium text-[#3C2C20] leading-6 wrap-break-word text-balance break-all;
 }
 
 .info-detail-card .detail-list-box-group-inner {
@@ -1263,13 +1269,28 @@
 }
 
 .info-detail-card .detail-list-box-group .detail-list-box-group-list {
-    @apply flex flex-row gap-3 items-center justify-start px-[17px] py-[17px] relative after:absolute after:bottom-0 sm:after:left-[55.5%]  after:left-[40.5%] after:h-[0.5px]
-            sm:after:w-[100%] after:w-[70%] after:-translate-x-1/2 after:bg-[#847362];
+    @apply flex flex-row gap-3 items-center justify-start px-[17px] py-[17px] relative w-full after:absolute after:bottom-0 after:left-1/2 after:h-[0.5px]
+            after:-translate-x-1/2 after:bg-[#847362] after:w-[calc(100%_-_34px)];
 }
 
 .info-detail-card .detail-list-box-group .detail-list-box-group-list:last-child::after {
     @apply hidden;
 }
+}
+
+/* Brand Grid Widget */
+@layer components {
+    .brand-grid-wrap {
+        @apply flex flex-row flex-wrap gap-8 justify-center;
+    }
+
+    .brand-grid-wrap .brand-item {
+        @apply flex w-[320px] h-[90px] items-center justify-center border border-[#E8E2D9] rounded-xl bg-white px-[25px] py-[22px] shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.05)];
+    }
+     .brand-grid-wrap .brand-item h4 {
+        @apply font-Montserrat text-[28px] leading-14 font-medium;
+    }
+
 }
 
 /* Normal Section css..................................... */
