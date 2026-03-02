@@ -546,9 +546,6 @@
   .h-\[75px\] {
     height: 75px;
   }
-  .h-\[86px\] {
-    height: 86px;
-  }
   .h-\[87px\] {
     height: 87px;
   }
@@ -645,9 +642,6 @@
   .w-\[250px\] {
     width: 250px;
   }
-  .w-\[320px\] {
-    width: 320px;
-  }
   .w-\[400px\] {
     width: 400px;
   }
@@ -686,9 +680,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-row {
-    flex-direction: row;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -764,9 +755,6 @@
   }
   .border-\[\#D9CEC0\] {
     border-color: #D9CEC0;
-  }
-  .border-\[\#E8E2D9\] {
-    border-color: #E8E2D9;
   }
   .border-\[rgba\(132\,115\,98\,0\.35\)\] {
     border-color: rgba(132,115,98,0.35);
@@ -4667,6 +4655,16 @@
 .insurers-partners-section .info-desc {
   margin-top: calc(var(--spacing) * 10);
   text-align: center;
+}
+.insurers-partners-section .info-desc a {
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  color: #C59722;
+  &:hover {
+    @media (hover: hover) {
+      text-decoration-line: underline;
+    }
+  }
 }
 .what-we-do-section .info-card-widget .info-card {
   align-items: center;

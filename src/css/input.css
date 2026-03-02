@@ -1458,10 +1458,12 @@
 
 
  /* Insurers Partners Section  */
- .insurers-partners-section .info-desc {
+ .insurers-partners-section .info-desc{
     @apply mt-10 text-center;
  }
-
+ .insurers-partners-section .info-desc a{
+    @apply text-[#C59722] font-normal hover:underline;
+ }
 /* What We Do Section */
 
 .what-we-do-section .info-card-widget .info-card {
