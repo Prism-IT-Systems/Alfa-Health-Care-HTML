@@ -1448,7 +1448,7 @@
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
-    @apply mb-0 rounded-[12px] w-[50px] h-[50px] sm:w-[60px] sm:w-[60px]
+    @apply mb-0 rounded-[12px] w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
@@ -1523,7 +1523,7 @@
 }
 
 .introduction-section .intro-tag-one {
-    @apply flex flex-col gap-[6px] p-[24px] h-[160px];
+    @apply flex flex-col gap-[6px] p-[24px];
 }
 
 .introduction-section .heading-wrap  {
@@ -1581,9 +1581,7 @@
 .introduction-section .purpose-card p {
   @apply text-base text-[#847362] leading-[1.7] m-0;
 }
-.introduction-section .icon-circle svg {
-  @apply w-6 h-6;
-}
+
 
 .introduction-section {
      @apply bg-[#F5F1EA] relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
@@ -1778,37 +1776,24 @@
 .introduction-section .icon-circle img {
   @apply w-6 h-6;
 }
-.introduction-section .introduction-grid .intro-tag-one {
-  @apply h-auto w-full;
+
+.workflow-section .info-title {
+    @apply text-[18px] sm:text-[20px]
 }
-@media (min-width: 768px) {
-  .workflow-section .info-title {
-    @apply text-xl;
-  }
+
+.introduction-section .content-media-grid .content-media-wrap img {
+    @apply  h-auto sm:h-[405px]
 }
-@media (min-width: 768px) {
-  .introduction-section .content-media-grid .content-media-wrap img {
-    @apply h-[405px];
-  }
-  .introduction-section .content-media-grid .content-media-col-left {
-    @apply w-[608px];
-  }
-  .introduction-section .content-media-grid .content-media-col-right {
-    @apply w-[639px];
-  }
+
+.introduction-section .content-media-grid .content-media-col-left {
+    @apply  w-full sm:w-[608px]
 }
-@media (max-width: 768px) {
-  .introduction-section .content-media-grid .content-media-wrap img {
-    @apply h-auto;
-  }
-  .introduction-section .content-media-grid .content-media-col-left {
-    @apply w-full;
-  }
-  .introduction-section .content-media-grid .content-media-col-right {
-    @apply w-full;
-  }
-}
-@media (max-width: 1025px) {
+
+ .introduction-section .content-media-grid .content-media-col-right {
+    @apply  w-full sm:w-[639px]
+ }
+
+ @media (max-width: 1025px) {
   .how-we-work-section .steps-card:nth-child(3)::after {
     @apply content-none;
   }

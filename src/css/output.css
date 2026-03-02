@@ -4628,6 +4628,9 @@
   width: 50px;
   border-radius: 12px;
   @media (width >= 40rem) {
+    height: 60px;
+  }
+  @media (width >= 40rem) {
     width: 60px;
   }
 }
@@ -4804,7 +4807,6 @@
 }
 .introduction-section .intro-tag-one {
   display: flex;
-  height: 160px;
   flex-direction: column;
   gap: 6px;
   padding: 24px;
@@ -4910,10 +4912,6 @@
   --tw-leading: 1.7;
   line-height: 1.7;
   color: #847362;
-}
-.introduction-section .icon-circle svg {
-  height: calc(var(--spacing) * 6);
-  width: calc(var(--spacing) * 6);
 }
 .introduction-section {
   position: relative;
@@ -5482,6 +5480,44 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.introduction-section .icon-circle img {
+  height: calc(var(--spacing) * 6);
+  width: calc(var(--spacing) * 6);
+}
+.workflow-section .info-title {
+  font-size: 18px;
+  @media (width >= 40rem) {
+    font-size: 20px;
+  }
+}
+.introduction-section .content-media-grid .content-media-wrap img {
+  height: auto;
+  @media (width >= 40rem) {
+    height: 405px;
+  }
+}
+.introduction-section .content-media-grid .content-media-col-left {
+  width: 100%;
+  @media (width >= 40rem) {
+    width: 608px;
+  }
+}
+.introduction-section .content-media-grid .content-media-col-right {
+  width: 100%;
+  @media (width >= 40rem) {
+    width: 639px;
+  }
+}
+@media (max-width: 1025px) {
+  .how-we-work-section .steps-card:nth-child(3)::after {
+    --tw-content: none;
+    content: none;
+  }
+  .workflow-section .workflow-num::before {
+    --tw-content: none;
+    content: none;
+  }
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
