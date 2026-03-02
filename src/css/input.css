@@ -1213,6 +1213,64 @@
     }
 }
 
+/* Info Details Card Widget */
+@layer components {
+ .info-detail-cards-wrap {
+    @apply flex flex-col lg:flex-row justify-center items-center gap-8;
+}
+
+.info-detail-card {
+    @apply w-full sm:w-[496px] rounded-3xl border border-[#C49331] bg-pureWhite p-10.5 text-left;
+}
+
+.info-detail-card > h3 { 
+    @apply text-xl leading-8 relative inline-block text-sm font-semibold text-[#3C2C20]
+           after:absolute after:left-0 after:-bottom-2
+           after:h-[1px] after:w-[80px] after:bg-[#c49331] mb-2;
+}
+
+.info-detail-card .info-desc {
+    @apply mt-8 text-base leading-6;
+}
+
+.detail-list-box-group{
+    @apply mt-8 flex flex-col items-start  rounded-xl bg-[#F5F1EA]; 
+}
+
+.info-detail-card .detail-list-box { 
+    @apply mt-8 flex items-center gap-3 rounded-xl bg-[#F5F1EA] px-[17px] py-[17px];
+}
+
+
+.info-detail-card .info-detail-icon {
+    @apply flex h-8 w-8 items-center justify-center rounded-md  text-[#c49331];
+}
+
+.info-detail-card .info-label-text {
+    @apply text-base leading-5 text-warmTaupe;
+}
+
+.info-detail-card .detail-list-box .info-detail-text {
+    @apply  mt-2;
+}
+
+.info-detail-card .info-detail-text {
+    @apply font-medium text-[#3C2C20] leading-6;
+}
+
+.info-detail-card .detail-list-box-group-inner {
+    @apply flex flex-row gap-3;
+}
+
+.info-detail-card .detail-list-box-group .detail-list-box-group-list {
+    @apply flex flex-row gap-3 items-center justify-start px-[17px] py-[17px] relative after:absolute after:bottom-0 sm:after:left-[55.5%]  after:left-[40.5%] after:h-[0.5px]
+            sm:after:w-[100%] after:w-[70%] after:-translate-x-1/2 after:bg-[#847362];
+}
+
+.info-detail-card .detail-list-box-group .detail-list-box-group-list:last-child::after {
+    @apply hidden;
+}
+}
 
 /* Normal Section css..................................... */
 
