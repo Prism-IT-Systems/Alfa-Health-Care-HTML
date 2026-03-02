@@ -1774,3 +1774,45 @@
 .banner-section .banner-img {
     @apply absolute inset-0 w-full h-full object-cover
 }
+
+.introduction-section .icon-circle img {
+  @apply w-6 h-6;
+}
+.introduction-section .introduction-grid .intro-tag-one {
+  @apply h-auto w-full;
+}
+@media (min-width: 768px) {
+  .workflow-section .info-title {
+    @apply text-xl;
+  }
+}
+@media (min-width: 768px) {
+  .introduction-section .content-media-grid .content-media-wrap img {
+    @apply h-[405px];
+  }
+  .introduction-section .content-media-grid .content-media-col-left {
+    @apply w-[608px];
+  }
+  .introduction-section .content-media-grid .content-media-col-right {
+    @apply w-[639px];
+  }
+}
+@media (max-width: 768px) {
+  .introduction-section .content-media-grid .content-media-wrap img {
+    @apply h-auto;
+  }
+  .introduction-section .content-media-grid .content-media-col-left {
+    @apply w-full;
+  }
+  .introduction-section .content-media-grid .content-media-col-right {
+    @apply w-full;
+  }
+}
+@media (max-width: 1025px) {
+  .how-we-work-section .steps-card:nth-child(3)::after {
+    @apply content-none;
+  }
+  .workflow-section .workflow-num::before {
+    @apply content-none;
+  }
+}
