@@ -1363,7 +1363,7 @@
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
-    @apply w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]mb-0 rounded-[12px]
+    @apply w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] mb-0 rounded-[12px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
