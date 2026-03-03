@@ -4808,6 +4808,7 @@
   color: #1a1a1a;
 }
 .section-404 .heading-wrap p {
+  margin-top: 30px;
   margin-bottom: 30px;
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -5568,6 +5569,81 @@
     --tw-content: none;
     content: none;
   }
+}
+.product-categories-section .category-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.product-categories-section .category-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline: calc(var(--spacing) * 5);
+  padding-block: calc(var(--spacing) * 7);
+  @media (width >= 40rem) {
+    gap: calc(var(--spacing) * 4);
+  }
+}
+.product-categories-section .category-info h3 {
+  font-size: 18px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  @media (width >= 40rem) {
+    font-size: 20px;
+  }
+}
+.product-categories-section .product-image {
+  height: 206px;
+  @media (width >= 40rem) {
+    height: 284px;
+  }
+}
+.product-categories-section .cta-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1.5);
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-top-color: rgba(132,115,98,0.35);
+  padding-top: calc(var(--spacing) * 4);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: 22.8px;
+  line-height: 22.8px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: #A17810;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease-in-out;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    @media (hover: hover) {
+      color: #644b0b;
+    }
+  }
+}
+.cta-link svg {
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+}
+.cta-link:hover svg {
+  --tw-translate-x: calc(var(--spacing) * 1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  stroke: #644b0b;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {

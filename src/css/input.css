@@ -1528,7 +1528,7 @@
   @apply text-[120px] font-bold leading-none text-[#1a1a1a] tracking-[-2px] mb-5;
 }
 .section-404 .heading-wrap p {
-  @apply text-xl text-[#666] mb-[30px];
+  @apply text-xl text-[#666] mb-[30px] mt-[30px];
 }
 .section-404 .back-home-btn {
   @apply inline-block bg-[#A17810] text-white no-underline text-base rounded transition-all duration-[0.3s] ease-[ease] px-[30px] py-3 hover:bg-[#A17810] hover:-translate-y-0.5;
@@ -1823,4 +1823,35 @@
   .workflow-section .workflow-num::before {
     @apply content-none;
   }
+
+}
+
+/* Product Category Page */
+
+.product-categories-section .category-card {
+     @apply flex flex-col h-full; 
+} 
+
+.product-categories-section .category-info {
+     @apply flex flex-col flex-1 px-5 py-7 gap-[10px] sm:gap-4; 
+} 
+
+.product-categories-section .category-info h3 { 
+    @apply text-[18px] sm:text-[20px] font-semibold; 
+} 
+
+.product-categories-section .product-image { 
+    @apply h-[206px] sm:h-[284px] 
+} 
+
+.product-categories-section .cta-link { 
+    @apply mt-auto text-base font-semibold leading-[22.8px] text-[#A17810] inline-flex items-center gap-1.5 transition-all duration-[0.3s] ease-[ease-in-out] pt-4 border-t-[rgba(132,115,98,0.35)] border-t border-solid hover:text-[#644b0b]; /* text-base = 1rem = 16px */
+ } 
+
+ .cta-link svg { 
+    @apply transition-all duration-[0.3s] ease-[ease]; 
+} 
+
+.cta-link:hover svg {
+     @apply stroke-[#644b0b] translate-x-1; 
 }
