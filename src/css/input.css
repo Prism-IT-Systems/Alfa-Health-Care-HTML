@@ -99,8 +99,8 @@
     }
 
     /*Section Gloabl Spacing */
-     section {
-        @apply py-[60px] xl:py-[100px] px-5 lg:px-7.5;
+     section,footer {
+        @apply py-[60px] xl:py-[100px] px-5 lg:!px-7.5;
     }
 }
 
@@ -283,7 +283,7 @@
 }
 
 .header-top-bar .top-bar-inner {
-    @apply flex justify-between gap-4 md:px-6;
+    @apply flex justify-between gap-4 xl:px-6;
 }
 
 .header-top-bar .top-bar-inner .top-bar-left {
@@ -291,7 +291,23 @@
 }
 
 .header-top-bar .top-bar-inner .top-bar-left .info-detail {
-    @apply flex items-center text-softIvory gap-2 text-sm font-normal;
+    @apply flex items-center text-softIvory gap-2 text-sm font-normal hover:text-SunlitGold transition duration-300 ease-in-out;
+}
+
+.header-top-bar .top-bar-inner .top-bar-left .info-detail svg {
+    @apply  duration-300 ease-in-out;
+}
+
+.header-top-bar .top-bar-inner .top-bar-left .info-detail svg {
+    @apply w-4 h-4;
+}
+
+.header-top-bar .top-bar-inner .top-bar-left .info-detail:hover svg path {
+    @apply transition duration-300 ease-in-out;
+}
+
+.header-top-bar .top-bar-inner .top-bar-left .info-detail:hover svg path{
+    @apply stroke-SunlitGold;
 }
 
 .header-top-bar .top-bar-inner .top-bar-right .social-icons { 
@@ -324,7 +340,7 @@
 }
 
 .navigation-bar .navigation-bar-inner {
-    @apply flex items-center justify-between md:gap-6;
+    @apply flex items-center justify-between md:gap-6 px-0 xl:!px-4.5;
 }
 
 .navigation-bar .navigation-bar-inner .navigation-menu-list {
@@ -377,9 +393,9 @@
 }
 
 .navigation-bar .mobile-menu-toggle {
-    @apply block lg:hidden;
-    
+    @apply block lg:hidden;  
 }
+
 .navigation-bar .mobile-menu-toggle > button{
     @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary
 }
@@ -402,10 +418,10 @@
 } 
 
 .navigation-bar .search-form {
-    @apply ml-auto lg:ml-0 mr-2;
+    @apply ml-auto lg:ml-0;
 }
 .navigation-bar .search-form .search-form-inner input[type="search"] {
-    @apply p-[10px_10px_10px_36px] w-[200px] max-h-full;
+    @apply p-[10px_10px_10px_39px] w-[200px] xl:w-[256px] max-h-full;
  }
 
 }
@@ -1086,19 +1102,23 @@
 @layer components {
 
     .main-footer {
-        @apply bg-deepBrown p-6 sm:pt-16 xl:pt-[80px] xl:p-0 !text-[rgba(252,250,248,0.7)] overflow-hidden;
+        @apply bg-deepBrown p-6 sm:pt-16 xl:pt-[80px] xl:!px-7.5  !text-[rgba(252,250,248,0.7)] overflow-hidden;
+    }
+    
+    .main-footer .footer-inner { 
+        @apply grid  grid-cols-1 sm:grid-cols-2 lg:flex md:flex-row md:flex-wrap xl:flex-nowrap gap-[30px] md:gap-[40px] lg:gap-[60px] xl:gap-[100px] justify-between;
     }
 
-    .main-footer .footer-inner { 
-        @apply flex flex-col md:flex-row md:flex-wrap gap-[30px] md:gap-[40px] lg:gap-[60px] xl:gap-[100px];
-    }
+    /* .main-footer .footer-inner > div{
+        @apply sm:w-1/2 lg:w-auto;
+    } */
 
     .main-footer .footer-inner h3{ 
         @apply text-softIvory mb-6 font-semibold text-[18px] leading-7;
     }
 
     .main-footer .footer-inner .footer-brand {
-        @apply max-w-[304px];
+        @apply sm:max-w-[304px];
     }
 
     .main-footer .footer-inner .footer-brand .footer-logo { 
@@ -1158,9 +1178,22 @@
         @apply text-2xl w-6 h-6 leading-6 text-SunlitGold;
     }
 
+    .main-footer .footer-inner .footer-contact p svg path { 
+        @apply stroke-SunlitGold;
+    }
+    
+    
+    .main-footer .footer-inner .footer-contact p:nth-child(2) svg { 
+        @apply mt-1;
+    }
+
+    .main-footer .footer-inner .footer-contact p a {
+        @apply transition duration-300 ease-in-out hover:text-SunlitGold;
+    }
+
     .main-footer .footer-inner .payment-box {
         @apply bg-[rgba(252,250,248,0.1)] outline outline-solid outline-[rgba(252,250,248,0.2)] rounded-3xl p-5 md:p-[25px_25px_28px_25px] w-full sm:w-[314px] max-w-full
-                text-center; 
+                text-center lg:text-left; 
      }
 
      .main-footer .footer-inner .payment-box .label {
@@ -1184,7 +1217,7 @@
     }
 
     .main-footer .footer-inner .payment-box .secure-text {
-        @apply text-center mt-3 mb-1.5 text-[#FBFAF850];
+        @apply text-center mt-4 mb-1.5 text-[#FBFAF850] text-xs leading-4;
     }
 
     .main-footer .footer-info {
@@ -1209,7 +1242,9 @@
     .main-footer .footer-bottom p {
         @apply text-[rgba(252,250,248,0.5)] text-center;
     }
-
+    .main-footer .footer-info p {
+        @apply leading-[23px];
+    }
     .main-footer .footer-bottom {
         @apply pt-6 lg:py-4;
     }
