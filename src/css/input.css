@@ -57,13 +57,15 @@
     @apply lg:text-[40px] lg:leading-[48px];
     }
 
+   h3 {
+    @apply text-xl leading-7 font-inter font-bold;
+    @apply md:text-2xl md:leading-8;
+    @apply lg:text-[28px] lg:leading-9;
+    }
+
     h4 {
     @apply text-xl leading-7 font-inter font-bold;
     @apply md:text-2xl md:leading-8;
-    }
-
-    h3 {
-    @apply font-inter font-bold;
     }
 
     h5 {
@@ -688,6 +690,295 @@
                hover:bg-neutralGrayHover transition-colors;
     }
 
+    /* Product detail page */
+    .product-detail-page-section {
+        @apply pt-4 pb-10 md:pb-14 bg-pureWhite;
+    }
+
+    .product-breadcrumb {
+        @apply flex items-center flex-wrap gap-1.5 text-sm text-warmTaupe mb-6;
+    }
+
+    .product-breadcrumb a {
+        @apply hover:text-deepBrown duration-200;
+    }
+
+    .product-breadcrumb .separator {
+        @apply text-warmTaupe/60 text-xs;
+    }
+
+    .product-breadcrumb .current {
+        @apply text-deepBrown font-semibold;
+    }
+
+    .product-detail-layout {
+        @apply grid grid-cols-1 lg:grid-cols-[48%_1fr] gap-6 lg:gap-10;
+    }
+
+    .product-gallery {
+        @apply relative;
+    }
+
+    .product-main-image {
+        @apply rounded-xl overflow-hidden bg-pureWhite relative;
+    }
+
+    .product-main-image img {
+        @apply w-full h-auto object-cover transition-opacity duration-200 cursor-pointer;
+    }
+
+    .product-main-image .view-icon {
+        @apply absolute top-3 right-3 w-9 h-9 rounded-full bg-pureWhite/90 shadow-sm inline-flex items-center justify-center
+               text-warmTaupe text-base cursor-pointer hover:bg-pureWhite duration-200;
+    }
+
+    .product-thumb-row {
+        @apply flex items-center gap-2.5 mt-4;
+    }
+
+    .thumb-track {
+        @apply flex items-center gap-2.5 overflow-x-auto scroll-smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .thumb-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .product-thumb {
+        @apply w-[72px] h-[72px] rounded-md overflow-hidden border border-[rgba(132,115,98,0.2)] bg-pureWhite cursor-pointer
+               hover:border-goldenBrown duration-200 flex-shrink-0;
+    }
+
+    .product-thumb.active {
+        @apply border-goldenBrown;
+    }
+
+    .product-thumb img {
+        @apply w-full h-full object-cover;
+    }
+
+    .thumb-arrow {
+        @apply w-8 h-8 rounded-full border border-[rgba(132,115,98,0.2)] bg-pureWhite text-warmTaupe
+               inline-flex items-center justify-center text-xs cursor-pointer hover:border-goldenBrown duration-200 flex-shrink-0;
+    }
+
+    .thumb-arrow.hidden {
+        @apply invisible;
+    }
+
+    /* ── Lightbox ── */
+    .gallery-lightbox {
+        @apply fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300;
+    }
+
+    .gallery-lightbox.open {
+        @apply opacity-100 pointer-events-auto;
+    }
+
+    .lightbox-backdrop {
+        @apply absolute inset-0 bg-black/80;
+    }
+
+    .lightbox-content {
+        @apply relative flex items-center justify-center max-w-[90vw] max-h-[90vh];
+    }
+
+    .lightbox-content img {
+        @apply max-w-full max-h-[85vh] rounded-lg object-contain transition-opacity duration-150;
+    }
+
+    .lightbox-close {
+        @apply absolute -top-10 right-0 w-9 h-9 rounded-full bg-pureWhite/20 text-pureWhite
+               inline-flex items-center justify-center text-lg hover:bg-pureWhite/40 duration-200 cursor-pointer;
+    }
+
+    .lightbox-nav {
+        @apply absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-pureWhite/20 text-pureWhite
+               inline-flex items-center justify-center text-lg hover:bg-pureWhite/40 duration-200 cursor-pointer;
+    }
+
+    .lightbox-prev {
+        @apply -left-14;
+    }
+
+    .lightbox-next {
+        @apply -right-14;
+    }
+
+    .lightbox-counter {
+        @apply absolute -bottom-8 left-1/2 -translate-x-1/2 text-pureWhite/70 text-sm;
+    }
+
+    .product-summary {
+        @apply flex flex-col;
+    }
+
+    .product-summary h1 {
+        @apply text-[26px] md:text-[32px] leading-[1.2] font-bold text-deepBrown mb-4;
+    }
+
+    .product-rating-row {
+        @apply flex items-center gap-2 mb-4;
+    }
+
+    .product-rating-stars {
+        @apply text-SunlitGold text-base leading-[1];
+    }
+
+    .product-review-count {
+        @apply text-sm leading-[1] text-warmTaupe;
+    }
+
+    .product-price-row {
+        @apply flex items-baseline gap-3 mb-5;
+    }
+
+    .product-price-row .price-now {
+        @apply text-[28px] leading-[1] font-bold text-goldenBrown;
+    }
+
+    .product-price-row .price-old {
+        @apply text-base leading-[1] text-warmTaupe line-through;
+    }
+
+    .product-short-desc {
+        @apply text-sm leading-[1.6] text-warmTaupe mb-5;
+    }
+
+    .product-stock-note {
+        @apply flex items-center gap-1.5 text-sm leading-[1] text-SunlitGold font-medium mb-6;
+    }
+
+    .product-stock-note i {
+        @apply text-SunlitGold text-sm;
+    }
+
+    .product-cart-row {
+        @apply grid grid-cols-[140px_1fr_48px] gap-3 mb-3;
+    }
+
+    .qty-picker {
+        @apply h-[48px] rounded-lg border border-[rgba(132,115,98,0.3)] bg-pureWhite
+               flex items-center justify-between overflow-hidden;
+    }
+
+    .qty-picker button {
+        @apply text-warmTaupe hover:text-deepBrown duration-200 h-full w-[40px]
+               inline-flex items-center justify-center text-base;
+    }
+
+    .qty-picker span {
+        @apply h-full flex-1 inline-flex items-center justify-center border-x border-[rgba(132,115,98,0.2)] text-sm font-medium;
+    }
+
+    .add-cart-btn {
+        @apply h-[48px] rounded-lg bg-[#ECE8E1] border border-[rgba(132,115,98,0.25)]
+               text-deepBrown text-sm font-medium hover:bg-[#e3ddd4] duration-200 cursor-pointer;
+    }
+
+    .wishlist-btn {
+        @apply h-[48px] w-[48px] rounded-lg border border-[rgba(132,115,98,0.3)] bg-pureWhite inline-flex items-center justify-center
+               text-warmTaupe hover:text-deepBrown duration-200 text-lg cursor-pointer;
+    }
+
+    .buy-now-btn {
+        @apply w-full h-[50px] rounded-lg bg-goldenBrown text-pureWhite text-sm font-semibold
+               hover:bg-[#87640d] duration-200 mb-5 cursor-pointer;
+    }
+
+    .secure-checkout {
+        @apply text-sm text-deepBrown mb-4 flex items-center gap-2 w-full justify-center font-medium;
+    }
+
+    .secure-checkout i {
+        @apply text-warmTaupe text-base;
+    }
+
+    .product-payments {
+        @apply flex items-center justify-center gap-2 mb-6;
+    }
+
+    .product-payments img {
+        @apply h-[30px] w-auto rounded-sm;
+    }
+
+    .detail-meta {
+        @apply border-t border-[rgba(132,115,98,0.15)] pt-5 mt-1;
+    }
+
+    .detail-meta p {
+        @apply text-sm leading-[1.8] text-warmTaupe mb-1;
+    }
+
+    .detail-meta strong {
+        @apply text-deepBrown font-bold;
+    }
+
+    .product-tabs-wrap {
+        @apply mt-10 md:mt-14;
+    }
+
+    .product-tab-nav {
+        @apply flex gap-2;
+    }
+
+    .product-tab-btn {
+        @apply px-8 md:px-12 py-3.5 text-sm font-semibold rounded-t-xl border border-b-0
+               border-[rgba(132,115,98,0.18)] bg-[#FBF7F1] text-goldenBrown cursor-pointer
+               hover:bg-[#f5efe5] duration-200;
+    }
+
+    .product-tab-btn.active {
+        @apply bg-goldenBrown text-pureWhite border-goldenBrown;
+    }
+
+    .product-tab-panel {
+        @apply border border-[rgba(132,115,98,0.18)] rounded-b-xl rounded-tr-xl bg-[#FBF7F1]
+               p-8 md:p-10 hidden text-deepBrown;
+    }
+
+    .product-tab-panel.active {
+        @apply block;
+    }
+
+    .additional-info-table {
+        @apply w-full text-sm;
+    }
+
+    .additional-info-table td {
+        @apply py-2.5 px-4 border-b border-[rgba(132,115,98,0.1)];
+    }
+
+    .additional-info-table .label-cell {
+        @apply font-semibold text-deepBrown w-[160px];
+    }
+
+    .related-products-section {
+        @apply py-14 md:py-16 bg-pureWhite;
+    }
+
+    .related-products-heading {
+        @apply flex items-center gap-4 mb-10;
+    }
+
+    .related-products-heading .line {
+        @apply flex-1 h-px bg-goldenBrown/30;
+    }
+
+    .related-products-heading h2 {
+        @apply text-2xl md:text-3xl font-semibold whitespace-nowrap;
+    }
+
+    .related-products-heading .hl {
+        @apply text-goldenBrown;
+    }
+
+    .related-products-grid {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[760px] mx-auto;
+    }
+
 }
 
 /* Tesimonial Widget */
@@ -924,6 +1215,83 @@
     }
 }
 
+/* Info Details Card Widget */
+@layer components {
+ .info-detail-cards-wrap {
+    @apply flex flex-col lg:flex-row justify-center items-center gap-8;
+}
+
+.info-detail-card {
+    @apply w-full sm:w-[496px] rounded-3xl border border-[#C49331] bg-pureWhite p-6 sm:p-10.5 text-left;
+}
+
+.info-detail-card > h3 { 
+    @apply text-xl leading-8 relative inline-block text-sm font-semibold text-[#3C2C20]
+           after:absolute after:left-0 after:-bottom-2
+           after:h-[1px] after:w-[80px] after:bg-[#c49331] mb-2;
+}
+
+.info-detail-card .info-desc {
+    @apply mt-8 text-base leading-6;
+}
+
+.detail-list-box-group{
+    @apply mt-8 flex flex-col items-start  rounded-xl bg-[#F5F1EA]; 
+}
+
+.info-detail-card .detail-list-box { 
+    @apply mt-8 flex items-center gap-3 rounded-xl bg-[#F5F1EA] px-[17px] py-[17px];
+}
+
+
+.info-detail-card .info-detail-icon {
+    @apply flex h-7.5 w-7.5 items-center justify-center rounded-md  text-[#c49331];
+}
+
+.info-detail-card .info-detail-icon svg {
+    @apply w-6 h-6;
+}
+
+.info-detail-card .info-label-text {
+    @apply text-base leading-5 text-warmTaupe;
+}
+
+.info-detail-card .detail-list-box .info-detail-text {
+    @apply  mt-2;
+}
+
+.info-detail-card .info-detail-text {
+    @apply font-medium text-[#3C2C20] leading-6 wrap-break-word text-balance break-all;
+}
+
+.info-detail-card .detail-list-box-group-inner {
+    @apply flex flex-row gap-3;
+}
+
+.info-detail-card .detail-list-box-group .detail-list-box-group-list {
+    @apply flex flex-row gap-3 items-center justify-start px-[17px] py-[17px] relative w-full after:absolute after:bottom-0 after:left-1/2 after:h-[0.5px]
+            after:-translate-x-1/2 after:bg-[#847362] after:w-[calc(100%_-_34px)];
+}
+
+.info-detail-card .detail-list-box-group .detail-list-box-group-list:last-child::after {
+    @apply hidden;
+}
+}
+
+/* Brand Grid Widget */
+@layer components {
+    .brand-grid-wrap {
+        @apply flex flex-row flex-wrap gap-8 justify-center;
+    }
+
+    .brand-grid-wrap .brand-item {
+        @apply flex w-[320px] h-[90px] items-center justify-center border border-[#E8E2D9] rounded-xl bg-white px-[25px] py-[22px] shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.05)];
+    }
+     .brand-grid-wrap .brand-item h4 {
+        @apply font-Montserrat text-[28px] leading-14 font-medium;
+    }
+
+}
 
 /* Normal Section css..................................... */
 
@@ -1046,17 +1414,16 @@
 /* Introduction Section */
 
 .introduction-section .content-media-grid .content-media-col-left {
-     @apply w-[100%] md:w-[80%] lg:w-[80%] xl:w-[47.66%]
+     @apply  w-[100%] md:w-[80%] lg:w-[80%] xl:w-[43.43%] h-[36.29%]
 }
 
 .introduction-section .content-media-grid .content-media-col-right {
-    @apply w-full xl:w-[43.92%] text-center xl:text-right
+    @apply w-full xl:w-[45.64%] text-center xl:text-right
 }
 
 .introduction-section .content-media-grid .content-media-wrap img {
-   @apply h-[350px] 
+   @apply h-full sm:h-[405px] 
 }
-
 .introduction-section .content-media-grid .content-media-wrap {
     @apply rounded-[24px]
 }
@@ -1065,16 +1432,46 @@
    @apply items-center md:items-center lg:items-center xl:items-start
 }
 
+@layer components {
+  .icon-box-cards-widget {
+    @apply flex flex-wrap justify-center gap-8 ; 
+  }
+  .icon-box-cards-widget .icon-box-card {
+    @apply w-full sm:w-[280px] rounded-xl bg-pureWhite px-[25px] py-[22px] flex flex-col items-center gap-4 shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.05)] text-center;
+  }
+  .icon-box-cards-widget .icon-box-card .info-title {
+    @apply leading-6.5 font-medium text-xl;
+  }
+  .icon-box-cards-widget .icon-box-card .info-desc {
+  @apply text-sm leading-5 font-normal;
+}
+
+.icon-box-cards-widget .icon-box-card .info-icon {
+  @apply inline-flex items-center justify-center h-12 w-12 rounded-full bg-[rgba(223,176,58,0.3)];
+  background-color: rgba(223,176,58,0.3);
+}
+
+.icon-box-cards-widget .icon-box-card .info-icon img {
+  @apply w-[30px] h-[30px];
+}
+}
 
 
+ /* Insurers Partners Section  */
+ .insurers-partners-section .info-desc{
+    @apply mt-10 text-center;
+ }
+ .insurers-partners-section .info-desc a{
+    @apply text-[#C59722] font-normal hover:underline;
+ }
 /* What We Do Section */
 
 .what-we-do-section .info-card-widget .info-card {
-    @apply items-start
+    @apply items-center sm:items-start
 }
 
 .what-we-do-section .info-card-widget .info-card .info-icon {
-    @apply rounded-[12px]
+    @apply mb-0 rounded-[12px] w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
@@ -1082,7 +1479,7 @@
 }
 
 .what-we-do-section .heading-wrap {
-    @apply items-start
+    @apply items-center sm:items-start
 }
  
 
@@ -1094,9 +1491,19 @@
     @apply justify-center xl:justify-start
 }
 
-.insurers-network-section .info-icon {
-    @apply w-[48px] h-[48px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full mb-2
+
+.insurers-network-section {
+    @apply bg-[linear-gradient(148.65deg,rgba(223,176,58,0.07)_3.19%,rgba(223,176,58,0.07)_100.21%,rgba(252,250,248,0.7)_112.92%)] relative;
+    @apply before:content-[''] before:absolute before:w-[646px] before:h-[520px] before:bg-[#ECDFC630] before:rounded-[999px] before:-left-[195px] before:-bottom-[146px];
+    @apply before:blur-[90px];
+ 
 }
+
+.insurers-network-section .info-icon {
+    @apply w-[48px] h-[48px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full;
+}
+
+
 
 /* Ordering Information Section */
 
@@ -1122,7 +1529,7 @@
   @apply text-[120px] font-bold leading-none text-[#1a1a1a] tracking-[-2px] mb-5;
 }
 .section-404 .heading-wrap p {
-  @apply text-xl text-[#666] mb-[30px];
+  @apply text-xl text-[#666] mb-[30px] mt-[30px];
 }
 .section-404 .back-home-btn {
   @apply inline-block bg-[#A17810] text-white no-underline text-base rounded transition-all duration-[0.3s] ease-[ease] px-[30px] py-3 hover:bg-[#A17810] hover:-translate-y-0.5;
@@ -1139,3 +1546,313 @@
   }
 }
 
+.introduction-section .intro-tag-one {
+    @apply flex flex-col gap-[6px] p-[24px];
+}
+
+.introduction-section .heading-wrap  {
+   @apply gap-[16px]
+}
+
+.what-we-do-section .info-card-widget .info-card {
+   @apply p-[25px] gap-[16px]
+}
+
+.what-we-do-section {
+   @apply bg-[rgba(246,219,148,0.09)] 
+}
+
+.our-registry-section {
+     @apply bg-[rgba(246,219,148,0.09)]
+}
+
+.what-we-do-section .heading-wrap {
+   @apply text-center sm:text-left 
+}
+
+.introduction-section .content-purpose-section {
+  @apply mt-6;
+}
+
+/* Grid Layout */
+.introduction-section .purpose-grid {
+  @apply grid gap-8 md:grid-cols-[repeat(2,1fr)];
+}
+
+/* Card Design */
+.introduction-section .purpose-card {
+  @apply backdrop-blur border shadow-[0px_12px_35px_-12px_rgba(55,49,37,0.08)] transition-all duration-[0.3s] ease-[ease] p-8 rounded-3xl border-solid border-[rgba(231,226,218,0.5)] hover:shadow-[0px_18px_45px_-15px_rgba(55,49,37,0.12)] hover:-translate-y-1;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* Header */
+.introduction-section .card-header {
+  @apply flex items-center gap-2.5 mb-4;
+}
+
+/* Icon Circle */
+.introduction-section .icon-circle {
+  @apply w-10 h-10 text-[#a17810] flex items-center justify-center font-semibold text-base rounded-[50%];
+  background: rgba(246, 219, 148, 0.3);
+}
+
+/* Heading */
+.introduction-section .purpose-card h3 {
+  @apply text-[18px] sm:text-xl font-semibold text-[#32261B] m-0;
+}
+
+/* Paragraph */
+.introduction-section .purpose-card p {
+  @apply text-base text-[#847362] leading-[1.7] m-0;
+}
+
+
+.introduction-section {
+     @apply bg-[#F5F1EA] relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
+     before:bg-[url('../images/Overlay+Blur.svg')] before:blur-md before:bg-no-repeat;
+}
+
+.what-we-do-section {
+     @apply relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
+     before:bg-[url('../images/wcd-before.svg')] before:blur-md before:bg-no-repeat;
+}
+
+.faq-section {
+    @apply relative overflow-hidden z-[1]  before:content-[""] before:absolute before:w-full before:h-full before:z-[-1] before:left-0 before:top-[30%]
+     before:bg-[url('../images/faq-overlay-before.svg')] before:blur-md before:bg-no-repeat;
+}
+
+.introduction-section .content-media-grid {
+    @apply flex-col-reverse xl:flex-row gap-[58px]
+}
+
+.introduction-section .intro-tag {
+    @apply absolute top-4 left-4 bg-white rounded-[20px] p-[14px] flex items-center gap-[8px] shadow-sm
+}
+
+.introduction-grid {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-[16px] mt-[18px] 
+}
+
+.introduction-grid .intro-tag-one {
+    @apply bg-white rounded-xl border border-[rgba(231,226,218,0.5)] shadow-[0px_4px_20px_-4px_rgba(55,49,37,0.08)] w-full  text-center
+}
+
+.introduction-grid .intro-tag-icon {
+    @apply w-[48px] h-[48px] mx-auto rounded-full bg-[#EFE1B8] flex items-center justify-center mb-2
+}
+
+.introduction-grid .info-title {
+    @apply text-center text-[18px] sm:text-[20px] text-[#373125] font-bold
+}
+
+.introduction-grid .info-desc {
+    @apply text-[14px]  leading-[20px] text-center
+}
+
+.introduction-section .value-points {
+    @apply gap-[10px]
+}
+
+/* What we can do section */
+
+.what-we-do-section .info-card-widget .info-title {
+    @apply text-center sm:text-left text-[18px] sm:text-[20px] font-semibold mb-0
+}
+
+.what-we-do-section .info-card-widget .info-desc {
+    @apply text-center sm:text-left
+}
+
+/* How we work section */
+
+.how-we-work-section {
+    @apply   bg-[#F5F1EA] 
+}
+
+.how-we-work-section .steps {
+    @apply relative
+}
+
+.how-we-work-section .steps-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-[30px] sm:gap-[70px] relative
+}
+
+.how-we-work-section .steps-card {
+    @apply flex flex-col gap-4 text-center relative 
+
+   sm:after:content-['']
+   sm:after:absolute
+   sm:after:top-[52px]
+   sm:after:left-1/2
+   sm:after:translate-x-12
+   sm:after:w-full
+   sm:after:h-[1.5px]
+  sm:after:bg-[#E0C78A]
+  last:sm:after:hidden
+}
+
+.how-we-work-section .steps-card span{
+    @apply mt-[10px] block text-[16px] font-bold text-[#B8870B]
+}
+
+.how-we-work-section .steps-card .steps-image {
+  @apply  flex h-[56px] w-[56px] items-center justify-center rounded-full bg-[linear-gradient(315deg,_#5E4718_0%,_#AF7A10_49.52%)]
+}
+
+.how-we-work-section .steps-card .steps-content {
+    @apply relative mx-auto flex flex-col h-[128px] w-[128px] z-50 items-center justify-center rounded-full bg-white
+}
+
+.how-we-work-section .steps-card .info-title {
+    @apply text-[18px] sm:text-xl font-semibold
+}
+
+/* Our Registry section */
+
+.our-registry-section {
+    @apply relative overflow-hidden bg-[#F6DB940F]
+}
+
+.our-registry-section .our-registry-grid {
+    @apply mx-0 md:mx-0 lg:mx-[10px] xl:mx-[200px] grid gap-[20px] lg:gap-8 sm:grid-cols-2 lg:grid-cols-3
+}
+
+.our-registry-section .our-registry-grid .our-registry-card {
+    @apply rounded-2xl flex flex-col items-center justify-start gap-4 border border-[#A17810] bg-white p-[15px] lg:p-10 text-center
+}
+
+.our-registry-section .our-registry-card .our-registry-image {
+    @apply mx-auto h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center rounded-full
+}
+
+.our-registry-section .info-title {
+    @apply text-[18px] sm:text-xl font-semibold
+}
+
+
+/* Faq section */
+
+.faq-section .faq-content {
+    @apply flex flex-col-reverse xl:flex-row gap-[67px] items-center
+}
+
+.faq-section .faq-content .faq-item {
+@apply flex-1 space-y-4
+}
+
+.faq-section .accordion-item {
+  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px]
+} 
+
+.faq-section .accordion-item .accordion-btn {
+  @apply flex w-full items-center justify-between
+}
+
+/* workflow section */
+
+.workflow-section {
+    @apply bg-[#F5F1EA]
+}
+
+.workflow-section .workflow-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-6 md:mb-12 lg:mb-12
+}
+
+.workflow-section .workflow-card {
+    @apply flex flex-col items-center relative 
+}
+
+.workflow-section .info-title {
+    @apply text-[18px] sm:text-[18px] text-xl font-semibold
+}
+
+/* banner section */
+
+.banner-section {
+   @apply relative w-full h-auto
+}
+
+.banner-section .banner-content {
+    @apply relative z-10 h-full flex flex-col gap-[4px] lg:gap-[16px] items-center justify-center text-center px-4
+}
+
+.banner-section .banner-heading {
+  @apply  font-bold xl:text-[48px] lg:text-[36px] md:text-[32px] text-[32px] bg-[linear-gradient(360deg,#FFFFFF_-64.84%,#FFD56C_42.27%,#EAB52F_164.84%)] bg-clip-text text-transparent
+}
+
+.banner-section .breadcrumbs-content {
+    @apply mt-3 text-sm md:text-base text-white flex items-center gap-[4px]
+}
+
+.banner-section .breadcrumbs-one {
+    @apply opacity-90 font-medium
+}
+
+.banner-section .breadcrumbs-two {
+    @apply text-[#F4C76C] font-medium
+}
+
+.banner-section .banner-img {
+    @apply absolute inset-0 w-full h-full object-cover
+}
+
+.introduction-section .icon-circle img {
+  @apply w-6 h-6;
+}
+
+.workflow-section .info-title {
+    @apply text-[18px] sm:text-[20px]
+}
+
+.introduction-section .content-media-grid .content-media-wrap img {
+    @apply  h-auto sm:h-[405px]
+}
+
+.introduction-section .content-media-grid .content-media-col-left {
+    @apply  w-full sm:w-[608px]
+}
+
+ .introduction-section .content-media-grid .content-media-col-right {
+    @apply  w-full sm:w-[639px]
+ }
+
+ @media (max-width: 1025px) {
+  .how-we-work-section .steps-card:nth-child(3)::after {
+    @apply content-none;
+  }
+  .workflow-section .workflow-num::before {
+    @apply content-none;
+  }
+
+}
+
+/* Product Category Page */
+
+.product-categories-section .category-card {
+     @apply flex flex-col h-full; 
+} 
+
+.product-categories-section .category-info {
+     @apply flex flex-col flex-1 px-5 py-7 gap-[10px] sm:gap-4; 
+} 
+
+.product-categories-section .category-info h3 { 
+    @apply text-[18px] sm:text-[20px] font-semibold; 
+} 
+
+.product-categories-section .product-image { 
+    @apply h-[206px] sm:h-[284px] 
+} 
+
+.product-categories-section .cta-link { 
+    @apply mt-auto text-base font-semibold leading-[22.8px] text-[#A17810] inline-flex items-center gap-1.5 transition-all duration-[0.3s] ease-[ease-in-out] pt-4 border-t-[rgba(132,115,98,0.35)] border-t border-solid hover:text-[#644b0b]; /* text-base = 1rem = 16px */
+ } 
+
+ .cta-link svg { 
+    @apply transition-all duration-[0.3s] ease-[ease]; 
+} 
+
+.cta-link:hover svg {
+     @apply stroke-[#644b0b] translate-x-1; 
+}
