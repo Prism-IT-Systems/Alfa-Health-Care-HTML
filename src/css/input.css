@@ -1561,23 +1561,41 @@
   @apply max-w-[700px] mx-auto my-0;
 }
 .section-404 .heading-wrap h1 {
-  @apply text-[120px] font-bold leading-none text-[#1a1a1a] tracking-[-2px] mb-5;
+  @apply text-[120px] font-bold leading-[100px] text-[#32261B] tracking-[-2px] ;
 }
 .section-404 .heading-wrap p {
-  @apply text-xl text-[#666] mb-[30px] mt-[30px];
+  @apply text-xl text-[#847362] ;
 }
 .section-404 .back-home-btn {
-  @apply inline-block bg-[#A17810] text-white no-underline text-base rounded transition-all duration-[0.3s] ease-[ease] px-[30px] py-3 hover:bg-[#A17810] hover:-translate-y-0.5;
+  @apply inline-block bg-[#A17810] text-white no-underline text-base rounded-full transition-all duration-[0.3s] ease-[ease] px-[30px] py-3 hover:bg-[#A17810] hover:-translate-y-0.5;
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .section-404 .heading-wrap h1 {
+    @apply text-[100px];
+  }
+
+  .section-404 .heading-wrap p {
+    @apply text-lg;
+  }
+
+  .section-404 .heading-wrap p {
+    @apply text-base
+  }
+}
+
 @media (max-width: 768px) {
   .section-404 {
     @apply px-5 py-[70px];
   }
   .section-404 .heading-wrap h1 {
-    @apply text-[70px];
+    @apply text-[70px] leading-[70px];
   }
   .section-404 .heading-wrap p {
-    @apply text-base;
+    @apply text-sm;
+  }
+  .section-404 .back-home-btn {
+    @apply text-sm;
   }
 }
 
