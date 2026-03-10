@@ -1904,3 +1904,318 @@
 .cta-link:hover svg {
      @apply stroke-[#644b0b] translate-x-1; 
 }
+
+.alfa-my-account {
+  @apply pt-5 pb-[100px] px-5;
+}
+#customer_login {
+  @apply flex gap-6 max-w-[1400px] m-auto;
+}
+#customer_login .u-column1,
+#customer_login .u-column2 {
+  @apply flex-1 shadow-[0_8px_25px_rgba(0,0,0,0.06)] p-[30px] rounded-[10px];
+  background: #ffffff;
+}
+#customer_login h2 {
+  @apply text-[26px] text-[#32261B] font-semibold mb-[25px];
+}
+#customer_login label {
+  @apply text-base text-[#847362] font-medium;
+}
+#customer_login input.input-text {
+  @apply w-full h-[46px] border transition-[0.3s] mt-2 px-3.5 py-0 rounded-md border-solid border-[#E6DED2] focus:shadow-[0_0_0_2px_rgba(161,120,16,0.08)] focus:border-[#A17810];
+}
+#customer_login input.input-text:focus {
+  outline: none;
+}
+.woocommerce button.button,
+.woocommerce .button {
+  @apply text-white font-medium transition-all duration-[0.3s] ease-[ease] px-[35px] py-3 rounded-[50px] border-[none];
+  background: #a17810;
+}
+.woocommerce button.button:hover,
+.woocommerce .button:hover {
+  @apply -translate-y-0.5 text-white;
+  background: #8a640c;
+}
+.woocommerce-form-login__rememberme {
+  @apply text-sm text-[#847362];
+}
+.lost_password a {
+  @apply text-[#A17810] text-sm no-underline hover:underline;
+}
+.woocommerce-form-register p {
+  @apply text-base text-[#847362];
+}
+.woocommerce-privacy-policy-text {
+  @apply text-[13px] text-[#847362];
+}
+@media (max-width: 768px) {
+  #customer_login {
+    @apply flex-col;
+  }
+  #customer_login .u-column1,
+  #customer_login .u-column2 {
+    @apply p-[30px];
+  }
+}
+.woocommerce-notices-wrapper {
+  @apply max-w-[1400px] mt-[100px] mb-5 mx-auto;
+}
+.woocommerce-error {
+  @apply border text-[#7A2E2E] text-base rounded-md border-l-[5px] border-l-[#E53935] border-solid border-[#F3C4C4];
+  list-style: none;
+  background: #fff4f4;
+}
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  @apply flex flex-col gap-2.5;
+}
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(:not(.edit-post-visual-editor))
+  .woocommerce
+  button.button {
+  @apply text-base;
+}
+@media (max-width: 1024px) {
+  .woocommerce-notices-wrapper {
+    @apply mt-[100px] mb-5 mx-5;
+  }
+  #customer_login {
+    @apply gap-6;
+  }
+  .alfa-my-account {
+    @apply pt-5 pb-[60px] px-5;
+  }
+}
+@media (max-width: 992px) {
+  #customer_login {
+    @apply flex flex-col;
+  }
+}
+ 
+/* Sidebar Navigation */
+.woocommerce-MyAccount-navigation {
+  @apply p-[25px];
+}
+.woocommerce-info::before {
+  @apply text-[#a17810];
+}
+ 
+/* Menu List */
+.woocommerce-MyAccount-navigation ul {
+  @apply m-0 p-0;
+  list-style: none;
+}
+ 
+/* Menu Item */
+.woocommerce-MyAccount-navigation ul li {
+  @apply mb-2.5;
+}
+ 
+/* Menu Links */
+.woocommerce-MyAccount-navigation ul li a {
+  @apply block text-[#5A4A3A] no-underline text-[15px] transition-all duration-[0.25s] ease-[ease] px-4 py-3 rounded-md hover:text-[#A17810];
+}
+ 
+/* Hover Effect */
+.woocommerce-MyAccount-navigation ul li a:hover {
+  background: #f8f5f0;
+}
+ 
+/* Active Menu */
+.woocommerce-MyAccount-navigation ul li.is-active a {
+  @apply text-white font-medium;
+  background: #a17810;
+}
+ 
+/* Content Area */
+.woocommerce-MyAccount-content {
+  @apply p-10;
+}
+ 
+/* Dashboard Text */
+.woocommerce-MyAccount-content p {
+  @apply text-base text-[#6F5F4E] leading-[1.7];
+}
+ 
+/* Dashboard Links */
+.woocommerce-MyAccount-content a {
+  @apply text-[#A17810] no-underline font-medium hover:underline;
+}
+ 
+/* Info Message */
+.woocommerce-info {
+  @apply text-[#6B5A44] mb-[25px] rounded-md border-t-[#a17810];
+  background: #f7f3ea;
+}
+ 
+/* Notice Wrapper */
+.woocommerce-notices-wrapper {
+  @apply mb-5;
+}
+ 
+/* Responsive */
+@media (max-width: 768px) {
+  .alfa-my-account .container {
+    @apply grid-cols-[1fr];
+  }
+  .woocommerce-MyAccount-navigation {
+    @apply mb-5;
+  }
+}
+ 
+/* Address Section Layout */
+.woocommerce-Addresses {
+  @apply grid grid-cols-[repeat(2,1fr)] gap-2.5 my-[30px];
+}
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1 {
+  width: 100% !important;
+}
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  @apply w-full;
+}
+.woocommerce-Address {
+  @apply border shadow-[0_8px_20px_rgba(0,0,0,0.04)] transition-all duration-[0.3s] ease-[ease] relative p-5 rounded-xl border-solid border-[#eee6dc] hover:-translate-y-1 hover:shadow-[0_14px_35px_rgba(0,0,0,0.08)];
+  background: #ffffff;
+}
+.woocommerce-Address-title {
+  @apply flex items-start gap-3 mb-5; /* justify-content: flex-start; */
+}
+.woocommerce-Address-title h2 {
+  @apply text-xl text-[#32261B] font-semibold m-0;
+}
+.woocommerce-Address-title .edit {
+  @apply text-white no-underline text-[13px] font-medium transition-all duration-[0.25s] ease-[ease] px-[18px] py-2 rounded-[50px] hover:-translate-y-0.5;
+  background: #a17810;
+}
+.woocommerce-Address-title .edit:hover {
+  background: #8b670d;
+}
+.woocommerce-Address address {
+  @apply text-[15px] text-[#7a6b59] leading-[1.6] not-italic empty:before:content-["No_address_added_yet."] empty:before:text-[#a69784];
+}
+.woocommerce .col2-set::after,
+.woocommerce .col2-set::before,
+.woocommerce-page .col2-set::after,
+.woocommerce-page .col2-set::before {
+  @apply content-none;
+}
+@media (max-width: 1024px) {
+  .woocommerce-Addresses {
+    @apply grid-cols-[repeat(1,1fr)];
+  }
+}
+@media (max-width: 768px) {
+  .woocommerce-Address-title {
+    @apply flex-col;
+  }
+  .woocommerce-Address {
+    @apply p-[25px];
+  }
+}
+
+/* Account Form Container */
+.woocommerce-EditAccountForm {
+  @apply border max-w-[850px] shadow-[0_4px_18px_rgba(0,0,0,0.04)] mb-[60px] p-[42px] rounded-xl border-solid border-[#E6E0D6];
+  background: #ffffff;
+}
+
+/* Form Rows */
+.woocommerce-EditAccountForm .form-row {
+  @apply mb-6;
+}
+
+/* Labels */
+.woocommerce-EditAccountForm label {
+  @apply block text-sm font-medium text-[#5A4A3A] tracking-[0.2px] mb-2;
+}
+
+/* Required star */
+.woocommerce-EditAccountForm .required {
+  @apply text-[#A17810];
+}
+
+/* Input Fields */
+.woocommerce-EditAccountForm .input-text {
+  @apply w-full border text-sm transition-all duration-[0.25s] ease-[ease] px-3.5 py-[13px] rounded-lg border-solid border-[#DDD5C9] focus:shadow-[0_0_0_3px_rgba(161,120,16,0.08)] focus:border-[#A17810];
+  background: #fff;
+}
+
+/* Input Focus */
+.woocommerce-EditAccountForm .input-text:focus {
+  outline: none;
+}
+
+/* Two column fields */
+.woocommerce-EditAccountForm .form-row-first,
+.woocommerce-EditAccountForm .form-row-last {
+  @apply w-[48%];
+}
+.woocommerce-EditAccountForm .form-row-first {
+  @apply float-left;
+}
+.woocommerce-EditAccountForm .form-row-last {
+  @apply float-right;
+}
+
+/* Full width rows */
+.woocommerce-EditAccountForm .form-row-wide {
+  @apply w-full;
+}
+
+/* Description text */
+#account_display_name_description {
+  @apply text-[13px] text-[#7A6B58] block leading-[1.4] mt-1.5;
+}
+
+/* Fieldset (Password section) */
+.woocommerce-EditAccountForm fieldset {
+  @apply border mt-[30px] p-7 rounded-[10px] border-solid border-[#E6E0D6];
+  background: #faf8f4;
+}
+
+/* Fieldset Title */
+.woocommerce-EditAccountForm fieldset legend {
+  @apply text-base font-semibold text-[#5A4A3A] px-2.5 py-0;
+}
+
+/* Password input wrapper */
+.password-input {
+  @apply relative block;
+}
+
+/* Show password button */
+.show-password-input {
+  @apply absolute -translate-y-2/4 cursor-pointer opacity-60 border-[none] right-3 top-2/4 hover:opacity-100;
+  background: none;
+}
+
+/* Save Button */
+.woocommerce-EditAccountForm button.button {
+  @apply text-white text-[15px] font-medium cursor-pointer transition-all duration-[0.25s] ease-[ease] mt-7 px-7 py-[13px] rounded-lg border-[none] hover:-translate-y-px hover:shadow-[0_4px_10px_rgba(0,0,0,0.08)];
+  background: #a17810;
+}
+
+/* Button Hover */
+.woocommerce-EditAccountForm button.button:hover {
+  background: #8c650d;
+}
+
+/* Clear Fix */
+.woocommerce-EditAccountForm .clear {
+  @apply clear-both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .woocommerce-EditAccountForm {
+    @apply p-7;
+  }
+  .woocommerce-EditAccountForm .form-row-first,
+  .woocommerce-EditAccountForm .form-row-last {
+    @apply w-full float-none;
+  }
+}
