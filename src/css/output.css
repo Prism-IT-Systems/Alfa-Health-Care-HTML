@@ -5897,7 +5897,7 @@
 }
 .woocommerce-notices-wrapper {
   margin-inline: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: calc(var(--spacing) * 5);
   max-width: 1400px;
 }
@@ -6276,7 +6276,7 @@
 .woocommerce-EditAccountForm button.button {
   margin-top: calc(var(--spacing) * 7);
   cursor: pointer;
-  border-radius: var(--radius-lg);
+  border-radius: calc(infinity * 1px);
   border-color: none;
   padding-inline: calc(var(--spacing) * 7);
   padding-block: 13px;
@@ -6307,6 +6307,9 @@
 }
 .woocommerce-EditAccountForm button.button:hover {
   background: #8c650d;
+}
+.woocommerce-MyAccount-content .woocommerce form .show-password-input, .woocommerce-MyAccount-content .woocommerce-page form .show-password-input {
+  top: 80%;
 }
 .woocommerce-EditAccountForm .clear {
   clear: both;

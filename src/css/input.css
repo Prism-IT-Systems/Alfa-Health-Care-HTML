@@ -1982,7 +1982,7 @@
   }
 }
 .woocommerce-notices-wrapper {
-  @apply max-w-[1400px] mt-[100px] mb-5 mx-auto;
+  @apply max-w-[1400px] mt-[30px] mb-5 mx-auto;
 }
 .woocommerce-error {
   @apply border text-[#7A2E2E] text-base rounded-md border-l-[5px] border-l-[#E53935] border-solid border-[#F3C4C4];
@@ -2217,7 +2217,7 @@
  
 /* Save Button */
 .woocommerce-EditAccountForm button.button {
-  @apply text-white text-[15px] font-medium cursor-pointer transition-all duration-[0.25s] ease-[ease] mt-7 px-7 py-[13px] rounded-lg border-[none] hover:-translate-y-px hover:shadow-[0_4px_10px_rgba(0,0,0,0.08)];
+  @apply text-white text-[15px] font-medium cursor-pointer transition-all duration-[0.25s] ease-[ease] mt-7 px-7 py-[13px] rounded-full border-[none] hover:-translate-y-px hover:shadow-[0_4px_10px_rgba(0,0,0,0.08)];
   background: #a17810;
 }
  
@@ -2225,7 +2225,13 @@
 .woocommerce-EditAccountForm button.button:hover {
   background: #8c650d;
 }
- 
+
+.woocommerce-MyAccount-content .woocommerce form .show-password-input, 
+.woocommerce-MyAccount-content .woocommerce-page form .show-password-input {
+  @apply top-[80%];
+}
+
+
 /* Clear Fix */
 .woocommerce-EditAccountForm .clear {
   @apply clear-both;
