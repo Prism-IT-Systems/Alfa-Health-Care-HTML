@@ -1250,6 +1250,10 @@
     }
 }
 
+.payment-icons svg {
+    @apply w-full h-10 object-cover;
+}
+
 /* Info Details Card Widget */
 @layer components {
  .info-detail-cards-wrap {
@@ -1558,13 +1562,13 @@
   @apply bg-[#F5F1EA] px-5 py-[100px];
 }
 .section-404 .heading-wrap {
-  @apply max-w-[700px] mx-auto my-0;
+  @apply max-w-[700px] mx-auto my-0 gap-[24px];
 }
 .section-404 .heading-wrap h1 {
   @apply text-[120px] font-bold leading-[100px] text-[#32261B] tracking-[-2px] ;
 }
 .section-404 .heading-wrap p {
-  @apply text-xl text-[#847362] ;
+  @apply text-xl text-[#847362] font-medium;
 }
 .section-404 .back-home-btn {
   @apply inline-block bg-[#A17810] text-white no-underline text-base rounded-full transition-all duration-[0.3s] ease-[ease] px-[30px] py-3 hover:bg-[#A17810] hover:-translate-y-0.5;
@@ -1599,7 +1603,7 @@
 }
 
 .introduction-section .heading-wrap  {
-   @apply gap-[16px]
+   @apply gap-[16px] mb-[32px]
 }
 
 .what-we-do-section .info-card-widget .info-card {
@@ -1671,7 +1675,7 @@
 }
 
 .introduction-section .content-media-grid {
-    @apply flex-col-reverse xl:flex-row gap-[58px]
+    @apply flex-col-reverse xl:flex-row gap-[32px] sm:gap-[58px]
 }
 
 .introduction-section .intro-tag {
@@ -1723,21 +1727,21 @@
 }
 
 .how-we-work-section .steps-grid {
-    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-[30px] sm:gap-[70px] relative
+    @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-[30px] md:gap-[70px] relative
 }
 
 .how-we-work-section .steps-card {
     @apply flex flex-col gap-4 text-center relative 
 
-   sm:after:content-['']
-   sm:after:absolute
-   sm:after:top-[52px]
-   sm:after:left-1/2
-   sm:after:translate-x-12
-   sm:after:w-full
-   sm:after:h-[1.5px]
-  sm:after:bg-[#E0C78A]
-  last:sm:after:hidden
+   md:after:content-['']
+   md:after:absolute
+   md:after:top-[52px]
+   md:after:left-1/2
+   md:after:translate-x-12
+   md:after:w-full
+   md:after:h-[1.5px]
+  md:after:bg-[#E0C78A]
+  last:md:after:hidden
 }
 
 .how-we-work-section .steps-card span{
@@ -1763,7 +1767,7 @@
 }
 
 .our-registry-section .our-registry-grid {
-    @apply mx-0 md:mx-0 lg:mx-[10px] xl:mx-[200px] grid gap-[20px] lg:gap-8 sm:grid-cols-2 lg:grid-cols-3
+    @apply mx-0 md:mx-0 lg:mx-[10px] xl:mx-[180px] grid gap-[20px] lg:gap-8 sm:grid-cols-2 lg:grid-cols-3
 }
 
 .our-registry-section .our-registry-grid .our-registry-card {
@@ -1777,6 +1781,13 @@
 .our-registry-section .info-title {
     @apply text-[18px] sm:text-xl font-semibold
 }
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .our-registry-section .our-registry-grid {
+    margin-inline: 60px;
+  }
+}
+
 
 
 /* Faq section */
@@ -1830,7 +1841,7 @@
 }
 
 .banner-section .breadcrumbs-content {
-    @apply mt-3 text-sm md:text-base text-white flex items-center gap-[4px]
+    @apply text-sm md:text-base text-white flex items-center gap-[4px]
 }
 
 .banner-section .breadcrumbs-one {
@@ -1865,14 +1876,18 @@
     @apply  w-full sm:w-[639px]
  }
 
- @media (max-width: 1025px) {
+ @media (max-width: 1280px) {
   .how-we-work-section .steps-card:nth-child(3)::after {
-    @apply content-none;
+    @apply content-none ;
   }
   .workflow-section .workflow-num::before {
-    @apply content-none;
+    @apply content-none ;
   }
 
+}
+
+ .what-we-do-section .info-card-widget .info-card-col {
+    @apply w-6/6 sm:w-3/6 lg:w-3/6 xl:w-2/6 px-[16px] ;
 }
 
 /* Product Category Page */
@@ -1894,7 +1909,7 @@
 } 
 
 .product-categories-section .cta-link { 
-    @apply mt-auto text-base font-semibold leading-[22.8px] text-[#A17810] inline-flex items-center gap-1.5 transition-all duration-[0.3s] ease-[ease-in-out] pt-4 border-t-[rgba(132,115,98,0.35)] border-t border-solid hover:text-[#644b0b]; /* text-base = 1rem = 16px */
+    @apply mt-auto text-base font-semibold leading-[22.8px] text-[#A17810] inline-flex items-center gap-1.5 transition-all duration-[0.3s] ease-[ease-in-out] pt-4 hover:text-[#644b0b]; /* text-base = 1rem = 16px */
  } 
 
  .cta-link svg { 
@@ -1904,6 +1919,11 @@
 .cta-link:hover svg {
      @apply stroke-[#644b0b] translate-x-1; 
 }
+
+.product-categories-section .view-products-wrap {
+  @apply mt-auto border-t-[rgba(132,115,98,0.35)] border-t;
+}
+
 
 /* Login and Register Page */
 
