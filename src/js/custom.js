@@ -13,7 +13,6 @@ jQuery(document).ready(function () {
       breakpoint: 1280,   // Tablet
       settings: {
         slidesToShow: 2,
-        arrows: false,
         autoplay: true
       }
     },

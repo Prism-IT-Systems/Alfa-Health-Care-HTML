@@ -2154,6 +2154,7 @@
     display: inline-flex;
     height: calc(var(--spacing) * 8);
     width: calc(var(--spacing) * 8);
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     border-radius: calc(infinity * 1px);
@@ -3874,6 +3875,18 @@
     --tw-border-style: solid !important;
     border-style: solid !important;
     border-color: var(--Sunlit-Gold) !important;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--Sunlit-Gold) !important;
+      }
+    }
   }
   .slider-arrows button::before {
     content: "㭹" !important;
@@ -3888,6 +3901,9 @@
   }
   .slider-arrows .slick-prev::before {
     content: "㭪" !important;
+  }
+  .arrow-heading-wrap .slider-arrows {
+    margin-top: calc(var(--spacing) * -4);
   }
   .testimonials-slider {
     margin-inline: calc(var(--spacing) * -4);
@@ -3915,18 +3931,27 @@
     margin-inline: calc(var(--spacing) * 4);
   }
   .testimonials-card .testimonials-card-box {
-    margin-bottom: calc(var(--spacing) * 10);
+    margin-bottom: calc(var(--spacing) * 8);
     border-radius: var(--radius-4xl);
     background-color: var(--pure-white);
     padding: calc(var(--spacing) * 6);
     --tw-shadow: var(--shadow1);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 10);
+    }
   }
   .testimonials-card .quote-right {
-    margin-bottom: calc(var(--spacing) * 12);
+    margin-bottom: calc(var(--spacing) * 6);
     display: inline-block;
     height: calc(var(--spacing) * 10);
     width: calc(var(--spacing) * 10);
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 12);
+    }
   }
   .testimonials-card .quote-right img {
     height: 100%;
@@ -3934,7 +3959,13 @@
     object-fit: cover;
   }
   .testimonials-card .ratings {
-    margin-top: calc(var(--spacing) * 8);
+    margin-top: calc(var(--spacing) * 6);
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 1);
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 8);
+    }
   }
   .testimonials-card .ratings svg {
     display: inline-block;
@@ -3979,14 +4010,26 @@
   }
   .testimonials-card .profile-item .avatar-circle {
     display: inline-flex;
-    height: 56px;
-    width: 56px;
+    height: calc(var(--spacing) * 12);
+    width: calc(var(--spacing) * 12);
     align-items: center;
     justify-content: center;
     border-radius: calc(infinity * 1px);
     background-image: linear-gradient(135deg,#3B2C06 0%,#F2CC5A 100%);
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
     --tw-shadow: 0px 8px 30px -8px var(--tw-shadow-color, rgba(66,51,36,0.12));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    @media (width >= 40rem) {
+      height: 56px;
+    }
+    @media (width >= 40rem) {
+      width: 56px;
+    }
+    @media (width >= 40rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
   }
   .testimonials-card .profile-item .profile-name {
     color: var(--Deep-Brown);
@@ -4551,6 +4594,9 @@
 .split-info-wrap .content-media-col-right .action-cta-wrap {
   display: flex;
   justify-content: center;
+  @media (width >= 80rem) {
+    justify-content: flex-start;
+  }
 }
 .split-info-wrap .float-badge {
   top: calc(30px * -1);
@@ -4596,6 +4642,9 @@
     width: calc(1/2 * 100%);
   }
 }
+.split-info-wrap .action-cta-wrap .cta svg {
+  flex-shrink: 0;
+}
 .split-info-wrap .split-info-footer {
   margin-top: calc(var(--spacing) * 8);
   border-top-style: var(--tw-border-style);
@@ -4610,6 +4659,8 @@
 .split-info-wrap .split-info-footer p {
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: var(--leading-6);
+  line-height: var(--leading-6);
 }
 .compression-therapy-section {
   background-color: rgba(246,219,148,0.09);
@@ -4623,7 +4674,14 @@
 .compression-therapy-section .split-info-wrap .icon-list-widget {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.compression-therapy-section .split-info-wrap .icon-list-widget li .icon-list-content h6 {
+  --tw-leading: calc(var(--spacing) * 6.5);
+  line-height: calc(var(--spacing) * 6.5);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+}
 .compression-therapy-section .content-media-col-right .action-cta-wrap {
+  margin-top: calc(var(--spacing) * 4);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -4644,11 +4702,25 @@
     width: auto;
   }
 }
+.compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
+  align-items: flex-start;
+  text-align: left;
+}
 .compression-therapy-section .action-cta-wrap .cta-bg {
   min-width: 400px;
 }
 .compression-therapy-section .content-media-col-right .action-cta-wrap .cta-outline {
+  gap: calc(var(--spacing) * 1.5);
   background-color: var(--Soft-Ivory);
+}
+@media (max-width: 465px) {
+  .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
+    align-items: flex-start;
+  }
+  .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold svg {
+    position: relative;
+    top: calc(var(--spacing) * 1);
+  }
 }
 .why-choose-us {
   background-color: var(--Off-White);

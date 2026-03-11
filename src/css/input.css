@@ -257,7 +257,7 @@
     }
 
     .icon-list-widget li .icon{
-        @apply w-8 h-8 inline-flex items-center justify-center bg-[rgba(223,176,58,0.15)] rounded-full mt-[6px];
+        @apply w-8 h-8 inline-flex items-center justify-center bg-[rgba(223,176,58,0.15)] rounded-full mt-[6px] flex-shrink-0;
     }
 
     .icon-list-widget li .icon i {
@@ -1015,12 +1015,14 @@
         @apply flex items-center justify-between;
     }
 
+ 
+
     .slider-arrows {
         @apply flex gap-3;
     }
 
     .slider-arrows button{
-        @apply !static !w-[54px] !h-[54px] !border-2 !border-solid !border-SunlitGold !transform-none; 
+        @apply !static !w-[54px] !h-[54px] !border-2 !border-solid !border-SunlitGold !transform-none hover:!bg-SunlitGold transition duration-300 ease-in-out ; 
     }
 
     .slider-arrows button::before{
@@ -1035,7 +1037,9 @@
     .slider-arrows .slick-prev::before{
         content: "㭪" !important;
     }
-
+    .arrow-heading-wrap .slider-arrows {
+        @apply -mt-4;
+    } 
     .testimonials-slider{
         @apply -mx-4;
     }
@@ -1064,11 +1068,11 @@
     }
 
     .testimonials-card .testimonials-card-box {
-        @apply bg-pureWhite shadow-shadow_1 p-6 rounded-4xl mb-10;
+        @apply bg-pureWhite shadow-shadow_1 p-6 rounded-4xl mb-8 sm:mb-10;
     }
 
     .testimonials-card .quote-right {
-        @apply w-10 h-10 inline-block mb-12;
+        @apply w-10 h-10 inline-block mb-6 sm:mb-8 lg:mb-12;
     }
 
     .testimonials-card .quote-right img {
@@ -1076,7 +1080,7 @@
     }
 
     .testimonials-card .ratings {
-        @apply mt-8
+        @apply mt-6 sm:mt-8 inline-flex items-center gap-1;
     }
     .testimonials-card .ratings svg{
      @apply w-5 h-5 inline-block;
@@ -1095,7 +1099,7 @@
     }
 
     .testimonials-card .profile-item .avatar-circle {
-        @apply w-[56px] h-[56px] rounded-full shadow-[0px_8px_30px_-8px_rgba(66,51,36,0.12)] bg-[linear-gradient(135deg,#3B2C06_0%,#F2CC5A_100%)]
+        @apply text-base sm:text-lg w-12 h-12 sm:w-[56px] sm:h-[56px] rounded-full shadow-[0px_8px_30px_-8px_rgba(66,51,36,0.12)] bg-[linear-gradient(135deg,#3B2C06_0%,#F2CC5A_100%)]
         inline-flex items-center justify-center;
     }
 
@@ -1376,7 +1380,7 @@
 }
 
 .split-info-wrap .content-media-col-right .action-cta-wrap{
-    @apply flex justify-center;
+    @apply flex justify-center xl:justify-start;
 }
 
 .split-info-wrap .float-badge {
@@ -1403,12 +1407,16 @@
     @apply w-full md:w-1/2 lg:w-1/2 xl:w-1/2 gap-3 px-8 mt-0;
 }
 
+.split-info-wrap .action-cta-wrap .cta svg {
+    @apply flex-shrink-0;
+}
+
 .split-info-wrap .split-info-footer {
     @apply pt-6 mt-8 border-t-[0.5px] border-t-goldenBrown text-center xl:text-left;
 }
 
 .split-info-wrap .split-info-footer p {
-    @apply text-base
+    @apply text-base leading-6;
 }
 
 /* Compression Therapy Section */
@@ -1428,12 +1436,19 @@
     @apply grid-cols-1; 
 }
 
+.compression-therapy-section .split-info-wrap .icon-list-widget li .icon-list-content h6{
+    @apply leading-6.5 font-medium;
+ }   
+
 .compression-therapy-section .content-media-col-right .action-cta-wrap{
-    @apply flex gap-4 flex-wrap justify-center xl:justify-start;
+    @apply flex gap-4 flex-wrap justify-center xl:justify-start mt-4;
 }
 
 .compression-therapy-section .action-cta-wrap .cta {
     @apply w-full md:w-auto lg:w-auto xl:w-auto;
+}
+.compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
+    @apply text-left items-start;
 }
 
 .compression-therapy-section .action-cta-wrap .cta-bg {
@@ -1441,9 +1456,17 @@
 }
 
 .compression-therapy-section .content-media-col-right .action-cta-wrap .cta-outline{
-    @apply bg-softIvory;
+    @apply bg-softIvory gap-1.5;
 }
 
+@media (max-width: 465px) {
+    .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
+        @apply items-start;
+    }
+    .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold svg {
+        @apply relative top-1;
+    }
+}
 
 
 
