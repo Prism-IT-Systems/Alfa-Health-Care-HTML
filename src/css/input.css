@@ -1542,7 +1542,9 @@
     @apply w-[48px] h-[48px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full;
 }
 
-
+.compression-therapy-section h3 {
+    @apply text-base font-medium
+}
 
 /* Ordering Information Section */
 
@@ -1782,9 +1784,9 @@
     @apply text-[18px] sm:text-xl font-semibold
 }
 
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1535px) {
   .our-registry-section .our-registry-grid {
-    margin-inline: 60px;
+    margin-inline: 0;
   }
 }
 
@@ -1819,12 +1821,14 @@
 }
 
 .workflow-section .workflow-card {
-    @apply flex flex-col items-center relative 
+    @apply flex flex-col items-center relative mt-[0] 
 }
 
 .workflow-section .info-title {
     @apply text-[18px] sm:text-[18px] text-xl font-semibold
 }
+
+
 
 /* banner section */
 
@@ -1876,6 +1880,12 @@
     @apply  w-full sm:w-[639px]
  }
 
+ @media (min-width:1281px) and (max-width:1535px) {
+    .workflow-section .workflow-num::before {
+        @apply w-[400px]
+    } 
+ }
+
  @media (max-width: 1280px) {
   .how-we-work-section .steps-card:nth-child(3)::after {
     @apply content-none ;
@@ -1883,7 +1893,6 @@
   .workflow-section .workflow-num::before {
     @apply content-none ;
   }
-
 }
 
  .what-we-do-section .info-card-widget .info-card-col {
