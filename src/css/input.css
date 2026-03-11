@@ -1628,12 +1628,12 @@
 
 /* Grid Layout */
 .introduction-section .purpose-grid {
-  @apply grid gap-8 md:grid-cols-[repeat(2,1fr)];
+  @apply grid gap-[24px] sm:gap-8 md:grid-cols-[repeat(2,1fr)];
 }
 
 /* Card Design */
 .introduction-section .purpose-card {
-  @apply backdrop-blur border shadow-[0px_12px_35px_-12px_rgba(55,49,37,0.08)] transition-all duration-[0.3s] ease-[ease] p-8 rounded-3xl border-solid border-[rgba(231,226,218,0.5)] hover:shadow-[0px_18px_45px_-15px_rgba(55,49,37,0.12)] hover:-translate-y-1;
+  @apply backdrop-blur border shadow-[0px_12px_35px_-12px_rgba(55,49,37,0.08)] transition-all duration-[0.3s] ease-[ease] p-[26px] sm:p-8 rounded-3xl border-solid border-[rgba(231,226,218,0.5)] hover:shadow-[0px_18px_45px_-15px_rgba(55,49,37,0.12)] hover:-translate-y-1;
   background: rgba(255, 255, 255, 0.85);
 }
 
@@ -2246,4 +2246,30 @@
   .woocommerce-EditAccountForm .form-row-last {
     @apply w-full float-none;
   }
+}
+
+/* tax-short-description */
+
+.tax-short-description {
+  @apply shadow-[0_10px_30px_rgba(0,0,0,0.06)] leading-[1.7] mx-auto my-[74px] m-0 p-10 rounded-xl;
+  background: #ffffff;
+}
+.tax-short-description h3 {
+  @apply text-[28px] font-bold text-[#6F5F4E] mb-5;
+}
+.tax-short-description h4 {
+  @apply text-xl font-semibold text-[#A17810] mt-[25px] mb-[15px];
+}
+.tax-short-description ul {
+  @apply mx-0 my-5 pl-0;
+  list-style: none;
+}
+.tax-short-description ul li {
+  @apply relative text-[#6F5F4E] mb-3.5 pl-7 before:content-["✔"] before:absolute before:text-[#A17810] before:text-sm before:font-semibold before:left-0 before:top-0;
+}
+.tax-short-description p {
+  @apply text-[#6F5F4E] text-base;
+}
+.tax-short-description a {
+  @apply text-[#A17810] font-semibold no-underline hover:underline;
 }
