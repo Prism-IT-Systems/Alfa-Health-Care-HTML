@@ -4922,22 +4922,14 @@
   line-height: var(--tw-leading, var(--text-base--line-height));
   color: var(--color-white);
   text-decoration-line: none;
-  transition-property: all;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 0.3s;
-  transition-duration: 0.3s;
-  --tw-ease: ease;
-  transition-timing-function: ease;
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
   &:hover {
     @media (hover: hover) {
-      --tw-translate-y: calc(var(--spacing) * -0.5);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      background-color: #A17810;
+      --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
 }
@@ -6414,6 +6406,11 @@
       text-decoration-line: underline;
     }
   }
+}
+.tax-product_cat .faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
