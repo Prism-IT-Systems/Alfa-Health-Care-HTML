@@ -1577,7 +1577,6 @@
 }
 
 
-
 /* Ordering Information Section */
 
 .ordering-information-section i {
@@ -1816,9 +1815,9 @@
     @apply text-[18px] sm:text-xl font-semibold
 }
 
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1535px) {
   .our-registry-section .our-registry-grid {
-    margin-inline: 60px;
+    margin-inline: 0;
   }
 }
 
@@ -1853,12 +1852,14 @@
 }
 
 .workflow-section .workflow-card {
-    @apply flex flex-col items-center relative 
+    @apply flex flex-col items-center relative mt-[0] 
 }
 
 .workflow-section .info-title {
     @apply text-[18px] sm:text-[18px] text-xl font-semibold
 }
+
+
 
 /* banner section */
 
@@ -1871,7 +1872,7 @@
 }
 
 .banner-section .banner-heading {
-  @apply  font-bold xl:text-[48px] lg:text-[36px] md:text-[32px] text-[32px] bg-[linear-gradient(360deg,#FFFFFF_-64.84%,#FFD56C_42.27%,#EAB52F_164.84%)] bg-clip-text text-transparent
+  @apply  font-bold xl:text-[48px] lg:text-[36px] md:text-[32px] text-[28px] bg-[linear-gradient(360deg,#FFFFFF_-64.84%,#FFD56C_42.27%,#EAB52F_164.84%)] bg-clip-text text-transparent
 }
 
 .banner-section .breadcrumbs-content {
@@ -1910,6 +1911,12 @@
     @apply  w-full sm:w-[639px]
  }
 
+ @media (min-width:1281px) and (max-width:1535px) {
+    .workflow-section .workflow-num::before {
+        @apply w-[400px]
+    } 
+ }
+
  @media (max-width: 1280px) {
   .how-we-work-section .steps-card:nth-child(3)::after {
     @apply content-none ;
@@ -1917,7 +1924,6 @@
   .workflow-section .workflow-num::before {
     @apply content-none ;
   }
-
 }
 
  .what-we-do-section .info-card-widget .info-card-col {
@@ -2260,8 +2266,8 @@
   background: #8c650d;
 }
 
-.woocommerce-MyAccount-content .woocommerce form .show-password-input, 
-.woocommerce-MyAccount-content .woocommerce-page form .show-password-input {
+.woocommerce form .show-password-input, 
+.woocommerce-page form .show-password-input {
   @apply top-[80%];
 }
 

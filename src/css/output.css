@@ -5591,9 +5591,9 @@
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
 }
-@media (min-width: 1024px) and (max-width: 1300px) {
+@media (min-width: 1024px) and (max-width: 1535px) {
   .our-registry-section .our-registry-grid {
-    margin-inline: 60px;
+    margin-inline: 0;
   }
 }
 .faq-section .faq-content {
@@ -5659,6 +5659,7 @@
 }
 .workflow-section .workflow-card {
   position: relative;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -5696,7 +5697,7 @@
 .banner-section .banner-heading {
   background-image: linear-gradient(360deg,#FFFFFF -64.84%,#FFD56C 42.27%,#EAB52F 164.84%);
   background-clip: text;
-  font-size: 32px;
+  font-size: 28px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   color: transparent;
@@ -5765,6 +5766,11 @@
   width: 100%;
   @media (width >= 40rem) {
     width: 639px;
+  }
+}
+@media (min-width:1281px) and (max-width:1535px) {
+  .workflow-section .workflow-num::before {
+    width: 400px;
   }
 }
 @media (max-width: 1280px) {
@@ -6394,7 +6400,7 @@
 .woocommerce-EditAccountForm button.button:hover {
   background: #8c650d;
 }
-.woocommerce-MyAccount-content .woocommerce form .show-password-input, .woocommerce-MyAccount-content .woocommerce-page form .show-password-input {
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
   top: 80%;
 }
 .woocommerce-EditAccountForm .clear {
