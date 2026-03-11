@@ -1578,6 +1578,9 @@
 
 
 /* Ordering Information Section */
+.ordering-information-section {
+    @apply bg-pureWhite;
+}
 
 .ordering-information-section i {
     @apply mb-[2px] text-[24px]
@@ -1590,7 +1593,6 @@
 }
 
 /* Insures Page FAQ css */
-
 body.page-insurers .faq-section .faq-content {
     @apply max-w-[1024px] mx-auto;
 }

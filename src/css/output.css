@@ -4951,6 +4951,9 @@
   border-radius: calc(infinity * 1px);
   background-color: rgba(223,176,58,0.3);
 }
+.ordering-information-section {
+  background-color: var(--pure-white);
+}
 .ordering-information-section i {
   margin-bottom: 2px;
   font-size: 24px;
