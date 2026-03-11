@@ -1542,9 +1542,6 @@
     @apply w-[48px] h-[48px] inline-flex items-center justify-center bg-[rgba(223,176,58,0.3)] rounded-full;
 }
 
-.compression-therapy-section h3 {
-    @apply text-base font-medium
-}
 
 /* Ordering Information Section */
 
@@ -1841,7 +1838,7 @@
 }
 
 .banner-section .banner-heading {
-  @apply  font-bold xl:text-[48px] lg:text-[36px] md:text-[32px] text-[32px] bg-[linear-gradient(360deg,#FFFFFF_-64.84%,#FFD56C_42.27%,#EAB52F_164.84%)] bg-clip-text text-transparent
+  @apply  font-bold xl:text-[48px] lg:text-[36px] md:text-[32px] text-[28px] bg-[linear-gradient(360deg,#FFFFFF_-64.84%,#FFD56C_42.27%,#EAB52F_164.84%)] bg-clip-text text-transparent
 }
 
 .banner-section .breadcrumbs-content {
@@ -2235,8 +2232,8 @@
   background: #8c650d;
 }
 
-.woocommerce-MyAccount-content .woocommerce form .show-password-input, 
-.woocommerce-MyAccount-content .woocommerce-page form .show-password-input {
+.woocommerce form .show-password-input, 
+.woocommerce-page form .show-password-input {
   @apply top-[80%];
 }
 

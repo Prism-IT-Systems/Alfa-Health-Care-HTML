@@ -4863,12 +4863,6 @@
   border-radius: calc(infinity * 1px);
   background-color: rgba(223,176,58,0.3);
 }
-.compression-therapy-section h3 {
-  font-size: var(--text-base);
-  line-height: var(--tw-leading, var(--text-base--line-height));
-  --tw-font-weight: var(--font-weight-medium);
-  font-weight: var(--font-weight-medium);
-}
 .ordering-information-section i {
   margin-bottom: 2px;
   font-size: 24px;
@@ -5615,7 +5609,7 @@
 .banner-section .banner-heading {
   background-image: linear-gradient(360deg,#FFFFFF -64.84%,#FFD56C 42.27%,#EAB52F 164.84%);
   background-clip: text;
-  font-size: 32px;
+  font-size: 28px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   color: transparent;
@@ -6318,7 +6312,7 @@
 .woocommerce-EditAccountForm button.button:hover {
   background: #8c650d;
 }
-.woocommerce-MyAccount-content .woocommerce form .show-password-input, .woocommerce-MyAccount-content .woocommerce-page form .show-password-input {
+.woocommerce form .show-password-input, .woocommerce-page form .show-password-input {
   top: 80%;
 }
 .woocommerce-EditAccountForm .clear {
