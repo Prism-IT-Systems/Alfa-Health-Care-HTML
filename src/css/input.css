@@ -2489,3 +2489,190 @@ body.page-insurers .faq-section .faq-content {
 }
 
 
+/* Referrals Page */
+
+.patient-referral-heading {
+  text-align: center;
+}
+
+.patient-referral-heading h1 {
+  display: inline-block;
+  border-bottom: 1px solid rgba(100, 87, 79, 0.5);
+  padding-bottom: 8px;
+  font-size: 24px;
+  line-height:28px;
+}
+
+.alfar-refferals-form .section-number {
+  background: rgba(223, 176, 58, 0.3);
+  color: #32261B;
+}
+
+.alfar-refferals-form .section-title {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.alfar-refferals-form .section-title {
+  gap: 16px;
+}
+
+.alfar-refferals-form .section-number {
+   width: 32px;
+   height: 32px;
+}
+
+.alfar-refferals-form .form-row {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 30px;
+}
+
+.alfar-refferals-form label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #64574F;
+  font-weight:600;
+}
+
+.alfar-refferals-form .form-row label span {
+    color: red;
+}
+
+.alfar-refferals-form input, .alfar-refferals-form select, .alfar-refferals-form textarea {
+    background: #FCFAF8;
+    mix-blend-mode: normal;
+    border: 1px solid #CDBAA6;
+    border-radius: 10px;
+
+
+ }
+
+.alfar-refferals-form input::placeholder, .alfar-refferals-form select, .alfar-refferals-form textarea::placeholder{
+   font-size: 14px;
+  line-height: 18px;
+  color: #847362;
+}
+
+.alfar-refferals-form input[type="date"] {
+  font-size: 14px;
+  line-height: 18px;
+  color: #847362;
+}
+
+.alfar-refferals-form .equipment-description {
+    font-size: 14px;
+  line-height: 20px;
+  color: #847362;
+  margin-bottom: 16px;
+}
+
+.alfar-refferals-form .equipment-item {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #32261B;
+  border: 1px solid #CDBAA6;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.alfar-refferals-form .section {
+   padding: 40px !important;
+}
+
+
+.alfar-refferals-form input[type="checkbox"] {
+  border-radius: 3px;
+}
+
+[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+}
+
+.alfar-refferals-form [type='checkbox']:checked {
+  background-color: #a17810 !important;
+}
+
+.document-upload  {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.document-upload .upload-box-content h3 {
+ font-size:16px;
+ line-height:26px;
+ margin-bottom: 16px;
+}
+
+.document-upload .upload-box-content p {
+  text-align:left;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+ 
+.document-upload .upload-heading-wrap {
+  font-size: 18px;
+  line-height:26px;
+  color:#847362;
+  font-weight: 600;
+  
+}
+
+.document-upload .upload-box {
+  width: 819px;
+  max-width:100%;
+  margin-bottom: 0;
+  margin-inline: auto;
+  border: 2px dashed #847362;
+  background: #FAF8F4;
+  padding: 42px;
+} 
+
+.document-upload .upload-icon-wrap {
+   width: 48px;
+   height: 48px;
+   background: rgba(246, 219, 148, 0.46);
+ }
+
+.document-upload .upload-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight:500;
+}
+
+.document-upload .upload-trigger {
+   display: flex;
+   flex-direction:column;
+   gap: 8px;
+ }
+
+.document-upload .upload-text .highlight-text {
+  color: #a17810;
+}
+
+.alfar-refferals-form .document-upload .submit-btn {
+  margin: 0 auto 0;
+}
+
+.document-upload .upload-subtext {
+   color: #847362;
+   font-size: 14px;
+   font-weight:400;
+   line-height:16px
+ }
+
+.alfar-refferals-form .submit-btn {
+  line-height: 26px;
+  font-size: 22px;
+  font-weight:500;
+  padding: 23px 54px;
+  border-radius: 999px;
+}
+
+
