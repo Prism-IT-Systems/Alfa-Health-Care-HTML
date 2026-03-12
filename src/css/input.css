@@ -2317,3 +2317,98 @@
 .tax-product_cat .faq-section {
   @apply flex flex-col gap-4;
 }
+
+.woocommerce a.add_to_cart_button {
+     @apply font-medium;
+}
+
+.product-category-section h3 {
+  @apply leading-7 ;
+}
+
+.product-category-section h3 {
+  @apply text-base lg:text-lg;
+}
+
+.product-category-section .woocommerce-Price-amount {
+  @apply text-[22px] sm:text-[28px];
+} 
+
+.woocommerce a.add_to_cart_button {
+  @apply inline-flex bg-[#A17810] text-white rounded-full text-sm leading-normal transition-all duration-300 hover:bg-[#c89a1a];
+}
+
+.product-category-section ul {
+  @apply flex flex-col justify-start items-start gap-2.5 shadow-[0_10px_30px_var(--tw-shadow-color,rgba(0,0,0,0.06))] px-[46px] py-7 rounded-xl;
+  background: #fff;
+  list-style: disc;
+}
+.product-category-section ul li {
+  @apply text-left;
+}
+
+.woocommerce a.added_to_cart {
+   @apply flex order-1 text-white border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-3.5 py-2 rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
+}
+
+.product-category-section .cart-view-info {
+    @apply flex flex-col flex-wrap sm:flex-row gap-[7px] justify-center
+}
+
+.woocommerce-message {
+  @apply border-t-[#a17810];
+}
+
+.woocommerce-message {
+  @apply border-t-[#a17810] before:content-["\e015"] before:text-[#a17810];
+}
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  background: #f5f1ea;
+}
+
+/* Pagination wrapper */
+.woocommerce-pagination {
+  @apply flex justify-center mt-10;
+}
+
+/* Pagination list */
+.woocommerce-pagination ul.page-numbers {
+  @apply flex gap-2 m-0 p-0;
+  list-style: none;
+}
+
+/* Pagination items */
+.woocommerce-pagination ul.page-numbers li a,
+.woocommerce-pagination ul.page-numbers li span {
+  @apply flex items-center justify-center min-w-[38px] h-[38px] border border-neutral-200 no-underline text-sm text-[#333] transition-all duration-[0.25s] ease-[ease] p-3 rounded-lg border-solid;
+  background: #fff;
+}
+
+/* Hover effect */
+.woocommerce-pagination ul.page-numbers li a:hover {
+  @apply text-white border-[#a17810];
+  background: #a17810;
+}
+
+/* Active page */
+.woocommerce-pagination ul.page-numbers li .current {
+  @apply text-white font-semibold p-3 border-[#a17810];
+  background: #a17810;
+}
+
+/* Next arrow */
+.woocommerce-pagination ul.page-numbers li .next {
+  @apply font-[bold];
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+  @apply border-[none];
+}
+.woocommerce nav.woocommerce-pagination ul li {
+  @apply border-[none];
+}
+
+
+
