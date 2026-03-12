@@ -153,6 +153,12 @@
         @apply text-goldenBrown;
     }
 
+    /*Boreder Title*/
+    .bordered-title::before,
+    .bordered-title::after {
+        @apply content-[""] w-[100px] h-[0.8px] bg-warmTaupe ;
+    }
+
     /* Text Badge */
     .text-badge{
         @apply py-2.5 px-4 bg-[rgba(223,176,58,0.3)] rounded-full min-w-[130px] inline-block text-center text-sm leading-5 font-semibold text-darkMustard
@@ -1578,6 +1584,9 @@
 
 
 /* Ordering Information Section */
+.ordering-information-section {
+    @apply bg-pureWhite;
+}
 
 .ordering-information-section i {
     @apply mb-[2px] text-[24px]
@@ -1587,6 +1596,11 @@
 
 .category-info i {
     @apply mt-[2px] font-[500] text-[18px] transition-transform duration-300 group-hover:translate-x-1
+}
+
+/* Insures Page FAQ css */
+body.page-insurers .faq-section .faq-content {
+    @apply max-w-[1024px] mx-auto;
 }
 
 
@@ -1830,15 +1844,27 @@
 }
 
 .faq-section .faq-content .faq-item {
-@apply flex-1 space-y-4
+@apply flex-1 space-y-4 w-full;
 }
 
 .faq-section .accordion-item {
-  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px]
+  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
 } 
 
 .faq-section .accordion-item .accordion-btn {
-  @apply flex w-full items-center justify-between
+  @apply flex w-full items-center justify-between gap-2 cursor-pointer;
+}
+
+.faq-section .accordion-item .accordion-btn .accordion-icon {
+    @apply text-2xl text-[#2E2415] cursor-pointer;
+}
+
+.faq-section .accordion-item .accordion-content {
+    @apply mt-4;
+}
+
+.faq-section .accordion-item .accordion-content >  div:empty{
+    @apply mb-4 h-px w-full bg-[#E5E2DC];
 }
 
 /* workflow section */

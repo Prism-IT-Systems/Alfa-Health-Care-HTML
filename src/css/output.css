@@ -367,9 +367,6 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
-  .inset-x-0 {
-    inset-inline: calc(var(--spacing) * 0);
-  }
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
@@ -450,9 +447,6 @@
   }
   .mt-\[22px\] {
     margin-top: 22px;
-  }
-  .\!mb-10 {
-    margin-bottom: calc(var(--spacing) * 10) !important;
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -549,9 +543,6 @@
   }
   .h-\[87px\] {
     height: 87px;
-  }
-  .h-\[110px\] {
-    height: 110px;
   }
   .h-\[130px\] {
     height: 130px;
@@ -806,19 +797,11 @@
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-gradient-to-t {
-    --tw-gradient-position: to top in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
-  }
   .bg-\[linear-gradient\(180deg\,\#5E4718_0\%\,\#A17810_73\.08\%\)\] {
     background-image: linear-gradient(180deg,#5E4718 0%,#A17810 73.08%);
   }
   .bg-\[linear-gradient\(360deg\,_\#32261B_2\.88\%\,_rgba\(102\,102\,102\,0\)_100\%\)\] {
     background-image: linear-gradient(360deg, #32261B 2.88%, rgba(102,102,102,0) 100%);
-  }
-  .from-\[rgba\(167\,126\,26\,0\.75\)\] {
-    --tw-gradient-from: rgba(167,126,26,0.75);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-\[rgba\(217\,217\,217\,0\)\] {
     --tw-gradient-from: rgba(217,217,217,0);
@@ -826,10 +809,6 @@
   }
   .to-\[rgba\(0\,0\,0\,0\.65\)\] {
     --tw-gradient-to: rgba(0,0,0,0.65);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .to-transparent {
-    --tw-gradient-to: transparent;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .stroke-\[\#32261b\] {
@@ -904,9 +883,6 @@
   .py-\[28px\] {
     padding-block: 28px;
   }
-  .\!pt-14 {
-    padding-top: calc(var(--spacing) * 14) !important;
-  }
   .pt-\[8px\] {
     padding-top: 8px;
   }
@@ -915,9 +891,6 @@
   }
   .pr-\[30px\] {
     padding-right: 30px;
-  }
-  .\!pb-20 {
-    padding-bottom: calc(var(--spacing) * 20) !important;
   }
   .pb-\[8px\] {
     padding-bottom: 8px;
@@ -1590,19 +1563,9 @@
       height: 500px;
     }
   }
-  .xl\:grid-cols-2 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .xl\:grid-cols-3 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-  .xl\:items-start {
-    @media (width >= 80rem) {
-      align-items: flex-start;
     }
   }
   .xl\:before\:absolute {
@@ -1939,6 +1902,13 @@
   }
   .highlight-text {
     color: var(--Golden-Brown);
+  }
+  .bordered-title::before, .bordered-title::after {
+    height: 0.8px;
+    width: 100px;
+    background-color: var(--Warm-Taupe);
+    --tw-content: "";
+    content: var(--tw-content);
   }
   .text-badge {
     display: inline-block;
@@ -4952,6 +4922,9 @@
   border-radius: calc(infinity * 1px);
   background-color: rgba(223,176,58,0.3);
 }
+.ordering-information-section {
+  background-color: var(--pure-white);
+}
 .ordering-information-section i {
   margin-bottom: 2px;
   font-size: 24px;
@@ -4972,6 +4945,10 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+}
+body.page-insurers .faq-section .faq-content {
+  margin-inline: auto;
+  max-width: 1024px;
 }
 .section-404 {
   background-color: #F5F1EA;
@@ -5607,6 +5584,7 @@
   }
 }
 .faq-section .faq-content .faq-item {
+  width: 100%;
   flex: 1;
   :where(& > :not(:last-child)) {
     --tw-space-y-reverse: 0;
@@ -5615,6 +5593,7 @@
   }
 }
 .faq-section .accordion-item {
+  cursor: pointer;
   border-radius: var(--radius-2xl);
   background-color: #F4F1EC;
   padding-inline: 15px;
@@ -5629,8 +5608,25 @@
 .faq-section .accordion-item .accordion-btn {
   display: flex;
   width: 100%;
+  cursor: pointer;
   align-items: center;
   justify-content: space-between;
+  gap: calc(var(--spacing) * 2);
+}
+.faq-section .accordion-item .accordion-btn .accordion-icon {
+  cursor: pointer;
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  color: #2E2415;
+}
+.faq-section .accordion-item .accordion-content {
+  margin-top: calc(var(--spacing) * 4);
+}
+.faq-section .accordion-item .accordion-content > div:empty {
+  margin-bottom: calc(var(--spacing) * 4);
+  height: 1px;
+  width: 100%;
+  background-color: #E5E2DC;
 }
 .workflow-section {
   background-color: #F5F1EA;
