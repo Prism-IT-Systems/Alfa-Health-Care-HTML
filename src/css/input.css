@@ -2436,5 +2436,56 @@ body.page-insurers .faq-section .faq-content {
   @apply border-[none];
 }
 
+.key-features-panel ul {
+  @apply flex flex-col justify-start items-start gap-2.5 px-[46px] rounded-xl;
+  list-style: disc;
+}
+.key-features-panel ul li {
+  @apply text-left;
+}
+
+.product-detail-page-section .woocommerce-product-details__short-description p {
+  @apply text-base leading-7;
+}
+
+.product-detail-page-section .buy-now-btn {
+  @apply flex justify-center items-center flex justify-center items-center mb-0;
+}
+.woocommerce div.product form.cart .button {
+  @apply text-[16.49px] leading-[23.6px];
+}
+
+.product-detail-page-section .secure-checkout span {
+  @apply leading-[26px] font-bold;
+}
+
+/* Product Detail Page FAQ */
+
+.faq-wrapper {
+  @apply mx-auto my-[30px];
+}
+
+/* Each FAQ item */
+.faq-wrapper .faq-item {
+  @apply border transition-shadow duration-[0.3s] ease-[ease] mb-4 px-[22px] py-[18px] rounded-[10px] border-solid border-[#e6e6e6] hover:shadow-[0_8px_20px_rgba(0,0,0,0.06)] border-l-4 border-l-[#A17810] border-solid;
+  background: #ffffff;
+}
+
+/* Hover effect */
+
+/* Question */
+.faq-wrapper .faq-question {
+  @apply text-lg font-semibold text-[#222] leading-[1.4] mb-2.5;
+}
+
+/* Answer text */
+.faq-wrapper .faq-answer {
+  @apply text-[15px] text-[#555] leading-[1.7];
+}
+
+/* Remove extra paragraph margin */
+.faq-wrapper .faq-answer p {
+  @apply m-0;
+}
 
 
