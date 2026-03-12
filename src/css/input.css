@@ -2369,36 +2369,45 @@ body.page-insurers .faq-section .faq-content {
   @apply flex flex-col gap-4;
 }
 
-
-/*Featured Blogs Section*/
-.featured-blog-section {
-    @apply bg-offWhite;
+.woocommerce a.add_to_cart_button {
+     @apply font-medium;
 }
-.bordered-title {
-    @apply flex items-center justify-center gap-4 w-full;
+
+.product-category-section h3 {
+  @apply leading-7 ;
+}
+
+.product-category-section h3 {
+  @apply text-base lg:text-lg;
+}
+
+.product-category-section .woocommerce-Price-amount {
+  @apply text-[22px] sm:text-[28px];
+} 
+
+.woocommerce a.add_to_cart_button {
+  @apply inline-flex bg-[#A17810] text-white rounded-full text-sm leading-normal transition-all duration-300 hover:bg-[#c89a1a];
+}
+
+.product-category-section ul {
+  @apply flex flex-col justify-start items-start gap-2.5 shadow-[0_10px_30px_var(--tw-shadow-color,rgba(0,0,0,0.06))] px-[46px] py-7 rounded-xl;
+  background: #fff;
+  list-style: disc;
+}
+.product-category-section ul li {
+  @apply text-left;
+}
+
+.woocommerce a.added_to_cart {
+   @apply flex order-1 text-white border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-3.5 py-2 rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
 }
 .display-blog-grid{
     @apply grid grid-cols-1 xl:grid-cols-2 gap-8 xl:items-start; 
 }
+
 .display-blog-grid .display-blog-img-big {
-    @apply relative h-[500px] w-full  rounded-[14px] overflow-hidden after:content-[''] after:absolute after:w-full after:h-full 
-                    after:bottom-0 after:bg-[linear-gradient(360deg,_rgba(161,120,16,0.9)_0%_,rgba(59,44,6,0)_47.6%)] ;
+    @apply relative h-[500px] w-full  rounded-[14px] overflow-hidden after:content-[''] after:absolute after:bottom-0 after:bg-[rgba(0,0,0,0.3)] after:opacity-0 
+           after:hover:opacity-100 after:transition-opacity after:duration-300;
 }
-.display-blog-grid .display-blog-img-big img {
-    @apply w-full h-full object-cover transition-transform duration-300 ease-[ease];
-}
-.display-blog-grid .display-blog-img-big:hover img {
-    @apply scale-105;
-}
-.display-blog-grid .aritcle-box { 
-    @apply mt-5.5 flex flex-col gap-4;
-}
-.display-blog-grid .aritcle-box .cta-link{ 
-    @apply text-base font-semibold leading-[23px] text-goldenBrown text-lg gap-0;
-} 
-.display-blog-grid .aritcle-box .cta-link:hover svg {
-    @apply stroke-goldenBrown;
-}
-.display-blog-grid .display-blog-right-col .aritcle-box:not(:last-child) {
-    @apply pb-6 border-b-[1px] border-warmtaupe;
-}
+
+
