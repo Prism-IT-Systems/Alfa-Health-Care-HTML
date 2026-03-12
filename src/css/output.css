@@ -67,6 +67,7 @@
   --color-gray-800: oklch(27.8% 0.033 256.848);
   --color-gray-900: oklch(21% 0.034 264.665);
   --color-gray-950: oklch(13% 0.028 261.692);
+  --color-neutral-200: oklch(92.2% 0 0);
   --color-black: #000;
   --color-white: #fff;
   --spacing: 0.25rem;
@@ -6562,6 +6563,153 @@ body.page-insurers .faq-section .faq-content {
 }
 .product-category-section ul li {
   text-align: left;
+}
+.woocommerce-pagination {
+  margin-top: calc(var(--spacing) * 10);
+  display: flex;
+  justify-content: center;
+}
+.woocommerce-pagination ul.page-numbers {
+  margin: calc(var(--spacing) * 0);
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+  padding: calc(var(--spacing) * 0);
+  list-style: none;
+}
+.woocommerce-pagination ul.page-numbers li a, .woocommerce-pagination ul.page-numbers li span {
+  display: flex;
+  height: 38px;
+  min-width: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: var(--color-neutral-200);
+  padding: calc(var(--spacing) * 3);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: #333;
+  text-decoration-line: none;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.25s;
+  transition-duration: 0.25s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  background: #fff;
+}
+.woocommerce-pagination ul.page-numbers li a:hover {
+  border-color: #a17810;
+  color: var(--color-white);
+  background: #a17810;
+}
+.woocommerce-pagination ul.page-numbers li .current {
+  border-color: #a17810;
+  padding: calc(var(--spacing) * 3);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  background: #a17810;
+}
+.woocommerce-pagination ul.page-numbers li .next {
+  font-family: bold;
+}
+.woocommerce nav.woocommerce-pagination ul {
+  border-color: none;
+}
+.woocommerce nav.woocommerce-pagination ul li {
+  border-color: none;
+}
+.key-features-panel ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: calc(var(--spacing) * 2.5);
+  border-radius: var(--radius-xl);
+  padding-inline: 46px;
+  list-style: disc;
+}
+.key-features-panel ul li {
+  text-align: left;
+}
+.product-detail-page-section .woocommerce-product-details__short-description p {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: var(--leading-7);
+  line-height: var(--leading-7);
+}
+.product-detail-page-section .buy-now-btn {
+  margin-bottom: calc(var(--spacing) * 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.woocommerce div.product form.cart .button {
+  font-size: 16.49px;
+  --tw-leading: 23.6px;
+  line-height: 23.6px;
+}
+.product-detail-page-section .secure-checkout span {
+  --tw-leading: 26px;
+  line-height: 26px;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.faq-wrapper {
+  margin-inline: auto;
+  margin-block: 30px;
+}
+.faq-wrapper .faq-item {
+  margin-bottom: calc(var(--spacing) * 4);
+  border-radius: 10px;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-left-style: var(--tw-border-style);
+  border-left-width: 4px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: #e6e6e6;
+  border-left-color: #A17810;
+  padding-inline: 22px;
+  padding-block: 18px;
+  transition-property: box-shadow;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 8px 20px var(--tw-shadow-color, rgba(0,0,0,0.06));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  background: #ffffff;
+}
+.faq-wrapper .faq-question {
+  margin-bottom: calc(var(--spacing) * 2.5);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-leading: 1.4;
+  line-height: 1.4;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: #222;
+}
+.faq-wrapper .faq-answer {
+  font-size: 15px;
+  --tw-leading: 1.7;
+  line-height: 1.7;
+  color: #555;
+}
+.faq-wrapper .faq-answer p {
+  margin: calc(var(--spacing) * 0);
 }
 .woocommerce a.added_to_cart {
   order: 1;
