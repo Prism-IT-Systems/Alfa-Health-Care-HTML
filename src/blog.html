@@ -174,26 +174,23 @@
 <!-- Banner Section End -->
 
 <!-- Featured Blogs Section Start -->
-<section class="!pt-14 !pb-20 bg-[#F5F1EA]">
+<section class="featured-blog-section">
   <div class="container">
 
     <!-- Section Heading -->
-    <div class="heading-wrap text-center !mb-10">
-      <h2 class="flex items-center justify-center gap-5 w-full">
-        <span class="w-24 h-px bg-[#BFB5A5] shrink-0 max-md:hidden"></span>
+    <div class="heading-wrap text-center">
+      <h2 class="bordered-title">
         <span>Featured <span class="highlight-text">Blogs</span></span>
-        <span class="w-24 h-px bg-[#BFB5A5] shrink-0 max-md:hidden"></span>
       </h2>
     </div>
 
     <!-- Blog Grid -->
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-7 xl:items-start">
+    <div class="display-blog-grid">
 
       <!-- Left Column: Featured image + article -->
-      <div>
-        <div class="relative rounded-2xl overflow-hidden">
+      <div class="display-blog-left-col">
+        <div class="display-blog-img-big">
           <img src="images/Introduction.png" alt="Alfa Healthcare store" class="block w-full h-[340px] xl:h-[500px] object-cover">
-          <div class="absolute inset-x-0 bottom-0 h-[110px] bg-gradient-to-t from-[rgba(167,126,26,0.75)] to-transparent pointer-events-none"></div>
         </div>
         <article class="mt-[22px]">
           <span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#A17810] text-white text-sm font-semibold leading-none">Diabetic</span>
@@ -212,7 +209,7 @@
       </div>
 
       <!-- Right Column: Two stacked cards -->
-      <div class="flex flex-col gap-[22px]">
+      <div class="display-blog-right-col flex flex-col gap-[22px]">
 
         <!-- Top card: 2 articles separated by divider -->
         <div class="border border-[#D9CEC0] rounded-2xl bg-white overflow-hidden">
@@ -276,8 +273,8 @@
   <div class="container">
 
     <!-- Section Heading -->
-    <div class="heading-wrap text-center !mb-10">
-      <h2 class="flex items-center justify-center gap-5 w-full">
+    <div class="heading-wrap text-center">
+      <h2 class="flex items-center justify-center gap-5 w-full bordered-title">
         <span class="w-24 h-px bg-[#BFB5A5] shrink-0 max-md:hidden"></span>
         <span>Latest <span class="highlight-text">Blogs</span></span>
         <span class="w-24 h-px bg-[#BFB5A5] shrink-0 max-md:hidden"></span>
