@@ -2410,4 +2410,99 @@ body.page-insurers .faq-section .faq-content {
            after:hover:opacity-100 after:transition-opacity after:duration-300;
 }
 
+.patient-referral-heading {
+  @apply text-center;
+}
+.patient-referral-heading h1 {
+  @apply inline-block text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] border-b border-solid;
+}
+.alfar-refferals-form .section-number {
+  @apply text-[#32261B] w-8 h-8;
+  background: rgba(223, 176, 58, 0.3);
+}
+.alfar-refferals-form .section-title {
+  @apply text-lg mb-8 gap-4;
+}
+.alfar-refferals-form .form-row {
+  @apply flex gap-[30px] mb-4;
+}
+.alfar-refferals-form label {
+  @apply text-base leading-5 text-[#64574F] font-semibold;
+}
+.alfar-refferals-form .form-row label span {
+  @apply text-[red];
+}
+.alfar-refferals-form input,
+.alfar-refferals-form select,
+.alfar-refferals-form textarea {
+  @apply mix-blend-normal border rounded-[10px] border-solid border-[#CDBAA6];
+  background: #fcfaf8;
+}
+.alfar-refferals-form input::placeholder,
+.alfar-refferals-form select,
+.alfar-refferals-form textarea::placeholder {
+  @apply text-sm leading-[18px] text-[#847362];
+}
+.alfar-refferals-form input[type="date"] {
+  @apply text-sm leading-[18px] text-[#847362];
+}
+.alfar-refferals-form .equipment-description {
+  @apply text-sm leading-5 text-[#847362] mb-4;
+}
+.alfar-refferals-form .equipment-item {
+  @apply text-base leading-5 font-medium text-[#32261B] border flex items-center gap-3 p-5 rounded-xl border-solid border-[#CDBAA6];
+}
+.alfar-refferals-form .section {
+  @apply p-10;
+}
+.alfar-refferals-form input[type="checkbox"] {
+  @apply rounded-[3px];
+}
+[type="checkbox"] {
+  @apply w-[15px] h-[15px];
+}
+.alfar-refferals-form [type="checkbox"]:checked {
+  @apply bg-[#a17810];
+}
+.document-upload {
+  @apply flex flex-col gap-[25px];
+}
+.document-upload .upload-box-content h3 {
+  @apply text-base leading-[26px] mb-4;
+}
+.document-upload .upload-box-content p {
+  @apply text-left max-w-full mb-0;
+}
+.document-upload .upload-heading-wrap {
+  @apply text-lg leading-[26px] text-[#847362] font-semibold;
+}
+.document-upload .upload-box {
+  @apply w-[819px] max-w-full mb-0 p-[42px] border-2 border-dashed border-[#847362];
+  margin-inline: auto;
+  background: #faf8f4;
+}
+.document-upload .upload-icon-wrap {
+  @apply w-12 h-12;
+  background: rgba(246, 219, 148, 0.46);
+}
+.document-upload .upload-text {
+  @apply text-base leading-5 font-medium;
+}
+.document-upload .upload-trigger {
+  @apply flex flex-col gap-2;
+}
+.document-upload .upload-text .highlight-text {
+  @apply text-[#a17810];
+}
+.alfar-refferals-form .document-upload .submit-btn {
+  @apply mx-auto my-0;
+}
+.document-upload .upload-subtext {
+  @apply text-[#847362] text-sm font-normal leading-4;
+}
+.alfar-refferals-form .submit-btn {
+  @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
+}
+
+
 
