@@ -7196,6 +7196,13 @@ body.page-insurers .faq-section .faq-content {
   line-height: var(--tw-leading, var(--text-xl--line-height));
   color: #a17810;
 }
+@media (width >= 48rem) {
+  .main-footer .footer-inner .payment-box {
+    padding-block: 25px;
+    padding-right: 15px;
+    padding-left: 13px;
+  }
+}
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
     position: absolute;

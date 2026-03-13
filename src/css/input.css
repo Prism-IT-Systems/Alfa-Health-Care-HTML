@@ -2721,3 +2721,8 @@ body.page-insurers .faq-section .faq-content {
   @apply text-xl text-[#a17810];
 }
 
+@media (width >= 48rem) {
+  .main-footer .footer-inner .payment-box {
+    @apply pl-[13px] pr-[15px] py-[25px];
+  }
+} 
