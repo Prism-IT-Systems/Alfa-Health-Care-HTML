@@ -5594,12 +5594,25 @@ body.page-insurers .faq-section .faq-content {
     margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
   }
 }
-.faq-section .accordion-item {
+.single-product .faq-section .accordion-item {
   margin-bottom: calc(var(--spacing) * 4);
   cursor: pointer;
   border-radius: var(--radius-2xl);
   background-color: #F4F1EC;
   background-color: #ffffff99;
+  padding-inline: 15px;
+  padding-block: 10px;
+  @media (width >= 40rem) {
+    padding-inline: 25px;
+  }
+  @media (width >= 40rem) {
+    padding-block: 20px;
+  }
+}
+.faq-section .accordion-item {
+  cursor: pointer;
+  border-radius: var(--radius-2xl);
+  background-color: #F4F1EC;
   padding-inline: 15px;
   padding-block: 10px;
   @media (width >= 40rem) {

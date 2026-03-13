@@ -1872,9 +1872,13 @@ body.page-insurers .faq-section .faq-content {
 @apply flex-1 space-y-4 w-full;
 }
 
-.faq-section .accordion-item {
+.single-product .faq-section .accordion-item {
   @apply rounded-2xl bg-[#F4F1EC] bg-[#ffffff99]  mb-4 px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
 } 
+
+.faq-section .accordion-item {
+  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+}
 
 .faq-section .accordion-item .accordion-btn {
   @apply flex w-full items-center justify-between gap-2 cursor-pointer;
