@@ -32,6 +32,7 @@
   --color-yellow-400: oklch(85.2% 0.199 91.936);
   --color-yellow-600: oklch(68.1% 0.162 75.834);
   --color-lime-500: oklch(76.8% 0.233 130.85);
+  --color-emerald-100: oklch(95% 0.052 163.051);
   --color-emerald-300: oklch(84.5% 0.143 164.978);
   --color-emerald-600: oklch(59.6% 0.145 163.225);
   --color-emerald-700: oklch(50.8% 0.118 165.612);
@@ -7096,6 +7097,24 @@ body.page-insurers .faq-section .faq-content {
     grid-template-columns: repeat(2,1fr);
   }
 }
+.alfar-refferals-form .error-message {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: red;
+}
+.alfar-refferals-form .success-message {
+  border-radius: 10px;
+  background-color: var(--color-emerald-100);
+  padding-inline: calc(var(--spacing) * 3.5);
+  padding-block: calc(var(--spacing) * 2.5);
+  text-align: center;
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #28A745;
+  color: #198754;
+}
 .patient-referral-heading {
   text-align: center;
 }
@@ -7450,7 +7469,9 @@ body.page-insurers .faq-section .faq-content {
   width: 100px;
 }
 .wishlist_table .product-add-to-cart a {
+  margin-inline: auto;
   display: flex;
+  justify-content: center;
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
@@ -7491,6 +7512,75 @@ body.page-insurers .faq-section .faq-content {
 }
 .blog-listing-section {
   padding-top: calc(var(--spacing) * 0);
+}
+form.form-loading {
+  pointer-events: none;
+  position: relative;
+  opacity: 60%;
+  &::after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::after {
+    content: var(--tw-content);
+    top: calc(2/4 * 100%);
+  }
+  &::after {
+    content: var(--tw-content);
+    left: calc(2/4 * 100%);
+  }
+  &::after {
+    content: var(--tw-content);
+    z-index: 10;
+  }
+  &::after {
+    content: var(--tw-content);
+    height: calc(var(--spacing) * 10);
+  }
+  &::after {
+    content: var(--tw-content);
+    width: calc(var(--spacing) * 10);
+  }
+  &::after {
+    content: var(--tw-content);
+    --tw-translate-x: calc(calc(2/4 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  &::after {
+    content: var(--tw-content);
+    --tw-translate-y: calc(calc(2/4 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  &::after {
+    content: var(--tw-content);
+    animation: spin 0.8s linear infinite;
+  }
+  &::after {
+    content: var(--tw-content);
+    border-radius: 50%;
+  }
+  &::after {
+    content: var(--tw-content);
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  &::after {
+    content: var(--tw-content);
+    --tw-border-style: solid;
+    border-style: solid;
+  }
+  &::after {
+    content: var(--tw-content);
+    border-color: var(--color-neutral-200);
+  }
+  &::after {
+    content: var(--tw-content);
+    border-top-color: var(--color-black);
+  }
+  &::after {
+    --tw-content: "";
+    content: var(--tw-content);
+  }
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
@@ -8209,6 +8299,11 @@ body.page-insurers .faq-section .faq-content {
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {

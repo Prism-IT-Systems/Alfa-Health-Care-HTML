@@ -2720,6 +2720,16 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 
+.alfar-refferals-form .error-message {
+  @apply text-[red] text-sm;
+}
+
+
+.alfar-refferals-form .success-message {
+  @apply text-center text-lg font-medium text-[#28A745] text-[#198754] bg-emerald-100 px-3.5 py-2.5 rounded-[10px];
+}
+
+
 
 .patient-referral-heading {
   @apply text-center;
@@ -2906,11 +2916,12 @@ body.page-insurers .faq-section .faq-content {
     @apply mt-2.5;
   }
 }
+
 .wishlist_table tr td.product-thumbnail {
   @apply w-[100px];
 }
 .wishlist_table .product-add-to-cart a {
-  @apply flex border border-solid border-[#a17810];
+  @apply flex border border-solid border-[#a17810] mx-auto justify-center;
 }
 .woocommerce
   .wishlist_table
@@ -2947,4 +2958,10 @@ body.page-insurers .faq-section .faq-content {
 }
 .blog-listing-section {
     @apply pt-0
+}
+
+/* form loading */
+
+form.form-loading {
+  @apply relative opacity-60 pointer-events-none after:content-[""] after:absolute after:w-10 after:h-10 after:border-neutral-200 after:-translate-x-2/4 after:-translate-y-2/4 after:animate-[spin_0.8s_linear_infinite] after:z-10 after:rounded-[50%] after:border-t-black after:border-4 after:border-solid after:left-2/4 after:top-2/4;
 }
