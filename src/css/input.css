@@ -1931,9 +1931,13 @@ body.page-insurers .faq-section .faq-content {
 @apply flex-1 space-y-4 w-full;
 }
 
+.single-product .faq-section .accordion-item {
+  @apply rounded-2xl bg-[#F4F1EC] bg-[#ffffff99]  mb-4 px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+} 
+
 .faq-section .accordion-item {
   @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
-} 
+}
 
 .faq-section .accordion-item .accordion-btn {
   @apply flex w-full items-center justify-between gap-2 cursor-pointer;
@@ -2448,7 +2452,7 @@ body.page-insurers .faq-section .faq-content {
   @apply inline-flex bg-[#A17810] text-white rounded-full text-sm leading-normal transition-all duration-300 hover:bg-[#c89a1a];
 }
 
-.product-category-section ul {
+.product-category-section .heading-wrap ul {
   @apply flex flex-col justify-start items-start gap-2.5 shadow-[0_10px_30px_var(--tw-shadow-color,rgba(0,0,0,0.06))] px-[46px] py-7 rounded-xl;
   background: #fff;
   list-style: disc;
@@ -2457,9 +2461,315 @@ body.page-insurers .faq-section .faq-content {
   @apply text-left;
 }
 
-.woocommerce a.added_to_cart {
-   @apply flex order-1 text-white border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-3.5 py-2 rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
+.woocommerce-pagination {
+  @apply flex justify-center mt-10;
+}
+
+/* Pagination list */
+.woocommerce-pagination ul.page-numbers {
+  @apply flex gap-2 m-0 p-0;
+  list-style: none;
+}
+
+/* Pagination items */
+.woocommerce-pagination ul.page-numbers li a,
+.woocommerce-pagination ul.page-numbers li span {
+  @apply flex items-center justify-center min-w-[38px] h-[38px] border border-neutral-200 no-underline text-sm text-[#333] transition-all duration-[0.25s] ease-[ease] p-3 rounded-lg border-solid;
+  background: #fff;
+}
+
+/* Hover effect */
+.woocommerce-pagination ul.page-numbers li a:hover {
+  @apply text-white border-[#a17810];
+  background: #a17810;
+}
+
+/* Active page */
+.woocommerce-pagination ul.page-numbers li .current {
+  @apply text-white font-semibold p-3 border-[#a17810];
+  background: #a17810;
+}
+
+/* Next arrow */
+.woocommerce-pagination ul.page-numbers li .next {
+  @apply font-[bold];
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+  @apply border-[none];
+}
+.woocommerce nav.woocommerce-pagination ul li {
+  @apply border-[none];
+}
+
+.key-features-panel ul {
+  @apply flex flex-col justify-start items-start gap-2.5 px-[46px] rounded-xl;
+  list-style: disc;
+}
+.key-features-panel ul li {
+  @apply text-left;
+}
+
+.product-detail-page-section .woocommerce-product-details__short-description p {
+  @apply text-base leading-7;
+}
+
+.product-detail-page-section .buy-now-btn {
+  @apply flex justify-center items-center flex justify-center items-center mb-0;
+}
+.woocommerce div.product form.cart .button {
+  @apply text-[16.49px] leading-[23.6px];
+}
+
+.product-detail-page-section .secure-checkout span {
+  @apply leading-[26px] font-bold;
+}
+
+/* Product Detail Page FAQ */
+
+.faq-wrapper {
+  @apply mx-auto my-[30px];
+}
+
+/* Each FAQ item */
+.faq-wrapper .faq-item {
+  @apply border transition-shadow duration-[0.3s] ease-[ease] mb-4 px-[22px] py-[18px] rounded-[10px] border-solid border-[#e6e6e6] hover:shadow-[0_8px_20px_rgba(0,0,0,0.06)] border-l-4 border-l-[#A17810] border-solid;
+  background: #ffffff;
+}
+
+/* Hover effect */
+
+/* Question */
+.faq-wrapper .faq-question {
+  @apply text-lg font-semibold text-[#222] leading-[1.4] mb-2.5;
+}
+
+/* Answer text */
+.faq-wrapper .faq-answer {
+  @apply text-[15px] text-[#555] leading-[1.7];
+}
+
+/* Remove extra paragraph margin */
+.faq-wrapper .faq-answer p {
+  @apply m-0;
 }
 
 
+.woocommerce a.added_to_cart {
+   @apply flex text-[14px] order-1 text-white border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-[30px] py-[8px] rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
+}
+
+
+.patient-referral-heading {
+  @apply text-center;
+}
+.patient-referral-heading h1 {
+  @apply inline-block text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] border-b border-solid;
+}
+.alfar-refferals-form .section-number {
+  @apply text-[#32261B] w-8 h-8;
+  background: rgba(223, 176, 58, 0.3);
+}
+.alfar-refferals-form .section-title {
+  @apply text-lg mb-8 gap-4;
+}
+.alfar-refferals-form .form-row {
+  @apply flex gap-[30px] mb-4;
+}
+.alfar-refferals-form label {
+  @apply text-base leading-5 text-[#64574F] font-semibold;
+}
+.alfar-refferals-form .form-row label span {
+  @apply text-[red];
+}
+.alfar-refferals-form input,
+.alfar-refferals-form select,
+.alfar-refferals-form textarea {
+  @apply mix-blend-normal border rounded-[10px] border-solid border-[#CDBAA6];
+  background: #fcfaf8;
+}
+.alfar-refferals-form input::placeholder,
+.alfar-refferals-form select,
+.alfar-refferals-form textarea::placeholder {
+  @apply text-sm leading-[18px] text-[#847362];
+}
+.alfar-refferals-form input[type="date"] {
+  @apply text-sm leading-[18px] text-[#847362];
+}
+.alfar-refferals-form .equipment-description {
+  @apply text-sm leading-5 text-[#847362] mb-4;
+}
+.alfar-refferals-form .equipment-item {
+  @apply text-base leading-5 font-medium text-[#32261B] border flex items-center gap-3 p-5 rounded-xl border-solid border-[#CDBAA6];
+}
+.alfar-refferals-form .section {
+  @apply p-10;
+}
+.alfar-refferals-form input[type="checkbox"] {
+  @apply rounded-[3px];
+}
+[type="checkbox"] {
+  @apply w-[15px] h-[15px];
+}
+.alfar-refferals-form [type="checkbox"]:checked {
+  @apply bg-[#a17810];
+}
+.document-upload {
+  @apply flex flex-col gap-[25px];
+}
+.document-upload .upload-box-content h3 {
+  @apply text-base leading-[26px] mb-4;
+}
+.document-upload .upload-box-content p {
+  @apply text-left max-w-full mb-0;
+}
+.document-upload .upload-heading-wrap {
+  @apply text-lg leading-[26px] text-[#847362] font-semibold;
+}
+.document-upload .upload-box {
+  @apply w-[819px] max-w-full mb-0 p-[42px] border-2 border-dashed border-[#847362];
+  margin-inline: auto;
+  background: #faf8f4;
+}
+.document-upload .upload-icon-wrap {
+  @apply w-12 h-12;
+  background: rgba(246, 219, 148, 0.46);
+}
+.document-upload .upload-text {
+  @apply text-base leading-5 font-medium;
+}
+.document-upload .upload-trigger {
+  @apply flex flex-col gap-2;
+}
+.document-upload .upload-text .highlight-text {
+  @apply text-[#a17810];
+}
+.alfar-refferals-form .document-upload .submit-btn {
+  @apply mx-auto my-0;
+}
+.document-upload .upload-subtext {
+  @apply text-[#847362] text-sm font-normal leading-4;
+}
+.alfar-refferals-form .submit-btn {
+  @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
+}
+
+
+/* Wishlist page */
+
+.wishlist_table {
+  @apply w-full shadow-[0_10px_30px_var(--tw-shadow-color,rgba(0,0,0,0.06))] overflow-hidden border-collapse;
+  background: #fff;
+}
+
+/* Header */
+.wishlist_table thead {
+  background: #f7f7f7;
+}
+.wishlist_table thead th {
+  @apply text-sm font-semibold text-[#555] text-left border border-neutral-200 px-5 py-4 border-solid;
+}
+
+/* Table rows */
+.wishlist_table tbody tr {
+  @apply border-b-[#f0f0f0] border-b border-solid last:border-b-[none];
+}
+
+/* Table cells */
+.wishlist_table td {
+  @apply align-middle border border-neutral-200 px-5 py-[18px] border-solid;
+}
+
+/* Product image */
+.wishlist_table .product-thumbnail img {
+  @apply w-[70px] h-[70px] object-cover rounded-md;
+}
+
+/* Product name */
+.wishlist_table .product-name a {
+  @apply text-[15px] font-medium text-[#222] no-underline hover:text-[#a17810];
+}
+
+/* Price */
+.wishlist_table .product-price {
+  @apply font-medium text-[#333];
+}
+
+/* Stock badge */
+.wishlist_table .wishlist-in-stock {
+  @apply text-[#2e7d32] text-xs font-medium px-2.5 py-1.5 rounded-[999px];
+  background: #e6f7ec;
+}
+
+/* Remove button */
+.wishlist_table .remove {
+  @apply text-xl text-[#999] no-underline transition-[0.3s] hover:text-[red];
+}
+
+/* Add to cart button */
+.wishlist_table .add_to_cart_button {
+  @apply text-white text-sm font-medium no-underline inline-flex items-center gap-1.5 transition-[0.3s] px-6 py-2;
+  background: #a17810;
+}
+.wishlist_table .add_to_cart_button:hover {
+  background: #8b640c;
+}
+
+/* Details button */
+.wishlist_table .product-add-to-cart a:last-child {
+  @apply text-[#A17810] border text-sm no-underline transition-[0.3s] px-5 py-2 border-solid border-[#A17810];
+  background: #fff;
+}
+.wishlist_table .product-add-to-cart a:last-child:hover {
+  background: #f7f7f7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wishlist_table thead {
+    @apply hidden;
+  }
+  .wishlist_table,
+  .wishlist_table tbody,
+  .wishlist_table tr,
+  .wishlist_table td {
+    @apply block w-full;
+  }
+  .wishlist_table tr {
+    @apply p-5 border-b-[#eee] border-b border-solid;
+  }
+  .wishlist_table td {
+    @apply px-0 py-2;
+  }
+  .wishlist_table .product-add-to-cart {
+    @apply mt-2.5;
+  }
+}
+.wishlist_table tr td.product-thumbnail {
+  @apply w-[100px];
+}
+.wishlist_table .product-add-to-cart a {
+  @apply flex border border-solid border-[#a17810];
+}
+.woocommerce
+  .wishlist_table
+  a.add_to_cart.button.alt:not(.yith-wcwl-themed-button-style) {
+  @apply border border-solid border-[#a17810];
+}
+@media (max-width: 768px) {
+  .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart,
+  .wishlist_table.mobile
+    li
+    .additional-info-wrapper
+    .move-to-another-
+    wishlist {
+    @apply p-2.5;
+  }
+}
+.yith_wcwl_wishlist_footer .yith-wcwl-share {
+  @apply float-none flex gap-3;
+}
+.yith-wcwl-share h4.yith-wcwl-share-title {
+  @apply text-xl text-[#a17810];
+}
 
