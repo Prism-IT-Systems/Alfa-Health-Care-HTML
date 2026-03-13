@@ -6547,7 +6547,7 @@ body.page-insurers .faq-section .faq-content {
     }
   }
 }
-.product-category-section ul {
+.product-category-section .heading-wrap ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

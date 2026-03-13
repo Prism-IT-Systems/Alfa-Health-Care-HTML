@@ -2389,7 +2389,7 @@ body.page-insurers .faq-section .faq-content {
   @apply inline-flex bg-[#A17810] text-white rounded-full text-sm leading-normal transition-all duration-300 hover:bg-[#c89a1a];
 }
 
-.product-category-section ul {
+.product-category-section .heading-wrap ul {
   @apply flex flex-col justify-start items-start gap-2.5 shadow-[0_10px_30px_var(--tw-shadow-color,rgba(0,0,0,0.06))] px-[46px] py-7 rounded-xl;
   background: #fff;
   list-style: disc;
