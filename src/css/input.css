@@ -2618,6 +2618,108 @@ body.page-insurers .faq-section .faq-content {
    @apply flex text-[14px] order-1 text-white border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-[30px] py-[8px] rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
 }
 
+/* Referrals Page */
+
+/* Make each section separate box */
+.alfar-refferals-form .section {
+  @apply border border-neutral-200 mb-[30px] rounded-xl border-solid;
+  background: #ffffff;
+}
+.alfar-refferals-form h1 {
+  @apply text-center mb-10;
+}
+.alfar-refferals-form .section-title {
+  @apply font-[bold] flex items-center;
+}
+.alfar-refferals-form .section-number {
+  @apply flex items-center justify-center text-sm rounded-[50%];
+}
+.alfar-refferals-form .form-group {
+  @apply flex-1 flex flex-col;
+}
+.alfar-refferals-form label {
+  @apply mb-2;
+}
+.alfar-refferals-form input,
+.alfar-refferals-form select,
+.alfar-refferals-form textarea {
+  @apply text-sm;
+  outline: none;
+}
+.alfar-refferals-form input:focus,
+.alfar-refferals-form select:focus,
+.alfar-refferals-form textarea:focus {
+  @apply border-[#d4b46a];
+}
+.alfar-refferals-form .equipment-grid {
+  @apply grid grid-cols-[repeat(4,1fr)] gap-[15px];
+}
+.alfar-refferals-form .upload-box {
+  @apply text-center;
+}
+.alfar-refferals-form textarea {
+  @apply min-h-[120px];
+}
+.alfar-refferals-form .checkbox-row {
+  @apply flex items-center gap-2.5;
+}
+.alfar-refferals-form .submit-btn {
+  @apply block text-white cursor-pointer mt-[30px] mb-0 mx-auto px-10 py-3.5 border-[none];
+  background: #a17608;
+}
+.alfar-refferals-form .submit-btn:hover {
+  background: #8c6406;
+}
+.alfar-refferals-form .form-group.checkbox-row {
+  flex-direction: unset;
+}
+.upload-box-content h3 {
+  @apply text-center;
+}
+.upload-box-content p {
+  @apply text-center text-sm text-[#555] leading-[1.6] max-w-[750px] mt-0 mb-[25px] mx-auto;
+}
+.upload-heading-wrap {
+  @apply text-center text-base text-[#333];
+}
+.upload-box {
+  @apply text-center transition-[0.3s] duration-[ease] mb-[30px] px-5 py-10 rounded-xl border-2 border-dashed border-[#cbb79d] mb-[30px] px-5 py-[50px] rounded-xl border-2 border-dashed border-[#cbb79d];
+  background: #f9f5ef;
+}
+.upload-box:hover {
+  background: #f3ece2;
+}
+.upload-trigger {
+  @apply cursor-pointer block flex flex-col items-center justify-center text-center cursor-pointer;
+}
+.upload-icon-wrap {
+  @apply w-[60px] h-[60px] flex items-center justify-center mt-0 mb-[15px] mx-auto rounded-[50%];
+  background: #e6d7bd;
+}
+.upload-icon-wrap img {
+  @apply w-6;
+}
+.upload-text {
+  @apply text-sm text-[#333] mb-[5px];
+}
+.highlight-text {
+  @apply text-[#b08a55] font-semibold;
+}
+.upload-subtext {
+  @apply text-xs text-[#777];
+}
+.upload-box {
+  background: #f9f5ef;
+}
+@media (max-width: 768px) {
+  .alfar-refferals-form .form-row {
+    @apply flex-col;
+  }
+  .alfar-refferals-form .equipment-grid {
+    @apply grid-cols-[repeat(2,1fr)];
+  }
+}
+
 
 .patient-referral-heading {
   @apply text-center;
