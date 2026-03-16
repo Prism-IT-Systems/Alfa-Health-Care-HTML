@@ -1612,13 +1612,95 @@
 }
 
 
+/* Wp-form widget reset styles */
+@layer components {
+  .form-row.submit-btn {
+      @apply relative m-0;
+  }
+
+  .form-row span.wpcf7-spinner {
+      @apply absolute block visible top-1/2 left-1/2 -translate-y-1/2 m-0;
+  }
+
+  form .wpcf7-list-item {
+      @apply  !m-0;
+  }
+
+  input[type="date"] {
+    position: relative;
+    padding: 10px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    @apply text-transparent z-[1] !bg-[url("../images/calendar-04-stroke-rounded18x18.svg")] bg-no-repeat bg-center bg-[length:18px_18px] cursor-pointer;
+  }
+
+ .form-row  select {
+    @apply appearance-none !bg-[url("../images/filled-arrow.svg")] !bg-no-repeat !bg-position-[center_right_18px] bg-[length:12px_7px] cursor-pointer;
+  }
+}
+
 /* Alfa Popup Widget */
 @layer components {
     .modal-main {
         @apply fixed inset-0 z-[99999] flex items-center justify-center bg-black/62  transition-opacity duration-300;
     }
+
     .alfa-modal {
         @apply bg-pureWhite rounded-3xl px-8 py-10 w-full max-w-[875px] mx-4;
+    }
+
+    .alfa-modal {
+    @apply py-[39px] px-8;
+    }
+
+    .alfa-modal .form-title {
+        @apply text-[26px] leading-[34px] font-semibold mb-6 text-center;
+    }
+
+    .alfa-modal .form-title::after {
+        content: "";
+        @apply w-[84px] h-px bg-[#A17810] block mx-auto mt-2;
+    }
+
+    .alfa-modal form :where(input:not([type="submit"],[type="checkbox"]),select,textarea) {
+        @apply !p-4 !bg-softIvory !border !border-solid !border-[#CDBAA6];
+    }
+
+    .alfa-modal form input {
+        @apply text-sm leading-[19px];
+    }
+
+    .alfa-modal .wpcf7-not-valid-tip {
+        @apply text-sm hidden;
+    }
+
+    .alfa-modal .form-row {
+        @apply gap-8 mb-4;
+    }
+
+    .alfa-modal form input[type="checkbox"] {
+        @apply !w-[19px] !h-[19px] !rounded-[3px] !p-0 mt-[6px] flex-shrink-0 !bg-pureWhite;
+    }
+
+    .alfa-modal .form-row.checkbox {
+        @apply my-6;
+    }
+
+    .alfa-modal form textarea {
+        @apply !h-[144px];
+    }
+
+    .alfa-modal .form-row.checkbox .wpcf7-list-item > label {
+        @apply flex items-start gap-5;
+    }
+
+    .alfa-modal form .wpcf7-list-item-label {
+        @apply text-base;
+    }
+
+     .alfa-modal form .submit-btn input {
+        @apply p-4 w-full max-w-[315px] flex mx-auto;
     }
 }
 /* Normal Section css..................................... */
