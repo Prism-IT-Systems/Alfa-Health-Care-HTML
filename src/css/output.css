@@ -8001,7 +8001,7 @@ form.form-loading {
   min-width: 38px;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-lg);
+  border-radius: 10px !important;
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
@@ -8071,14 +8071,12 @@ form.form-loading {
   justify-content: center;
 }
 .woocommerce div.product form.cart .button {
-  padding-inline: 12px;
-  padding-block: 60px;
   font-size: 16.49px;
   --tw-leading: 23.6px;
   line-height: 23.6px;
 }
 .woocommerce div.product form.cart {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .product-detail-page-section .secure-checkout span {
   --tw-leading: 26px;

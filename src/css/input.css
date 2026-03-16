@@ -3183,7 +3183,7 @@ form.form-loading {
 /* Pagination items */
 .woocommerce .woocommerce-pagination ul.page-numbers li a,
 .woocommerce .woocommerce-pagination ul.page-numbers li span {
-  @apply flex items-center justify-center min-w-[38px] h-[38px] border border-neutral-200 no-underline text-sm text-[#333] transition-all duration-[0.25s] ease-[ease] p-3 rounded-lg border-solid;
+  @apply flex items-center justify-center min-w-[38px] h-[38px] border border-neutral-200 no-underline text-sm text-[#333] transition-all duration-[0.25s] ease-[ease] p-3 !rounded-[10px] border-solid;
   background: #fff;
 }
 
@@ -3227,11 +3227,11 @@ form.form-loading {
   @apply flex justify-center items-center flex justify-center items-center mb-0;
 }
 .woocommerce div.product form.cart .button {
-  @apply text-[16.49px] leading-[23.6px] px-[12px] py-[60px];
+  @apply text-[16.49px] leading-[23.6px] ;
 }
 
 .woocommerce div.product form.cart {
-  @apply mb-[0] 
+  @apply !mb-[0];
 }
 
 .product-detail-page-section .secure-checkout span {
