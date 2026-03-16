@@ -3124,40 +3124,40 @@ form.form-loading {
 }
 
 /* Pagination list */
-.woocommerce-pagination ul.page-numbers {
+.woocommerce .woocommerce-pagination ul.page-numbers {
   @apply flex gap-2 m-0 p-0;
   list-style: none;
 }
 
 /* Pagination items */
-.woocommerce-pagination ul.page-numbers li a,
-.woocommerce-pagination ul.page-numbers li span {
+.woocommerce .woocommerce-pagination ul.page-numbers li a,
+.woocommerce .woocommerce-pagination ul.page-numbers li span {
   @apply flex items-center justify-center min-w-[38px] h-[38px] border border-neutral-200 no-underline text-sm text-[#333] transition-all duration-[0.25s] ease-[ease] p-3 rounded-lg border-solid;
   background: #fff;
 }
 
 /* Hover effect */
-.woocommerce-pagination ul.page-numbers li a:hover {
+.woocommerce .woocommerce-pagination ul.page-numbers li a:hover {
   @apply text-white border-[#a17810];
   background: #a17810;
 }
 
 /* Active page */
-.woocommerce-pagination ul.page-numbers li .current {
+.woocommerce .woocommerce-pagination ul.page-numbers li .current {
   @apply text-white font-semibold p-3 border-[#a17810];
   background: #a17810;
 }
 
 /* Next arrow */
-.woocommerce-pagination ul.page-numbers li .next {
+.woocommerce .woocommerce-pagination ul.page-numbers li .next {
   @apply font-[bold];
 }
 
-.woocommerce nav.woocommerce-pagination ul {
-  @apply border-[none];
+.woocommerce .woocommerce nav.woocommerce-pagination ul {
+  @apply !border-none;
 }
-.woocommerce nav.woocommerce-pagination ul li {
-  @apply border-[none];
+.woocommerce .woocommerce nav.woocommerce-pagination ul li {
+  @apply !border-none;
 }
 
 .key-features-panel ul {
@@ -3315,99 +3315,99 @@ form.form-loading {
 
 /* Wishlist page */
 
-.wishlist_table {
+.woocommerce-wishlist .wishlist_table {
   @apply w-full shadow-[0_10px_30px_var(--tw-shadow-color,rgba(0,0,0,0.06))] overflow-hidden border-collapse;
   background: #fff;
 }
 
 /* Header */
-.wishlist_table thead {
+.woocommerce-wishlist .wishlist_table thead {
   background: #f7f7f7;
 }
-.wishlist_table thead th {
+.woocommerce-wishlist .wishlist_table thead th {
   @apply text-sm font-semibold text-[#555] text-left border border-neutral-200 px-5 py-4 border-solid;
 }
 
 /* Table rows */
-.wishlist_table tbody tr {
+.woocommerce-wishlist .wishlist_table tbody tr {
   @apply border-b-[#f0f0f0] border-b border-solid last:border-b-[none];
 }
 
 /* Table cells */
-.wishlist_table td {
+.woocommerce-wishlist .wishlist_table td {
   @apply align-middle border border-neutral-200 px-5 py-[18px] border-solid;
 }
 
 /* Product image */
-.wishlist_table .product-thumbnail img {
+.woocommerce-wishlist .wishlist_table .product-thumbnail img {
   @apply w-[70px] h-[70px] object-cover rounded-md;
 }
 
 /* Product name */
-.wishlist_table .product-name a {
+.woocommerce-wishlist .wishlist_table .product-name a {
   @apply text-[15px] font-medium text-[#222] no-underline hover:text-[#a17810];
 }
 
 /* Price */
-.wishlist_table .product-price {
+.woocommerce-wishlist .wishlist_table .product-price {
   @apply font-medium text-[#333];
 }
 
 /* Stock badge */
-.wishlist_table .wishlist-in-stock {
+.woocommerce-wishlist .wishlist_table .wishlist-in-stock {
   @apply text-[#2e7d32] text-xs font-medium px-2.5 py-1.5 rounded-[999px];
   background: #e6f7ec;
 }
 
 /* Remove button */
-.wishlist_table .remove {
+.woocommerce-wishlist .wishlist_table .remove {
   @apply text-xl text-[#999] no-underline transition-[0.3s] hover:text-[red];
 }
 
 /* Add to cart button */
-.wishlist_table .add_to_cart_button {
+.woocommerce-wishlist .wishlist_table .add_to_cart_button {
   @apply text-white text-sm font-medium no-underline inline-flex items-center gap-1.5 transition-[0.3s] px-6 py-2;
   background: #a17810;
 }
-.wishlist_table .add_to_cart_button:hover {
+.woocommerce-wishlist .wishlist_table .add_to_cart_button:hover {
   background: #8b640c;
 }
 
 /* Details button */
-.wishlist_table .product-add-to-cart a:last-child {
+.woocommerce-wishlist .wishlist_table .product-add-to-cart a:last-child {
   @apply text-[#A17810] border text-sm no-underline transition-[0.3s] px-5 py-2 border-solid border-[#A17810];
   background: #fff;
 }
-.wishlist_table .product-add-to-cart a:last-child:hover {
+.woocommerce-wishlist .wishlist_table .product-add-to-cart a:last-child:hover {
   background: #f7f7f7;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .wishlist_table thead {
+  .woocommerce-wishlist .wishlist_table thead {
     @apply hidden;
   }
-  .wishlist_table,
-  .wishlist_table tbody,
-  .wishlist_table tr,
-  .wishlist_table td {
+  .woocommerce-wishlist .wishlist_table,
+  .woocommerce-wishlist .wishlist_table tbody,
+  .woocommerce-wishlist .wishlist_table tr,
+  .woocommerce-wishlist .wishlist_table td {
     @apply block w-full;
   }
-  .wishlist_table tr {
+  .woocommerce-wishlist .wishlist_table tr {
     @apply p-5 border-b-[#eee] border-b border-solid;
   }
-  .wishlist_table td {
+  .woocommerce-wishlist .wishlist_table td {
     @apply px-0 py-2;
   }
-  .wishlist_table .product-add-to-cart {
+  .woocommerce-wishlist .wishlist_table .product-add-to-cart {
     @apply mt-2.5;
   }
 }
-.wishlist_table tr td.product-thumbnail {
+.woocommerce-wishlist .wishlist_table tr td.product-thumbnail {
   @apply w-[100px];
 }
-.wishlist_table .product-add-to-cart a {
-  @apply flex border border-solid border-[#a17810];
+.woocommerce-wishlist .wishlist_table .product-add-to-cart a {
+  @apply !flex border border-solid border-[#a17810];
 }
 .woocommerce
   .wishlist_table
@@ -3415,8 +3415,8 @@ form.form-loading {
   @apply border border-solid border-[#a17810];
 }
 @media (max-width: 768px) {
-  .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart,
-  .wishlist_table.mobile
+  .woocommerce-wishlist .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart,
+  .woocommerce-wishlist .wishlist_table.mobile
     li
     .additional-info-wrapper
     .move-to-another-
@@ -3424,10 +3424,10 @@ form.form-loading {
     @apply p-2.5;
   }
 }
-.yith_wcwl_wishlist_footer .yith-wcwl-share {
+.woocommerce-wishlist .yith_wcwl_wishlist_footer .yith-wcwl-share {
   @apply float-none flex gap-3;
 }
-.yith-wcwl-share h4.yith-wcwl-share-title {
+.woocommerce-wishlist .yith-wcwl-share h4.yith-wcwl-share-title {
   @apply text-xl text-[#a17810];
 }
 
