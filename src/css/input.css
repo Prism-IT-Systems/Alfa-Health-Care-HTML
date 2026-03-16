@@ -3648,3 +3648,65 @@ form.form-loading {
 .page-faq .faq-heading-wrapper {
   @apply !items-end !gap-[44px]; 
 }
+
+/* Privacy and Policy Page */
+
+.page-privacy-policy #privacy-policy-content {
+  @apply border gap-4 px-[35px] py-[30px] py-9 rounded-3xl border-solid border-[#DFB03A];
+  background: rgba(223, 176, 58, 0.03);
+}
+.page-privacy-policy #privacy-policy-content p {
+  @apply text-lg leading-7 text-[#847362] font-medium mb-4;
+}
+.page-privacy-policy #privacy-policy-content h2 {
+  @apply text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[26px] mb-6;
+  font-family: inter;
+}
+.page-privacy-policy #privacy-policy-content h5 {
+  @apply text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[26px] mb-2.5;
+  font-family: inter;
+}
+.page-privacy-policy #privacy-policy-content ul {
+  @apply flex flex-col gap-4 pl-5;
+  /* margin-bottom: 20px; */
+}
+.page-privacy-policy #privacy-policy-content li {
+  @apply text-lg leading-7 text-[#847362] font-medium;
+  list-style: disc;
+}
+#privacy-policy-form .sms-consent-form {
+  @apply flex flex-col gap-8 m-auto pt-4;
+}
+#privacy-policy-form .consent-text {
+  @apply font-medium text-lg leading-7 text-[#847362] flex gap-5 justify-start;
+}
+#privacy-policy-form .consent-text input {
+  @apply accent-[#32261B] mt-1;
+  background: transparent;
+}
+#privacy-policy-form .form-group {
+  @apply mt-2.5 mb-[15px];
+}
+#privacy-policy-form .form-group label {
+  @apply hidden;
+}
+#privacy-policy-form .form-control {
+  @apply flex flex-row items-center gap-2.5 w-full h-16 max-w-[447px] border pl-[27px] pr-9 py-[18px] rounded-xl border-solid border-[#DFB03A];
+  background: rgba(223, 176, 58, 0.06);
+}
+#privacy-policy-form .agree-btn {
+  @apply flex flex-row justify-center items-center gap-2 w-40 h-[50px] text-white transition-[0.3s] duration-[ease-in-out] px-[43px] py-2 rounded-[50px];
+  background: #a17810;
+}
+#privacy-policy-form .agree-btn:hover {
+  background: #8b640c;
+}
+#privacy-policy-form .consent-text input[type="checkbox"] {
+  @apply appearance-none w-5 h-5 border cursor-pointer relative rounded-[3px] border-solid border-[#a17810];
+  -webkit-appearance: none;
+  /* border color and thickness */
+  background: transparent;
+}
+#privacy-policy-form .error-msg-consent {
+  @apply text-[red] text-sm font-normal;
+}
