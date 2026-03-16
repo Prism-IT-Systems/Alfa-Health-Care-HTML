@@ -3092,6 +3092,7 @@ form.form-loading {
 .woocommerce a.add_to_cart_button {
      @apply font-medium;
 }
+}
 
 .product-category-section h3 {
   @apply leading-7 ;
@@ -3228,7 +3229,7 @@ form.form-loading {
   background: rgba(223, 176, 58, 0.3);
 }
 .alfar-refferals-form .section-title {
-  @apply text-lg mb-8 gap-4;
+  @apply text-lg mb-8 gap-4 font-inter font-semibold ;
 }
 .alfar-refferals-form .form-row {
   @apply flex gap-[30px] mb-4;

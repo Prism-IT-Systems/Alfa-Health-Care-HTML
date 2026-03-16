@@ -7859,10 +7859,10 @@ form.form-loading {
     --tw-content: "";
     content: var(--tw-content);
   }
-}
-.woocommerce a.add_to_cart_button {
-  --tw-font-weight: var(--font-weight-medium);
-  font-weight: var(--font-weight-medium);
+  .woocommerce a.add_to_cart_button {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
 }
 .product-category-section h3 {
   --tw-leading: var(--leading-7);
@@ -8121,8 +8121,11 @@ form.form-loading {
 .alfar-refferals-form .section-title {
   margin-bottom: calc(var(--spacing) * 8);
   gap: calc(var(--spacing) * 4);
+  font-family: Inter, sans-serif;
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
 }
 .alfar-refferals-form .form-row {
   margin-bottom: calc(var(--spacing) * 4);
