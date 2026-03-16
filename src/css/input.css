@@ -3707,6 +3707,10 @@ form.form-loading {
   /* border color and thickness */
   background: transparent;
 }
-#privacy-policy-form .error-msg-consent {
+#privacy-policy-form .error-msg {
   @apply text-[red] text-sm font-normal;
+}
+
+#privacy-policy-form .succes {
+  @apply text-center text-lg font-medium text-[#28A745] text-[#198754] bg-emerald-100 px-3.5 py-2.5 rounded-[10px];
 }

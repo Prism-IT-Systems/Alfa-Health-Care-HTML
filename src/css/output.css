@@ -8957,12 +8957,25 @@ form.form-loading {
   -webkit-appearance: none;
   background: transparent;
 }
-#privacy-policy-form .error-msg-consent {
+#privacy-policy-form .error-msg {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
   color: red;
+}
+#privacy-policy-form .succes {
+  border-radius: 10px;
+  background-color: var(--color-emerald-100);
+  padding-inline: calc(var(--spacing) * 3.5);
+  padding-block: calc(var(--spacing) * 2.5);
+  text-align: center;
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #28A745;
+  color: #198754;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
