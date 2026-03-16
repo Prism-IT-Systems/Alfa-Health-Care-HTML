@@ -6986,8 +6986,9 @@ body.page-insurers .faq-section .faq-content {
 }
 .product-category-section .woocommerce-Price-amount {
   font-size: 22px;
+  color: #a17810;
   @media (width >= 40rem) {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 .woocommerce a.add_to_cart_button {
@@ -7045,7 +7046,7 @@ body.page-insurers .faq-section .faq-content {
   min-width: 38px;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-lg);
+  border-radius: 10px;
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
@@ -7082,10 +7083,12 @@ body.page-insurers .faq-section .faq-content {
   font-family: bold;
 }
 .woocommerce nav.woocommerce-pagination ul {
-  border-color: none;
+  --tw-border-style: none;
+  border-style: none;
 }
 .woocommerce nav.woocommerce-pagination ul li {
-  border-color: none;
+  --tw-border-style: none;
+  border-style: none;
 }
 .key-features-panel ul {
   display: flex;
@@ -7111,11 +7114,6 @@ body.page-insurers .faq-section .faq-content {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.woocommerce div.product form.cart .button {
-  font-size: 16.49px;
-  --tw-leading: 23.6px;
-  line-height: 23.6px;
 }
 .product-detail-page-section .secure-checkout span {
   --tw-leading: 26px;
@@ -7173,6 +7171,9 @@ body.page-insurers .faq-section .faq-content {
 }
 .faq-wrapper .faq-answer p {
   margin: calc(var(--spacing) * 0);
+}
+.page-wishlist .yith_wcwl_wishlist_footer>div {
+  margin-top: 16px;
 }
 .woocommerce a.added_to_cart {
   order: 1;
@@ -7357,7 +7358,7 @@ body.page-insurers .faq-section .faq-content {
 .highlight-text {
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
-  color: #b08a55;
+  color: #A17810;
 }
 .upload-subtext {
   font-size: var(--text-xs);
@@ -7719,6 +7720,36 @@ body.page-insurers .faq-section .faq-content {
 .wishlist_table .product-add-to-cart a:last-child:hover {
   background: #f7f7f7;
 }
+@media (max-width: 1024px) {
+  .wishlist_table thead th {
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 3);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .wishlist_table td {
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 4);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .wishlist_table .product-thumbnail img {
+    height: 60px;
+    width: 60px;
+  }
+  .wishlist_table .add_to_cart_button {
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .wishlist_table .product-add-to-cart a:last-child {
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
 @media (max-width: 768px) {
   .wishlist_table thead {
     display: none;
@@ -7728,19 +7759,52 @@ body.page-insurers .faq-section .faq-content {
     width: 100%;
   }
   .wishlist_table tr {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-    --tw-border-style: solid;
-    border-style: solid;
-    border-bottom-color: #eee;
-    padding: calc(var(--spacing) * 5);
+    margin-bottom: calc(var(--spacing) * 4);
+    border-radius: var(--radius-lg);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-neutral-200);
+    background-color: var(--color-white);
+    padding: calc(var(--spacing) * 4);
   }
   .wishlist_table td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    --tw-border-style: none;
+    border-style: none;
     padding-inline: calc(var(--spacing) * 0);
     padding-block: calc(var(--spacing) * 2);
   }
-  .wishlist_table .product-add-to-cart {
-    margin-top: calc(var(--spacing) * 2.5);
+  .wishlist_table td::before {
+    content: attr(data-title);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-gray-600);
+  }
+  .wishlist_table .product-thumbnail {
+    margin-bottom: calc(var(--spacing) * 3);
+    justify-content: center;
+  }
+  .wishlist_table .product-thumbnail img {
+    height: 80px;
+    width: 80px;
+  }
+  .wishlist_table .product-name a {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .wishlist_table .add_to_cart_button {
+    margin-top: calc(var(--spacing) * 2);
+    width: 100%;
+    justify-content: center;
+  }
+  .wishlist_table .product-add-to-cart a:last-child {
+    margin-top: calc(var(--spacing) * 2);
+    width: 100%;
+    text-align: center;
   }
 }
 .wishlist_table tr td.product-thumbnail {
@@ -8007,9 +8071,14 @@ form.form-loading {
   justify-content: center;
 }
 .woocommerce div.product form.cart .button {
+  padding-inline: 12px;
+  padding-block: 60px;
   font-size: 16.49px;
   --tw-leading: 23.6px;
   line-height: 23.6px;
+}
+.woocommerce div.product form.cart {
+  margin-bottom: 0;
 }
 .product-detail-page-section .secure-checkout span {
   --tw-leading: 26px;
@@ -8489,6 +8558,18 @@ form.form-loading {
 }
 .blog-listing-section {
   padding-top: calc(var(--spacing) * 0);
+}
+.page-faq .faq-heading-column {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+}
+.page-faq .faq-content span {
+  color: #32261B !important;
+}
+.page-faq .faq-heading-wrapper {
+  align-items: flex-end !important;
+  gap: 44px !important;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
