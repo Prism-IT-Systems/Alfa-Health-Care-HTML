@@ -4930,14 +4930,14 @@
 @layer components {
   .form-row.submit-btn {
     position: relative;
-    margin: calc(var(--spacing) * 0);
+    margin: calc(var(--spacing) * 0) !important;
   }
   .form-row span.wpcf7-spinner {
     visibility: visible;
     position: absolute;
     top: calc(1/2 * 100%);
     left: calc(1/2 * 100%);
-    margin: calc(var(--spacing) * 0);
+    margin: calc(var(--spacing) * 0) !important;
     display: block;
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -4966,19 +4966,68 @@
     background-position: center right 18px !important;
     background-repeat: no-repeat !important;
   }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 8);
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .form-row > div {
+    width: 100%;
+    flex: none;
+  }
+  .form-row.two-col > div {
+    width: 100%;
+    @media (width >= 40rem) {
+      width: calc(1/2 * 100%);
+    }
+    @media (width >= 64rem) {
+      width: calc(1/3 * 100%);
+    }
+  }
+  .form-row.three-col > div {
+    width: 100%;
+    @media (width >= 40rem) {
+      width: calc(1/2 * 100%);
+    }
+    @media (width >= 64rem) {
+      width: calc(1/3 * 100%);
+    }
+  }
+  .form-row > p {
+    --tw-leading: calc(var(--spacing) * 1) !important;
+    line-height: calc(var(--spacing) * 1) !important;
+  }
+  .form-row .submit-btn {
+    position: relative;
+  }
+  .form-row .wpcf7-spinner {
+    position: absolute !important;
+    top: calc(1/2 * 100%);
+    left: calc(1/2 * 100%);
+    margin: calc(var(--spacing) * 0);
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
 }
 @layer components {
   .modal-main {
     position: fixed;
     inset: calc(var(--spacing) * 0);
     z-index: 99999;
+    margin: calc(var(--spacing) * 0);
     display: flex;
     align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    overflow: auto;
     background-color: color-mix(in srgb, #000 62%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 62%, transparent);
     }
+    padding-block: calc(var(--spacing) * 10);
     transition-property: opacity;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -4986,20 +5035,27 @@
     transition-duration: 300ms;
   }
   .alfa-modal {
-    margin-inline: calc(var(--spacing) * 4);
-    width: 100%;
-    max-width: 875px;
+    position: relative;
+    margin: auto;
+    width: 875px;
+    max-width: calc(100% - 32px);
     border-radius: var(--radius-3xl);
     background-color: var(--pure-white);
+    padding: calc(var(--spacing) * 6);
     padding-inline: calc(var(--spacing) * 8);
     padding-block: calc(var(--spacing) * 10);
-  }
-  .alfa-modal {
-    padding-inline: calc(var(--spacing) * 8);
-    padding-block: 39px;
+    @media (width >= 40rem) {
+      max-width: calc(100% - 64px);
+    }
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+    @media (width >= 40rem) {
+      padding-block: 39px;
+    }
   }
   .alfa-modal .form-title {
-    margin-bottom: calc(var(--spacing) * 6);
+    margin-bottom: calc(var(--spacing) * 6) !important;
     text-align: center;
     font-size: 26px;
     --tw-leading: 34px;
@@ -5014,9 +5070,13 @@
     display: block;
     height: 1px;
     width: 84px;
-    background-color: #A17810;
+    background-color: var(--Golden-Brown);
+  }
+  .alfa-modal .form-row label, .alfa-modal .form-row label + br, .alfa-modal .form-row .form-group label, .alfa-modal .form-row .form-group br {
+    display: none;
   }
   .alfa-modal form :where(input:not([type="submit"],[type="checkbox"]),select,textarea) {
+    border-radius: 10px !important;
     border-style: var(--tw-border-style) !important;
     border-width: 1px !important;
     --tw-border-style: solid !important;
@@ -5033,12 +5093,16 @@
   }
   .alfa-modal .wpcf7-not-valid-tip {
     display: none;
+    text-align: left;
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .alfa-modal .form-row {
-    margin-bottom: calc(var(--spacing) * 4);
-    gap: calc(var(--spacing) * 8);
+    margin-bottom: calc(var(--spacing) * 4) !important;
+    gap: calc(var(--spacing) * 4) !important;
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 8) !important;
+    }
   }
   .alfa-modal form input[type="checkbox"] {
     margin-top: 6px;
@@ -5058,11 +5122,19 @@
   .alfa-modal .form-row.checkbox .wpcf7-list-item > label {
     display: flex;
     align-items: flex-start;
-    gap: calc(var(--spacing) * 5);
+    gap: calc(var(--spacing) * 4);
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 5);
+    }
   }
   .alfa-modal form .wpcf7-list-item-label {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
+    text-align: left;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    @media (width >= 40rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
   }
   .alfa-modal form .submit-btn input {
     margin-inline: auto;
@@ -5070,6 +5142,53 @@
     width: 100%;
     max-width: 315px;
     padding: calc(var(--spacing) * 4);
+  }
+  .alfa-modal .alfa-close svg path {
+    stroke: var(--pure-white);
+  }
+  .alfa-modal .alfa-close svg {
+    height: calc(var(--spacing) * 4.5);
+    width: calc(var(--spacing) * 4.5);
+  }
+  .alfa-modal .form-row.three-col > div {
+    width: 100%;
+    @media (width >= 40rem) {
+      width: calc(1/2 * 100%);
+    }
+    @media (width >= 64rem) {
+      width: calc(1/2 * 100%);
+    }
+    @media (width >= 80rem) {
+      width: calc(1/3 * 100%);
+    }
+  }
+  .alfa-modal .form-row.three-col {
+    flex-wrap: wrap;
+  }
+  .alfa-modal .form-row.three-col > div {
+    min-width: 100px;
+    flex: 1;
+  }
+  .alfa-modal .form-row.three-col > div p, .alfa-modal .form-row p {
+    width: 100%;
+  }
+  .alfa-modal .alfa-close {
+    position: absolute;
+    top: calc(var(--spacing) * -2.5);
+    right: calc(var(--spacing) * -2.5);
+    display: inline-flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    background-color: #dfb03a;
+    @media (width >= 40rem) {
+      top: -15px;
+    }
+    @media (width >= 40rem) {
+      right: -15px;
+    }
   }
 }
 .therapeutic-footwear-section {
