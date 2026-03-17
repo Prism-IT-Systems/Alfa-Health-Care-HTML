@@ -2067,6 +2067,11 @@
     font-weight: var(--font-weight-normal);
   }
 }
+@layer base {
+  [type='checkbox'], [type='radio'] {
+    color: #a17810 !important;
+  }
+}
 @layer components {
   .header-top-bar {
     display: none;

@@ -303,6 +303,12 @@
     }
 }
 
+@layer base {
+  [type='checkbox'],
+  [type='radio'] {
+    @apply !text-[#a17810];
+  }
+} 
 
 /*Header Component*/
 @layer components {
