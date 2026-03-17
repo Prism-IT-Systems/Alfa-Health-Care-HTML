@@ -269,7 +269,7 @@
       @apply relative;
     }
     .loading-overlay::before {
-        @apply content-[''] absolute w-[calc(100%+40px)] h-[calc(100%+40px)] [-inset-5] bg-[#f5f1ea80] z-[1];
+      @apply content-[''] absolute w-[calc(100%+40px)] h-[calc(100%+40px)] -inset-5 bg-[#f5f1ea80] z-[1];
     }
     
 }
@@ -3747,4 +3747,45 @@ form.form-loading {
 
 #privacy-policy-form .succes {
   @apply text-center text-lg font-medium text-[#28A745] text-[#198754] bg-emerald-100 px-3.5 py-2.5 rounded-[10px];
+}
+
+
+/* Sitemap Page */
+
+.page-sitemap .sitemap {
+  @apply grid grid-cols-[1fr_2fr] gap-8;
+}
+.page-sitemap .sitemap-section {
+  @apply shadow-[0_10px_30px_rgba(0,0,0,0.05)] h-fit w-full mx-auto my-0 p-10 rounded-xl;
+  background: #ffffff;
+}
+.page-sitemap .sitemap-section h3 {
+  @apply text-[22px] font-semibold text-[#32261B] mb-5 pb-2.5 border-b-2 border-b-[#f0f0f0] border-solid;
+}
+.page-sitemap .sitemap-section ul {
+  @apply m-0 pl-0;
+  list-style: none;
+}
+.page-sitemap .sitemap-section li {
+  @apply mb-2;
+}
+.page-sitemap .sitemap-section a {
+  @apply no-underline text-[#847362] text-[15px] inline-block transition-all duration-[0.3s] ease-[ease] px-0 py-1.5 hover:text-[#a17810] hover:translate-x-1;
+}
+.page-sitemap .sitemap-section ul ul {
+  @apply mt-1.5 pl-[18px] pl-10 border-l-2 border-l-[#f0f0f0] border-solid;
+  list-style: disc;
+}
+.page-sitemap .sitemap-section ul ul li {
+  @apply mb-1.5;
+}
+@media (max-width: 1280px) {
+  .page-sitemap .sitemap {
+    @apply grid-cols-[1fr];
+  }
+}
+@media (max-width: 575px) {
+  .page-sitemap .sitemap-section {
+    @apply p-5;
+  }
 }
