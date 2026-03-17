@@ -186,6 +186,7 @@
         @apply text-sm text-deepBrown leading-[15px];
     }
 
+
     /* Gloabal CTA */
     .cta {
         @apply py-3.5 px-[36px] leading-5 inline-flex items-center justify-center gap-[5px] rounded-full text-base leading-6 font-medium cursor-pointer
@@ -250,6 +251,14 @@
     /* Floting Badge */
     .float-badge{
         @apply bg-softIvory absolute py-4.5 px-6 text-sm sm:text-base font-PlusJakartaSans font-semibold text-darkMustard text-center shadow-[0px_0px_32.4px_rgba(0,0,0,0.08)] rounded-lg;
+    }
+
+    /* Loading Overly */
+    .loading-overlay {
+      @apply relative;
+    }
+    .loading-overlay::before {
+        @apply content-[''] absolute w-[calc(100%+40px)] h-[calc(100%+40px)] [-inset-5] bg-[#f5f1ea80] z-[1];
     }
     
 }
