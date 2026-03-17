@@ -3903,7 +3903,3 @@ form.form-loading {
   }
 }
 
-.woocommerce img,
-.woocommerce-page img {
-  @apply !hidden;
-}

@@ -9371,9 +9371,6 @@ form.form-loading {
     flex-direction: column;
   }
 }
-.woocommerce img, .woocommerce-page img {
-  display: none !important;
-}
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
     position: absolute;
