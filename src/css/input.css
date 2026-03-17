@@ -3646,54 +3646,6 @@ form.form-loading {
   background: #f7f7f7;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .woocommerce-wishlist .wishlist_table thead {
-    @apply hidden;
-  }
-  .woocommerce-wishlist .wishlist_table,
-  .woocommerce-wishlist .wishlist_table tbody,
-  .woocommerce-wishlist .wishlist_table tr,
-  .woocommerce-wishlist .wishlist_table td {
-    @apply block w-full;
-  }
-  .woocommerce-wishlist .wishlist_table tr {
-    @apply p-5 border-b-[#eee] border-b border-solid;
-  }
-  .woocommerce-wishlist .wishlist_table td {
-    @apply px-0 py-2;
-  }
-  .woocommerce-wishlist .wishlist_table .product-add-to-cart {
-    @apply mt-2.5;
-  }
-}
-.woocommerce-wishlist .wishlist_table tr td.product-thumbnail {
-  @apply w-[100px];
-}
-.woocommerce-wishlist .wishlist_table .product-add-to-cart a {
-  @apply !flex border border-solid border-[#a17810];
-}
-.woocommerce
-  .wishlist_table
-  a.add_to_cart.button.alt:not(.yith-wcwl-themed-button-style) {
-  @apply border border-solid border-[#a17810];
-}
-@media (max-width: 768px) {
-  .woocommerce-wishlist .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart,
-  .woocommerce-wishlist .wishlist_table.mobile
-    li
-    .additional-info-wrapper
-    .move-to-another-
-    wishlist {
-    @apply p-2.5;
-  }
-}
-.woocommerce-wishlist .yith_wcwl_wishlist_footer .yith-wcwl-share {
-  @apply float-none flex gap-3;
-}
-.woocommerce-wishlist .yith-wcwl-share h4.yith-wcwl-share-title {
-  @apply text-xl text-[#a17810];
-}
 
 
 /* Blog Page css */

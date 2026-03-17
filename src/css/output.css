@@ -8910,63 +8910,6 @@ form.form-loading {
 .woocommerce-wishlist .wishlist_table .product-add-to-cart a:last-child:hover {
   background: #f7f7f7;
 }
-@media (max-width: 768px) {
-  .woocommerce-wishlist .wishlist_table thead {
-    display: none;
-  }
-  .woocommerce-wishlist .wishlist_table, .woocommerce-wishlist .wishlist_table tbody, .woocommerce-wishlist .wishlist_table tr, .woocommerce-wishlist .wishlist_table td {
-    display: block;
-    width: 100%;
-  }
-  .woocommerce-wishlist .wishlist_table tr {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-    --tw-border-style: solid;
-    border-style: solid;
-    border-bottom-color: #eee;
-    padding: calc(var(--spacing) * 5);
-  }
-  .woocommerce-wishlist .wishlist_table td {
-    padding-inline: calc(var(--spacing) * 0);
-    padding-block: calc(var(--spacing) * 2);
-  }
-  .woocommerce-wishlist .wishlist_table .product-add-to-cart {
-    margin-top: calc(var(--spacing) * 2.5);
-  }
-}
-.woocommerce-wishlist .wishlist_table tr td.product-thumbnail {
-  width: 100px;
-}
-.woocommerce-wishlist .wishlist_table .product-add-to-cart a {
-  display: flex !important;
-  border-style: var(--tw-border-style);
-  border-width: 1px;
-  --tw-border-style: solid;
-  border-style: solid;
-  border-color: #a17810;
-}
-.woocommerce .wishlist_table a.add_to_cart.button.alt:not(.yith-wcwl-themed-button-style) {
-  border-style: var(--tw-border-style);
-  border-width: 1px;
-  --tw-border-style: solid;
-  border-style: solid;
-  border-color: #a17810;
-}
-@media (max-width: 768px) {
-  .woocommerce-wishlist .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart, .woocommerce-wishlist .wishlist_table.mobile li .additional-info-wrapper .move-to-another- wishlist {
-    padding: calc(var(--spacing) * 2.5);
-  }
-}
-.woocommerce-wishlist .yith_wcwl_wishlist_footer .yith-wcwl-share {
-  float: none;
-  display: flex;
-  gap: calc(var(--spacing) * 3);
-}
-.woocommerce-wishlist .yith-wcwl-share h4.yith-wcwl-share-title {
-  font-size: var(--text-xl);
-  line-height: var(--tw-leading, var(--text-xl--line-height));
-  color: #a17810;
-}
 .featured-blog-section, .blog-listing-section {
   background-color: var(--Off-White);
 }
