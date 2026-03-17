@@ -7494,7 +7494,7 @@ body.page-insurers .faq-section .faq-content {
 .alfar-refferals-form input, .alfar-refferals-form select, .alfar-refferals-form textarea {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  outline: none;
+  outline: none !p-[13px];
 }
 .alfar-refferals-form input:focus, .alfar-refferals-form select:focus, .alfar-refferals-form textarea:focus {
   border-color: #d4b46a;
