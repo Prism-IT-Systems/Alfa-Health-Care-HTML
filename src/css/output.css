@@ -6357,6 +6357,9 @@ body.page-insurers .faq-section .faq-content {
   width: 100%;
   background-color: #E5E2DC;
 }
+.faq-heading-column:last-child {
+  max-width: 100% !important;
+}
 .workflow-section {
   background-color: #F5F1EA;
 }
@@ -7248,7 +7251,7 @@ body.page-insurers .faq-section .faq-content {
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
 }
-.product-category-section .woocommerce-Price-amount {
+.woocommerce-wishlist .product-category-section .woocommerce-Price-amount {
   font-size: 22px;
   color: #a17810;
   @media (width >= 40rem) {
@@ -7436,7 +7439,7 @@ body.page-insurers .faq-section .faq-content {
 .faq-wrapper .faq-answer p {
   margin: calc(var(--spacing) * 0);
 }
-.page-wishlist .yith_wcwl_wishlist_footer>div {
+.woocommerce-wishlist .yith_wcwl_wishlist_footer>div {
   margin-top: 16px;
 }
 .woocommerce a.added_to_cart {
@@ -7850,7 +7853,7 @@ body.page-insurers .faq-section .faq-content {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
 }
-.wishlist_table {
+.woocommerce-wishlist .wishlist_table {
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
@@ -7858,10 +7861,10 @@ body.page-insurers .faq-section .faq-content {
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   background: #fff;
 }
-.wishlist_table thead {
+.woocommerce-wishlist .wishlist_table thead {
   background: #f7f7f7;
 }
-.wishlist_table thead th {
+.woocommerce-wishlist .wishlist_table thead th {
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
@@ -7876,7 +7879,7 @@ body.page-insurers .faq-section .faq-content {
   font-weight: var(--font-weight-semibold);
   color: #555;
 }
-.wishlist_table tbody tr {
+.woocommerce-wishlist .wishlist_table tbody tr {
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
   --tw-border-style: solid;
@@ -7886,7 +7889,7 @@ body.page-insurers .faq-section .faq-content {
     border-bottom-color: none;
   }
 }
-.wishlist_table td {
+.woocommerce-wishlist .wishlist_table td {
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
@@ -7896,13 +7899,13 @@ body.page-insurers .faq-section .faq-content {
   padding-block: 18px;
   vertical-align: middle;
 }
-.wishlist_table .product-thumbnail img {
+.woocommerce-wishlist .wishlist_table .product-thumbnail img {
   height: 70px;
   width: 70px;
   border-radius: var(--radius-md);
   object-fit: cover;
 }
-.wishlist_table .product-name a {
+.woocommerce-wishlist .wishlist_table .product-name a {
   font-size: 15px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
@@ -7914,12 +7917,12 @@ body.page-insurers .faq-section .faq-content {
     }
   }
 }
-.wishlist_table .product-price {
+.woocommerce-wishlist .wishlist_table .product-price {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: #333;
 }
-.wishlist_table .wishlist-in-stock {
+.woocommerce-wishlist .wishlist_table .wishlist-in-stock {
   border-radius: 999px;
   padding-inline: calc(var(--spacing) * 2.5);
   padding-block: calc(var(--spacing) * 1.5);
@@ -7930,7 +7933,7 @@ body.page-insurers .faq-section .faq-content {
   color: #2e7d32;
   background: #e6f7ec;
 }
-.wishlist_table .remove {
+.woocommerce-wishlist .wishlist_table .remove {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   color: #999;
@@ -7944,7 +7947,7 @@ body.page-insurers .faq-section .faq-content {
     }
   }
 }
-.wishlist_table .add_to_cart_button {
+.woocommerce-wishlist .wishlist_table .add_to_cart_button {
   display: inline-flex;
   align-items: center;
   gap: calc(var(--spacing) * 1.5);
@@ -7961,10 +7964,10 @@ body.page-insurers .faq-section .faq-content {
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   background: #a17810;
 }
-.wishlist_table .add_to_cart_button:hover {
+.woocommerce-wishlist .wishlist_table .add_to_cart_button:hover {
   background: #8b640c;
 }
-.wishlist_table .product-add-to-cart a:last-child {
+.woocommerce-wishlist .wishlist_table .product-add-to-cart a:last-child {
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
@@ -7981,100 +7984,13 @@ body.page-insurers .faq-section .faq-content {
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   background: #fff;
 }
-.wishlist_table .product-add-to-cart a:last-child:hover {
+.woocommerce-wishlist .wishlist_table .product-add-to-cart a:last-child:hover {
   background: #f7f7f7;
 }
-@media (max-width: 1024px) {
-  .wishlist_table thead th {
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: calc(var(--spacing) * 3);
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .wishlist_table td {
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: calc(var(--spacing) * 4);
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .wishlist_table .product-thumbnail img {
-    height: 60px;
-    width: 60px;
-  }
-  .wishlist_table .add_to_cart_button {
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: calc(var(--spacing) * 2);
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .wishlist_table .product-add-to-cart a:last-child {
-    padding-inline: calc(var(--spacing) * 4);
-    padding-block: calc(var(--spacing) * 2);
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-}
-@media (max-width: 768px) {
-  .wishlist_table thead {
-    display: none;
-  }
-  .wishlist_table, .wishlist_table tbody, .wishlist_table tr, .wishlist_table td {
-    display: block;
-    width: 100%;
-  }
-  .wishlist_table tr {
-    margin-bottom: calc(var(--spacing) * 4);
-    border-radius: var(--radius-lg);
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-    border-color: var(--color-neutral-200);
-    background-color: var(--color-white);
-    padding: calc(var(--spacing) * 4);
-  }
-  .wishlist_table td {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    --tw-border-style: none;
-    border-style: none;
-    padding-inline: calc(var(--spacing) * 0);
-    padding-block: calc(var(--spacing) * 2);
-  }
-  .wishlist_table td::before {
-    content: attr(data-title);
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-gray-600);
-  }
-  .wishlist_table .product-thumbnail {
-    margin-bottom: calc(var(--spacing) * 3);
-    justify-content: center;
-  }
-  .wishlist_table .product-thumbnail img {
-    height: 80px;
-    width: 80px;
-  }
-  .wishlist_table .product-name a {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .wishlist_table .add_to_cart_button {
-    margin-top: calc(var(--spacing) * 2);
-    width: 100%;
-    justify-content: center;
-  }
-  .wishlist_table .product-add-to-cart a:last-child {
-    margin-top: calc(var(--spacing) * 2);
-    width: 100%;
-    text-align: center;
-  }
-}
-.wishlist_table tr td.product-thumbnail {
+.woocommerce-wishlist .wishlist_table tr td.product-thumbnail {
   width: 100px;
 }
-.wishlist_table .product-add-to-cart a {
+.woocommerce-wishlist .wishlist_table .product-add-to-cart a {
   margin-inline: auto;
   display: flex;
   justify-content: center;
@@ -8084,24 +8000,19 @@ body.page-insurers .faq-section .faq-content {
   border-style: solid;
   border-color: #a17810;
 }
-.woocommerce .wishlist_table a.add_to_cart.button.alt:not(.yith-wcwl-themed-button-style) {
+.woocommerce-wishlist .woocommerce .wishlist_table a.add_to_cart.button.alt:not(.yith-wcwl-themed-button-style) {
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
   border-style: solid;
   border-color: #a17810;
 }
-@media (max-width: 768px) {
-  .wishlist_table.mobile li .additional-info-wrapper .product-add-to-cart, .wishlist_table.mobile li .additional-info-wrapper .move-to-another- wishlist {
-    padding: calc(var(--spacing) * 2.5);
-  }
-}
-.yith_wcwl_wishlist_footer .yith-wcwl-share {
+.woocommerce-wishlist .yith_wcwl_wishlist_footer .yith-wcwl-share {
   float: none;
   display: flex;
   gap: calc(var(--spacing) * 3);
 }
-.yith-wcwl-share h4.yith-wcwl-share-title {
+.woocommerce-wishlist .yith-wcwl-share h4.yith-wcwl-share-title {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   color: #a17810;
@@ -8211,19 +8122,19 @@ form.form-loading {
   }
 }
 .woocommerce a.add_to_cart_button {
-  display: inline-flex;
-  border-radius: calc(infinity * 1px);
-  background-color: #A17810;
-  font-size: var(--text-sm);
-  line-height: var(--tw-leading, var(--text-sm--line-height));
-  --tw-leading: var(--leading-normal);
-  line-height: var(--leading-normal);
-  color: var(--color-white);
-  transition-property: all;
-  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-  transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 300ms;
-  transition-duration: 300ms;
+  display: inline-flex !important;
+  border-radius: calc(infinity * 1px) !important;
+  background-color: #A17810 !important;
+  font-size: var(--text-sm) !important;
+  line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
+  --tw-leading: var(--leading-normal) !important;
+  line-height: var(--leading-normal) !important;
+  color: var(--color-white) !important;
+  transition-property: all !important;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function)) !important;
+  transition-duration: var(--tw-duration, var(--default-transition-duration)) !important;
+  --tw-duration: 300ms !important;
+  transition-duration: 300ms !important;
   &:hover {
     @media (hover: hover) {
       background-color: #c89a1a;
@@ -9075,8 +8986,7 @@ form.form-loading {
   --tw-border-style: solid;
   border-style: solid;
   border-left-color: #f0f0f0;
-  padding-left: calc(var(--spacing) * 10);
-  padding-left: 18px;
+  padding-left: 36px;
   list-style: disc;
 }
 .page-sitemap .sitemap-section ul ul li {
@@ -9090,6 +9000,135 @@ form.form-loading {
 @media (max-width: 575px) {
   .page-sitemap .sitemap-section {
     padding: calc(var(--spacing) * 5);
+  }
+}
+@media (max-width: 1024px) {
+  .woocommerce-wishlist .wishlist_table.mobile {
+    margin: calc(var(--spacing) * 0);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 5);
+    padding: calc(var(--spacing) * 0);
+  }
+  .woocommerce-wishlist .wishlist_table.mobile li {
+    border-radius: var(--radius-xl);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #eee;
+    padding: 15px;
+    --tw-shadow: 0 4px 12px var(--tw-shadow-color, rgba(0,0,0,0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    list-style: none;
+    background: #fff;
+  }
+  .woocommerce-wishlist .item-wrapper {
+    display: flex;
+    gap: 15px;
+  }
+  .woocommerce-wishlist .product-thumbnail img {
+    height: 90px;
+    width: 90px;
+    border-radius: var(--radius-lg);
+    object-fit: cover;
+  }
+  .woocommerce-wishlist .product-name h3 {
+    margin-inline: calc(var(--spacing) * 0);
+    margin-top: calc(var(--spacing) * 0);
+    margin-bottom: calc(var(--spacing) * 1.5);
+    font-size: 15px;
+  }
+  .woocommerce-wishlist .product-name a {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: #222;
+    text-decoration-line: none;
+  }
+  .woocommerce-wishlist .item-details-table {
+    font-size: 13px;
+    color: #666;
+  }
+  .woocommerce-wishlist .item-details-table .value {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: #a17810;
+  }
+  .woocommerce-wishlist .additional-info-wrapper {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .woocommerce-wishlist .wishlist-in-stock {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: #2e7d32;
+  }
+  .woocommerce-wishlist .product-add-to-cart {
+    margin-top: calc(var(--spacing) * 3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .woocommerce-wishlist .product-add-to-cart .add_to_cart_button {
+    flex: 1;
+    border-radius: 50px;
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 2);
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-white);
+    transition-property: 0.3s;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    background: #a17810 !important;
+  }
+  .woocommerce-wishlist .product-add-to-cart .add_to_cart_button:hover {
+    background: #8b640c !important;
+  }
+  .woocommerce-wishlist .product-add-to-cart a:not(.add_to_cart_button) {
+    flex: 1;
+    border-radius: 50px;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #a17810;
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 2);
+    text-align: center;
+    font-size: 13px;
+    color: #a17810;
+    background: #fff;
+  }
+  .woocommerce-wishlist .product-remove {
+    margin-top: calc(var(--spacing) * 2.5);
+    text-align: right;
+  }
+  .woocommerce-wishlist .product-remove a {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    color: #999;
+    transition-property: 0.3s;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:hover {
+      @media (hover: hover) {
+        color: red;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .woocommerce-wishlist .item-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .woocommerce-wishlist .product-thumbnail img {
+    height: 120px;
+    width: 120px;
+  }
+  .woocommerce-wishlist .product-add-to-cart {
+    flex-direction: column;
   }
 }
 @layer base {
