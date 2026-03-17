@@ -269,7 +269,7 @@
       @apply relative;
     }
     .loading-overlay::before {
-        @apply content-[''] absolute w-[calc(100%+40px)] h-[calc(100%+40px)] [-inset-5] bg-[#f5f1ea80] z-[1];
+        @apply content-[''] absolute w-[calc(100%+40px)] h-[calc(100%+40px)] -inset-5 bg-[#f5f1ea80] z-[1];
     }
     
 }
@@ -586,8 +586,6 @@
     }
 }
 }
-
-
 
 
 /* Content Meadia Section */
@@ -1323,11 +1321,13 @@
     .main-footer .footer-bottom {
         @apply pt-6 lg:py-4;
     }
+    
+    .payment-icons svg {
+        @apply w-full h-10 object-cover;
+    }
 }
 
-.payment-icons svg {
-    @apply w-full h-10 object-cover;
-}
+
 
 /* Info Details Card Widget */
 @layer components {
@@ -1794,6 +1794,110 @@
       justify-center absolute -right-2.5 -top-2.5 rounded cursor-pointer;
     }
 
+
+}
+
+
+/* Single Blog grid */
+@layer components {
+  .single-blog-section {
+    @apply bg-offWhite;
+  }
+  .single-blog-grid {
+    @apply flex flex-wrap lg:flex-nowrap gap-8;
+  }
+
+  .single-blog-grid .col-left{
+    @apply w-full lg:w-[66.7857%]
+  }
+
+  .single-blog-grid .col-right{
+    @apply w-full lg:w-[30.9286%]
+  }
+
+  .single-blog-grid .content-box {
+    @apply p-6 sm:py-7.5 sm:px-7.5 bg-pureWhite rounded-2xl;
+  }
+
+  .single-blog-grid .featured-image {
+    @apply rounded-2xl overflow-hidden aspect-[877/440];
+  }
+
+  .single-blog-grid .featured-image img{
+    @apply w-full h-full object-cover;
+  }
+  .single-blog-grid .meta-info-wrap {
+    @apply flex items-center my-[25px];
+  }
+
+  .single-blog-grid .meta-info-wrap svg{
+    @apply w-4.5 h-4.5;
+  }
+
+  .single-blog-grid .meta-info-wrap > span:not(:last-child){
+    @apply pr-4 border-r border-solid border-warmTaupe;
+  }
+
+  .single-blog-grid .meta-info-wrap > span:not(:first-child){
+    @apply pl-4;
+  }
+
+  .single-blog-grid .content-wrap h2 {
+      @apply mb-6;
+  }
+
+  .single-blog-grid .content-wrap p {
+    @apply mb-4 
+  }
+
+  .single-blog-grid .content-box :where(p,li){
+    @apply mb-1.5 text-warmTaupe text-base leading-6.5;
+   } 
+
+  .single-blog-grid .content-box :is(ul, ol):not(:last-child) {
+    @apply mb-4;
+  }
+
+  .single-blog-grid .content-box :is(ul, ol) li {
+    @apply pl-6 sm:pl-7.5 relative before:content-[''] before:absolute before:left-0 before:top-1.5 sm:before:top-1  before:w-3.5 before:h-3.5 sm:before:w-4 sm:bg-size-[14px] sm:before:h-4 before:bg-no-repeat before:bg-center sm:before:bg-size-[16px] before:[background-image:url('../images/checkmark-sharp-stroke.svg')]
+  } 
+
+  .single-blog-grid .content-box :is(ul, ol) li:not(:last-child) {
+    @apply mb-1.5;
+  }
+
+  .single-blog-grid .content-box .wp-block-heading,
+   .single-blog-grid .content-box :where(h3,h4,h5,h6) {
+    @apply mb-4;
+  }
+
+  .single-blog-grid .blog-right-sidebar {
+    @apply p-6 bg-pureWhite rounded-2xl;
+  }
+
+  .single-blog-grid .blog-right-sidebar h5 {
+    @apply font-semibold leading-5;
+  }
+
+  .blog-right-sidebar-list li {
+    @apply relative pl-7.5 before:content-[''] before:inline-block before:absolute before:left-0 before:top-1 before:w-5 before:h-5 before:bg-no-repeat before:bg-center before:bg-size-[20px] before:[background-image:url('../images/checkmark-circle-04-stroke-rounded.svg')];
+  }
+
+  .blog-right-sidebar-list li:not(:last-child) {
+    @apply mb-4;
+  }
+
+  .blog-right-sidebar-list li a {
+    @apply font-normal; 
+  }
+
+  .blog-right-sidebar-header {
+    @apply flex items-center gap-2 mb-5.5;
+  }
+
+  .blog-right-sidebar-header span.blog-right-sidebar-icon {
+    @apply w-6 h-6;
+  }
 
 }
 /* Normal Section css..................................... */
@@ -2349,15 +2453,15 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .banner-section .breadcrumbs-content {
-    @apply text-sm md:text-base text-white flex items-center gap-[4px]
+    @apply text-sm md:text-base text-white flex items-center flex-wrap gap-[4px] justify-center mt-4;
 }
 
 .banner-section .breadcrumbs-one {
     @apply opacity-90 font-medium
 }
 
-.banner-section .breadcrumbs-two {
-    @apply text-[#F4C76C] font-medium
+.banner-section .breadcrumbs-three {
+    @apply text-[#F4C76C] font-medium;
 }
 
 .banner-section .banner-img {
