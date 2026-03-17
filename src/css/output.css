@@ -7508,9 +7508,11 @@ body.page-insurers .faq-section .faq-content {
   margin-bottom: calc(var(--spacing) * 2);
 }
 .alfar-refferals-form input, .alfar-refferals-form select, .alfar-refferals-form textarea {
+  padding: 13px !important;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  outline: none !p-[13px];
+  --tw-outline-style: none;
+  outline-style: none;
 }
 .alfar-refferals-form input:focus, .alfar-refferals-form select:focus, .alfar-refferals-form textarea:focus {
   border-color: #d4b46a;
@@ -8987,7 +8989,7 @@ form.form-loading {
   border-style: solid;
   border-left-color: #f0f0f0;
   padding-left: 36px;
-  list-style: disc;
+  list-style: none;
 }
 .page-sitemap .sitemap-section ul ul li {
   margin-bottom: calc(var(--spacing) * 1.5);
@@ -9130,6 +9132,9 @@ form.form-loading {
   .woocommerce-wishlist .product-add-to-cart {
     flex-direction: column;
   }
+}
+.woocommerce img, .woocommerce-page img {
+  display: none !important;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {

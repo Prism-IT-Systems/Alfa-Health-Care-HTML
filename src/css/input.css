@@ -2946,12 +2946,13 @@ body.page-insurers .faq-section .faq-content {
 .alfar-refferals-form label {
   @apply mb-2;
 }
+
 .alfar-refferals-form input,
 .alfar-refferals-form select,
 .alfar-refferals-form textarea {
-  @apply text-sm;
-  outline: none !p-[13px];
+  @apply text-sm !p-[13px] outline-none;
 }
+
 .alfar-refferals-form input:focus,
 .alfar-refferals-form select:focus,
 .alfar-refferals-form textarea:focus {
@@ -3703,7 +3704,7 @@ form.form-loading {
 }
 .page-sitemap .sitemap-section ul ul {
   @apply mt-1.5 pl-[36px] border-l-2 border-l-[#f0f0f0] border-solid;
-  list-style: disc;
+  list-style: none;
 }
 .page-sitemap .sitemap-section ul ul li {
   @apply mb-1.5;
@@ -3796,4 +3797,9 @@ form.form-loading {
   .woocommerce-wishlist .product-add-to-cart {
     @apply flex-col;
   }
+}
+
+.woocommerce img,
+.woocommerce-page img {
+  @apply !hidden;
 }
