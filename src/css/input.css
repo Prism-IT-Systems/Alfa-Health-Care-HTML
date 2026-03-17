@@ -102,9 +102,20 @@
      section,footer {
         @apply py-[60px] xl:py-[100px] px-5 lg:!px-7.5;
     }
+
+    input[type="checkbox"] {
+       @apply border-[#a37b12] cursor-pointer;
+    }
+
+    input[type="checkbox"]:checked,
+    input[type="checkbox"]:focus  {
+        @apply !bg-[#a37b12] !border-[#a37b12] !shadow-[0_0_4px_#a37b12] ring-[0_0_4px_#a37b12];
+    }
 }
 
 @layer utilities{
+
+
     /* Global Container */
     .container {
         margin-inline: auto;
@@ -1670,8 +1681,14 @@
 
 /* Alfa Popup Widget */
 @layer components {
+
+    html:has(.modal-main:not(.hidden)),
+    body:has(.modal-main:not(.hidden)) {
+        overflow:hidden;
+    }
+
     .modal-main {
-        @apply fixed inset-0 z-[99999] flex items-center justify-center bg-black/62  transition-opacity duration-300 m-0 items-start overflow-auto py-10;
+        @apply fixed inset-0 z-[99999] flex items-center justify-center bg-black/62  transition-opacity duration-300 m-0 items-start overflow-auto py-10 !opacity-100;
     }
 
     .alfa-modal {
@@ -1746,7 +1763,7 @@
     }
 
     .alfa-modal .form-row.three-col {
-    flex-wrap: wrap;
+      @apply flex-wrap;
     }
     .alfa-modal .form-row.three-col > div {
         @apply min-w-[100px] flex-1;
@@ -1759,8 +1776,10 @@
 
     .alfa-modal .alfa-close {
       @apply w-[30px] h-[30px] bg-[#dfb03a] inline-flex items-center 
-      justify-center absolute -right-2.5 -top-2.5 sm:right-[-15px] sm:top-[-15px] rounded;
+      justify-center absolute -right-2.5 -top-2.5 rounded cursor-pointer;
     }
+
+
 }
 /* Normal Section css..................................... */
 

@@ -1735,6 +1735,17 @@
       padding-block: 100px;
     }
   }
+  input[type="checkbox"] {
+    cursor: pointer;
+    border-color: #a37b12;
+  }
+  input[type="checkbox"]:checked, input[type="checkbox"]:focus {
+    border-color: #a37b12 !important;
+    background-color: #a37b12 !important;
+    --tw-shadow: 0 0 4px var(--tw-shadow-color, #a37b12) !important;
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+    --tw-ring-color: 0 0 4px #a37b12;
+  }
 }
 @layer utilities {
   .container {
@@ -5013,6 +5024,9 @@
   }
 }
 @layer components {
+  html:has(.modal-main:not(.hidden)), body:has(.modal-main:not(.hidden)) {
+    overflow: hidden;
+  }
   .modal-main {
     position: fixed;
     inset: calc(var(--spacing) * 0);
@@ -5028,6 +5042,7 @@
       background-color: color-mix(in oklab, var(--color-black) 62%, transparent);
     }
     padding-block: calc(var(--spacing) * 10);
+    opacity: 100% !important;
     transition-property: opacity;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
@@ -5179,16 +5194,11 @@
     display: inline-flex;
     height: 30px;
     width: 30px;
+    cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: var(--radius);
     background-color: #dfb03a;
-    @media (width >= 40rem) {
-      top: -15px;
-    }
-    @media (width >= 40rem) {
-      right: -15px;
-    }
   }
 }
 .therapeutic-footwear-section {
