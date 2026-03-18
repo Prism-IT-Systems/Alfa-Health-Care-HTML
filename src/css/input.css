@@ -2461,10 +2461,6 @@ body.page-insurers .faq-section .faq-content {
     @apply text-sm md:text-base text-white flex items-center flex-wrap gap-[4px] justify-center mt-4;
 }
 
-.banner-section .breadcrumbs-one {
-    @apply opacity-90 font-medium
-}
-
 .banner-section .breadcrumbs-three {
     @apply text-[#F4C76C] font-medium;
 }
@@ -3326,7 +3322,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .woocommerce-wishlist .wishlist_table .product-add-to-cart a {
-  @apply flex border border-solid border-[#a17810] mx-auto justify-center;
+  @apply !flex border border-solid border-[#a17810] mx-auto justify-center;
 }
 
 .woocommerce-wishlist .woocommerce
@@ -3810,7 +3806,7 @@ form.form-loading {
   }
   /* Product name */
   .woocommerce-wishlist .product-name h3 {
-    @apply text-[15px] mt-0 mb-1.5 mx-0;
+    @apply text-[14px] mt-0 mb-1.5 mx-0 text-left ;
   }
   .woocommerce-wishlist .product-name a {
     @apply no-underline text-[#222] font-medium;
@@ -3873,7 +3869,7 @@ form.form-loading {
   @apply flex flex-col h-fit justify-center !gap-[25.26px] !shadow-[0px_0px_27.3684px_rgba(0,0,0,0.03)] !px-8 !py-11 !rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !bg-white;
 }
 .contact-form-card .form-title {
-  @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] !mb-0;
+  @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] !mb-0 w-fit border-b border-[#a17810] ;
   font-family: "Inter";
 }
 .contact-form-card .form-desc {
@@ -3889,10 +3885,10 @@ form.form-loading {
   background: #fcfaf8;
 }
 .contact-form-card .form-row {
-  @apply flex flex-row justify-between items-start gap-[16.84px] p-0;
+  @apply flex flex-col sm:flex-row justify-between items-start gap-[16.84px] p-0;
 }
 .contact-form-card .form-row label {
-  @apply not-italic font-semibold text-sm leading-[17px] flex items-center tracking-[0.631579px] uppercase text-[#8A8075] mx-auto my-0;
+  @apply not-italic font-semibold text-sm leading-[17px] flex items-center tracking-[0.631579px] text-[#8A8075] mx-auto my-0;
   font-family: "Inter";
 }
 .contact-us-wrapper {
@@ -3907,12 +3903,17 @@ form.form-loading {
   @apply flex flex-col justify-center items-center gap-[10.53px] mix-blend-normal px-[27.3684px] py-[44.2105px] rounded-[16.8421px] border-[1.05263px] border-dashed border-[#847362];
   background: #faf8f4;
 }
+
+.page-contact-us .contact-info-wrapper  {
+  @apply flex flex-col gap-[18px] sm:gap-[32px];
+}
+
 .contact-info-wrapper .contact-info-card {
   @apply flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
   background: #ffffff;
 }
 .contact-info-wrapper .contact-info-card h4 {
-  @apply not-italic font-semibold text-xl leading-[34px] text-[#32261B];
+  @apply not-italic font-semibold text-xl leading-[34px] text-[#32261B] w-fit border-b border-[#a17810];
   font-family: "Inter";
 }
 .contact-info-wrapper .contact-info-card .info-item {
@@ -3927,18 +3928,18 @@ form.form-loading {
   font-family: "Inter";
 }
 .contact-info-wrapper .contact-info-card .info-item a {
-  @apply not-italic font-medium text-lg leading-[29px] text-[#3C2C20];
+  @apply not-italic font-medium text-lg leading-[29px] text-[#3C2C20] break-words break-all;
   font-family: "Inter";
 }
 .contact-info-wrapper .contact-info-card .icon-circle svg {
   @apply w-[29.47px] h-[29.47px] stroke-[#a17810];
 }
 .contact-info-wrapper .working-hours-card {
-  @apply box-border flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
+  @apply box-border flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
   background: #ffffff;
 }
 .contact-info-wrapper .working-hours-card h4 {
-  @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B];
+  @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] w-fit border-b border-[#a17810];
   font-family: "Inter";
 }
 .contact-info-wrapper .social-follow-card {
@@ -3946,7 +3947,7 @@ form.form-loading {
   background: #ffffff;
 }
 .contact-info-wrapper .social-follow-card h4 {
-  @apply not-italic font-bold text-base leading-5 flex items-center text-center text-[#32261B];
+  @apply not-italic font-bold text-base leading-5 flex items-center text-center text-[#32261B] gap-[7px];
   font-family: "Inter";
 }
 .contact-info-wrapper .social-follow-card h4 span {
@@ -3975,7 +3976,7 @@ form.form-loading {
   @apply flex flex-row gap-2.5 my-4;
 }
 .contact-form-card .form-row.checkbox input {
-  @apply w-[18px] h-[18px] rounded mr-3 mt-[5px] p-2.5;
+  @apply w-[18px] h-[18px] rounded-[4px] mr-3 mt-[5px] p-2.5;
 }
 .contact-form-card .form-row.checkbox label {
   @apply not-italic font-medium text-base leading-[26px] flex items-start text-[#847362] tracking-[0];
@@ -3995,6 +3996,33 @@ form.form-loading {
 }
 
 .page-contact-us .wpcf7-not-valid-tip {
-  @apply text-sm;
+  @apply text-sm mt-[8px];
+}
+
+.page-contact-us .contact-form-card .form-group br {
+  @apply hidden;
+}
+.page-contact-us .contact-us-map-wrap {
+  @apply !mt-[74px];
+}
+.page-contact-us .custom-contact-form .form-row {
+  @apply !mb-[25px];
+}
+
+.contact-info-wrapper .working-hours-card li {
+  @apply relative pl-[18px] before:content-[""] before:absolute before:-translate-y-2/4 before:w-2 before:h-2 before:bg-[#C5A65E] before:rounded-[50%] before:left-0 before:top-2/4;
+}
+
+.contact-form-card .form-group input::placeholder {
+  @apply text-sm leading-[18.9px] text-[#847362];
+}
+.contact-form-card .form-group textarea::placeholder {
+  @apply text-sm leading-[18.9px] text-[#847362];
+}
+
+@media (max-width: 768px) {
+  .page-contact-us .contact-grid {
+    @apply !block;
+  }
 }
 

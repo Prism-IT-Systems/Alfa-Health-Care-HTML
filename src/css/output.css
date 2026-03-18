@@ -6690,11 +6690,6 @@ body.page-insurers .faq-section .faq-content {
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
 }
-.banner-section .breadcrumbs-one {
-  --tw-font-weight: var(--font-weight-medium);
-  font-weight: var(--font-weight-medium);
-  opacity: 90%;
-}
 .banner-section .breadcrumbs-three {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
@@ -8248,7 +8243,7 @@ body.page-insurers .faq-section .faq-content {
 }
 .woocommerce-wishlist .wishlist_table .product-add-to-cart a {
   margin-inline: auto;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   border-style: var(--tw-border-style);
   border-width: 1px;
@@ -9239,7 +9234,8 @@ form.form-loading {
     margin-inline: calc(var(--spacing) * 0);
     margin-top: calc(var(--spacing) * 0);
     margin-bottom: calc(var(--spacing) * 1.5);
-    font-size: 15px;
+    text-align: left;
+    font-size: 14px;
   }
   .woocommerce-wishlist .product-name a {
     --tw-font-weight: var(--font-weight-medium);
@@ -9354,7 +9350,11 @@ form.form-loading {
 .contact-form-card .form-title {
   margin-bottom: calc(var(--spacing) * 0) !important;
   display: flex;
+  width: fit-content;
   align-items: center;
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  border-color: #a17810;
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   --tw-leading: 34px;
@@ -9396,11 +9396,14 @@ form.form-loading {
 }
 .contact-form-card .form-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 16.84px;
   padding: calc(var(--spacing) * 0);
+  @media (width >= 40rem) {
+    flex-direction: row;
+  }
 }
 .contact-form-card .form-row label {
   margin-inline: auto;
@@ -9416,7 +9419,6 @@ form.form-loading {
   --tw-tracking: 0.631579px;
   letter-spacing: 0.631579px;
   color: #8A8075;
-  text-transform: uppercase;
   font-style: normal;
   font-family: "Inter";
 }
@@ -9443,6 +9445,14 @@ form.form-loading {
   mix-blend-mode: normal;
   background: #faf8f4;
 }
+.page-contact-us .contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @media (width >= 40rem) {
+    gap: 32px;
+  }
+}
 .contact-info-wrapper .contact-info-card {
   margin-bottom: 0 !important;
   display: flex;
@@ -9459,6 +9469,10 @@ form.form-loading {
   background: #ffffff;
 }
 .contact-info-wrapper .contact-info-card h4 {
+  width: fit-content;
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  border-color: #a17810;
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   --tw-leading: 34px;
@@ -9500,6 +9514,8 @@ form.form-loading {
   line-height: 29px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
+  overflow-wrap: break-word;
+  word-break: break-all;
   color: #3C2C20;
   font-style: normal;
   font-family: "Inter";
@@ -9510,6 +9526,7 @@ form.form-loading {
   stroke: #a17810;
 }
 .contact-info-wrapper .working-hours-card {
+  margin-bottom: 0 !important;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -9526,7 +9543,11 @@ form.form-loading {
 }
 .contact-info-wrapper .working-hours-card h4 {
   display: flex;
+  width: fit-content;
   align-items: center;
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  border-color: #a17810;
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   --tw-leading: 34px;
@@ -9557,6 +9578,7 @@ form.form-loading {
 .contact-info-wrapper .social-follow-card h4 {
   display: flex;
   align-items: center;
+  gap: 7px;
   text-align: center;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
@@ -9610,7 +9632,7 @@ form.form-loading {
   margin-right: calc(var(--spacing) * 3);
   height: 18px;
   width: 18px;
-  border-radius: var(--radius);
+  border-radius: 4px;
   padding: calc(var(--spacing) * 2.5);
 }
 .contact-form-card .form-row.checkbox label {
@@ -9649,8 +9671,78 @@ form.form-loading {
   display: none;
 }
 .page-contact-us .wpcf7-not-valid-tip {
+  margin-top: 8px;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.page-contact-us .contact-form-card .form-group br {
+  display: none;
+}
+.page-contact-us .contact-us-map-wrap {
+  margin-top: 74px !important;
+}
+.page-contact-us .custom-contact-form .form-row {
+  margin-bottom: 25px !important;
+}
+.contact-info-wrapper .working-hours-card li {
+  position: relative;
+  padding-left: 18px;
+  &::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::before {
+    content: var(--tw-content);
+    top: calc(2/4 * 100%);
+  }
+  &::before {
+    content: var(--tw-content);
+    left: calc(var(--spacing) * 0);
+  }
+  &::before {
+    content: var(--tw-content);
+    height: calc(var(--spacing) * 2);
+  }
+  &::before {
+    content: var(--tw-content);
+    width: calc(var(--spacing) * 2);
+  }
+  &::before {
+    content: var(--tw-content);
+    --tw-translate-y: calc(calc(2/4 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  &::before {
+    content: var(--tw-content);
+    border-radius: 50%;
+  }
+  &::before {
+    content: var(--tw-content);
+    background-color: #C5A65E;
+  }
+  &::before {
+    --tw-content: "";
+    content: var(--tw-content);
+  }
+}
+.contact-form-card .form-group input::placeholder {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: 18.9px;
+  line-height: 18.9px;
+  color: #847362;
+}
+.contact-form-card .form-group textarea::placeholder {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: 18.9px;
+  line-height: 18.9px;
+  color: #847362;
+}
+@media (max-width: 768px) {
+  .page-contact-us .contact-grid {
+    display: block !important;
+  }
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
