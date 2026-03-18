@@ -2585,11 +2585,15 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .banner-section .breadcrumbs-content {
-    @apply text-sm md:text-base text-white flex items-center flex-wrap gap-[4px] justify-center mt-4;
+    @apply text-sm md:text-base text-white flex items-center flex-wrap gap-[4px] justify-center;
 }
 
-.banner-section .breadcrumbs-three {
+.banner-section .breadcrumbs-two {
     @apply text-[#F4C76C] font-medium;
+}
+
+.banner-section .breadcrumbs-one {
+    @apply font-medium;
 }
 
 .banner-section .banner-img {
