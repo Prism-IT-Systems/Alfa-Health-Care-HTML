@@ -4185,6 +4185,6 @@ form.form-loading {
 
 
 /* Cart Page css */
-.product-category-section {
+.page-cart .product-category-section {
   @apply bg-offWhite;
 }

@@ -9993,7 +9993,7 @@ form.form-loading {
     margin-bottom: calc(var(--spacing) * 4);
   }
 }
-.product-category-section {
+.page-cart .product-category-section {
   background-color: var(--Off-White);
 }
 @layer base {
