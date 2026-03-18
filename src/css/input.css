@@ -2549,6 +2549,25 @@ body.page-insurers .faq-section .faq-content {
   @apply !max-w-full;
 }
 
+@media (max-width: 1280px) {
+  .faq-content .faq-wrapper {
+    @apply flex-col;
+  }
+}
+@media (max-width: 1280px) {
+  .faq-content .faq-column {
+    @apply w-full;
+  }
+  .page-faq .faq-heading-wrapper {
+    @apply flex-col items-center gap-4;
+  }
+  .page-faq .faq-heading-column {
+    @apply items-center text-center;
+  }
+  .faq-heading-column:first-child {
+    @apply max-w-full items-center;
+  }
+}
 
 /* workflow section */
 
@@ -4156,6 +4175,14 @@ form.form-loading {
     @apply !block;
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1535px) {
+  .alfa-secure-wrap {
+    @apply mt-0 mb-4 !mx-20;
+  }
+}
+
+
 
 /* Cart Page css */
 .product-category-section {
