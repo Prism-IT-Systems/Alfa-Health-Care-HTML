@@ -3027,6 +3027,10 @@ body.page-insurers .faq-section .faq-content {
   @apply flex flex-col gap-4;
 }
 
+.woocommerce-page .tax-short-description img {
+  @apply !hidden;
+}
+
 .woocommerce a.add_to_cart_button {
      @apply font-medium;
 }
@@ -3249,13 +3253,21 @@ body.page-insurers .faq-section .faq-content {
 .upload-box {
   background: #f9f5ef;
 }
+
+@media (max-width: 1280px) {
+    .alfar-refferals-form .equipment-grid {
+    @apply grid-cols-[repeat(1,1fr)];
+  }
+}
+
 @media (max-width: 768px) {
   .alfar-refferals-form .form-row {
     @apply flex-col;
   }
-  .alfar-refferals-form .equipment-grid {
-    @apply grid-cols-[repeat(2,1fr)];
-  }
+
+  .alfar-refferals-form .submit-btn {
+  @apply leading-[22px] text-[16px] font-medium px-[54px] py-[16px] rounded-[999px];
+}
 }
 
 .alfar-refferals-form .error-message {
@@ -3907,7 +3919,7 @@ form.form-loading {
 
 @media (max-width: 1024px) {
   .woocommerce-wishlist .wishlist_table.mobile {
-    @apply flex flex-col gap-5 m-0 p-0;
+    @apply flex flex-col gap-5 m-0 p-0 !bg-transparent !shadow-none;
   }
   /* Each item card */
   .woocommerce-wishlist .wishlist_table.mobile li {
@@ -3985,17 +3997,16 @@ form.form-loading {
 /* Contact Us Page */
 
 .contact-form-card {
-  @apply flex flex-col justify-center gap-[25.26px] shadow-[0px_0px_27.3684px_rgba(0,0,0,0.03)] px-8 py-11 rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
-  background: #ffffff;
+  @apply flex flex-col h-fit justify-center !gap-[25.26px] !shadow-[0px_0px_27.3684px_rgba(0,0,0,0.03)] !px-8 !py-11 !rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !bg-white;
 }
 .contact-form-card .form-title {
   @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] !mb-0;
   font-family: "Inter";
 }
 .contact-form-card .form-desc {
-  @apply flex flex-col items-start gap-[25.26px] text-sm text-[#847362] leading-[26px] p-0;
+  @apply flex flex-col items-start gap-[25.26px] text-sm text-[#847362] leading-[26px] p-0 !mb-[0];
 }
-.contact-form-card label {
+.contact-form-card .form-group label {
   @apply !hidden;
 }
 .custom-contact-form input,
@@ -4012,65 +4023,106 @@ form.form-loading {
   font-family: "Inter";
 }
 .contact-us-wrapper {
-  @apply p-0;
+  @apply !p-[0];
 }
+
+.contact-us-wrapper .alfa-agree {
+  @apply !hidden;
+}
+
 .contact-form-card .form-row.file-upload {
   @apply flex flex-col justify-center items-center gap-[10.53px] mix-blend-normal px-[27.3684px] py-[44.2105px] rounded-[16.8421px] border-[1.05263px] border-dashed border-[#847362];
   background: #faf8f4;
 }
-.contact-info-card {
-  @apply flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
+.contact-info-wrapper .contact-info-card {
+  @apply flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
   background: #ffffff;
 }
-.contact-info-card h4 {
+.contact-info-wrapper .contact-info-card h4 {
   @apply not-italic font-semibold text-xl leading-[34px] text-[#32261B];
   font-family: "Inter";
 }
-.contact-info-card .info-item {
+.contact-info-wrapper .contact-info-card .info-item {
   @apply flex gap-4 items-center mb-0;
 }
-.contact-info-card .icon-circle {
+.contact-info-wrapper .contact-info-card .icon-circle {
   @apply w-[63.16px] h-[63.16px] shrink-0 rounded-[100%];
   background: #f5efe0;
 }
-.contact-info-card .info-item strong {
+.contact-info-wrapper .contact-info-card .info-item strong {
   @apply not-italic font-normal text-base leading-[21px] text-[#847062];
   font-family: "Inter";
 }
-.contact-info-card .info-item a {
+.contact-info-wrapper .contact-info-card .info-item a {
   @apply not-italic font-medium text-lg leading-[29px] text-[#3C2C20];
   font-family: "Inter";
 }
-.contact-info-card .icon-circle svg {
+.contact-info-wrapper .contact-info-card .icon-circle svg {
   @apply w-[29.47px] h-[29.47px] stroke-[#a17810];
 }
-.working-hours-card {
+.contact-info-wrapper .working-hours-card {
   @apply box-border flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
   background: #ffffff;
 }
-.working-hours-card h4 {
+.contact-info-wrapper .working-hours-card h4 {
   @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B];
   font-family: "Inter";
 }
-.social-follow-card {
+.contact-info-wrapper .social-follow-card {
   @apply box-border flex flex-col justify-center items-center gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
   background: #ffffff;
 }
-.social-follow-card h4 {
+.contact-info-wrapper .social-follow-card h4 {
   @apply not-italic font-bold text-base leading-5 flex items-center text-center text-[#32261B];
   font-family: "Inter";
 }
-.social-follow-card h4 span {
+.contact-info-wrapper .social-follow-card h4 span {
   @apply text-[#a17810];
 }
-.contact-info-wrapper {
+.contact-info-wrapper .contact-info-wrapper {
   @apply flex flex-col gap-8;
 }
-.social-follow-card .social-icons {
+.contact-info-wrapper .social-follow-card .social-icons {
   @apply flex gap-2.5 !mt-0;
 }
-.social-follow-card .social-icons img {
+.contact-info-wrapper .social-follow-card .social-icons img {
   @apply w-7 h-7;
+}
+
+.contact-form-card .form-row.choose-box {
+  @apply flex flex-col gap-4 my-4;
+}
+.contact-form-card .form-row.choose-box label {
+  @apply flex gap-2.5;
+}
+.contact-form-card .form-row.choose-box input {
+  @apply w-[15px] rounded-[999px];
+}
+.contact-form-card .form-row.checkbox {
+  @apply flex flex-row gap-2.5 my-4;
+}
+.contact-form-card .form-row.checkbox input {
+  @apply w-[18px] h-[18px] rounded mr-3 mt-[5px] p-2.5;
+}
+.contact-form-card .form-row.checkbox label {
+  @apply not-italic font-medium text-base leading-[26px] flex items-start text-[#847362] tracking-[0];
+  font-family: "Inter";
+  text-transform: initial !important;
+}
+.contact-form-card .form-row.submit-btn {
+  @apply flex flex-row justify-center items-center gap-2.5 pl-[98px] pr-[103px] py-3.5 rounded-[36.8421px];
+  background: #a17810;
+  margin-inline: auto;
+}
+.contact-us-wrapper .alfa-agree {
+  @apply hidden;
+}
+.contact-form-card .file-upload span {
+  @apply hidden;
+}
+
+.page-contact-us .wpcf7-not-valid-tip {
+  @apply text-sm;
 }
 
 /* Cart Page css */
