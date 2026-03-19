@@ -22,7 +22,8 @@ export default {
         WarmMarigold: "var(--Warm-Marigold)",
         neutralGray: "#E8E8E8",
         neutralGrayHover: "#DDDDDD",
-        sand: "var(--sand)"
+        sand: "var(--sand)",
+        danger: "var(--danger)"
       },
       boxShadow: {
         shadow_1: "var(--shadow1)",
