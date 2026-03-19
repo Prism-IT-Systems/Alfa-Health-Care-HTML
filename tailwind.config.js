@@ -23,6 +23,7 @@ export default {
         neutralGray: "#E8E8E8",
         neutralGrayHover: "#DDDDDD",
         sand: "var(--sand)",
+        lightBeige: "var(--light-beige)",
         danger: "var(--danger)"
       },
       boxShadow: {
