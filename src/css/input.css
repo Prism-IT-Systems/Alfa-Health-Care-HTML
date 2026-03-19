@@ -487,7 +487,7 @@
 }
 
 .search-form .search-form-inner input[type="search"] {
-    @apply p-[12px_12px_12px_40px] block w-full rounded-full  bg-[rgba(245,241,234,0.5)] border border-solid border-[#E8E2D9] text-heading text-sm focus:ring-goldenBrown focus:border-goldenBrown  shadow-xs placeholder:text-sm placeholder:text-warmTaupe placeholder:leading-normal; 
+    @apply p-[12px_12px_12px_40px] block w-full rounded-full  bg-[rgba(245,241,234,0.5)] !border !border-solid !border-[#E8E2D9] text-heading text-sm focus:ring-goldenBrown focus:border-goldenBrown  shadow-xs placeholder:text-sm placeholder:text-warmTaupe placeholder:leading-normal; 
 } 
 
 .navigation-bar .search-form {
