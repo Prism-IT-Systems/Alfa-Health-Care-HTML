@@ -1871,9 +1871,16 @@
     @apply mb-4;
   }
 
-  .single-blog-grid .content-box :is(ul, ol) li {
+  .single-blog-grid .content-box :is(ul) li {
     @apply pl-6 sm:pl-7.5 relative before:content-[''] before:absolute before:left-0 before:top-1.5 sm:before:top-1  before:w-3.5 before:h-3.5 sm:before:w-4 sm:bg-size-[14px] sm:before:h-4 before:bg-no-repeat before:bg-center sm:before:bg-size-[16px] before:[background-image:url('../images/checkmark-sharp-stroke.svg')]
   } 
+
+  .single-blog-grid .content-box ol {
+     @apply list-decimal pl-5;
+  }
+  .single-blog-grid .content-box ol li {
+     @apply pl-0 marker:font-bold;
+  }
 
   .single-blog-grid .content-box :is(ul, ol) li:not(:last-child) {
     @apply mb-1.5;
@@ -4526,6 +4533,7 @@ form.form-loading {
     @apply p-[5px];
   }
 }
+
 
 
 

@@ -5316,7 +5316,7 @@
   .single-blog-grid .content-box :is(ul, ol):not(:last-child) {
     margin-bottom: calc(var(--spacing) * 4);
   }
-  .single-blog-grid .content-box :is(ul, ol) li {
+  .single-blog-grid .content-box :is(ul) li {
     position: relative;
     padding-left: calc(var(--spacing) * 6);
     &::before {
@@ -5384,6 +5384,29 @@
         content: var(--tw-content);
         background-size: 16px;
       }
+    }
+  }
+  .single-blog-grid .content-box ol {
+    list-style-type: decimal;
+    padding-left: calc(var(--spacing) * 5);
+  }
+  .single-blog-grid .content-box ol li {
+    padding-left: calc(var(--spacing) * 0);
+    & *::marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+    &::marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+    & *::-webkit-details-marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
+    }
+    &::-webkit-details-marker {
+      --tw-font-weight: var(--font-weight-bold);
+      font-weight: var(--font-weight-bold);
     }
   }
   .single-blog-grid .content-box :is(ul, ol) li:not(:last-child) {
