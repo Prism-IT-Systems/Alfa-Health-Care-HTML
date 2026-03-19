@@ -4534,7 +4534,13 @@ form.form-loading {
   }
 }
 
+.page-wishlist .product-add-to-cart .product-detail-btn {
+  @apply inline-flex items-center justify-center w-full bg-white text-[#a17810] text-sm font-medium gap-2 transition-all duration-[0.2s] ease-[ease] px-[30px] py-2 rounded-full hover:bg-gray-200 sm:w-[238px];
+}
 
+.product-category-section .product-detail-btn {
+  @apply inline-flex items-center justify-center w-full bg-white text-[#a17810] text-sm font-medium gap-2 transition-all duration-[0.2s] ease-[ease] px-[30px] py-2 rounded-full hover:bg-gray-200 sm:w-[142px];
+}
 
 
 /* Cart Page css */

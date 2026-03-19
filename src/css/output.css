@@ -10654,6 +10654,68 @@ form.form-loading {
     padding: 5px;
   }
 }
+.page-wishlist .product-add-to-cart .product-detail-btn {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 2);
+  border-radius: calc(infinity * 1px);
+  background-color: var(--color-white);
+  padding-inline: 30px;
+  padding-block: calc(var(--spacing) * 2);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #a17810;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.2s;
+  transition-duration: 0.2s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-gray-200);
+    }
+  }
+  @media (width >= 40rem) {
+    width: 238px;
+  }
+}
+.product-category-section .product-detail-btn {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 2);
+  border-radius: calc(infinity * 1px);
+  background-color: var(--color-white);
+  padding-inline: 30px;
+  padding-block: calc(var(--spacing) * 2);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #a17810;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.2s;
+  transition-duration: 0.2s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-gray-200);
+    }
+  }
+  @media (width >= 40rem) {
+    width: 142px;
+  }
+}
 .page-cart .product-category-section {
   background-color: var(--Off-White);
 }
