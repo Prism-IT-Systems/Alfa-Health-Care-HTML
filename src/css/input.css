@@ -4887,7 +4887,7 @@ form.form-loading {
 }
 
 .woocommerce-order-downloads th {
-  @apply !text-left !text-sm !font-semibold !text-gray-800 !px-[18px] !py-4 !border-b !border-solid;
+  @apply !text-left !text-sm !font-semibold !text-gray-800 !px-[18px] !py-4 ;
 }
 
 /* Body cells */
@@ -4930,13 +4930,12 @@ form.form-loading {
   @apply !font-medium text-gray-500;
 }
 
-.woocommerce-error,
 .woocommerce-info,
 .woocommerce-message {
   @apply !border-t-[#a17810];
 }
 
-.woocommerce-error::before,
+
 .woocommerce-info::before,
 .woocommerce-message::before {
   @apply content-["\e015"] !text-[#a17810];

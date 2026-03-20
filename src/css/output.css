@@ -11350,10 +11350,6 @@ form.form-loading {
   background: #f9fafb !important;
 }
 .woocommerce-order-downloads th {
-  border-bottom-style: var(--tw-border-style) !important;
-  border-bottom-width: 1px !important;
-  --tw-border-style: solid !important;
-  border-style: solid !important;
   padding-inline: 18px !important;
   padding-block: calc(var(--spacing) * 4) !important;
   text-align: left !important;
@@ -11429,10 +11425,10 @@ form.form-loading {
   font-weight: var(--font-weight-medium) !important;
   color: var(--color-gray-500);
 }
-.woocommerce-error, .woocommerce-info, .woocommerce-message {
+.woocommerce-info, .woocommerce-message {
   border-top-color: #a17810 !important;
 }
-.woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before {
+.woocommerce-info::before, .woocommerce-message::before {
   color: #a17810 !important;
   --tw-content: "\e015";
   content: var(--tw-content);
