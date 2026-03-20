@@ -2416,6 +2416,41 @@
   .wc-block-components-button:has(.wc-block-components-spinner){
     @apply after:hidden
   }
+
+  /* order recived screen */
+  .woocommerce-order p,
+  .woocommerce-order-overview,
+  .woocommerce-order-overview + p {
+    @apply bg-pureWhite  !border-solid !border-lightBeige;
+  }
+
+  .woocommerce-order p.woocommerce-thankyou-order-received{
+    @apply !p-6 font-bold !text-deepBrown !border-t !border-x rounded-t-xl relative flex items-center;
+  }
+
+  .woocommerce-order p.woocommerce-thankyou-order-received {
+    @apply relative pl-10 gap-3;
+    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center;
+    @apply before:bg-[length:18px_18px] before:bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.5%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%2F%3E%3C%2Fsvg%3E')];
+  }
+
+  .woocommerce-order-overview {
+    @apply !m-0 !border flex;
+  }
+
+  .woocommerce-order-overview li {
+    @apply w-1/5 !p-6 !m-0 flex items-start flex-col  text-sm leading-5;
+  }
+
+  .woocommerce ul.order_details li strong,
+  .product-category-section .woocommerce-Price-amount {
+    @apply text-lg leading-5;
+  }
+
+  .woocommerce-order-overview + p {
+    @apply !border-b !border-x rounded-b-xl;
+  }
+
 }
 /* Normal Section css..................................... */
 
