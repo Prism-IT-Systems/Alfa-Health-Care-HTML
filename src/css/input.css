@@ -4636,6 +4636,21 @@ form.form-loading {
   @apply !text-right text-[#555] !px-4 !py-3;
 }
 
+.page-my-account span.woocommerce-Price-currencySymbol {
+  @apply text-xl text-[#a17810] font-medium;
+}
+.page-my-account
+  .woocommerce-orders-table
+  span.woocommerce-Price-amount.amount {
+  @apply text-sm;
+}
+.page-my-account .woocommerce table.shop_table {
+  @apply border-[none];
+}
+.page-my-account .woocommerce-MyAccount-content {
+  @apply p-0;
+}
+
 /* TOTAL ROW HIGHLIGHT */
 .woocommerce-table--order-details tfoot tr:nth-child(2) td {
   @apply !text-lg !font-semibold text-[#333];
@@ -4648,10 +4663,10 @@ form.form-loading {
   background: #fff;
 }
 .page-my-account .woocommerce-order-details {
-  @apply !p-0;
+  @apply !p-[0];
 }
 .page-my-account .woocommerce-customer-details {
-  @apply !p-0;
+  @apply !p-[0];
 }
 
 /* My account css */
@@ -4758,7 +4773,7 @@ form.form-loading {
   background: #f9fafb;
 }
 .mobility-aid-comparison img.emoji {
-  @apply w-4 h-4 align-middle brightness-0 saturate-[100%] invert-[74%] sepia-[91%] saturate-[749%] hue-rotate-[1deg] brightness-[102%] contrast-[101%] mr-1;
+  @apply w-4 h-4 align-middle mr-1;
 }
 .mobility-aid-comparison tbody tr:last-child td {
   @apply border-b-[none];
@@ -4827,6 +4842,18 @@ form.form-loading {
   }
 }
 
+.product-detail-page-section h3 {
+  @apply leading-7 ;
+}
+
+.product-detail-page-section h3 {
+  @apply text-base lg:text-lg;
+}
+
+.product-detail-page-section .woocommerce-Price-amount {
+  @apply text-[22px] sm:text-[28px];
+} 
+
 .page-wishlist .product-add-to-cart .product-detail-btn {
   @apply inline-flex items-center justify-center w-full bg-white text-[#a17810] text-sm font-medium gap-2 transition-all duration-[0.2s] ease-[ease] px-[30px] py-2 rounded-full hover:bg-gray-200 sm:w-[238px];
   /* text-sm */
@@ -4837,9 +4864,74 @@ form.form-loading {
 
 }
 
+.product-detail-page-section .product-detail-btn {
+  @apply inline-flex items-center justify-center w-full bg-white text-[#a17810] text-sm font-medium gap-2 transition-all duration-[0.2s] ease-[ease] px-[30px] py-2 rounded-full hover:bg-gray-200 sm:w-[142px];
+
+}
+
+/* Downloads */
+
+.woocommerce-order-downloads {
+  @apply !mx-0 !my-[30px];
+}
+
+/* Table container */
+.woocommerce-order-downloads .woocommerce-table {
+  @apply !w-full !overflow-hidden !shadow-[0_6px_24px_rgba(0,0,0,0.06)] !rounded-[14px];
+  background: #ffffff !important;
+}
+
+/* Header */
+.woocommerce-order-downloads thead {
+  background: #f9fafb !important;
+}
+
+.woocommerce-order-downloads th {
+  @apply !text-left !text-sm !font-semibold !text-gray-800 !px-[18px] !py-4 !border-b !border-solid;
+}
+
+/* Body cells */
+.woocommerce-order-downloads td {
+  @apply !text-sm text-gray-600 border-b-slate-100 !px-[18px] !py-4 !border-b !border-solid;
+}
+
+/* Row hover */
+.woocommerce-order-downloads tbody tr {
+  @apply !transition-[background] !duration-[0.25s] !ease-[ease];
+}
+
+.woocommerce-order-downloads tbody tr:hover {
+  background: #f9fafb !important;
+}
+
+/* Product link */
+.woocommerce-order-downloads a {
+  @apply text-[#a17810] !no-underline !font-medium hover:underline;
+}
+
+/* Download button */
+.woocommerce-order-downloads .woocommerce-MyAccount-downloads-file.button {
+  @apply !inline-block !text-[13px] text-white !transition-all !duration-[0.3s] !ease-[ease] !px-4 !py-[7px] !rounded-[20px];
+  background: #a17810 !important;
+}
+
+.woocommerce-order-downloads
+  .woocommerce-MyAccount-downloads-file.button:hover {
+  @apply -translate-y-px;
+  background: rgb(110, 82, 5) !important;
+}
+
+/* Special values styling */
+.download-remaining {
+  @apply !font-semibold text-emerald-600;
+}
+
+.download-expires {
+  @apply !font-medium text-gray-500;
+}
 
 /* Cart Page css */
 .page-cart .product-category-section ,
 .page-checkout .product-category-section{
   @apply bg-offWhite;
-}
+} 
