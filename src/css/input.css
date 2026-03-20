@@ -3318,7 +3318,7 @@ body.page-insurers .faq-section .faq-content {
 .woocommerce-page .col2-set::before {
   @apply content-none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1535px) {
   .woocommerce-Addresses {
     @apply grid-cols-[repeat(1,1fr)];
   }
@@ -4964,6 +4964,181 @@ form.form-loading {
 .download-expires {
   @apply !font-medium text-gray-500;
 }
+
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+  @apply !border-t-[#a17810];
+}
+
+.woocommerce-error::before,
+.woocommerce-info::before,
+.woocommerce-message::before {
+  @apply content-["\e015"] !text-[#a17810];
+}
+
+.alfa-my-account .woocommerce-address-fields {
+  @apply !shadow-[0_8px_30px_rgba(0,0,0,0.06)] !max-w-full !mb-10 !p-7 !rounded-2xl;
+  background: #ffffff !important;
+}
+
+/* Heading */
+.alfa-my-account form h2 {
+  @apply !text-[22px] !font-semibold !mb-[22px];
+}
+
+/* Grid layout */
+.alfa-my-account .woocommerce-address-fields__field-wrapper {
+  @apply !grid !grid-cols-[repeat(2,1fr)] !gap-[18px] !w-full;
+}
+
+/* Full width rows */
+.alfa-my-account .form-row-wide {
+  @apply !col-[span_2];
+}
+
+/* Labels */
+.alfa-my-account .woocommerce-address-fields label {
+  @apply !block !text-[13px] !font-medium !text-gray-700 !mb-1.5;
+}
+
+/* Required star */
+.alfa-my-account .required {
+  @apply !text-red-500;
+}
+
+/* Inputs + Select */
+.alfa-my-account .woocommerce-address-fields input.input-text,
+.alfa-my-account .woocommerce-address-fields select {
+  @apply !w-full !h-11 !border !border-gray-300 !text-sm !text-gray-900 !transition-all !duration-[0.25s] !ease-[ease] !px-3 !py-2.5 !rounded-[10px] !border-solid;
+  background: #f9fafb !important;
+}
+
+/* Focus effect */
+.alfa-my-account .woocommerce-address-fields input:focus,
+.alfa-my-account .woocommerce-address-fields select:focus {
+  @apply !border-blue-600 !shadow-[0_0_0_3px_rgba(37,99,235,0.15)];
+  background: #ffffff !important;
+  outline: none !important;
+}
+
+/* Placeholder */
+.alfa-my-account .woocommerce-address-fields input::placeholder {
+  @apply !text-gray-400 !text-[13px];
+}
+
+/* Fix Select2 */
+.alfa-my-account .select2-container {
+  @apply !w-full;
+}
+.alfa-my-account .select2-container--default .select2-selection--single {
+  @apply !h-11 !border !border-gray-300 !flex !items-center !px-2.5 !py-0 !rounded-[10px] !border-solid;
+  background: #f9fafb !important;
+}
+.alfa-my-account .select2-selection__rendered {
+  @apply !text-sm !text-gray-900 !leading-[normal];
+}
+.alfa-my-account .select2-selection__arrow {
+  @apply !h-full;
+}
+
+/* Button */
+.alfa-my-account .woocommerce-address-fields button.button {
+  @apply !text-white !text-sm !cursor-pointer !transition-all !duration-[0.3s] !ease-[ease] !mt-6 !px-[22px] !py-3 !rounded-[10px] !border-[none] hover:-translate-y-px;
+}
+.alfa-my-account .woocommerce-address-fields button.button:hover {
+  background: #6a4f0a !important;
+}
+.woocommerce form .form-row-first,
+.woocommerce form .form-row-last,
+.woocommerce-page form .form-row-first,
+.woocommerce-page form .form-row-last {
+  @apply !w-full lg:w-[48%];
+}
+
+/* Payment method form */
+
+.alfa-my-account .woocommerce-Payment {
+  @apply shadow-[0_10px_30px_rgba(0,0,0,0.05)] mx-0 my-10 p-6 rounded-2xl;
+  background: #fff !important;
+}
+
+/* Payment Method List */
+.alfa-my-account .woocommerce-PaymentMethods {
+  @apply m-0 p-0;
+  list-style: none !important;
+}
+
+/* Each Payment Option */
+.alfa-my-account .woocommerce-PaymentMethod {
+  @apply border transition-all duration-[0.3s] ease-[ease] cursor-pointer mb-4 p-4 rounded-xl border-solid border-[#eee] hover:shadow-[0_6px_20px_rgba(108,99,255,0.08)] hover:border-[#6c63ff];
+}
+
+/* Hover effect */
+
+/* Label styling */
+.alfa-my-account .woocommerce-PaymentMethod label {
+  @apply text-base font-medium text-[#222] flex items-center gap-2.5;
+}
+
+/* Card icons */
+.alfa-my-account .stripe-cards-icon {
+  @apply h-5 ml-auto;
+}
+
+/* Active (selected) state */
+.alfa-my-account .woocommerce-PaymentMethod input[type="radio"]:checked + label {
+  @apply text-[#a17810];
+}
+
+/* Payment box (Stripe form container) */
+.alfa-my-account .payment_box {
+  @apply border mt-4 p-4 rounded-xl border-solid border-[#eee];
+  background: #f9f9ff !important;
+}
+
+/* Stripe iframe container */
+.alfa-my-account .wc-stripe-upe-element {
+  @apply border p-2.5 rounded-[10px] border-solid border-[#ddd];
+  background: #fff !important;
+}
+
+/* Test mode notice */
+.alfa-my-account .testmode-info {
+  @apply text-sm border mb-3 px-3 py-2.5 rounded-lg border-solid border-[#ffd8a8];
+  background: #fff4e5 !important;
+}
+
+/* Save card checkbox */
+.alfa-my-account .woocommerce-SavedPaymentMethods-saveNew {
+  @apply text-sm mt-3;
+}
+
+/* Submit Button */
+.alfa-my-account #place_order {
+  @apply w-full text-white text-[15px] font-semibold transition-all duration-[0.3s] ease-[ease] p-3.5 rounded-[10px] border-[none] hover:-translate-y-px hover:shadow-[0_6px_18px_rgba(108,99,255,0.2)];
+  background: #a17810 !important;
+}
+
+/* Button hover */
+.alfa-my-account #place_order:hover {
+  background: #574fd6 !important;
+}
+@media (max-width: 768px) {
+  .alfa-my-account .woocommerce-Payment {
+    @apply p-4;
+  }
+  .alfa-my-account .woocommerce-PaymentMethod {
+    @apply p-3.5;
+  }
+  .alfa-my-account .woocommerce-PaymentMethod label {
+    @apply text-sm;
+  }
+  .alfa-my-account #place_order {
+    @apply text-sm p-3;
+  }
+}
+
 
 /* Cart Page css */
 .page-cart .product-category-section ,
