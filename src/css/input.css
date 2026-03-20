@@ -123,6 +123,7 @@
       @apply !cursor-pointer focus:!ring-0;
     }
 
+
     input[type="checkbox"] {
        @apply !border-[#a37b12];
     }
@@ -514,7 +515,7 @@
 }
 
 .search-form .search-form-inner input[type="search"] {
-    @apply p-[12px_12px_12px_40px] block w-full rounded-full  bg-[rgba(245,241,234,0.5)] !border !border-solid !border-[#E8E2D9] text-heading text-sm focus:ring-goldenBrown focus:border-goldenBrown  shadow-xs placeholder:text-sm placeholder:text-warmTaupe placeholder:leading-normal; 
+     @apply p-[12px_12px_12px_40px] block w-full rounded-full  bg-[rgba(245,241,234,0.5)] !border !border-solid !border-[#E8E2D9] text-heading text-sm focus:ring-goldenBrown focus:border-goldenBrown  shadow-xs placeholder:text-sm placeholder:text-warmTaupe placeholder:leading-normal; 
 } 
 
 .navigation-bar .search-form {
@@ -1707,7 +1708,7 @@
   }
 
   .form-row {
-    @apply flex gap-8 flex-col sm:flex-row;
+    @apply  gap-8 ;
   }
 
   .form-row > div {
@@ -1780,7 +1781,7 @@
     }
 
     .alfa-modal .form-row {
-        @apply !gap-4 sm:!gap-8 !mb-4;
+        @apply flex flex-col sm:flex-row !gap-4 sm:!gap-8 !mb-4;
     }
 
     .alfa-modal form input[type="checkbox"] {
@@ -2090,11 +2091,12 @@
     @apply !pt-5.5;
   }
 
-  .wc-block-components-text-input.is-active label {
+   .wc-block-components-text-input.is-active label {
     @apply hidden;
   }
+
   .wc-block-components-totals-coupon__form .wc-block-components-text-input.is-active label {
-    @apply block !top-[10%];
+   @apply block !top-[10%];
   }
 
   .wc-block-components-totals-coupon__form .wc-block-components-button,
@@ -4800,10 +4802,12 @@ form.form-loading {
 
 .page-wishlist .product-add-to-cart .product-detail-btn {
   @apply inline-flex items-center justify-center w-full bg-white text-[#a17810] text-sm font-medium gap-2 transition-all duration-[0.2s] ease-[ease] px-[30px] py-2 rounded-full hover:bg-gray-200 sm:w-[238px];
+  /* text-sm */
 }
 
 .product-category-section .product-detail-btn {
   @apply inline-flex items-center justify-center w-full bg-white text-[#a17810] text-sm font-medium gap-2 transition-all duration-[0.2s] ease-[ease] px-[30px] py-2 rounded-full hover:bg-gray-200 sm:w-[142px];
+
 }
 
 
