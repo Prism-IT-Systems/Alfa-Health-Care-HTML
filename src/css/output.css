@@ -34,6 +34,7 @@
   --color-yellow-400: oklch(85.2% 0.199 91.936);
   --color-yellow-600: oklch(68.1% 0.162 75.834);
   --color-lime-500: oklch(76.8% 0.233 130.85);
+  --color-green-600: oklch(62.7% 0.194 149.214);
   --color-emerald-100: oklch(95% 0.052 163.051);
   --color-emerald-300: oklch(84.5% 0.143 164.978);
   --color-emerald-600: oklch(59.6% 0.145 163.225);
@@ -6485,6 +6486,104 @@
       content: var(--tw-content);
       display: none;
     }
+  }
+  .woocommerce-order p, .woocommerce-order-overview, .woocommerce-order-overview + p {
+    --tw-border-style: solid !important;
+    border-style: solid !important;
+    border-color: var(--light-beige) !important;
+    background-color: var(--pure-white);
+  }
+  .woocommerce-order p.woocommerce-thankyou-order-received {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
+    border-inline-style: var(--tw-border-style) !important;
+    border-inline-width: 1px !important;
+    border-top-style: var(--tw-border-style) !important;
+    border-top-width: 1px !important;
+    padding: calc(var(--spacing) * 6) !important;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--Deep-Brown) !important;
+  }
+  .woocommerce-order p.woocommerce-thankyou-order-received {
+    position: relative;
+    gap: calc(var(--spacing) * 3);
+    padding-left: calc(var(--spacing) * 10);
+    &::before {
+      content: var(--tw-content);
+      display: inline-block;
+    }
+    &::before {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 9);
+    }
+    &::before {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 9);
+    }
+    &::before {
+      content: var(--tw-content);
+      border-radius: calc(infinity * 1px);
+    }
+    &::before {
+      content: var(--tw-content);
+      background-color: var(--color-green-600);
+    }
+    &::before {
+      content: var(--tw-content);
+      background-position: center;
+    }
+    &::before {
+      content: var(--tw-content);
+      background-repeat: no-repeat;
+    }
+    &::before {
+      --tw-content: '';
+      content: var(--tw-content);
+    }
+    &::before {
+      content: var(--tw-content);
+      background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.5%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%2F%3E%3C%2Fsvg%3E');
+    }
+    &::before {
+      content: var(--tw-content);
+      background-size: 18px 18px;
+    }
+  }
+  .woocommerce-order-overview {
+    margin: calc(var(--spacing) * 0) !important;
+    display: flex;
+    border-style: var(--tw-border-style) !important;
+    border-width: 1px !important;
+  }
+  .woocommerce-order-overview li {
+    margin: calc(var(--spacing) * 0) !important;
+    display: flex;
+    width: calc(1/5 * 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: calc(var(--spacing) * 6) !important;
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-leading: var(--leading-5);
+    line-height: var(--leading-5);
+  }
+  .woocommerce ul.order_details li strong, .product-category-section .woocommerce-Price-amount {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+    --tw-leading: var(--leading-5);
+    line-height: var(--leading-5);
+  }
+  .woocommerce-order-overview + p {
+    border-bottom-right-radius: var(--radius-xl);
+    border-bottom-left-radius: var(--radius-xl);
+    border-inline-style: var(--tw-border-style) !important;
+    border-inline-width: 1px !important;
+    border-bottom-style: var(--tw-border-style) !important;
+    border-bottom-width: 1px !important;
   }
 }
 .therapeutic-footwear-section {
