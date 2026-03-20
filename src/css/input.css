@@ -2416,8 +2416,9 @@
   .wc-block-components-button:has(.wc-block-components-spinner){
     @apply after:hidden
   }
+}
 
-  /* order recived screen */
+/* order recived screen */
   .woocommerce-order p,
   .woocommerce-order-overview,
   .woocommerce-order-overview + p {
@@ -2451,7 +2452,30 @@
     @apply !border-b !border-x rounded-b-xl;
   }
 
-}
+  .woocommerce-order-overview li {
+    @apply gap-[10px];
+  }
+
+  .woocommerce-order p {
+    @apply p-[24px];
+  }
+
+  .woocommerce-order .woocommerce-order-details {
+    @apply !px-0 !py-10;
+  }
+
+  .woocommerce-order .woocommerce-customer-details {
+    @apply !px-0 !py-10;
+  }
+
+   .woocommerce-order .woocommerce-customer-details h2.woocommerce-column__title {
+     @apply !text-xl !font-semibold !mb-[15px];
+   }
+
+   .woocommerce-order .woocommerce-customer-details address {
+    @apply flex flex-col gap-4 p-4;
+  background: #fff;
+   }
 /* Normal Section css..................................... */
 
 /* Therapeutic Footwear Section css  */
@@ -4671,13 +4695,10 @@ form.form-loading {
   @apply !text-right text-[#555] !px-4 !py-3;
 }
 
-.page-my-account span.woocommerce-Price-currencySymbol {
-  @apply text-xl text-[#a17810] font-medium;
-}
 .page-my-account
   .woocommerce-orders-table
   span.woocommerce-Price-amount.amount {
-  @apply text-sm;
+  @apply !text-[20px] font-semibold !text-[#a17810];
 }
 .page-my-account .woocommerce table.shop_table {
   @apply border-[none];
@@ -4711,9 +4732,16 @@ form.form-loading {
   @apply !w-full !overflow-hidden !text-sm !rounded-[10px] !border-collapse !border-[none];
 }
 /* HEADER */
-.woocommerce-orders-table thead {
-  background: #f9f9f9 !important;
+.alfa-my-account .woocommerce table.shop_table {
+  @apply border border-[color-mix(in_srgb,currentColor_20%,transparent)] text-left w-full border-spacing-0 ml-0 -mr-px mt-0 mb-6 rounded-[5px] border-solid border-separate;
+  background: #fff !important;
 }
+@media (max-width: 1280px) {
+  .alfa-my-account .woocommerce table.shop_table {
+    @apply !border-[none];
+  }
+}
+
 .woocommerce-orders-table th {
   @apply !text-left !font-semibold !text-[#333] !p-3.5 !border-b-[#eee] !border-b !border-solid;
 }
@@ -5137,6 +5165,9 @@ form.form-loading {
     @apply text-sm p-3;
   }
 }
+
+
+
 
 
 /* Cart Page css */
