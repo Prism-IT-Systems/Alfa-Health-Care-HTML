@@ -5231,7 +5231,9 @@ form.form-loading {
   }
 }
 
-
+.page-contact-us .radio-group span {
+  @apply inline-flex;
+}
 
 /* Cart Page css */
 .page-cart .product-category-section ,

@@ -11979,6 +11979,9 @@ form.form-loading {
     text-align: center;
   }
 }
+.page-contact-us .radio-group span {
+  display: inline-flex;
+}
 .page-cart .product-category-section , .page-checkout .product-category-section {
   background-color: var(--Off-White);
 }
