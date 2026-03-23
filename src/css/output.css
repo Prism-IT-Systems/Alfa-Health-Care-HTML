@@ -8057,7 +8057,7 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfa-my-account {
   padding-inline: calc(var(--spacing) * 5);
-  padding-top: calc(var(--spacing) * 5);
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 #customer_login {

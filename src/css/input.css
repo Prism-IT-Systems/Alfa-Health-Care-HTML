@@ -3178,7 +3178,7 @@ body.page-insurers .faq-section .faq-content {
 /* Login and Register Page */
 
 .alfa-my-account {
-  @apply pt-5 pb-[100px] px-5;
+  @apply pt-[100px] pb-[100px] px-5;
 }
 #customer_login {
   @apply flex gap-6 max-w-[1400px] m-auto;
