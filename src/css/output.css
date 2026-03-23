@@ -9034,6 +9034,7 @@ body.page-insurers .faq-section .faq-content {
   display: flex;
   height: 60px;
   width: 60px;
+  cursor: pointer;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -10841,6 +10842,7 @@ form.form-loading {
 }
 .contact-form-card .form-row.submit-btn {
   display: flex;
+  cursor: pointer;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -11856,6 +11858,89 @@ form.form-loading {
     padding: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
+.page-wishlist .woocommerce-message {
+  margin-bottom: calc(var(--spacing) * 5);
+  display: flex;
+  animation: slideIn 0.4s ease;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 4);
+  border-radius: var(--radius-xl);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-left-style: var(--tw-border-style);
+  border-left-width: 5px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: #F5F1EA;
+  border-left-color: #a17810;
+  padding-inline: 18px;
+  padding-block: calc(var(--spacing) * 3.5);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: #2c2c2c;
+  --tw-shadow: 0 2px 6px var(--tw-shadow-color, rgba(0,0,0,0.08));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  &::before {
+    content: var(--tw-content);
+    margin-right: calc(var(--spacing) * 2);
+  }
+  &::before {
+    content: var(--tw-content);
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  &::before {
+    content: var(--tw-content);
+    color: #a17810;
+  }
+  &::before {
+    --tw-content: "✔";
+    content: var(--tw-content);
+  }
+  background: #fff;
+}
+.page-wishlist .woocommerce-message a:not(.button) {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #a17810;
+  text-decoration-line: none;
+}
+.page-wishlist .woocommerce-message .button {
+  border-radius: var(--radius-lg);
+  padding-inline: calc(var(--spacing) * 3.5);
+  padding-block: calc(var(--spacing) * 2);
+  font-size: 13px;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  color: var(--color-white);
+  text-decoration-line: none;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  background: #a17810;
+}
+.page-wishlist .woocommerce-message .button:hover {
+  background: #32261b;
+}
+@media (max-width: 768px) {
+  .page-wishlist .woocommerce-message {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--spacing) * 2.5);
+    padding-inline: calc(var(--spacing) * 3.5);
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .page-wishlist .woocommerce-message .button {
+    width: 100%;
+    text-align: center;
   }
 }
 .page-cart .product-category-section , .page-checkout .product-category-section {

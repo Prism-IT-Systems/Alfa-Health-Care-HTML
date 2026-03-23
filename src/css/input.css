@@ -3703,7 +3703,7 @@ body.page-insurers .faq-section .faq-content {
   @apply cursor-pointer block flex flex-col items-center justify-center text-center cursor-pointer;
 }
 .upload-icon-wrap {
-  @apply w-[60px] h-[60px] flex items-center justify-center mt-0 mb-[15px] mx-auto rounded-[50%];
+  @apply w-[60px] h-[60px] flex items-center justify-center mt-0 mb-[15px] mx-auto rounded-[50%] cursor-pointer;
   background: #e6d7bd;
 }
 .upload-icon-wrap img {
@@ -4583,7 +4583,7 @@ form.form-loading {
   text-transform: initial !important;
 }
 .contact-form-card .form-row.submit-btn {
-  @apply flex flex-row justify-center items-center gap-2.5 pl-[98px] pr-[103px] py-3.5 rounded-[36.8421px];
+  @apply flex flex-row justify-center items-center gap-2.5 pl-[98px] pr-[103px] py-3.5 rounded-[36.8421px] cursor-pointer;
   background: #a17810;
   margin-inline: auto;
 }
@@ -5167,6 +5167,36 @@ form.form-loading {
 }
 
 
+.page-wishlist .woocommerce-message {
+  @apply flex items-center justify-between gap-4 border text-sm text-[#2c2c2c] shadow-[0_2px_6px_rgba(0,0,0,0.08)] animate-[slideIn_0.4s_ease] mb-5 px-[18px] py-3.5 rounded-xl border-l-[5px] border-l-[#a17810] border-solid border-[#F5F1EA] before:content-["✔"] before:text-base before:text-[#a17810] before:mr-2;
+  background: #fff;
+}
+
+/* Icon (optional via pseudo element) */
+
+/* Text spacing fix */
+.page-wishlist .woocommerce-message a:not(.button) {
+  @apply text-[#a17810] font-medium no-underline;
+}
+
+/* Button styling */
+.page-wishlist .woocommerce-message .button {
+  @apply text-white text-[13px] font-medium no-underline transition-all duration-[0.3s] ease-[ease] whitespace-nowrap px-3.5 py-2 rounded-lg;
+  background: #a17810;
+}
+
+/* Button hover */
+.page-wishlist .woocommerce-message .button:hover {
+  background: #32261b;
+}
+@media (max-width: 768px) {
+  .page-wishlist .woocommerce-message {
+    @apply flex-col items-start gap-2.5 px-3.5 py-3;
+  }
+  .page-wishlist .woocommerce-message .button {
+    @apply w-full text-center;
+  }
+}
 
 
 
