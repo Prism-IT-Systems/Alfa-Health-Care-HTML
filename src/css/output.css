@@ -6579,6 +6579,8 @@
   line-height: var(--tw-leading, var(--text-lg--line-height));
   --tw-leading: var(--leading-5);
   line-height: var(--leading-5);
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 .woocommerce-order-overview + p {
   border-bottom-right-radius: var(--radius-xl);
@@ -6593,6 +6595,37 @@
 }
 .woocommerce-order p {
   padding: 24px;
+}
+@media (max-width: 1024px) {
+  .woocommerce-order .woocommerce-order-overview li {
+    padding: calc(var(--spacing) * 3) !important;
+  }
+  .woocommerce ul.order_details li strong, .product-category-section .woocommerce-Price-amount {
+    font-size: var(--text-sm) !important;
+    line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
+  }
+  .woocommerce-order p {
+    padding: calc(var(--spacing) * 4) !important;
+  }
+}
+@media (max-width: 575px) {
+  .woocommerce-order .woocommerce-order-overview li {
+    padding: calc(var(--spacing) * 2.5) !important;
+  }
+  .woocommerce ul.order_details li strong, .product-category-section .woocommerce-Price-amount {
+    font-size: var(--text-xs) !important;
+    line-height: var(--tw-leading, var(--text-xs--line-height)) !important;
+  }
+}
+.woocommerce-order .woocommerce-customer-details .woocommerce-customer-details--phone {
+  padding-block: calc(var(--spacing) * 0) !important;
+  padding-right: calc(var(--spacing) * 0) !important;
+  padding-left: calc(var(--spacing) * 6) !important;
+}
+.woocommerce-order .woocommerce-customer-details .woocommerce-customer-details--email {
+  padding-block: calc(var(--spacing) * 0) !important;
+  padding-right: calc(var(--spacing) * 0) !important;
+  padding-left: calc(var(--spacing) * 6) !important;
 }
 .woocommerce-order .woocommerce-order-details {
   padding-inline: calc(var(--spacing) * 0) !important;
@@ -11025,7 +11058,10 @@ form.form-loading {
   color: #a17810 !important;
 }
 .page-my-account .woocommerce table.shop_table {
-  border-color: none;
+  @media (width < 80rem) {
+    --tw-border-style: none;
+    border-style: none;
+  }
 }
 .page-my-account .woocommerce-MyAccount-content {
   padding: calc(var(--spacing) * 0);

@@ -2445,7 +2445,7 @@
 
   .woocommerce ul.order_details li strong,
   .product-category-section .woocommerce-Price-amount {
-    @apply text-lg leading-5;
+    @apply text-lg leading-5 break-words break-all;
   }
 
   .woocommerce-order-overview + p {
@@ -2459,6 +2459,39 @@
   .woocommerce-order p {
     @apply p-[24px];
   }
+
+  @media (max-width: 1024px) {
+  .woocommerce-order .woocommerce-order-overview li {
+    @apply !p-3;
+  }
+  .woocommerce ul.order_details li strong,
+  .product-category-section .woocommerce-Price-amount {
+    @apply !text-sm;
+  }
+  .woocommerce-order p {
+    @apply !p-4;
+  }
+}
+@media (max-width: 575px) {
+  .woocommerce-order .woocommerce-order-overview li {
+    @apply !p-2.5;
+  }
+  .woocommerce ul.order_details li strong,
+  .product-category-section .woocommerce-Price-amount {
+    @apply !text-xs;
+  }
+}
+.woocommerce-order
+  .woocommerce-customer-details
+  .woocommerce-customer-details--phone {
+  @apply !pl-6 !pr-0 !py-0;
+}
+.woocommerce-order
+  .woocommerce-customer-details
+  .woocommerce-customer-details--email {
+  @apply !pl-6 !pr-0 !py-0;
+}
+
 
   .woocommerce-order .woocommerce-order-details {
     @apply !px-0 !py-10;
@@ -4701,7 +4734,7 @@ form.form-loading {
   @apply !text-[20px] font-semibold !text-[#a17810];
 }
 .page-my-account .woocommerce table.shop_table {
-  @apply border-[none];
+  @apply max-xl:border-none;
 }
 .page-my-account .woocommerce-MyAccount-content {
   @apply p-0;
