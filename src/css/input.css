@@ -4906,7 +4906,7 @@ form.form-loading {
   background: #fcfaf8;
 }
 .custom-data-table th {
-  @apply text-left font-semibold text-gray-900 px-4 py-3.5 border-r-[#CDBAA6] border-b-[#CDBAA6] border-b border-solid border-r;
+  @apply text-left text-base font-semibold text-gray-900 px-4 py-3.5 border-r-[#CDBAA6] border-b-[#CDBAA6] border-b border-solid border-r;
 }
 .custom-data-table td {
   @apply text-gray-700 align-middle px-4 py-3.5 border-r-[#cdbaa6] border-b-[#cdbaa6] border-b border-solid border-r first:font-medium first:text-gray-900;
