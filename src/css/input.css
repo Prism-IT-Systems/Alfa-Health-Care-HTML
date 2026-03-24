@@ -5259,6 +5259,13 @@ form.form-loading {
   @apply bg-offWhite;
 } 
 
-product-category-section .cart-title-price {
+.product-category-section .cart-title-price {
   @apply flex !items-end gap-4;
+}
+
+.page-home textarea::placeholder {
+  @apply text-[#847362] text-base;
+}
+.page-home input::placeholder {
+  @apply text-[#847362] text-base;
 }

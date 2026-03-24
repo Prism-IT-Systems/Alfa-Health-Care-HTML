@@ -12002,10 +12002,20 @@ form.form-loading {
 .page-cart .product-category-section , .page-checkout .product-category-section {
   background-color: var(--Off-White);
 }
-product-category-section .cart-title-price {
+.product-category-section .cart-title-price {
   display: flex;
   align-items: flex-end !important;
   gap: calc(var(--spacing) * 4);
+}
+.page-home textarea::placeholder {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  color: #847362;
+}
+.page-home input::placeholder {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  color: #847362;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
