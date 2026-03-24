@@ -2444,8 +2444,8 @@
   }
 
   .woocommerce ul.order_details li strong,
-  .product-category-section .woocommerce-Price-amount {
-    @apply text-lg leading-5 break-words break-all;
+  .page-checkout .product-category-section .woocommerce-Price-amount {
+    @apply !text-[28px] leading-5 break-words break-all;
   }
 
   .woocommerce-order-overview + p {
@@ -2465,7 +2465,7 @@
     @apply !p-3;
   }
   .woocommerce ul.order_details li strong,
-  .product-category-section .woocommerce-Price-amount {
+  .page-checkout .product-category-section .woocommerce-Price-amount {
     @apply !text-sm;
   }
   .woocommerce-order p {
@@ -2477,7 +2477,7 @@
     @apply !p-2.5;
   }
   .woocommerce ul.order_details li strong,
-  .product-category-section .woocommerce-Price-amount {
+  .page-checkout .product-category-section .woocommerce-Price-amount {
     @apply !text-xs;
   }
 }

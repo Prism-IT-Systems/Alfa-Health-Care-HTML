@@ -6574,9 +6574,8 @@
   --tw-leading: var(--leading-5);
   line-height: var(--leading-5);
 }
-.woocommerce ul.order_details li strong, .product-category-section .woocommerce-Price-amount {
-  font-size: var(--text-lg);
-  line-height: var(--tw-leading, var(--text-lg--line-height));
+.woocommerce ul.order_details li strong, .page-checkout .product-category-section .woocommerce-Price-amount {
+  font-size: 28px !important;
   --tw-leading: var(--leading-5);
   line-height: var(--leading-5);
   overflow-wrap: break-word;
@@ -6600,7 +6599,7 @@
   .woocommerce-order .woocommerce-order-overview li {
     padding: calc(var(--spacing) * 3) !important;
   }
-  .woocommerce ul.order_details li strong, .product-category-section .woocommerce-Price-amount {
+  .woocommerce ul.order_details li strong, .page-checkout .product-category-section .woocommerce-Price-amount {
     font-size: var(--text-sm) !important;
     line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
   }
@@ -6612,7 +6611,7 @@
   .woocommerce-order .woocommerce-order-overview li {
     padding: calc(var(--spacing) * 2.5) !important;
   }
-  .woocommerce ul.order_details li strong, .product-category-section .woocommerce-Price-amount {
+  .woocommerce ul.order_details li strong, .page-checkout .product-category-section .woocommerce-Price-amount {
     font-size: var(--text-xs) !important;
     line-height: var(--tw-leading, var(--text-xs--line-height)) !important;
   }
