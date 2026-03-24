@@ -21,10 +21,14 @@ export default {
         SunlitGold: "var(--Sunlit-Gold)",
         WarmMarigold: "var(--Warm-Marigold)",
         neutralGray: "#E8E8E8",
-        neutralGrayHover: "#DDDDDD"
+        neutralGrayHover: "#DDDDDD",
+        sand: "var(--sand)",
+        lightBeige: "var(--light-beige)",
+        danger: "var(--danger)"
       },
       boxShadow: {
         shadow_1: "var(--shadow1)",
+        shadow_2: "--shadow2",
         productCard: "0px 2px 12px -2px rgba(66, 51, 36, 0.06)",
         productCardHover: "0px 2px 24px -2px rgba(66, 51, 36, 0.25)"
       }
