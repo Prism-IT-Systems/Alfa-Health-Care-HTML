@@ -2978,7 +2978,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .how-we-work-section .steps-card .info-title {
-    @apply text-[18px] sm:text-xl font-semibold
+    @apply text-[18px] sm:text-xl font-semibold leading-[28px];
 }
 
 /* Our Registry section */
