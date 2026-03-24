@@ -276,6 +276,10 @@
         @apply items-center max-w-[690px]  mb-[34px] sm:mb-13.5 lg:mb-[74px] mx-auto;
     }
 
+    .heading-wrap h2 .highlight-text{
+      @apply !font-bold;
+    }
+
     /* Section Footer CTA */
     .section-footer-cta {
         @apply text-center mt-[34px] sm:mt-13.5;
@@ -328,7 +332,7 @@
 }
 
 .header-top-bar .top-bar-inner {
-    @apply flex justify-between gap-4 xl:px-6;
+    @apply flex justify-between gap-4;
 }
 
 .header-top-bar .top-bar-inner .top-bar-left {
@@ -385,7 +389,7 @@
 }
 
 .navigation-bar .navigation-bar-inner {
-    @apply flex items-center justify-between md:gap-6 px-0 xl:!px-4.5;
+    @apply flex items-center justify-between md:gap-6;
 }
 
 .navigation-bar .navigation-bar-inner .navigation-menu-list {
@@ -1166,7 +1170,7 @@
     }
     
     .main-footer .footer-inner { 
-        @apply grid  grid-cols-1 sm:grid-cols-2 lg:flex md:flex-row md:flex-wrap xl:flex-nowrap gap-[30px] md:gap-[40px] lg:gap-[60px] xl:gap-[100px] justify-between;
+        @apply grid  grid-cols-1 sm:grid-cols-2 lg:flex md:flex-row md:flex-wrap xl:flex-nowrap gap-[30px] md:gap-[40px] lg:gap-[60px] 2xl:gap-[100px] justify-between;
     }
 
     /* .main-footer .footer-inner > div{
@@ -1254,6 +1258,10 @@
     .main-footer .footer-inner .payment-box {
         @apply bg-[rgba(252,250,248,0.1)] outline outline-solid outline-[rgba(252,250,248,0.2)] rounded-3xl p-5 md:p-[25px_25px_28px_25px] w-full sm:w-[314px] max-w-full
                 text-center lg:text-left; 
+     }
+     
+    .main-footer .footer-inner .payment-box iframe{
+        @apply !w-full; 
      }
 
      .main-footer .footer-inner .payment-box .label {
@@ -1696,7 +1704,7 @@
     }
 
     .alfa-modal .form-title {
-        @apply text-[26px] leading-[34px] font-semibold !mb-6 text-center;
+        @apply !text-[26px] leading-[34px] font-semibold !mb-6 text-center;
     }
 
     .alfa-modal .form-title::after {
@@ -1717,6 +1725,11 @@
 
     .alfa-modal form input {
         @apply text-sm leading-[19px];
+    }
+
+    .alfa-modal form input:not([type="submit"],[type="checkbox"]),
+    .alfa-modal form select {
+      @apply h-13
     }
 
     .alfa-modal .wpcf7-not-valid-tip {
@@ -1772,6 +1785,10 @@
     .alfa-modal .form-row.three-col > div p,
     .alfa-modal .form-row p {
         @apply w-full;
+    }
+
+    .alfa-modal .form-row .form-group > p {
+      @apply leading-0;
     }
 
     .alfa-modal .alfa-close {
@@ -1871,7 +1888,7 @@
 }
 
 .compression-therapy-section .split-info-wrap .icon-list-widget li .icon-list-content h6{
-    @apply leading-6.5 font-medium;
+    @apply leading-6 font-medium;
  }   
 
 .compression-therapy-section .content-media-col-right .action-cta-wrap{

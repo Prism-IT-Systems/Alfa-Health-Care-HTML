@@ -2007,6 +2007,10 @@
       margin-bottom: 74px;
     }
   }
+  .heading-wrap h2 .highlight-text {
+    --tw-font-weight: var(--font-weight-bold) !important;
+    font-weight: var(--font-weight-bold) !important;
+  }
   .section-footer-cta {
     margin-top: 34px;
     text-align: center;
@@ -2091,9 +2095,6 @@
     display: flex;
     justify-content: space-between;
     gap: calc(var(--spacing) * 4);
-    @media (width >= 80rem) {
-      padding-inline: calc(var(--spacing) * 6);
-    }
   }
   .header-top-bar .top-bar-inner .top-bar-left {
     display: flex;
@@ -2201,12 +2202,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: calc(var(--spacing) * 0);
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
-    }
-    @media (width >= 80rem) {
-      padding-inline: calc(var(--spacing) * 4.5) !important;
     }
   }
   .navigation-bar .navigation-bar-inner .navigation-menu-list {
@@ -3989,7 +3986,7 @@
     @media (width >= 80rem) {
       flex-wrap: nowrap;
     }
-    @media (width >= 80rem) {
+    @media (width >= 96rem) {
       gap: 100px;
     }
   }
@@ -4137,6 +4134,9 @@
     @media (width >= 64rem) {
       text-align: left;
     }
+  }
+  .main-footer .footer-inner .payment-box iframe {
+    width: 100% !important;
   }
   .main-footer .footer-inner .payment-box .label {
     --tw-leading: var(--leading-5);
@@ -5072,7 +5072,7 @@
   .alfa-modal .form-title {
     margin-bottom: calc(var(--spacing) * 6) !important;
     text-align: center;
-    font-size: 26px;
+    font-size: 26px !important;
     --tw-leading: 34px;
     line-height: 34px;
     --tw-font-weight: var(--font-weight-semibold);
@@ -5105,6 +5105,9 @@
     line-height: var(--tw-leading, var(--text-sm--line-height));
     --tw-leading: 19px;
     line-height: 19px;
+  }
+  .alfa-modal form input:not([type="submit"],[type="checkbox"]), .alfa-modal form select {
+    height: calc(var(--spacing) * 13);
   }
   .alfa-modal .wpcf7-not-valid-tip {
     display: none;
@@ -5186,6 +5189,10 @@
   }
   .alfa-modal .form-row.three-col > div p, .alfa-modal .form-row p {
     width: 100%;
+  }
+  .alfa-modal .form-row .form-group > p {
+    --tw-leading: calc(var(--spacing) * 0);
+    line-height: calc(var(--spacing) * 0);
   }
   .alfa-modal .alfa-close {
     position: absolute;
@@ -5342,8 +5349,8 @@
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .compression-therapy-section .split-info-wrap .icon-list-widget li .icon-list-content h6 {
-  --tw-leading: calc(var(--spacing) * 6.5);
-  line-height: calc(var(--spacing) * 6.5);
+  --tw-leading: var(--leading-6);
+  line-height: var(--leading-6);
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
 }
