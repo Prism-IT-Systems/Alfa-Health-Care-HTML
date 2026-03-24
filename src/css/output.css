@@ -5195,7 +5195,7 @@
     }
   }
   .alfa-modal form input[type="checkbox"] {
-    margin-top: 6px;
+    margin-top: 6px !important;
     height: 19px !important;
     width: 19px !important;
     flex-shrink: 0;
@@ -5205,6 +5205,7 @@
   }
   .alfa-modal .form-row.checkbox {
     margin-block: calc(var(--spacing) * 6);
+    margin-bottom: 24px !important;
   }
   .alfa-modal form textarea {
     height: 144px !important;
@@ -5232,6 +5233,10 @@
     width: 100%;
     max-width: 315px;
     padding: calc(var(--spacing) * 4);
+    text-align: center !important;
+    font-family: Inter;
+    font-size: 16px;
+    background-color: #a17810 !important;
   }
   .alfa-modal .alfa-close svg path {
     stroke: var(--pure-white);
@@ -9089,8 +9094,8 @@ body.page-insurers .faq-section .faq-content {
   color: #333;
 }
 .highlight-text {
-  --tw-font-weight: var(--font-weight-semibold);
-  font-weight: var(--font-weight-semibold);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
   color: #A17810;
 }
 .upload-subtext {
@@ -9596,6 +9601,8 @@ form.form-loading {
 }
 .product-category-section .woocommerce-Price-amount {
   font-size: 22px;
+  --tw-leading: 42px;
+  line-height: 42px;
   @media (width >= 40rem) {
     font-size: 28px;
   }
@@ -11992,6 +11999,11 @@ form.form-loading {
 }
 .page-cart .product-category-section , .page-checkout .product-category-section {
   background-color: var(--Off-White);
+}
+product-category-section .cart-title-price {
+  display: flex;
+  align-items: flex-end !important;
+  gap: calc(var(--spacing) * 4);
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {

@@ -1798,11 +1798,11 @@
     }
 
     .alfa-modal form input[type="checkbox"] {
-        @apply !w-[19px] !h-[19px] !rounded-[3px] !p-0 mt-[6px] flex-shrink-0 !bg-pureWhite;
+        @apply !w-[19px] !h-[19px] !rounded-[3px] !p-0 !mt-[6px] flex-shrink-0 !bg-pureWhite;
     }
 
     .alfa-modal .form-row.checkbox {
-        @apply my-6;
+        @apply my-6 !mb-[24px];
     }
 
     .alfa-modal form textarea {
@@ -1818,7 +1818,8 @@
     }
 
      .alfa-modal form .submit-btn input {
-        @apply p-4 w-full max-w-[315px] flex mx-auto;
+        @apply p-4 w-full max-w-[315px] flex mx-auto !text-center text-[16px] font-[Inter];
+        background-color: #a17810 !important;
     }
 
     .alfa-modal .alfa-close svg path {
@@ -3763,7 +3764,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-sm text-[#333] mb-[5px];
 }
 .highlight-text {
-  @apply text-[#A17810] font-semibold;
+  @apply text-[#A17810] font-bold;
 }
 .upload-subtext {
   @apply text-xs text-[#777];
@@ -4020,7 +4021,7 @@ form.form-loading {
 }
 
 .product-category-section .woocommerce-Price-amount {
-  @apply text-[22px] sm:text-[28px];
+  @apply text-[22px] sm:text-[28px] leading-[42px];
 } 
 
 .woocommerce a.add_to_cart_button {
@@ -5257,3 +5258,7 @@ form.form-loading {
 .page-checkout .product-category-section{
   @apply bg-offWhite;
 } 
+
+product-category-section .cart-title-price {
+  @apply flex !items-end gap-4;
+}
