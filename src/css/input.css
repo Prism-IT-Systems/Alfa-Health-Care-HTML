@@ -2449,7 +2449,7 @@
 
   .woocommerce-order p.woocommerce-thankyou-order-received {
     @apply relative pl-10 gap-3;
-    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center;
+    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center shrink-0 ;
     @apply before:bg-[length:18px_18px] before:bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.5%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%2F%3E%3C%2Fsvg%3E')];
   }
 
@@ -2463,7 +2463,7 @@
 
   .woocommerce ul.order_details li strong,
   .page-checkout .product-category-section .woocommerce-Price-amount {
-    @apply !text-[28px] leading-5 break-words break-all;
+    @apply !text-[26px] leading-[30px] break-words break-all;
   }
 
   .woocommerce-order-overview + p {

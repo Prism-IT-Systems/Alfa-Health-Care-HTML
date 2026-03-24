@@ -6527,6 +6527,7 @@
   position: relative;
   gap: calc(var(--spacing) * 3);
   padding-left: calc(var(--spacing) * 10);
+  flex-shrink: 0;
   &::before {
     content: var(--tw-content);
     display: inline-block;
@@ -6587,9 +6588,9 @@
   line-height: var(--leading-5);
 }
 .woocommerce ul.order_details li strong, .page-checkout .product-category-section .woocommerce-Price-amount {
-  font-size: 28px !important;
-  --tw-leading: var(--leading-5);
-  line-height: var(--leading-5);
+  font-size: 26px !important;
+  --tw-leading: 30px;
+  line-height: 30px;
   overflow-wrap: break-word;
   word-break: break-all;
 }
