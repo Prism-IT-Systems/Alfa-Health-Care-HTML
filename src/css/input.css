@@ -3074,7 +3074,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .faq-content .faq-wrapper {
-  @apply !gap-[32px] 
+  @apply !gap-[32px] w-full;
 }
 
 @media (max-width: 1280px) {
@@ -4128,9 +4128,6 @@ form.form-loading {
 
 /* Product Detail Page FAQ */
 
-.faq-wrapper {
-  @apply mx-auto my-[30px];
-}
 
 /* Each FAQ item */
 .faq-wrapper .faq-item {
@@ -4345,7 +4342,7 @@ form.form-loading {
 }
 
 .page-faq .faq-heading-wrapper {
-  @apply items-end gap-[32px] !mb-[34px] sm:mb-13.5 lg:mb-[74px]; 
+  @apply items-end gap-[32px] mb-[34px] sm:mb-13.5 lg:mb-[74px]; 
 }
 
 /* Privacy and Policy Page */
@@ -4358,7 +4355,7 @@ form.form-loading {
   @apply text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] font-medium mb-[20px];
 }
 .page-privacy-policy #privacy-policy-content h2 {
-  @apply text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[18px] mb-[18px] md:mt-[26px] md:mb-6;
+  @apply text-base md:text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[18px] mb-[18px] md:mt-[26px] md:mb-6;
   font-family: inter;
 }
 .page-privacy-policy #privacy-policy-content h5 {
@@ -4392,7 +4389,7 @@ form.form-loading {
   background: rgba(223, 176, 58, 0.06);
 }
 #privacy-policy-form .agree-btn {
-  @apply flex flex-row justify-center items-center gap-2 w-40 h-[50px] text-white transition-[0.3s] duration-[ease-in-out] px-[43px] py-2 rounded-[50px];
+  @apply flex flex-row justify-center text-[18px] font-medium font-inter items-center gap-2 w-40 h-[50px] text-white transition-[0.3s] duration-[ease-in-out] px-[43px] py-2 rounded-[50px];
   background: #a17810;
 }
 #privacy-policy-form .agree-btn:hover {
