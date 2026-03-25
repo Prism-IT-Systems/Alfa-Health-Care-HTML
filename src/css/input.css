@@ -3046,7 +3046,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .faq-section .accordion-item .accordion-btn {
-  @apply flex w-full items-center justify-between gap-2 px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+  @apply flex w-full items-center justify-between gap-2 px-[18px] py-[12px] sm:px-[25px] sm:py-[20px] cursor-pointer;
 }
 
 .faq-section .accordion-item .accordion-btn {

@@ -7782,8 +7782,8 @@ body.page-insurers .faq-section .faq-content {
   align-items: center;
   justify-content: space-between;
   gap: calc(var(--spacing) * 2);
-  padding-inline: 15px;
-  padding-block: 10px;
+  padding-inline: 18px;
+  padding-block: 12px;
   @media (width >= 40rem) {
     padding-inline: 25px;
   }
