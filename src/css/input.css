@@ -4351,14 +4351,14 @@ form.form-loading {
 /* Privacy and Policy Page */
 
 .page-privacy-policy #privacy-policy-content {
-  @apply border gap-4 px-[35px] py-[30px] py-9 rounded-3xl border-solid border-[#DFB03A];
+  @apply border gap-4 px-[20px] py-[20px] md:px-[35px] md:py-[30px] py-9 rounded-3xl border-solid border-[#DFB03A];
   background: rgba(223, 176, 58, 0.03);
 }
 .page-privacy-policy #privacy-policy-content p {
-  @apply text-lg leading-7 text-[#847362] font-medium mb-4;
+  @apply text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] font-medium mb-[20px];
 }
 .page-privacy-policy #privacy-policy-content h2 {
-  @apply text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[26px] mb-6;
+  @apply text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[18px] mb-[18px] md:mt-[26px] md:mb-6;
   font-family: inter;
 }
 .page-privacy-policy #privacy-policy-content h5 {
@@ -4370,22 +4370,20 @@ form.form-loading {
   /* margin-bottom: 20px; */
 }
 .page-privacy-policy #privacy-policy-content li {
-  @apply text-lg leading-7 text-[#847362] font-medium;
+  @apply text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] font-medium;
   list-style: disc;
 }
 #privacy-policy-form .sms-consent-form {
   @apply flex flex-col gap-8 m-auto pt-4;
 }
 #privacy-policy-form .consent-text {
-  @apply font-medium text-lg leading-7 text-[#847362] flex gap-5 justify-start;
+  @apply font-medium text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] flex gap-5 justify-start;
 }
 #privacy-policy-form .consent-text input {
   @apply accent-[#32261B] mt-1;
   background: transparent;
 }
-#privacy-policy-form .form-group {
-  @apply mt-2.5 mb-[15px];
-}
+
 #privacy-policy-form .form-group label {
   @apply hidden;
 }
@@ -4400,14 +4398,29 @@ form.form-loading {
 #privacy-policy-form .agree-btn:hover {
   background: #8b640c;
 }
-#privacy-policy-form .consent-text input[type="checkbox"] {
-  @apply appearance-none w-5 h-5 border cursor-pointer relative rounded-[3px] border-solid border-[#a17810];
+
+#privacy-policy-form .consent-text input[type="checkbox"][name="sms_consent"] {
+  @apply appearance-none w-5 h-5 border rounded cursor-pointer relative bg-transparent transition-all duration-[0.2s] ease-[ease] border-solid border-[#a17810] checked:bg-[#a17810] checked:border-[#a17810] checked:after:content-[""] checked:after:w-[5px] checked:after:h-2.5 checked:after:absolute checked:after:-translate-x-2/4 checked:after:translate-y-[-60%] checked:after:rotate-45 checked:after:border-[solid] checked:after:border-[0_2px_2px_0] checked:after:left-2/4 checked:after:top-2/4;
   -webkit-appearance: none;
-  /* border color and thickness */
-  background: transparent;
 }
+
+/* Checked state */
+
+/* Checkmark */
+#privacy-policy-form
+  .consent-text
+  input[type="checkbox"][name="sms_consent"]:not(:checked) {
+  @apply bg-transparent border-[#a17810] after:content-none;
+}
+
+
 #privacy-policy-form .error-msg {
-  @apply text-[red] text-sm font-normal;
+  @apply text-[red] text-sm font-normal font-inter;
+}
+
+#privacy-policy-form .form-group .error-msg{
+   display:block;
+   margin-top: 16px;
 }
 
 #privacy-policy-form .succes {
