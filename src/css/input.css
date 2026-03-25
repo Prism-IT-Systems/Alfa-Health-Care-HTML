@@ -2952,17 +2952,25 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .how-we-work-section .steps-card {
-    @apply flex flex-col gap-4 text-center relative 
+    @apply flex flex-col gap-4 text-center ;
+}
 
-   md:after:content-['']
-   md:after:absolute
-   md:after:top-[52px]
-   md:after:left-1/2
-   md:after:translate-x-12
-   md:after:w-full
-   md:after:h-[1.5px]
-  md:after:bg-[#E0C78A]
-  last:md:after:hidden
+.how-we-work-section .steps-card .steps-content {
+  @apply relative z-[9999] md:after:content-[''] md:after:absolute md:after:w-[180%] md:after:h-[1.5px] md:after:bg-[#E0C78A] md:after:left-full md:after:top-2/4;
+}
+
+@media (max-width: 1280px) {
+  .how-we-work-section .steps-card:nth-child(3) .steps-content::after {
+    @apply content-none;
+  }
+}
+
+/* AFTER LINE */
+@media (min-width: 768px) {
+  /* Remove line from last item */
+  .how-we-work-section .steps-card:last-child .steps-content::after {
+    @apply hidden;
+  }
 }
 
 .how-we-work-section .steps-card span{
@@ -2978,7 +2986,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .how-we-work-section .steps-card .info-title {
-    @apply text-[18px] sm:text-xl font-semibold leading-[28px];
+    @apply text-[18px] sm:text-xl font-semibold leading-[30px];
 }
 
 /* Our Registry section */
@@ -3049,6 +3057,10 @@ body.page-insurers .faq-section .faq-content {
   @apply !max-w-full;
 }
 
+.faq-content .faq-wrapper {
+  @apply !gap-[32px] 
+}
+
 @media (max-width: 1280px) {
   .faq-content .faq-wrapper {
     @apply flex-col;
@@ -3059,7 +3071,7 @@ body.page-insurers .faq-section .faq-content {
     @apply w-full;
   }
   .page-faq .faq-heading-wrapper {
-    @apply flex-col items-center gap-4;
+    @apply flex-col !items-center !gap-4;
   }
   .page-faq .faq-heading-column {
     @apply items-center text-center;
@@ -3146,9 +3158,6 @@ body.page-insurers .faq-section .faq-content {
  }
 
  @media (max-width: 1280px) {
-  .how-we-work-section .steps-card:nth-child(3)::after {
-    @apply content-none ;
-  }
   .workflow-section .workflow-num::before {
     @apply content-none ;
   }
@@ -3642,10 +3651,6 @@ body.page-insurers .faq-section .faq-content {
 }
 
 /* Product Detail Page FAQ */
-
-.faq-wrapper {
-  @apply mx-auto my-[30px];
-}
 
 /* Each FAQ item */
 .faq-wrapper .faq-item {
@@ -4324,7 +4329,7 @@ form.form-loading {
 }
 
 .page-faq .faq-heading-wrapper {
-  @apply !items-end !gap-[44px]; 
+  @apply items-end gap-[32px] !mb-[34px] sm:mb-13.5 lg:mb-[74px]; 
 }
 
 /* Privacy and Policy Page */

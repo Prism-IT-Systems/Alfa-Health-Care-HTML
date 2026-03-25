@@ -7554,11 +7554,14 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .how-we-work-section .steps-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing) * 4);
   text-align: center;
+}
+.how-we-work-section .steps-card .steps-content {
+  position: relative;
+  z-index: 9999;
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
@@ -7568,13 +7571,13 @@ body.page-insurers .faq-section .faq-content {
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
-      top: 52px;
+      top: calc(2/4 * 100%);
     }
   }
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
-      left: calc(1/2 * 100%);
+      left: 100%;
     }
   }
   @media (width >= 48rem) {
@@ -7586,14 +7589,7 @@ body.page-insurers .faq-section .faq-content {
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
-      width: 100%;
-    }
-  }
-  @media (width >= 48rem) {
-    &::after {
-      content: var(--tw-content);
-      --tw-translate-x: calc(var(--spacing) * 12);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
+      width: 180%;
     }
   }
   @media (width >= 48rem) {
@@ -7608,13 +7604,16 @@ body.page-insurers .faq-section .faq-content {
       content: var(--tw-content);
     }
   }
-  &:last-child {
-    @media (width >= 48rem) {
-      &::after {
-        content: var(--tw-content);
-        display: none;
-      }
-    }
+}
+@media (max-width: 1280px) {
+  .how-we-work-section .steps-card:nth-child(3) .steps-content::after {
+    --tw-content: none;
+    content: none;
+  }
+}
+@media (min-width: 768px) {
+  .how-we-work-section .steps-card:last-child .steps-content::after {
+    display: none;
   }
 }
 .how-we-work-section .steps-card span {
@@ -7649,8 +7648,8 @@ body.page-insurers .faq-section .faq-content {
 }
 .how-we-work-section .steps-card .info-title {
   font-size: 18px;
-  --tw-leading: 28px;
-  line-height: 28px;
+  --tw-leading: 30px;
+  line-height: 30px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {
@@ -7804,6 +7803,9 @@ body.page-insurers .faq-section .faq-content {
 .faq-heading-column:last-child {
   max-width: 100% !important;
 }
+.faq-content .faq-wrapper {
+  gap: 32px !important;
+}
 @media (max-width: 1280px) {
   .faq-content .faq-wrapper {
     flex-direction: column;
@@ -7815,8 +7817,8 @@ body.page-insurers .faq-section .faq-content {
   }
   .page-faq .faq-heading-wrapper {
     flex-direction: column;
-    align-items: center;
-    gap: calc(var(--spacing) * 4);
+    align-items: center !important;
+    gap: calc(var(--spacing) * 4) !important;
   }
   .page-faq .faq-heading-column {
     align-items: center;
@@ -7971,10 +7973,6 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 @media (max-width: 1280px) {
-  .how-we-work-section .steps-card:nth-child(3)::after {
-    --tw-content: none;
-    content: none;
-  }
   .workflow-section .workflow-num::before {
     --tw-content: none;
     content: none;
@@ -8858,10 +8856,6 @@ body.page-insurers .faq-section .faq-content {
   line-height: 26px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
-}
-.faq-wrapper {
-  margin-inline: auto;
-  margin-block: 30px;
 }
 .faq-wrapper .faq-item {
   margin-bottom: calc(var(--spacing) * 4);
@@ -10173,8 +10167,15 @@ form.form-loading {
   color: #32261B !important;
 }
 .page-faq .faq-heading-wrapper {
-  align-items: flex-end !important;
-  gap: 44px !important;
+  margin-bottom: 34px !important;
+  align-items: flex-end;
+  gap: 32px;
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 13.5);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: 74px;
+  }
 }
 .page-privacy-policy #privacy-policy-content {
   gap: calc(var(--spacing) * 4);
