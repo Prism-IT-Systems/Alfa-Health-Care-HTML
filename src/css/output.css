@@ -3058,7 +3058,6 @@
   }
   .info-card-widget .info-card {
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     border-radius: var(--radius-3xl);
@@ -7604,6 +7603,11 @@ body.page-insurers .faq-section .faq-content {
       content: var(--tw-content);
     }
   }
+}
+.what-we-do-section .info-card-widget .info-card-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 @media (max-width: 1280px) {
   .how-we-work-section .steps-card:nth-child(3) .steps-content::after {

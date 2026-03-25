@@ -784,7 +784,7 @@
 
     .info-card-widget .info-card { 
         @apply px-[25px] py-8 border border-[rgba(223,176,58,0.3)] shadow-[0px_2px_12px_-2px_rgba(66,51,36,0.06)] rounded-3xl bg-white
-               flex flex-col items-center text-center h-full;
+               flex flex-col items-center text-center;
     }
 
     .info-card-widget .info-card .info-icon {
@@ -2957,6 +2957,10 @@ body.page-insurers .faq-section .faq-content {
 
 .how-we-work-section .steps-card .steps-content {
   @apply relative z-[9999] md:after:content-[''] md:after:absolute md:after:w-[180%] md:after:h-[1.5px] md:after:bg-[#E0C78A] md:after:left-full md:after:top-2/4;
+}
+
+.what-we-do-section .info-card-widget .info-card-col {
+  @apply flex justify-end items-end;
 }
 
 @media (max-width: 1280px) {
