@@ -3034,11 +3034,23 @@ body.page-insurers .faq-section .faq-content {
 } 
 
 .faq-section .accordion-item {
-  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+  @apply rounded-2xl bg-[#F4F1EC];
+}
+
+.faq-section .accordion-item .accordion-content > div:empty {
+  @apply !hidden;
 }
 
 .faq-section .accordion-item .accordion-btn {
-  @apply flex w-full items-center justify-between gap-2 cursor-pointer;
+  @apply flex w-full items-center justify-between gap-2 px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+}
+
+.faq-section .accordion-item .accordion-btn {
+  @apply relative after:content-[""] after:absolute after:w-[calc(100%_-_50px)] after:h-px after:bg-neutral-200 after:opacity-0 after:bottom-0;
+}
+
+.faq-section .accordion-item.active .accordion-btn::after {
+  @apply opacity-100;
 }
 
 .faq-section .accordion-item .accordion-btn .accordion-icon {
@@ -3046,7 +3058,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .faq-section .accordion-item .accordion-content {
-    @apply mt-4;
+    @apply px-[15px] py-[10px] sm:px-[25px] sm:py-[20px];
 }
 
 .faq-section .accordion-item .accordion-content >  div:empty{

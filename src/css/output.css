@@ -7765,9 +7765,19 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .faq-section .accordion-item {
-  cursor: pointer;
   border-radius: var(--radius-2xl);
   background-color: #F4F1EC;
+}
+.faq-section .accordion-item .accordion-content > div:empty {
+  display: none !important;
+}
+.faq-section .accordion-item .accordion-btn {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 2);
   padding-inline: 15px;
   padding-block: 10px;
   @media (width >= 40rem) {
@@ -7778,12 +7788,38 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .faq-section .accordion-item .accordion-btn {
-  display: flex;
-  width: 100%;
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
-  gap: calc(var(--spacing) * 2);
+  position: relative;
+  &::after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::after {
+    content: var(--tw-content);
+    bottom: calc(var(--spacing) * 0);
+  }
+  &::after {
+    content: var(--tw-content);
+    height: 1px;
+  }
+  &::after {
+    content: var(--tw-content);
+    width: calc(100% - 50px);
+  }
+  &::after {
+    content: var(--tw-content);
+    background-color: var(--color-neutral-200);
+  }
+  &::after {
+    content: var(--tw-content);
+    opacity: 0%;
+  }
+  &::after {
+    --tw-content: "";
+    content: var(--tw-content);
+  }
+}
+.faq-section .accordion-item.active .accordion-btn::after {
+  opacity: 100%;
 }
 .faq-section .accordion-item .accordion-btn .accordion-icon {
   cursor: pointer;
@@ -7792,7 +7828,14 @@ body.page-insurers .faq-section .faq-content {
   color: #2E2415;
 }
 .faq-section .accordion-item .accordion-content {
-  margin-top: calc(var(--spacing) * 4);
+  padding-inline: 15px;
+  padding-block: 10px;
+  @media (width >= 40rem) {
+    padding-inline: 25px;
+  }
+  @media (width >= 40rem) {
+    padding-block: 20px;
+  }
 }
 .faq-section .accordion-item .accordion-content > div:empty {
   margin-bottom: calc(var(--spacing) * 4);
