@@ -11198,6 +11198,7 @@ form.form-loading {
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
 }
 .page-contact-us .contact-form-card {
+  margin-bottom: 0 !important;
   padding-inline: 28px;
   padding-block: 28px;
   @media (width >= 40rem) {
@@ -11206,6 +11207,16 @@ form.form-loading {
   @media (width >= 40rem) {
     padding-block: calc(var(--spacing) * 11);
   }
+}
+.contact-us-map-wrap iframe {
+  margin-bottom: 34px;
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 13.5);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: 74px;
+  }
+  filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
 }
 .contact-form-card .form-title {
   margin-bottom: calc(var(--spacing) * 0) !important;
@@ -11363,10 +11374,16 @@ form.form-loading {
   gap: calc(var(--spacing) * 4);
 }
 .contact-info-wrapper .contact-info-card .icon-circle {
-  height: 63.16px;
-  width: 63.16px;
+  height: 46.16px;
+  width: 46.16px;
   flex-shrink: 0;
   border-radius: 100%;
+  @media (width >= 40rem) {
+    height: 63.16px;
+  }
+  @media (width >= 40rem) {
+    width: 63.16px;
+  }
   background: #f5efe0;
 }
 .contact-info-wrapper .contact-info-card .info-item strong {
@@ -11391,12 +11408,26 @@ form.form-loading {
   word-break: break-all;
   color: #3C2C20;
   font-style: normal;
+  transition-property: 0.2s;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: ease-in-out;
+  transition-duration: ease-in-out;
   font-family: "Inter";
 }
+.contact-info-wrapper .contact-info-card .info-item a:hover {
+  color: #a17810;
+}
 .contact-info-wrapper .contact-info-card .icon-circle svg {
-  height: 29.47px;
-  width: 29.47px;
+  height: 20.47px;
+  width: 20.47px;
   stroke: #a17810;
+  @media (width >= 40rem) {
+    height: 29.47px;
+  }
+  @media (width >= 40rem) {
+    width: 29.47px;
+  }
 }
 .contact-info-wrapper .working-hours-card {
   margin-bottom: 0 !important;
@@ -11437,7 +11468,7 @@ form.form-loading {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 33.68px;
+  gap: 14px;
   border-radius: 25.2632px;
   border-style: var(--tw-border-style);
   border-width: 1.05263px;

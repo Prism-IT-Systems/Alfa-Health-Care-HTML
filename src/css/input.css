@@ -4742,8 +4742,15 @@ form.form-loading {
 }
 
 .page-contact-us .contact-form-card {
-  @apply px-[28px] py-[28px] sm:px-8 sm:py-11;
+  @apply px-[28px] py-[28px] sm:px-8 sm:py-11 !mb-[0];
 }
+
+.contact-us-map-wrap iframe {
+  @apply mb-[34px] sm:mb-13.5 lg:mb-[74px];
+  filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
+}
+
+
 
 .contact-form-card .form-title {
   @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] !mb-0 w-fit border-b border-[#a17810] ;
@@ -4814,7 +4821,7 @@ form.form-loading {
   @apply flex gap-4 items-center mb-0;
 }
 .contact-info-wrapper .contact-info-card .icon-circle {
-  @apply w-[63.16px] h-[63.16px] shrink-0 rounded-[100%];
+  @apply w-[46.16px] h-[46.16px] sm:w-[63.16px] sm:h-[63.16px] shrink-0 rounded-[100%];
   background: #f5efe0;
 }
 .contact-info-wrapper .contact-info-card .info-item strong {
@@ -4822,11 +4829,16 @@ form.form-loading {
   font-family: "Inter";
 }
 .contact-info-wrapper .contact-info-card .info-item a {
-  @apply not-italic font-medium text-lg leading-[29px] text-[#3C2C20] break-words break-all;
+  @apply not-italic font-medium text-lg leading-[29px] text-[#3C2C20] break-words break-all transition-[0.2s] duration-[ease-in-out];
   font-family: "Inter";
 }
+
+.contact-info-wrapper .contact-info-card .info-item a:hover {
+  @apply text-[#a17810];
+}
+
 .contact-info-wrapper .contact-info-card .icon-circle svg {
-  @apply w-[29.47px] h-[29.47px] stroke-[#a17810];
+  @apply w-[20.47px] h-[20.47px] sm:w-[29.47px] sm:h-[29.47px] stroke-[#a17810];
 }
 .contact-info-wrapper .working-hours-card {
   @apply box-border flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
@@ -4837,7 +4849,7 @@ form.form-loading {
   font-family: "Inter";
 }
 .contact-info-wrapper .social-follow-card {
-  @apply box-border flex flex-col justify-center items-center gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
+  @apply box-border flex flex-col justify-center items-center gap-[14px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
   background: #ffffff;
 }
 .contact-info-wrapper .social-follow-card h4 {
