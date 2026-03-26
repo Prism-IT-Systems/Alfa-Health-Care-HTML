@@ -968,7 +968,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
     .info-card-widget .info-card { 
         @apply px-[25px] py-8 border border-[rgba(223,176,58,0.3)] shadow-[0px_2px_12px_-2px_rgba(66,51,36,0.06)] rounded-3xl bg-white
-               flex flex-col items-center text-center h-full;
+               flex flex-col items-center text-center;
     }
 
     .info-card-widget .info-card .info-icon {
@@ -1982,11 +1982,11 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
     .alfa-modal form input[type="checkbox"] {
-        @apply !w-[19px] !h-[19px] !rounded-[3px] !p-0 mt-[6px] flex-shrink-0 !bg-pureWhite;
+        @apply !w-[19px] !h-[19px] !rounded-[3px] !p-0 !mt-[6px] flex-shrink-0 !bg-pureWhite;
     }
 
     .alfa-modal .form-row.checkbox {
-        @apply my-6;
+        @apply my-6 !mb-[24px];
     }
 
     .alfa-modal form textarea {
@@ -2002,7 +2002,8 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
      .alfa-modal form .submit-btn input {
-        @apply p-4 w-full max-w-[315px] flex mx-auto;
+        @apply p-4 w-full max-w-[315px] flex mx-auto !text-center text-[16px] font-[Inter];
+        background-color: #a17810 !important;
     }
 
     .alfa-modal .alfa-close svg path {
@@ -2632,7 +2633,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
   .woocommerce-order p.woocommerce-thankyou-order-received {
     @apply relative pl-10 gap-3;
-    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center;
+    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center shrink-0 ;
     @apply before:bg-[length:18px_18px] before:bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.5%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%2F%3E%3C%2Fsvg%3E')];
   }
 
@@ -2646,7 +2647,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
   .woocommerce ul.order_details li strong,
   .page-checkout .product-category-section .woocommerce-Price-amount {
-    @apply !text-[28px] leading-5 break-words break-all;
+    @apply !text-[26px] leading-[30px] break-words break-all;
   }
 
   .woocommerce-order-overview + p {
@@ -3135,17 +3136,29 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .how-we-work-section .steps-card {
-    @apply flex flex-col gap-4 text-center relative 
+    @apply flex flex-col gap-4 text-center ;
+}
 
-   md:after:content-['']
-   md:after:absolute
-   md:after:top-[52px]
-   md:after:left-1/2
-   md:after:translate-x-12
-   md:after:w-full
-   md:after:h-[1.5px]
-  md:after:bg-[#E0C78A]
-  last:md:after:hidden
+.how-we-work-section .steps-card .steps-content {
+  @apply relative z-[9999] md:after:content-[''] md:after:absolute md:after:w-[180%] md:after:h-[1.5px] md:after:bg-[#E0C78A] md:after:left-full md:after:top-2/4;
+}
+
+.what-we-do-section .info-card-widget .info-card-col {
+  @apply flex justify-end items-end;
+}
+
+@media (max-width: 1280px) {
+  .how-we-work-section .steps-card:nth-child(3) .steps-content::after {
+    @apply content-none;
+  }
+}
+
+/* AFTER LINE */
+@media (min-width: 768px) {
+  /* Remove line from last item */
+  .how-we-work-section .steps-card:last-child .steps-content::after {
+    @apply hidden;
+  }
 }
 
 .how-we-work-section .steps-card span{
@@ -3161,7 +3174,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .how-we-work-section .steps-card .info-title {
-    @apply text-[18px] sm:text-xl font-semibold
+    @apply text-[18px] sm:text-xl font-semibold leading-[30px];
 }
 
 /* Our Registry section */
@@ -3209,11 +3222,23 @@ body.page-insurers .faq-section .faq-content {
 } 
 
 .faq-section .accordion-item {
-  @apply rounded-2xl bg-[#F4F1EC] px-[15px] py-[10px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+  @apply rounded-2xl bg-[#F4F1EC];
+}
+
+.faq-section .accordion-item .accordion-content > div:empty {
+  @apply !hidden;
 }
 
 .faq-section .accordion-item .accordion-btn {
-  @apply flex w-full items-center justify-between gap-2 cursor-pointer;
+  @apply flex w-full items-center justify-between gap-2 px-[18px] py-[12px] sm:px-[25px] sm:py-[20px] cursor-pointer;
+}
+
+.faq-section .accordion-item .accordion-btn {
+  @apply relative after:content-[""] after:absolute after:w-[calc(100%_-_50px)] after:h-px after:bg-neutral-200 after:opacity-0 after:bottom-0;
+}
+
+.faq-section .accordion-item.active .accordion-btn::after {
+  @apply opacity-100;
 }
 
 .faq-section .accordion-item .accordion-btn .accordion-icon {
@@ -3221,7 +3246,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .faq-section .accordion-item .accordion-content {
-    @apply mt-4;
+    @apply px-[15px] py-[10px] sm:px-[25px] sm:py-[20px];
 }
 
 .faq-section .accordion-item .accordion-content >  div:empty{
@@ -3230,6 +3255,10 @@ body.page-insurers .faq-section .faq-content {
 
 .faq-heading-column:last-child {
   @apply !max-w-full;
+}
+
+.faq-content .faq-wrapper {
+  @apply !gap-[32px] w-full;
 }
 
 @media (max-width: 1280px) {
@@ -3242,7 +3271,7 @@ body.page-insurers .faq-section .faq-content {
     @apply w-full;
   }
   .page-faq .faq-heading-wrapper {
-    @apply flex-col items-center gap-4;
+    @apply flex-col !items-center !gap-4;
   }
   .page-faq .faq-heading-column {
     @apply items-center text-center;
@@ -3329,9 +3358,6 @@ body.page-insurers .faq-section .faq-content {
  }
 
  @media (max-width: 1280px) {
-  .how-we-work-section .steps-card:nth-child(3)::after {
-    @apply content-none ;
-  }
   .workflow-section .workflow-num::before {
     @apply content-none ;
   }
@@ -3826,10 +3852,6 @@ body.page-insurers .faq-section .faq-content {
 
 /* Product Detail Page FAQ */
 
-.faq-wrapper {
-  @apply mx-auto my-[30px];
-}
-
 /* Each FAQ item */
 .faq-wrapper .faq-item {
   @apply border transition-shadow duration-[0.3s] ease-[ease] mb-4 px-[22px] py-[18px] rounded-[10px] border-solid border-[#e6e6e6] hover:shadow-[0_8px_20px_rgba(0,0,0,0.06)] border-l-4 border-l-[#A17810] border-solid;
@@ -3875,7 +3897,7 @@ body.page-insurers .faq-section .faq-content {
   @apply font-[bold] flex items-center;
 }
 .alfar-refferals-form .section-number {
-  @apply flex items-center justify-center text-sm rounded-[50%];
+  @apply flex items-center justify-center text-sm rounded-[50%] font-bold;
 }
 .alfar-refferals-form .form-group {
   @apply flex-1 flex flex-col;
@@ -3905,10 +3927,10 @@ body.page-insurers .faq-section .faq-content {
   @apply min-h-[120px];
 }
 .alfar-refferals-form .checkbox-row {
-  @apply flex items-center gap-2.5;
+  @apply flex items-start gap-2.5;
 }
 .alfar-refferals-form .submit-btn {
-  @apply block text-white cursor-pointer mt-[30px] mb-0 mx-auto px-10 py-3.5 border-[none];
+  @apply block text-white cursor-pointer !text-[20px] mt-[30px] mb-0 mx-auto !px-[40px] !py-[16px] border-[none];
   background: #a17608;
 }
 .alfar-refferals-form .submit-btn:hover {
@@ -3947,7 +3969,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-sm text-[#333] mb-[5px];
 }
 .highlight-text {
-  @apply text-[#A17810] font-semibold;
+  @apply text-[#A17810] font-bold;
 }
 .upload-subtext {
   @apply text-xs text-[#777];
@@ -3973,7 +3995,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .alfar-refferals-form .error-message {
-  @apply text-[red] text-sm;
+  @apply text-[red] text-sm mt-[10px];
 }
 
 
@@ -3987,7 +4009,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-center;
 }
 .patient-referral-heading h1 {
-  @apply inline-block text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] border-b border-solid;
+  @apply  inline-block text-[20px] sm:text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] !mb-[30px] border-b border-solid;
 }
 .alfar-refferals-form .section-number {
   @apply text-[#32261B] w-8 h-8;
@@ -3997,7 +4019,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-lg mb-8 gap-4;
 }
 .alfar-refferals-form .form-row {
-  @apply flex gap-[30px] mb-4;
+  @apply flex gap-[30px] mb-[32px];
 }
 .alfar-refferals-form label {
   @apply text-base leading-5 text-[#64574F] font-semibold;
@@ -4026,10 +4048,10 @@ body.page-insurers .faq-section .faq-content {
   @apply text-base leading-5 font-medium text-[#32261B] border flex items-center gap-3 p-5 rounded-xl border-solid border-[#CDBAA6];
 }
 .alfar-refferals-form .section {
-  @apply p-10;
+  @apply p-[20px] sm:p-10;
 }
 .alfar-refferals-form input[type="checkbox"] {
-  @apply rounded-[3px] !p-[0];
+  @apply rounded-[3px] !p-[0] mt-[5px];
 }
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
@@ -4041,10 +4063,10 @@ body.page-insurers .faq-section .faq-content {
   @apply flex flex-col gap-[25px];
 }
 .document-upload .upload-box-content h3 {
-  @apply text-base leading-[26px] mb-4;
+  @apply text-base leading-[26px] mb-[25px];
 }
 .document-upload .upload-box-content p {
-  @apply text-left max-w-full mb-0;
+  @apply text-left max-w-full mb-0 text-base font-medium;
 }
 .document-upload .upload-heading-wrap {
   @apply text-lg leading-[26px] text-[#847362] font-semibold;
@@ -4055,7 +4077,7 @@ body.page-insurers .faq-section .faq-content {
   background: #faf8f4;
 }
 .document-upload .upload-icon-wrap {
-  @apply w-12 h-12;
+  @apply w-12 h-12 !mb-[0];
   background: rgba(246, 219, 148, 0.46);
 }
 .document-upload .upload-text {
@@ -4071,7 +4093,7 @@ body.page-insurers .faq-section .faq-content {
   @apply mx-auto my-0;
 }
 .document-upload .upload-subtext {
-  @apply text-[#847362] text-sm font-normal leading-4;
+  @apply text-[#847362] text-sm font-normal leading-[20px] sm:leading-4;
 }
 .alfar-refferals-form .submit-btn {
   @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
@@ -4204,7 +4226,7 @@ form.form-loading {
 }
 
 .product-category-section .woocommerce-Price-amount {
-  @apply text-[22px] sm:text-[28px];
+  @apply text-[22px] sm:text-[28px] leading-[42px];
 } 
 
 .woocommerce a.add_to_cart_button {
@@ -4290,9 +4312,6 @@ form.form-loading {
 
 /* Product Detail Page FAQ */
 
-.faq-wrapper {
-  @apply mx-auto my-[30px];
-}
 
 /* Each FAQ item */
 .faq-wrapper .faq-item {
@@ -4327,7 +4346,7 @@ form.form-loading {
   @apply text-center;
 }
 .patient-referral-heading h1 {
-  @apply inline-block text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] border-b border-solid;
+  @apply inline-block text-[20px] sm:text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] !mb-[30px] border-b border-solid;
 }
 .alfar-refferals-form .section-number {
   @apply text-[#32261B] w-8 h-8;
@@ -4337,7 +4356,7 @@ form.form-loading {
   @apply text-lg mb-8 gap-4 font-inter font-semibold ;
 }
 .alfar-refferals-form .form-row {
-  @apply flex gap-[30px] mb-4;
+  @apply flex gap-[30px] mb-[32px];
 }
 .alfar-refferals-form label {
   @apply text-base leading-5 text-[#64574F] font-semibold;
@@ -4384,13 +4403,13 @@ form.form-loading {
   @apply text-base leading-[26px] mb-4;
 }
 .document-upload .upload-box-content p {
-  @apply text-left max-w-full mb-0;
+  @apply text-left max-w-full mb-0 text-base font-medium leading-[26px] text-[#847362] font-inter;
 }
 .document-upload .upload-heading-wrap {
   @apply text-lg leading-[26px] text-[#847362] font-semibold;
 }
 .document-upload .upload-box {
-  @apply w-[819px] max-w-full mb-0 p-[42px] border-2 border-dashed border-[#847362];
+  @apply w-[819px] max-w-full mb-0 py-[42px] px-[26px] border-2 border-dashed border-[#847362];
   margin-inline: auto;
   background: #faf8f4;
 }
@@ -4417,6 +4436,9 @@ form.form-loading {
   @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
 }
 
+.alfar-refferals-form .refferal-notes label {
+  @apply mb-[18px];
+}
 
 /* Wishlist page */
 
@@ -4507,20 +4529,20 @@ form.form-loading {
 }
 
 .page-faq .faq-heading-wrapper {
-  @apply !items-end !gap-[44px]; 
+  @apply items-end gap-[32px] mb-[34px] sm:mb-13.5 lg:mb-[74px]; 
 }
 
 /* Privacy and Policy Page */
 
 .page-privacy-policy #privacy-policy-content {
-  @apply border gap-4 px-[35px] py-[30px] py-9 rounded-3xl border-solid border-[#DFB03A];
+  @apply border gap-4 px-[20px] py-[20px] md:px-[35px] md:py-[30px] py-9 rounded-3xl border-solid border-[#DFB03A];
   background: rgba(223, 176, 58, 0.03);
 }
 .page-privacy-policy #privacy-policy-content p {
-  @apply text-lg leading-7 text-[#847362] font-medium mb-4;
+  @apply text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] font-medium mb-[20px];
 }
 .page-privacy-policy #privacy-policy-content h2 {
-  @apply text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[26px] mb-6;
+  @apply text-base md:text-xl font-semibold text-[#32261B] leading-7 text-[32261B] mt-[18px] mb-[18px] md:mt-[26px] md:mb-6;
   font-family: inter;
 }
 .page-privacy-policy #privacy-policy-content h5 {
@@ -4532,22 +4554,20 @@ form.form-loading {
   /* margin-bottom: 20px; */
 }
 .page-privacy-policy #privacy-policy-content li {
-  @apply text-lg leading-7 text-[#847362] font-medium;
+  @apply text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] font-medium;
   list-style: disc;
 }
 #privacy-policy-form .sms-consent-form {
   @apply flex flex-col gap-8 m-auto pt-4;
 }
 #privacy-policy-form .consent-text {
-  @apply font-medium text-lg leading-7 text-[#847362] flex gap-5 justify-start;
+  @apply font-medium text-base lg:text-lg leading-[26px] lg:leading-7 text-[#847362] flex gap-5 justify-start;
 }
 #privacy-policy-form .consent-text input {
   @apply accent-[#32261B] mt-1;
   background: transparent;
 }
-#privacy-policy-form .form-group {
-  @apply mt-2.5 mb-[15px];
-}
+
 #privacy-policy-form .form-group label {
   @apply hidden;
 }
@@ -4556,20 +4576,35 @@ form.form-loading {
   background: rgba(223, 176, 58, 0.06);
 }
 #privacy-policy-form .agree-btn {
-  @apply flex flex-row justify-center items-center gap-2 w-40 h-[50px] text-white transition-[0.3s] duration-[ease-in-out] px-[43px] py-2 rounded-[50px];
+  @apply flex flex-row justify-center text-[18px] font-medium font-inter items-center gap-2 w-40 h-[50px] text-white transition-[0.3s] duration-[ease-in-out] px-[43px] py-2 rounded-[50px];
   background: #a17810;
 }
 #privacy-policy-form .agree-btn:hover {
   background: #8b640c;
 }
-#privacy-policy-form .consent-text input[type="checkbox"] {
-  @apply appearance-none w-5 h-5 border cursor-pointer relative rounded-[3px] border-solid border-[#a17810];
+
+#privacy-policy-form .consent-text input[type="checkbox"][name="sms_consent"] {
+  @apply appearance-none w-5 h-5 border rounded-[3px] cursor-pointer relative bg-transparent transition-all duration-[0.2s] ease-[ease] border-solid border-[#a17810] checked:bg-[#a17810] checked:border-[#a17810] checked:after:content-[""] checked:after:w-[5px] checked:after:h-2.5 checked:after:absolute checked:after:-translate-x-2/4 checked:after:translate-y-[-60%] checked:after:rotate-45 checked:after:border-[solid] checked:after:border-[0_2px_2px_0] checked:after:left-2/4 checked:after:top-2/4;
   -webkit-appearance: none;
-  /* border color and thickness */
-  background: transparent;
 }
+
+/* Checked state */
+
+/* Checkmark */
+#privacy-policy-form
+  .consent-text
+  input[type="checkbox"][name="sms_consent"]:not(:checked) {
+  @apply bg-transparent border-[#a17810] after:content-none;
+}
+
+
 #privacy-policy-form .error-msg {
-  @apply text-[red] text-sm font-normal;
+  @apply text-[red] text-sm font-normal font-inter;
+}
+
+#privacy-policy-form .form-group .error-msg{
+   display:block;
+   margin-top: 16px;
 }
 
 #privacy-policy-form .succes {
@@ -5441,3 +5476,14 @@ form.form-loading {
 .page-checkout .product-category-section{
   @apply bg-offWhite;
 } 
+
+.product-category-section .cart-title-price {
+  @apply flex !items-end gap-4;
+}
+
+.page-home textarea::placeholder {
+  @apply text-[#847362] text-base;
+}
+.page-home input::placeholder {
+  @apply text-[#847362] text-base;
+}

@@ -3449,7 +3449,6 @@
   }
   .info-card-widget .info-card {
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     border-radius: var(--radius-3xl);
@@ -5586,7 +5585,7 @@
     }
   }
   .alfa-modal form input[type="checkbox"] {
-    margin-top: 6px;
+    margin-top: 6px !important;
     height: 19px !important;
     width: 19px !important;
     flex-shrink: 0;
@@ -5596,6 +5595,7 @@
   }
   .alfa-modal .form-row.checkbox {
     margin-block: calc(var(--spacing) * 6);
+    margin-bottom: 24px !important;
   }
   .alfa-modal form textarea {
     height: 144px !important;
@@ -5623,6 +5623,10 @@
     width: 100%;
     max-width: 315px;
     padding: calc(var(--spacing) * 4);
+    text-align: center !important;
+    font-family: Inter;
+    font-size: 16px;
+    background-color: #a17810 !important;
   }
   .alfa-modal .alfa-close svg path {
     stroke: var(--pure-white);
@@ -6913,6 +6917,7 @@
   position: relative;
   gap: calc(var(--spacing) * 3);
   padding-left: calc(var(--spacing) * 10);
+  flex-shrink: 0;
   &::before {
     content: var(--tw-content);
     display: inline-block;
@@ -6973,9 +6978,9 @@
   line-height: var(--leading-5);
 }
 .woocommerce ul.order_details li strong, .page-checkout .product-category-section .woocommerce-Price-amount {
-  font-size: 28px !important;
-  --tw-leading: var(--leading-5);
-  line-height: var(--leading-5);
+  font-size: 26px !important;
+  --tw-leading: 30px;
+  line-height: 30px;
   overflow-wrap: break-word;
   word-break: break-all;
 }
@@ -7939,11 +7944,14 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .how-we-work-section .steps-card {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing) * 4);
   text-align: center;
+}
+.how-we-work-section .steps-card .steps-content {
+  position: relative;
+  z-index: 9999;
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
@@ -7953,13 +7961,13 @@ body.page-insurers .faq-section .faq-content {
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
-      top: 52px;
+      top: calc(2/4 * 100%);
     }
   }
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
-      left: calc(1/2 * 100%);
+      left: 100%;
     }
   }
   @media (width >= 48rem) {
@@ -7971,14 +7979,7 @@ body.page-insurers .faq-section .faq-content {
   @media (width >= 48rem) {
     &::after {
       content: var(--tw-content);
-      width: 100%;
-    }
-  }
-  @media (width >= 48rem) {
-    &::after {
-      content: var(--tw-content);
-      --tw-translate-x: calc(var(--spacing) * 12);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
+      width: 180%;
     }
   }
   @media (width >= 48rem) {
@@ -7993,13 +7994,21 @@ body.page-insurers .faq-section .faq-content {
       content: var(--tw-content);
     }
   }
-  &:last-child {
-    @media (width >= 48rem) {
-      &::after {
-        content: var(--tw-content);
-        display: none;
-      }
-    }
+}
+.what-we-do-section .info-card-widget .info-card-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media (max-width: 1280px) {
+  .how-we-work-section .steps-card:nth-child(3) .steps-content::after {
+    --tw-content: none;
+    content: none;
+  }
+}
+@media (min-width: 768px) {
+  .how-we-work-section .steps-card:last-child .steps-content::after {
+    display: none;
   }
 }
 .how-we-work-section .steps-card span {
@@ -8034,6 +8043,8 @@ body.page-insurers .faq-section .faq-content {
 }
 .how-we-work-section .steps-card .info-title {
   font-size: 18px;
+  --tw-leading: 30px;
+  line-height: 30px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {
@@ -8149,9 +8160,69 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .faq-section .accordion-item {
-  cursor: pointer;
   border-radius: var(--radius-2xl);
   background-color: #F4F1EC;
+}
+.faq-section .accordion-item .accordion-content > div:empty {
+  display: none !important;
+}
+.faq-section .accordion-item .accordion-btn {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 2);
+  padding-inline: 18px;
+  padding-block: 12px;
+  @media (width >= 40rem) {
+    padding-inline: 25px;
+  }
+  @media (width >= 40rem) {
+    padding-block: 20px;
+  }
+}
+.faq-section .accordion-item .accordion-btn {
+  position: relative;
+  &::after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::after {
+    content: var(--tw-content);
+    bottom: calc(var(--spacing) * 0);
+  }
+  &::after {
+    content: var(--tw-content);
+    height: 1px;
+  }
+  &::after {
+    content: var(--tw-content);
+    width: calc(100% - 50px);
+  }
+  &::after {
+    content: var(--tw-content);
+    background-color: var(--color-neutral-200);
+  }
+  &::after {
+    content: var(--tw-content);
+    opacity: 0%;
+  }
+  &::after {
+    --tw-content: "";
+    content: var(--tw-content);
+  }
+}
+.faq-section .accordion-item.active .accordion-btn::after {
+  opacity: 100%;
+}
+.faq-section .accordion-item .accordion-btn .accordion-icon {
+  cursor: pointer;
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  color: #2E2415;
+}
+.faq-section .accordion-item .accordion-content {
   padding-inline: 15px;
   padding-block: 10px;
   @media (width >= 40rem) {
@@ -8161,23 +8232,6 @@ body.page-insurers .faq-section .faq-content {
     padding-block: 20px;
   }
 }
-.faq-section .accordion-item .accordion-btn {
-  display: flex;
-  width: 100%;
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
-  gap: calc(var(--spacing) * 2);
-}
-.faq-section .accordion-item .accordion-btn .accordion-icon {
-  cursor: pointer;
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
-  color: #2E2415;
-}
-.faq-section .accordion-item .accordion-content {
-  margin-top: calc(var(--spacing) * 4);
-}
 .faq-section .accordion-item .accordion-content > div:empty {
   margin-bottom: calc(var(--spacing) * 4);
   height: 1px;
@@ -8186,6 +8240,10 @@ body.page-insurers .faq-section .faq-content {
 }
 .faq-heading-column:last-child {
   max-width: 100% !important;
+}
+.faq-content .faq-wrapper {
+  width: 100%;
+  gap: 32px !important;
 }
 @media (max-width: 1280px) {
   .faq-content .faq-wrapper {
@@ -8198,8 +8256,8 @@ body.page-insurers .faq-section .faq-content {
   }
   .page-faq .faq-heading-wrapper {
     flex-direction: column;
-    align-items: center;
-    gap: calc(var(--spacing) * 4);
+    align-items: center !important;
+    gap: calc(var(--spacing) * 4) !important;
   }
   .page-faq .faq-heading-column {
     align-items: center;
@@ -8354,10 +8412,6 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 @media (max-width: 1280px) {
-  .how-we-work-section .steps-card:nth-child(3)::after {
-    --tw-content: none;
-    content: none;
-  }
   .workflow-section .workflow-num::before {
     --tw-content: none;
     content: none;
@@ -9242,10 +9296,6 @@ body.page-insurers .faq-section .faq-content {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
 }
-.faq-wrapper {
-  margin-inline: auto;
-  margin-block: 30px;
-}
 .faq-wrapper .faq-item {
   margin-bottom: calc(var(--spacing) * 4);
   border-radius: 10px;
@@ -9352,6 +9402,8 @@ body.page-insurers .faq-section .faq-content {
   border-radius: 50%;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
 }
 .alfar-refferals-form .form-group {
   display: flex;
@@ -9384,7 +9436,7 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfar-refferals-form .checkbox-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: calc(var(--spacing) * 2.5);
 }
 .alfar-refferals-form .submit-btn {
@@ -9394,8 +9446,9 @@ body.page-insurers .faq-section .faq-content {
   display: block;
   cursor: pointer;
   border-color: none;
-  padding-inline: calc(var(--spacing) * 10);
-  padding-block: calc(var(--spacing) * 3.5);
+  padding-inline: 40px !important;
+  padding-block: 16px !important;
+  font-size: 20px !important;
   color: var(--color-white);
   background: #a17608;
 }
@@ -9480,8 +9533,8 @@ body.page-insurers .faq-section .faq-content {
   color: #333;
 }
 .highlight-text {
-  --tw-font-weight: var(--font-weight-semibold);
-  font-weight: var(--font-weight-semibold);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
   color: #A17810;
 }
 .upload-subtext {
@@ -9513,6 +9566,7 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .alfar-refferals-form .error-message {
+  margin-top: 10px;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: red;
@@ -9534,6 +9588,7 @@ body.page-insurers .faq-section .faq-content {
   text-align: center;
 }
 .patient-referral-heading h1 {
+  margin-bottom: 30px !important;
   display: inline-block;
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
@@ -9541,10 +9596,13 @@ body.page-insurers .faq-section .faq-content {
   border-style: solid;
   border-bottom-color: rgba(100,87,79,0.5);
   padding-bottom: calc(var(--spacing) * 2);
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  font-size: 20px;
   --tw-leading: var(--leading-7);
   line-height: var(--leading-7);
+  @media (width >= 40rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
 }
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
@@ -9559,7 +9617,7 @@ body.page-insurers .faq-section .faq-content {
   line-height: var(--tw-leading, var(--text-lg--line-height));
 }
 .alfar-refferals-form .form-row {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 32px;
   display: flex;
   gap: 30px;
 }
@@ -9627,9 +9685,13 @@ body.page-insurers .faq-section .faq-content {
   color: #32261B;
 }
 .alfar-refferals-form .section {
-  padding: calc(var(--spacing) * 10);
+  padding: 20px;
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 10);
+  }
 }
 .alfar-refferals-form input[type="checkbox"] {
+  margin-top: 5px;
   border-radius: 3px;
   padding: 0 !important;
 }
@@ -9646,7 +9708,7 @@ body.page-insurers .faq-section .faq-content {
   gap: 25px;
 }
 .document-upload .upload-box-content h3 {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 25px;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: 26px;
@@ -9656,6 +9718,10 @@ body.page-insurers .faq-section .faq-content {
   margin-bottom: calc(var(--spacing) * 0);
   max-width: 100%;
   text-align: left;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
 }
 .document-upload .upload-heading-wrap {
   font-size: var(--text-lg);
@@ -9680,6 +9746,7 @@ body.page-insurers .faq-section .faq-content {
   background: #faf8f4;
 }
 .document-upload .upload-icon-wrap {
+  margin-bottom: 0 !important;
   height: calc(var(--spacing) * 12);
   width: calc(var(--spacing) * 12);
   background: rgba(246, 219, 148, 0.46);
@@ -9707,11 +9774,15 @@ body.page-insurers .faq-section .faq-content {
 .document-upload .upload-subtext {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  --tw-leading: var(--leading-4);
-  line-height: var(--leading-4);
+  --tw-leading: 20px;
+  line-height: 20px;
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
   color: #847362;
+  @media (width >= 40rem) {
+    --tw-leading: var(--leading-4);
+    line-height: var(--leading-4);
+  }
 }
 .alfar-refferals-form .submit-btn {
   border-radius: 999px;
@@ -9987,6 +10058,8 @@ form.form-loading {
 }
 .product-category-section .woocommerce-Price-amount {
   font-size: 22px;
+  --tw-leading: 42px;
+  line-height: 42px;
   @media (width >= 40rem) {
     font-size: 28px;
   }
@@ -10129,10 +10202,6 @@ form.form-loading {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
 }
-.faq-wrapper {
-  margin-inline: auto;
-  margin-block: 30px;
-}
 .faq-wrapper .faq-item {
   margin-bottom: calc(var(--spacing) * 4);
   border-radius: 10px;
@@ -10214,6 +10283,7 @@ form.form-loading {
   text-align: center;
 }
 .patient-referral-heading h1 {
+  margin-bottom: 30px !important;
   display: inline-block;
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
@@ -10221,10 +10291,13 @@ form.form-loading {
   border-style: solid;
   border-bottom-color: rgba(100,87,79,0.5);
   padding-bottom: calc(var(--spacing) * 2);
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  font-size: 20px;
   --tw-leading: var(--leading-7);
   line-height: var(--leading-7);
+  @media (width >= 40rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
 }
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
@@ -10242,7 +10315,7 @@ form.form-loading {
   font-weight: var(--font-weight-semibold);
 }
 .alfar-refferals-form .form-row {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 32px;
   display: flex;
   gap: 30px;
 }
@@ -10338,6 +10411,14 @@ form.form-loading {
   margin-bottom: calc(var(--spacing) * 0);
   max-width: 100%;
   text-align: left;
+  font-family: Inter, sans-serif;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: 26px;
+  line-height: 26px;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #847362;
 }
 .document-upload .upload-heading-wrap {
   font-size: var(--text-lg);
@@ -10357,7 +10438,8 @@ form.form-loading {
   --tw-border-style: dashed;
   border-style: dashed;
   border-color: #847362;
-  padding: 42px;
+  padding-inline: 26px;
+  padding-block: 42px;
   margin-inline: auto;
   background: #faf8f4;
 }
@@ -10404,6 +10486,9 @@ form.form-loading {
   line-height: 26px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
+}
+.alfar-refferals-form .refferal-notes label {
+  margin-bottom: 18px;
 }
 .woocommerce-wishlist .wishlist_table {
   width: 100%;
@@ -10554,8 +10639,15 @@ form.form-loading {
   color: #32261B !important;
 }
 .page-faq .faq-heading-wrapper {
-  align-items: flex-end !important;
-  gap: 44px !important;
+  margin-bottom: 34px;
+  align-items: flex-end;
+  gap: 32px;
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 13.5);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: 74px;
+  }
 }
 .page-privacy-policy #privacy-policy-content {
   gap: calc(var(--spacing) * 4);
@@ -10565,32 +10657,56 @@ form.form-loading {
   --tw-border-style: solid;
   border-style: solid;
   border-color: #DFB03A;
-  padding-inline: 35px;
+  padding-inline: 20px;
   padding-block: calc(var(--spacing) * 9);
-  padding-block: 30px;
+  padding-block: 20px;
+  @media (width >= 48rem) {
+    padding-inline: 35px;
+  }
+  @media (width >= 48rem) {
+    padding-block: 30px;
+  }
   background: rgba(223, 176, 58, 0.03);
 }
 .page-privacy-policy #privacy-policy-content p {
-  margin-bottom: calc(var(--spacing) * 4);
-  font-size: var(--text-lg);
-  line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-leading: var(--leading-7);
-  line-height: var(--leading-7);
+  margin-bottom: 20px;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: 26px;
+  line-height: 26px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: #847362;
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  @media (width >= 64rem) {
+    --tw-leading: var(--leading-7);
+    line-height: var(--leading-7);
+  }
 }
 .page-privacy-policy #privacy-policy-content h2 {
-  margin-top: 26px;
-  margin-bottom: calc(var(--spacing) * 6);
-  font-size: var(--text-xl);
-  line-height: var(--tw-leading, var(--text-xl--line-height));
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: var(--leading-7);
   line-height: var(--leading-7);
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #32261B;
   color: 32261B;
+  @media (width >= 48rem) {
+    margin-top: 26px;
+  }
+  @media (width >= 48rem) {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  @media (width >= 48rem) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   font-family: inter;
 }
 .page-privacy-policy #privacy-policy-content h5 {
@@ -10613,13 +10729,21 @@ form.form-loading {
   padding-left: calc(var(--spacing) * 5);
 }
 .page-privacy-policy #privacy-policy-content li {
-  font-size: var(--text-lg);
-  line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-leading: var(--leading-7);
-  line-height: var(--leading-7);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: 26px;
+  line-height: 26px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: #847362;
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  @media (width >= 64rem) {
+    --tw-leading: var(--leading-7);
+    line-height: var(--leading-7);
+  }
   list-style: disc;
 }
 #privacy-policy-form .sms-consent-form {
@@ -10633,22 +10757,26 @@ form.form-loading {
   display: flex;
   justify-content: flex-start;
   gap: calc(var(--spacing) * 5);
-  font-size: var(--text-lg);
-  line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-leading: var(--leading-7);
-  line-height: var(--leading-7);
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: 26px;
+  line-height: 26px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: #847362;
+  @media (width >= 64rem) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  @media (width >= 64rem) {
+    --tw-leading: var(--leading-7);
+    line-height: var(--leading-7);
+  }
 }
 #privacy-policy-form .consent-text input {
   margin-top: calc(var(--spacing) * 1);
   accent-color: #32261B;
   background: transparent;
-}
-#privacy-policy-form .form-group {
-  margin-top: calc(var(--spacing) * 2.5);
-  margin-bottom: 15px;
 }
 #privacy-policy-form .form-group label {
   display: none;
@@ -10683,6 +10811,10 @@ form.form-loading {
   border-radius: 50px;
   padding-inline: 43px;
   padding-block: calc(var(--spacing) * 2);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
   color: var(--color-white);
   transition-property: 0.3s;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -10694,7 +10826,7 @@ form.form-loading {
 #privacy-policy-form .agree-btn:hover {
   background: #8b640c;
 }
-#privacy-policy-form .consent-text input[type="checkbox"] {
+#privacy-policy-form .consent-text input[type="checkbox"][name="sms_consent"] {
   position: relative;
   height: calc(var(--spacing) * 5);
   width: calc(var(--spacing) * 5);
@@ -10706,15 +10838,111 @@ form.form-loading {
   --tw-border-style: solid;
   border-style: solid;
   border-color: #a17810;
+  background-color: transparent;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.2s;
+  transition-duration: 0.2s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:checked {
+    border-color: #a17810;
+  }
+  &:checked {
+    background-color: #a17810;
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      top: calc(2/4 * 100%);
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      left: calc(2/4 * 100%);
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 2.5);
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      width: 5px;
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-x: calc(calc(2/4 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-y: -60%;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      rotate: 45deg;
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      border-style: var(--tw-border-style);
+      border-width: 0 2px 2px 0;
+    }
+  }
+  &:checked {
+    &::after {
+      content: var(--tw-content);
+      border-color: solid;
+    }
+  }
+  &:checked {
+    &::after {
+      --tw-content: "";
+      content: var(--tw-content);
+    }
+  }
   -webkit-appearance: none;
-  background: transparent;
+}
+#privacy-policy-form .consent-text input[type="checkbox"][name="sms_consent"]:not(:checked) {
+  border-color: #a17810;
+  background-color: transparent;
+  &::after {
+    content: var(--tw-content);
+    --tw-content: none;
+    content: none;
+  }
 }
 #privacy-policy-form .error-msg {
+  font-family: Inter, sans-serif;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
   color: red;
+}
+#privacy-policy-form .form-group .error-msg {
+  display: block;
+  margin-top: 16px;
 }
 #privacy-policy-form .succes {
   border-radius: 10px;
@@ -12383,6 +12611,21 @@ form.form-loading {
 }
 .page-cart .product-category-section , .page-checkout .product-category-section {
   background-color: var(--Off-White);
+}
+.product-category-section .cart-title-price {
+  display: flex;
+  align-items: flex-end !important;
+  gap: calc(var(--spacing) * 4);
+}
+.page-home textarea::placeholder {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  color: #847362;
+}
+.page-home input::placeholder {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  color: #847362;
 }
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
