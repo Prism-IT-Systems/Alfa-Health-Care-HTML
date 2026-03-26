@@ -1,4 +1,16 @@
 jQuery(document).ready(function () {
+
+  // Sticky Header JS
+  jQuery(window).scroll(function(){
+    if (jQuery(window).scrollTop() >= 32) {
+        jQuery('.navigation-bar').addClass('fixed-header');
+    }
+    else {
+        jQuery('.navigation-bar').removeClass('fixed-header');
+    }
+  });
+
+
   jQuery('.testimonials-slider').slick({
     slidesToShow: 3,
     infinite: true,
