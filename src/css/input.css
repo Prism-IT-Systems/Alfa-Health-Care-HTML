@@ -378,9 +378,13 @@
 /*Header Component*/
 @layer components {
 
-/* .main-header {
-    @apply absolute;
-} */
+header.main-header {
+  @apply relative top-0 z-[99999]; 
+}
+
+ header.main-header * {
+  @apply border-0;
+} 
 
 /* Header Topbar */
 .header-top-bar {
@@ -436,6 +440,10 @@
     @apply bg-pureWhite border border-solid border-[rgba(255,255,255,0.3)] shadow-[0px_4px_20px_-4px_rgba(66,51,36,0.08)] backdrop-blur-[12px] p-2;
 }
 
+.navigation-bar.fixed-header {
+  @apply fixed left-0 right-0 top-0;
+}
+
 .navigation-bar .nav-logo {
     @apply w-[70px] h-[70px] md:w-[80px] md:h-[80px];
 }
@@ -452,7 +460,11 @@
     @apply hidden w-full lg:flex xl:pl-[112px] md:flex-wrap items-center md:w-auto gap-4.5;
 }
 
-.navigation-bar .navigation-bar-inner .navigation-menu .navigation-item :where(a.navigation-link, .dropdown-link) {
+.navigation-item.menu-item-has-children {
+  @apply relative lg:pr-4;
+}
+
+.navigation-bar .navigation-bar-inner .navigation-menu .navigation-item :where(a.navigation-link) {
     @apply text-base leading-6 text-[rgba(50,38,27,0.8)] font-medium transition duration-300 ease-in-out;
 }
 
@@ -480,22 +492,55 @@
 .navigation-bar .navigation-bar-inner .navigation-menu .navigation-item a[aria-current="page"] {
     @apply text-darkMustard;
 }
-
-.navigation-bar .navigation-bar-inner .navigation-menu .navigation-item .dropdown-navbar {
-    @apply z-10 hidden bg-pureWhite border border-default-medium rounded-base shadow-lg w-44; 
+ /*Hover*/
+.navigation-item.menu-item-has-children:hover > div,
+.navigation-item.menu-item-has-children.active > div {
+  @apply bg-[#f5f3f1] lg:bg-pureWhite;
 }
+
+/* Nav Dropdown */
+.dropdown-link {
+  @apply lg:absolute lg:-translate-y-2/4 cursor-pointer pl-3 pr-2.5 border-[none] lg:-right-4 lg:top-2/4 bg-none;
+}
+
+/* Arrow animation */
+.dropdown-link svg {
+  @apply transition-[transform] duration-[0.25s] ease-[ease];
+}
+
+.navigation-item.active .dropdown-link svg {
+  @apply transform rotate-180;
+}
+
+.dropdown-navbar {
+  @apply lg:border lg:border-default-medium lg:w-44 lg:absolute lg:min-w-[260px] lg:shadow-[0_12px_30px_rgba(0,0,0,0.15)] hidden z-[999] lg:p-2 lg:rounded-xl lg:top-[80%] lg:bg-pureWhite;
+}
+
+.dropdown-navbar ul {
+  @apply m-0 list-none;
+}
+
+.dropdown-navbar ul li a {
+  @apply text-base leading-6 text-[rgba(50,38,27,0.8)] font-medium;
+  @apply block text-[#4a4036] no-underline px-[18px] py-3 inline-flex items-center w-full p-2 hover:bg-[#f4f1ed] lg:hover:bg-[rgb(162_121_13/4%)] hover:text-goldenBrown lg:rounded
+         !transition-[background-color,padding-left] !duration-200 !ease-in-out;
+  @apply hover:pl-5.5 hover:text-black;
+  @apply after:!content-none;      
+}
+
+
+.navigation-item.active>.dropdown-navbar {
+  @apply !block;
+}  
 
 .navigation-bar .navigation-bar-inner .navigation-menu .navigation-item:has(.dropdown-navbar.block) .dropdown-link svg{
     @apply rotate-180;
 }
 
 .navigation-bar .navigation-bar-inner .navigation-menu .navigation-item .dropdown-navbar ul {
-    @apply p-2 text-sm text-body font-medium;
+    @apply text-sm text-body font-medium;
 }
 
-.navigation-bar .navigation-bar-inner .navigation-menu .navigation-item .dropdown-navbar ul li a {
-    @apply inline-flex items-center w-full p-2 hover:bg-[rgb(162_121_13/4%)] hover:text-goldenBrown rounded;
-}
 
 .navigation-bar .mobile-menu-toggle {
     @apply block lg:hidden;  
@@ -505,6 +550,10 @@
     @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base lg:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary
 }
 
+.navigation-bar .dropdown-navbar {
+  @apply lg:mt-5;
+  @apply before:content-[""] before:h-5 before:w-full before:block before:absolute before:bottom-full before:left-0
+}
 
 .search-form .search-form-inner {
     @apply relative;
@@ -528,6 +577,141 @@
 .navigation-bar .search-form .search-form-inner input[type="search"] {
     @apply p-[10px_10px_10px_39px] w-[200px] xl:w-[256px] max-h-full;
  }
+
+
+
+.navigation-item.menu-item-has-children.active > div .navigation-link {
+  @apply text-[#32261b] font-semibold;
+}
+
+ /* Mobile Menu css */
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.mobile-menu-toggle .mobile-menu-wrapper {
+  @apply absolute w-full min-h-[100dvh] h-full shadow-[4px_0_25px_rgba(0,0,0,0.15)] z-[2] max-w-[350px] translate-x-[-360px] transition-transform duration-[0.3s] ease-linear border-0 left-0 top-0;
+  @apply bg-pureWhite !block;
+}
+.mobile-menu-toggle .mobile-menu-wrapper.active {
+  @apply translate-x-0;
+}
+html:has(.mobile-menu-toggle .mobile-menu-wrapper.active),
+body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
+  @apply overflow-hidden;
+}
+
+/* ===============================
+   MENU HEADER
+================================ */
+.mobile-menu-toggle .mobile-menu-header {
+  @apply flex items-center justify-between border-b-neutral-200 px-[18px] py-4 border-b border-solid;
+}
+.mobile-menu-toggle .mobile-menu-close {
+  @apply text-white w-8 h-8 rounded text-[19px] cursor-pointer border-[none];
+  background: #a17810;
+
+  /* text-align: center; */
+}
+
+/* ===============================
+   MENU LIST
+================================ */
+.mobile-menu-toggle .mobile-menu-list {
+  @apply m-0 pt-0 pb-[250px] px-0;
+  list-style: none;
+}
+.mobile-menu-toggle .navigation-item:not(:last-child) {
+  @apply border-b-[#e6e6e6] border-b border-solid;
+}
+
+/* ===============================
+   MENU LINKS
+================================ */
+.mobile-menu-toggle .navigation-link {
+  @apply flex items-center justify-between text-[15px] font-medium text-[#2d2d2d] no-underline relative px-[18px] py-[15px] after:text-xl after:text-[#7a7a7a];
+}
+
+/* Hover */
+.mobile-menu-toggle .navigation-link:hover {
+  @apply bg-[#f8f8f8];
+}
+
+/* ===============================
+   QUICK ACCESS STYLE
+================================ */
+.mobile-menu-toggle .navigation-item.quick-access {
+  @apply relative before:content-[""] before:absolute before:w-1 before:left-0 before:inset-y-0 bg-[#f3edf8];
+  @apply before:bg-[#6b2fa5];
+}
+
+.mobile-menu-toggle .navbar-offcanvas::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+.mobile-menu-toggle .navbar-offcanvas::-webkit-scrollbar-thumb {
+  @apply rounded-[10px] bg-[#c9c9c9];
+}
+
+/* ===============================
+   DROPDOWN BUTTON (TOP LEVEL)
+================================ */
+.mobile-menu-toggle .dropdown-link {
+  @apply w-full flex items-center justify-end text-[15px] font-medium text-[#2d2d2d] cursor-pointer px-4.5 py-[15px] border-[none] bg-transparent;
+  @apply focus:outline-none;
+}
+
+/* Arrow animation */
+.mobile-menu-toggle .dropdown-link svg {
+  @apply transition-transform duration-[0.25s] ease-[ease];
+}
+
+/* Rotate arrow when open */
+.mobile-menu-toggle .dropdown-link[aria-expanded="true"] svg {
+  @apply rotate-180;
+}
+
+.mobile-menu-toggle .dropdown-navbar {
+  @apply bg-[#fafafa]  max-h-[400px] overflow-y-auto;
+}
+
+.mobile-menu-toggle .dropdown-navbar ul {
+  @apply m-0 p-0 list-none;
+}
+
+/* Submenu links */
+.mobile-menu-toggle .dropdown-navbar li {
+  @apply bg-[#f9f9f9];
+}
+.mobile-menu-toggle .dropdown-navbar li:hover {
+  @apply bg-[#f1f1f1];
+}
+
+.mobile-menu-toggle .dropdown-navbar .navigation-link {
+  @apply text-sm font-normal text-[#444] pl-9 pr-4.5 py-3.5;
+}
+
+.mobile-menu-header {
+  @apply flex-[0_0_auto] h-[100px] min-h-[100px] bg-pureWhite;
+}
+
+.mobile-menu-collapse {
+  @apply flex-auto h-[calc(100vh_-_100px)] overflow-y-auto overflow-x-hidden;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.mobile-menu-overlay {
+  @apply bg-[rgb(161_120_16_/_34%)] fixed min-h-screen opacity-0 pointer-events-none transition-opacity duration-[0.2s] ease-[ease-in-out] inset-0;
+}
+
+.mobile-menu-toggle:has(.mobile-menu-wrapper.active) .mobile-menu-overlay {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.mobile-menu-toggle .mobile-menu-wrapper.active {
+  @apply !block;
+}
 
 }
 
