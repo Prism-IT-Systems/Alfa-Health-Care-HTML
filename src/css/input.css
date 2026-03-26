@@ -3909,7 +3909,7 @@ body.page-insurers .faq-section .faq-content {
   @apply mx-auto my-0;
 }
 .document-upload .upload-subtext {
-  @apply text-[#847362] text-sm font-normal leading-4;
+  @apply text-[#847362] text-sm font-normal leading-[20px] sm:leading-4;
 }
 .alfar-refferals-form .submit-btn {
   @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
@@ -4400,7 +4400,7 @@ form.form-loading {
 }
 
 #privacy-policy-form .consent-text input[type="checkbox"][name="sms_consent"] {
-  @apply appearance-none w-5 h-5 border rounded cursor-pointer relative bg-transparent transition-all duration-[0.2s] ease-[ease] border-solid border-[#a17810] checked:bg-[#a17810] checked:border-[#a17810] checked:after:content-[""] checked:after:w-[5px] checked:after:h-2.5 checked:after:absolute checked:after:-translate-x-2/4 checked:after:translate-y-[-60%] checked:after:rotate-45 checked:after:border-[solid] checked:after:border-[0_2px_2px_0] checked:after:left-2/4 checked:after:top-2/4;
+  @apply appearance-none w-5 h-5 border rounded-[3px] cursor-pointer relative bg-transparent transition-all duration-[0.2s] ease-[ease] border-solid border-[#a17810] checked:bg-[#a17810] checked:border-[#a17810] checked:after:content-[""] checked:after:w-[5px] checked:after:h-2.5 checked:after:absolute checked:after:-translate-x-2/4 checked:after:translate-y-[-60%] checked:after:rotate-45 checked:after:border-[solid] checked:after:border-[0_2px_2px_0] checked:after:left-2/4 checked:after:top-2/4;
   -webkit-appearance: none;
 }
 

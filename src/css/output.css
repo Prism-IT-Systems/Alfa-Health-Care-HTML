@@ -9383,11 +9383,15 @@ body.page-insurers .faq-section .faq-content {
 .document-upload .upload-subtext {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  --tw-leading: var(--leading-4);
-  line-height: var(--leading-4);
+  --tw-leading: 20px;
+  line-height: 20px;
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
   color: #847362;
+  @media (width >= 40rem) {
+    --tw-leading: var(--leading-4);
+    line-height: var(--leading-4);
+  }
 }
 .alfar-refferals-form .submit-btn {
   border-radius: 999px;
@@ -10437,7 +10441,7 @@ form.form-loading {
   width: calc(var(--spacing) * 5);
   cursor: pointer;
   appearance: none;
-  border-radius: var(--radius);
+  border-radius: 3px;
   border-style: var(--tw-border-style);
   border-width: 1px;
   --tw-border-style: solid;
