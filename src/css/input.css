@@ -3915,6 +3915,10 @@ body.page-insurers .faq-section .faq-content {
   @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
 }
 
+.alfar-refferals-form .form-row:last-child {
+  @apply !mb-[0];
+}
+
 
 /* Wishlist page */
 
@@ -4550,8 +4554,13 @@ form.form-loading {
 /* Contact Us Page */
 
 .contact-form-card {
-  @apply flex flex-col h-fit justify-center !gap-[25.26px] !shadow-[0px_0px_27.3684px_rgba(0,0,0,0.03)] !px-8 !py-11 !rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !bg-white;
+  @apply flex flex-col h-fit justify-center !gap-[25.26px] !shadow-[0px_0px_27.3684px_rgba(0,0,0,0.03)] px-8 py-11 !rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !bg-white;
 }
+
+.page-contact-us .contact-form-card {
+  @apply px-[28px] py-[28px] sm:px-8 sm:py-11;
+}
+
 .contact-form-card .form-title {
   @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] !mb-0 w-fit border-b border-[#a17810] ;
   font-family: "Inter";
@@ -4566,7 +4575,7 @@ form.form-loading {
 .custom-contact-form textarea,
 .custom-contact-form select {
   @apply box-border mix-blend-normal mx-auto my-0 rounded-[10.5263px] border-[1.05263px] border-solid border-[#CDBAA6];
-  background: #fcfaf8;
+  background: #fcfaf8 !important;
 }
 .contact-form-card .form-row {
   @apply flex flex-col sm:flex-row justify-between items-start gap-[16.84px] p-0;
@@ -4579,12 +4588,29 @@ form.form-loading {
   @apply !p-[0];
 }
 
+@media (min-width: 1280px) {
+  .page-contact-us .contact-grid {
+    @apply grid-cols-[2fr_1fr];
+  }
+}
+
+.page-contact-us {
+  background: #f5f1ea;
+}
+
+@media (max-width: 992px) {
+  .page-contact-us .contact-grid {
+    @apply gap-7;
+  }
+}
+
+
 .contact-us-wrapper .alfa-agree {
   @apply !hidden;
 }
 
 .contact-form-card .form-row.file-upload {
-  @apply flex flex-col justify-center items-center gap-[10.53px] mix-blend-normal px-[27.3684px] py-[44.2105px] rounded-[16.8421px] border-[1.05263px] border-dashed border-[#847362];
+  @apply flex flex-col justify-center items-center gap-[10.53px] mix-blend-normal px-[27.3684px] py-[22px] rounded-[16.8421px] border-[1.05263px] border-dashed border-[#847362];
   background: #faf8f4;
 }
 
@@ -4660,7 +4686,7 @@ form.form-loading {
   @apply flex flex-row gap-2.5 my-4;
 }
 .contact-form-card .form-row.checkbox input {
-  @apply w-[18px] h-[18px] rounded-[4px] mr-3 mt-[5px] p-2.5;
+  @apply w-[18px] h-[18px] rounded-[4px] mr-3 mt-[6px] p-2.5;
 }
 .contact-form-card .form-row.checkbox label {
   @apply not-italic font-medium text-base leading-[26px] flex items-start text-[#847362] tracking-[0];
@@ -4668,7 +4694,7 @@ form.form-loading {
   text-transform: initial !important;
 }
 .contact-form-card .form-row.submit-btn {
-  @apply flex flex-row justify-center items-center gap-2.5 pl-[98px] pr-[103px] py-3.5 rounded-[36.8421px] cursor-pointer;
+  @apply flex flex-row justify-center items-center gap-2.5 pl-[98px] pr-[103px] py-[16px] rounded-[36.8421px] text-[18px] font-semibold font-inter  cursor-pointer;
   background: #a17810;
   margin-inline: auto;
 }
@@ -4677,6 +4703,10 @@ form.form-loading {
 }
 .contact-form-card .file-upload span {
   @apply hidden;
+}
+
+.submit-btn input {
+  background: #a17810 !important;
 }
 
 .page-contact-us .wpcf7-not-valid-tip {

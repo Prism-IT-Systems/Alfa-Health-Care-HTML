@@ -9403,6 +9403,9 @@ body.page-insurers .faq-section .faq-content {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
 }
+.alfar-refferals-form .form-row:last-child {
+  margin-bottom: 0 !important;
+}
 .woocommerce-wishlist .wishlist_table {
   width: 100%;
   border-collapse: collapse;
@@ -10798,10 +10801,20 @@ form.form-loading {
   border-style: solid;
   border-color: #C49331;
   background-color: var(--color-white) !important;
-  padding-inline: calc(var(--spacing) * 8) !important;
-  padding-block: calc(var(--spacing) * 11) !important;
+  padding-inline: calc(var(--spacing) * 8);
+  padding-block: calc(var(--spacing) * 11);
   --tw-shadow: 0px 0px 27.3684px var(--tw-shadow-color, rgba(0,0,0,0.03)) !important;
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+}
+.page-contact-us .contact-form-card {
+  padding-inline: 28px;
+  padding-block: 28px;
+  @media (width >= 40rem) {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  @media (width >= 40rem) {
+    padding-block: calc(var(--spacing) * 11);
+  }
 }
 .contact-form-card .form-title {
   margin-bottom: calc(var(--spacing) * 0) !important;
@@ -10848,7 +10861,7 @@ form.form-loading {
   border-style: solid;
   border-color: #CDBAA6;
   mix-blend-mode: normal;
-  background: #fcfaf8;
+  background: #fcfaf8 !important;
 }
 .contact-form-card .form-row {
   display: flex;
@@ -10881,6 +10894,19 @@ form.form-loading {
 .contact-us-wrapper {
   padding: 0 !important;
 }
+@media (min-width: 1280px) {
+  .page-contact-us .contact-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.page-contact-us {
+  background: #f5f1ea;
+}
+@media (max-width: 992px) {
+  .page-contact-us .contact-grid {
+    gap: calc(var(--spacing) * 7);
+  }
+}
 .contact-us-wrapper .alfa-agree {
   display: none !important;
 }
@@ -10897,7 +10923,7 @@ form.form-loading {
   border-style: dashed;
   border-color: #847362;
   padding-inline: 27.3684px;
-  padding-block: 44.2105px;
+  padding-block: 22px;
   mix-blend-mode: normal;
   background: #faf8f4;
 }
@@ -11084,7 +11110,7 @@ form.form-loading {
   gap: calc(var(--spacing) * 2.5);
 }
 .contact-form-card .form-row.checkbox input {
-  margin-top: 5px;
+  margin-top: 6px;
   margin-right: calc(var(--spacing) * 3);
   height: 18px;
   width: 18px;
@@ -11115,9 +11141,13 @@ form.form-loading {
   justify-content: center;
   gap: calc(var(--spacing) * 2.5);
   border-radius: 36.8421px;
-  padding-block: calc(var(--spacing) * 3.5);
+  padding-block: 16px;
   padding-right: 103px;
   padding-left: 98px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
   background: #a17810;
   margin-inline: auto;
 }
@@ -11126,6 +11156,9 @@ form.form-loading {
 }
 .contact-form-card .file-upload span {
   display: none;
+}
+.submit-btn input {
+  background: #a17810 !important;
 }
 .page-contact-us .wpcf7-not-valid-tip {
   margin-top: 8px;
