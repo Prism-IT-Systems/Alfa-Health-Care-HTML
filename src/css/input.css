@@ -4746,7 +4746,6 @@ form.form-loading {
 }
 
 .contact-us-map-wrap iframe {
-  @apply mb-[34px] sm:mb-13.5 lg:mb-[74px];
   filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
 }
 
@@ -4913,7 +4912,7 @@ form.form-loading {
   @apply hidden;
 }
 .page-contact-us .contact-us-map-wrap {
-  @apply !mt-[74px];
+  @apply mb-[34px] sm:mb-13.5 lg:mb-[74px];
 }
 .page-contact-us .custom-contact-form .form-row {
   @apply !mb-[25px];
