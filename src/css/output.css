@@ -9011,6 +9011,8 @@ body.page-insurers .faq-section .faq-content {
   border-radius: 50%;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
 }
 .alfar-refferals-form .form-group {
   display: flex;
@@ -9043,7 +9045,7 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfar-refferals-form .checkbox-row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: calc(var(--spacing) * 2.5);
 }
 .alfar-refferals-form .submit-btn {
@@ -9053,8 +9055,9 @@ body.page-insurers .faq-section .faq-content {
   display: block;
   cursor: pointer;
   border-color: none;
-  padding-inline: calc(var(--spacing) * 10);
-  padding-block: calc(var(--spacing) * 3.5);
+  padding-inline: 40px !important;
+  padding-block: 16px !important;
+  font-size: 20px !important;
   color: var(--color-white);
   background: #a17608;
 }
@@ -9172,6 +9175,7 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .alfar-refferals-form .error-message {
+  margin-top: 10px;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: red;
@@ -9193,6 +9197,7 @@ body.page-insurers .faq-section .faq-content {
   text-align: center;
 }
 .patient-referral-heading h1 {
+  margin-bottom: 30px !important;
   display: inline-block;
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
@@ -9200,10 +9205,13 @@ body.page-insurers .faq-section .faq-content {
   border-style: solid;
   border-bottom-color: rgba(100,87,79,0.5);
   padding-bottom: calc(var(--spacing) * 2);
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  font-size: 20px;
   --tw-leading: var(--leading-7);
   line-height: var(--leading-7);
+  @media (width >= 40rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
 }
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
@@ -9218,7 +9226,7 @@ body.page-insurers .faq-section .faq-content {
   line-height: var(--tw-leading, var(--text-lg--line-height));
 }
 .alfar-refferals-form .form-row {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 32px;
   display: flex;
   gap: 30px;
 }
@@ -9286,9 +9294,13 @@ body.page-insurers .faq-section .faq-content {
   color: #32261B;
 }
 .alfar-refferals-form .section {
-  padding: calc(var(--spacing) * 10);
+  padding: 20px;
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 10);
+  }
 }
 .alfar-refferals-form input[type="checkbox"] {
+  margin-top: 5px;
   border-radius: 3px;
   padding: 0 !important;
 }
@@ -9305,7 +9317,7 @@ body.page-insurers .faq-section .faq-content {
   gap: 25px;
 }
 .document-upload .upload-box-content h3 {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 25px;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: 26px;
@@ -9315,6 +9327,10 @@ body.page-insurers .faq-section .faq-content {
   margin-bottom: calc(var(--spacing) * 0);
   max-width: 100%;
   text-align: left;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
 }
 .document-upload .upload-heading-wrap {
   font-size: var(--text-lg);
@@ -9339,6 +9355,7 @@ body.page-insurers .faq-section .faq-content {
   background: #faf8f4;
 }
 .document-upload .upload-icon-wrap {
+  margin-bottom: 0 !important;
   height: calc(var(--spacing) * 12);
   width: calc(var(--spacing) * 12);
   background: rgba(246, 219, 148, 0.46);
@@ -9871,6 +9888,7 @@ form.form-loading {
   text-align: center;
 }
 .patient-referral-heading h1 {
+  margin-bottom: 30px !important;
   display: inline-block;
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 1px;
@@ -9878,10 +9896,13 @@ form.form-loading {
   border-style: solid;
   border-bottom-color: rgba(100,87,79,0.5);
   padding-bottom: calc(var(--spacing) * 2);
-  font-size: var(--text-2xl);
-  line-height: var(--tw-leading, var(--text-2xl--line-height));
+  font-size: 20px;
   --tw-leading: var(--leading-7);
   line-height: var(--leading-7);
+  @media (width >= 40rem) {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
 }
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
@@ -9899,7 +9920,7 @@ form.form-loading {
   font-weight: var(--font-weight-semibold);
 }
 .alfar-refferals-form .form-row {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 32px;
   display: flex;
   gap: 30px;
 }
@@ -9995,6 +10016,14 @@ form.form-loading {
   margin-bottom: calc(var(--spacing) * 0);
   max-width: 100%;
   text-align: left;
+  font-family: Inter, sans-serif;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-leading: 26px;
+  line-height: 26px;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: #847362;
 }
 .document-upload .upload-heading-wrap {
   font-size: var(--text-lg);
@@ -10014,7 +10043,8 @@ form.form-loading {
   --tw-border-style: dashed;
   border-style: dashed;
   border-color: #847362;
-  padding: 42px;
+  padding-inline: 26px;
+  padding-block: 42px;
   margin-inline: auto;
   background: #faf8f4;
 }
@@ -10061,6 +10091,9 @@ form.form-loading {
   line-height: 26px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
+}
+.alfar-refferals-form .refferal-notes label {
+  margin-bottom: 18px;
 }
 .woocommerce-wishlist .wishlist_table {
   width: 100%;

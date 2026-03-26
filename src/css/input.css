@@ -3713,7 +3713,7 @@ body.page-insurers .faq-section .faq-content {
   @apply font-[bold] flex items-center;
 }
 .alfar-refferals-form .section-number {
-  @apply flex items-center justify-center text-sm rounded-[50%];
+  @apply flex items-center justify-center text-sm rounded-[50%] font-bold;
 }
 .alfar-refferals-form .form-group {
   @apply flex-1 flex flex-col;
@@ -3743,10 +3743,10 @@ body.page-insurers .faq-section .faq-content {
   @apply min-h-[120px];
 }
 .alfar-refferals-form .checkbox-row {
-  @apply flex items-center gap-2.5;
+  @apply flex items-start gap-2.5;
 }
 .alfar-refferals-form .submit-btn {
-  @apply block text-white cursor-pointer mt-[30px] mb-0 mx-auto px-10 py-3.5 border-[none];
+  @apply block text-white cursor-pointer !text-[20px] mt-[30px] mb-0 mx-auto !px-[40px] !py-[16px] border-[none];
   background: #a17608;
 }
 .alfar-refferals-form .submit-btn:hover {
@@ -3811,7 +3811,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .alfar-refferals-form .error-message {
-  @apply text-[red] text-sm;
+  @apply text-[red] text-sm mt-[10px];
 }
 
 
@@ -3825,7 +3825,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-center;
 }
 .patient-referral-heading h1 {
-  @apply inline-block text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] border-b border-solid;
+  @apply  inline-block text-[20px] sm:text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] !mb-[30px] border-b border-solid;
 }
 .alfar-refferals-form .section-number {
   @apply text-[#32261B] w-8 h-8;
@@ -3835,7 +3835,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-lg mb-8 gap-4;
 }
 .alfar-refferals-form .form-row {
-  @apply flex gap-[30px] mb-4;
+  @apply flex gap-[30px] mb-[32px];
 }
 .alfar-refferals-form label {
   @apply text-base leading-5 text-[#64574F] font-semibold;
@@ -3864,10 +3864,10 @@ body.page-insurers .faq-section .faq-content {
   @apply text-base leading-5 font-medium text-[#32261B] border flex items-center gap-3 p-5 rounded-xl border-solid border-[#CDBAA6];
 }
 .alfar-refferals-form .section {
-  @apply p-10;
+  @apply p-[20px] sm:p-10;
 }
 .alfar-refferals-form input[type="checkbox"] {
-  @apply rounded-[3px] !p-[0];
+  @apply rounded-[3px] !p-[0] mt-[5px];
 }
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
@@ -3879,10 +3879,10 @@ body.page-insurers .faq-section .faq-content {
   @apply flex flex-col gap-[25px];
 }
 .document-upload .upload-box-content h3 {
-  @apply text-base leading-[26px] mb-4;
+  @apply text-base leading-[26px] mb-[25px];
 }
 .document-upload .upload-box-content p {
-  @apply text-left max-w-full mb-0;
+  @apply text-left max-w-full mb-0 text-base font-medium;
 }
 .document-upload .upload-heading-wrap {
   @apply text-lg leading-[26px] text-[#847362] font-semibold;
@@ -3893,7 +3893,7 @@ body.page-insurers .faq-section .faq-content {
   background: #faf8f4;
 }
 .document-upload .upload-icon-wrap {
-  @apply w-12 h-12;
+  @apply w-12 h-12 !mb-[0];
   background: rgba(246, 219, 148, 0.46);
 }
 .document-upload .upload-text {
@@ -4162,7 +4162,7 @@ form.form-loading {
   @apply text-center;
 }
 .patient-referral-heading h1 {
-  @apply inline-block text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] border-b border-solid;
+  @apply inline-block text-[20px] sm:text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] !mb-[30px] border-b border-solid;
 }
 .alfar-refferals-form .section-number {
   @apply text-[#32261B] w-8 h-8;
@@ -4172,7 +4172,7 @@ form.form-loading {
   @apply text-lg mb-8 gap-4 font-inter font-semibold ;
 }
 .alfar-refferals-form .form-row {
-  @apply flex gap-[30px] mb-4;
+  @apply flex gap-[30px] mb-[32px];
 }
 .alfar-refferals-form label {
   @apply text-base leading-5 text-[#64574F] font-semibold;
@@ -4219,13 +4219,13 @@ form.form-loading {
   @apply text-base leading-[26px] mb-4;
 }
 .document-upload .upload-box-content p {
-  @apply text-left max-w-full mb-0;
+  @apply text-left max-w-full mb-0 text-base font-medium leading-[26px] text-[#847362] font-inter;
 }
 .document-upload .upload-heading-wrap {
   @apply text-lg leading-[26px] text-[#847362] font-semibold;
 }
 .document-upload .upload-box {
-  @apply w-[819px] max-w-full mb-0 p-[42px] border-2 border-dashed border-[#847362];
+  @apply w-[819px] max-w-full mb-0 py-[42px] px-[26px] border-2 border-dashed border-[#847362];
   margin-inline: auto;
   background: #faf8f4;
 }
@@ -4252,6 +4252,9 @@ form.form-loading {
   @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
 }
 
+.alfar-refferals-form .refferal-notes label {
+  @apply mb-[18px];
+}
 
 /* Wishlist page */
 
