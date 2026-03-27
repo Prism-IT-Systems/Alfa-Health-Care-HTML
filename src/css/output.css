@@ -10971,23 +10971,29 @@ form.form-loading {
   height: fit-content;
   width: 100%;
   border-radius: var(--radius-xl);
-  padding: calc(var(--spacing) * 10);
+  padding: 30px;
   --tw-shadow: 0 10px 30px var(--tw-shadow-color, rgba(0,0,0,0.05));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   background: #ffffff;
 }
 .page-sitemap .sitemap-section h3 {
-  margin-bottom: calc(var(--spacing) * 5);
+  margin-bottom: 14px;
   border-bottom-style: var(--tw-border-style);
   border-bottom-width: 2px;
   --tw-border-style: solid;
   border-style: solid;
   border-bottom-color: #f0f0f0;
   padding-bottom: calc(var(--spacing) * 2.5);
-  font-size: 22px;
+  font-size: 19px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #32261B;
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  @media (width >= 40rem) {
+    font-size: 22px;
+  }
 }
 .page-sitemap .sitemap-section ul {
   margin: calc(var(--spacing) * 0);
@@ -10995,12 +11001,10 @@ form.form-loading {
   list-style: none;
 }
 .page-sitemap .sitemap-section li {
-  margin-bottom: calc(var(--spacing) * 2);
+  margin-bottom: 10px;
 }
 .page-sitemap .sitemap-section a {
   display: inline-block;
-  padding-inline: calc(var(--spacing) * 0);
-  padding-block: calc(var(--spacing) * 1.5);
   font-size: 15px;
   color: #847362;
   text-decoration-line: none;
@@ -11024,17 +11028,20 @@ form.form-loading {
   }
 }
 .page-sitemap .sitemap-section ul ul {
-  margin-top: calc(var(--spacing) * 1.5);
+  margin-top: 9px;
   border-left-style: var(--tw-border-style);
   border-left-width: 2px;
   --tw-border-style: solid;
   border-style: solid;
   border-left-color: #f0f0f0;
-  padding-left: 36px;
+  padding-left: 20px;
+  @media (width >= 40rem) {
+    padding-left: 26px;
+  }
   list-style: none;
 }
 .page-sitemap .sitemap-section ul ul li {
-  margin-bottom: calc(var(--spacing) * 1.5);
+  margin-bottom: 9px;
 }
 @media (max-width: 1280px) {
   .page-sitemap .sitemap {
@@ -11043,7 +11050,7 @@ form.form-loading {
 }
 @media (max-width: 575px) {
   .page-sitemap .sitemap-section {
-    padding: calc(var(--spacing) * 5);
+    padding: 24px;
   }
 }
 @media (max-width: 1024px) {
