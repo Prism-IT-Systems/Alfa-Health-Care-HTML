@@ -201,7 +201,7 @@
 
     /*Boreder Title*/
     .bordered-title {
-        @apply flex items-center justify-center gap-4 w-full;
+        @apply flex items-center justify-center gap-4 w-full font-inter font-bold;
     }
     .bordered-title::before,
     .bordered-title::after {
@@ -221,7 +221,7 @@
 
     /* Meta Items */
     .meta-item {
-        @apply flex items-center gap-[5px];
+        @apply flex items-center gap-[5px] text-[#32261B];
     }
 
     .meta-item i {
@@ -1646,9 +1646,22 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
 }
 
+.wpcf7-submit {
+  @apply relative;
+}
+.wpcf7-spinner {
+  @apply absolute right-[-30px] -translate-x-2/4 top-2/4;
+  /* button ni right side ma lai jase */
+}
+
+
 /* Article Cards Widget */
 @layer components {
 
+.meta-item span {
+   @apply leading-[14.5px]
+}
+  
 .display-blog-grid{
     @apply grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 xl:items-start; 
 }
@@ -1671,7 +1684,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 }
 
 .display-blog-grid .aritcle-box:not(:first-child) { 
-    @apply mt-5.5;
+    @apply mt-[24px];
 }
 .aritcle-box { 
     @apply  bg-pureWhite lg:bg-transparent flex flex-col gap-4 border-0;
