@@ -369,11 +369,17 @@
 }
 
   @layer base {
-    [type='checkbox'],
     [type='radio'] {
       @apply !text-[#a17810];
     }
+
+    [type='checkbox'] {
+      @apply !text-[#fff];
+    }
   } 
+
+
+
 
 /*Header Component*/
 @layer components {
@@ -1612,7 +1618,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 }
 
 .info-detail-card .detail-list-box-group-inner {
-    @apply flex flex-row gap-3;
+    @apply flex flex-row gap-3 items-center;
 }
 
 .info-detail-card .detail-list-box-group .detail-list-box-group-list {
@@ -2901,6 +2907,25 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
  .insurers-partners-section .info-desc a{
     @apply text-[#C59722] font-normal hover:underline;
  }
+
+ .insurers-partners-section .partners-logo-img {
+  @apply flex w-80 h-[90px] items-center justify-center border bg-white shadow-[0px_4px_20px_-4px_rgba(0,0,0,0.05)] px-[25px] py-[22px] rounded-xl border-solid border-[#E8E2D9];
+ }
+
+ .insurers-partners-section .partners-box {
+  @apply flex flex-row flex-wrap gap-8 justify-center;
+ }
+
+ @media (max-width: 575px) {
+  .insurers-partners-section .partners-box {
+    @apply gap-[22px];
+  }
+ }
+
+ .info-detail-card .info-detail-text a {
+  @apply transition-[0.3s] duration-[ease] hover:text-[#a17810];
+ }
+
 /* What We Do Section */
 
 .what-we-do-section .info-card-widget .info-card {
@@ -4051,7 +4076,8 @@ body.page-insurers .faq-section .faq-content {
   @apply p-[20px] sm:p-10;
 }
 .alfar-refferals-form input[type="checkbox"] {
-  @apply rounded-[3px] !p-[0] mt-[5px];
+  @apply rounded-[3px] !p-[0] ;
+  background: url(data:image/svg+xml,%3csvg aria-hidden=true xmlns=http://www.w3.org/2000/svg width=24 height=24 fill=none viewBox=0 0 24 24%3e %3cpath stroke=white stroke-linecap=round stroke-linejoin=round stroke-width=2 d=M5 11.917 9.724 16.5 19 7.5/%3e %3c/svg%3e) !important;
 }
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
@@ -4764,7 +4790,6 @@ form.form-loading {
 .custom-contact-form textarea,
 .custom-contact-form select {
   @apply box-border mix-blend-normal mx-auto my-0 rounded-[10.5263px] border-[1.05263px] border-solid border-[#CDBAA6];
-  background: #fcfaf8 !important;
 }
 .contact-form-card .form-row {
   @apply flex flex-col sm:flex-row justify-between items-start gap-[16.84px] p-0;
@@ -4775,6 +4800,10 @@ form.form-loading {
 }
 .contact-us-wrapper {
   @apply !p-[0];
+}
+
+.alfar-refferals-form .checkbox-row input[type="checkbox"] {
+   @apply mt-[5px];
 }
 
 @media (min-width: 1280px) {
