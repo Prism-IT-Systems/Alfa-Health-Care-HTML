@@ -1742,7 +1742,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
     .blog-card-grid .blog-card .blog-content {
-        @apply p-5 flex flex-col gap-4 flex-1;
+        @apply p-5 flex flex-col gap-[6px] sm:gap-4 flex-1;
     }
 
     .blog-card-grid .blog-card .blog-content h5 {
@@ -1801,7 +1801,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 .display-blog-grid .aritcle-box:not(:first-child) { 
     @apply mt-5.5;
 }
-.aritcle-box { 
+.blogs-on-right .aritcle-box { 
     @apply  bg-pureWhite lg:bg-transparent flex flex-col gap-4 border-0;
 }
 
@@ -1822,12 +1822,10 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 }
 
 @media(max-width:1023px){
-.aritcle-box { 
-    @apply p-7.5 md:pb-6 !border-1 !border-solid !border-[#ddd] rounded-[14px];
+.blogs-on-right .aritcle-box { 
+    @apply p-[20px] md:pb-6 !border-1 !border-solid !border-[#ddd] rounded-[14px];
 }
-
 }
-
 }
 
 /* Blog Card Widget */
@@ -1857,7 +1855,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
     .blog-card-grid .blog-card .blog-content {
-        @apply p-5 flex flex-col gap-4 flex-1;
+        @apply p-5 flex flex-col gap-[6px] sm:gap-4 flex-1;
     }
 
     .blog-card-grid .blog-card .blog-content h5 {
@@ -2997,6 +2995,31 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 /* Insures Page FAQ css */
 body.page-insurers .faq-section .faq-content {
     @apply max-w-[1024px] mx-auto;
+}
+
+.faq-item .accordion-item.active .accordion-content p a {
+  @apply font-[bold] transition-[color] duration-[0.3s] hover:text-[color:var(--Sunlit-Gold)];
+}
+
+.page-contact-us .wpcf7-form p {
+  @apply relative;
+}
+.page-contact-us .wpcf7-spinner {
+  @apply absolute opacity-0 transition-all duration-[0.3s] ease-[ease] left-[90%];
+}
+.page-contact-us .wpcf7 form.submitting .wpcf7-spinner {
+  @apply opacity-50;
+}
+
+@media (max-width: 575px) {
+  .blog-card-grid .blog-card .blog-content a.cta-link {
+    @apply text-sm;
+  }
+}
+@media (max-width: 575px) {
+  .blog .cta-link svg {
+    @apply w-5 h-5;
+  }
 }
 
 
@@ -4210,10 +4233,10 @@ body.page-insurers .faq-section .faq-content {
   @apply text-[#A17810] border text-sm no-underline transition-[0.3s] px-5 py-2 border-solid border-[#A17810];
   background: #fff;
 }
+
 .woocommerce-wishlist .wishlist_table .product-add-to-cart a:last-child:hover {
   background: #f7f7f7;
 }
-
 
 .woocommerce-wishlist .wishlist_table tr td.product-thumbnail {
   @apply w-[100px];

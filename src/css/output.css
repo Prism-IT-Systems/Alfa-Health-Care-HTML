@@ -5122,8 +5122,11 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: calc(var(--spacing) * 4);
+    gap: 6px;
     padding: calc(var(--spacing) * 5);
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 4);
+    }
   }
   .blog-card-grid .blog-card .blog-content h5 {
     --tw-font-weight: var(--font-weight-semibold);
@@ -5250,7 +5253,7 @@
   .display-blog-grid .aritcle-box:not(:first-child) {
     margin-top: calc(var(--spacing) * 5.5);
   }
-  .aritcle-box {
+  .blogs-on-right .aritcle-box {
     display: flex;
     flex-direction: column;
     gap: calc(var(--spacing) * 4);
@@ -5293,14 +5296,14 @@
     }
   }
   @media (max-width:1023px) {
-    .aritcle-box {
+    .blogs-on-right .aritcle-box {
       border-radius: 14px;
       border-style: var(--tw-border-style) !important;
       border-width: 1px !important;
       --tw-border-style: solid !important;
       border-style: solid !important;
       border-color: #ddd !important;
-      padding: calc(var(--spacing) * 7.5);
+      padding: 20px;
       @media (width >= 48rem) {
         padding-bottom: calc(var(--spacing) * 6);
       }
@@ -5372,8 +5375,11 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: calc(var(--spacing) * 4);
+    gap: 6px;
     padding: calc(var(--spacing) * 5);
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 4);
+    }
   }
   .blog-card-grid .blog-card .blog-content h5 {
     --tw-font-weight: var(--font-weight-semibold);
@@ -7559,6 +7565,49 @@
 body.page-insurers .faq-section .faq-content {
   margin-inline: auto;
   max-width: 1024px;
+}
+.faq-item .accordion-item.active .accordion-content p a {
+  font-family: bold;
+  transition-property: color;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  &:hover {
+    @media (hover: hover) {
+      color: var(--Sunlit-Gold);
+    }
+  }
+}
+.page-contact-us .wpcf7-form p {
+  position: relative;
+}
+.page-contact-us .wpcf7-spinner {
+  position: absolute;
+  left: 90%;
+  opacity: 0%;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+}
+.page-contact-us .wpcf7 form.submitting .wpcf7-spinner {
+  opacity: 50%;
+}
+@media (max-width: 575px) {
+  .blog-card-grid .blog-card .blog-content a.cta-link {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
+@media (max-width: 575px) {
+  .blog .cta-link svg {
+    height: calc(var(--spacing) * 5);
+    width: calc(var(--spacing) * 5);
+  }
 }
 .section-404 {
   background-color: #F5F1EA;
