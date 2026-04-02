@@ -3466,7 +3466,7 @@ body.page-insurers .faq-section .faq-content {
 /* Login and Register Page */
 
 .alfa-my-account {
-  @apply pt-[100px] pb-[100px] px-5;
+  @apply pt-[70px] pb-[100px] px-5;
 }
 #customer_login {
   @apply flex gap-6 max-w-[1400px] m-auto;
@@ -3477,7 +3477,7 @@ body.page-insurers .faq-section .faq-content {
   background: #ffffff;
 }
 #customer_login h2 {
-  @apply text-[26px] text-[#32261B] font-semibold mb-[25px];
+  @apply text-[20px] sm:text-[26px] text-[#32261B] font-semibold mb-[20px] sm:mb-[25px];
 }
 #customer_login label {
   @apply text-base text-[#847362] font-medium;
@@ -3486,13 +3486,28 @@ body.page-insurers .faq-section .faq-content {
   @apply w-full h-[46px] border transition-[0.3s] mt-2 px-3.5 py-0 rounded-md border-solid border-[#E6DED2] focus:shadow-[0_0_0_2px_rgba(161,120,16,0.08)] focus:border-[#A17810];
 }
 #customer_login input.input-text:focus {
-  outline: none;
+  @apply !shadow-none !border-[#a17810];
+  outline: none !important;
 }
 .woocommerce button.button,
 .woocommerce .button {
   @apply text-white font-medium transition-all duration-[0.3s] ease-[ease] px-[35px] py-3 rounded-[50px] border-[none];
   background: #a17810;
 }
+
+#customer_login label {
+  @apply order-1 flex items-center gap-1.5;
+}
+.ahs-login-actions {
+  @apply flex flex-row flex-wrap items-center gap-0;
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  @apply !m-0;
+}
+
 .woocommerce button.button:hover,
 .woocommerce .button:hover {
   @apply -translate-y-0.5 text-white;
@@ -3505,7 +3520,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-[#A17810] text-sm no-underline hover:underline;
 }
 .woocommerce-form-register p {
-  @apply text-base text-[#847362];
+  @apply text-sm sm:text-base text-[#847362];
 }
 .woocommerce-privacy-policy-text {
   @apply text-[13px] text-[#847362];
@@ -3516,11 +3531,11 @@ body.page-insurers .faq-section .faq-content {
   }
   #customer_login .u-column1,
   #customer_login .u-column2 {
-    @apply p-[30px];
+    @apply p-[24px];
   }
 }
 .woocommerce-notices-wrapper {
-  @apply max-w-[1400px] mt-[30px] mb-5 mx-auto;
+  @apply max-w-[1400px] !mt-[30px] !mb-[30px] !mx-auto;
 }
 .woocommerce-error {
   @apply border text-[#7A2E2E] text-base rounded-md border-l-[5px] border-l-[#E53935] border-solid border-[#F3C4C4];
@@ -3545,7 +3560,7 @@ body.page-insurers .faq-section .faq-content {
     @apply gap-6;
   }
   .alfa-my-account {
-    @apply pt-5 pb-[60px] px-5;
+    @apply pt-[30px] pb-[60px] px-5;
   }
 }
 @media (max-width: 992px) {
@@ -4703,6 +4718,16 @@ form.form-loading {
   @apply mt-[9px] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
   list-style: none;
 }
+
+.page-sitemap .sitemap-section > ul > li {
+  @apply font-bold text-[16px] sm:text-[20px] mt-[25px] font-bold text-[22px] mt-[25px];
+}
+
+.page-sitemap .wp-block-heading {
+  @apply text-center text-[40px] mb-[34px] sm:mb-13.5 lg:mb-[74px];
+}
+
+
 .page-sitemap .sitemap-section ul ul li {
   @apply mb-[9px];
 }
@@ -5079,6 +5104,17 @@ form.form-loading {
 }
 .page-my-account .woocommerce-MyAccount-content {
   @apply p-0;
+}
+
+.woocommerce button.button:hover,
+.woocommerce .button:hover {
+  @apply shadow-[0_6px_0px_#dda619] -translate-y-0.5;
+}
+
+@media (max-width: 411px) {
+  #customer_login label {
+    @apply mt-3;
+  }
 }
 
 /* TOTAL ROW HIGHLIGHT */

@@ -8622,7 +8622,7 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfa-my-account {
   padding-inline: calc(var(--spacing) * 5);
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 #customer_login {
@@ -8640,11 +8640,17 @@ body.page-insurers .faq-section .faq-content {
   background: #ffffff;
 }
 #customer_login h2 {
-  margin-bottom: 25px;
-  font-size: 26px;
+  margin-bottom: 20px;
+  font-size: 20px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #32261B;
+  @media (width >= 40rem) {
+    margin-bottom: 25px;
+  }
+  @media (width >= 40rem) {
+    font-size: 26px;
+  }
 }
 #customer_login label {
   font-size: var(--text-base);
@@ -8677,7 +8683,10 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 #customer_login input.input-text:focus {
-  outline: none;
+  border-color: #a17810 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+  outline: none !important;
 }
 .woocommerce button.button, .woocommerce .button {
   border-radius: 50px;
@@ -8695,6 +8704,22 @@ body.page-insurers .faq-section .faq-content {
   --tw-ease: ease;
   transition-timing-function: ease;
   background: #a17810;
+}
+#customer_login label {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1.5);
+}
+.ahs-login-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--spacing) * 0);
+}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+  margin: calc(var(--spacing) * 0) !important;
 }
 .woocommerce button.button:hover, .woocommerce .button:hover {
   --tw-translate-y: calc(var(--spacing) * -0.5);
@@ -8719,9 +8744,13 @@ body.page-insurers .faq-section .faq-content {
   }
 }
 .woocommerce-form-register p {
-  font-size: var(--text-base);
-  line-height: var(--tw-leading, var(--text-base--line-height));
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
   color: #847362;
+  @media (width >= 40rem) {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
 }
 .woocommerce-privacy-policy-text {
   font-size: 13px;
@@ -8732,13 +8761,13 @@ body.page-insurers .faq-section .faq-content {
     flex-direction: column;
   }
   #customer_login .u-column1, #customer_login .u-column2 {
-    padding: 30px;
+    padding: 24px;
   }
 }
 .woocommerce-notices-wrapper {
-  margin-inline: auto;
-  margin-top: 30px;
-  margin-bottom: calc(var(--spacing) * 5);
+  margin-inline: auto !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
   max-width: 1400px;
 }
 .woocommerce-error {
@@ -8777,7 +8806,7 @@ body.page-insurers .faq-section .faq-content {
   }
   .alfa-my-account {
     padding-inline: calc(var(--spacing) * 5);
-    padding-top: calc(var(--spacing) * 5);
+    padding-top: 30px;
     padding-bottom: 60px;
   }
 }
@@ -11154,6 +11183,27 @@ form.form-loading {
   }
   list-style: none;
 }
+.page-sitemap .sitemap-section > ul > li {
+  margin-top: 25px;
+  font-size: 16px;
+  font-size: 22px;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  @media (width >= 40rem) {
+    font-size: 20px;
+  }
+}
+.page-sitemap .wp-block-heading {
+  margin-bottom: 34px;
+  text-align: center;
+  font-size: 40px;
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 13.5);
+  }
+  @media (width >= 64rem) {
+    margin-bottom: 74px;
+  }
+}
 .page-sitemap .sitemap-section ul ul li {
   margin-bottom: 9px;
 }
@@ -11876,6 +11926,17 @@ form.form-loading {
 }
 .page-my-account .woocommerce-MyAccount-content {
   padding: calc(var(--spacing) * 0);
+}
+.woocommerce button.button:hover, .woocommerce .button:hover {
+  --tw-translate-y: calc(var(--spacing) * -0.5);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+@media (max-width: 411px) {
+  #customer_login label {
+    margin-top: calc(var(--spacing) * 3);
+  }
 }
 .woocommerce-table--order-details tfoot tr:nth-child(2) td {
   font-size: var(--text-lg) !important;
