@@ -5593,3 +5593,59 @@ form.form-loading {
   @apply text-[#847362] text-base;
 }
 
+.insurance-advantage {
+  background: linear-gradient(
+    rgba(223, 176, 58, 0.03) 100%,
+    rgba(252, 250, 248, 0.3) 80%
+  );
+}
+.insurance-advantage .container {
+  @apply max-w-[1200px] mx-auto my-0;
+}
+
+/* Heading */
+.insurance-advantage .main-heading {
+  @apply !text-center lg:text-[40px] lg:leading-[48px] md:text-3xl md:leading-[38px] text-2xl leading-[32px] !font-bold !text-[#32261B] !mb-[34px] sm:mb-13.5 lg:mb-[74px];
+}
+
+/* Grid Layout */
+.insurance-advantage .advantage-list {
+  @apply grid grid-cols-[repeat(2,1fr)] gap-8;
+}
+
+/* Card Style (Logo Box Look) */
+.insurance-advantage .advantage-item {
+  @apply !text-left transition-all duration-[0.3s] ease-[ease] shadow-[0_2px_8px_rgba(0,0,0,0.04)] !px-5 !py-[30px] !rounded-[14px];
+  background: #ffffff !important;
+}
+
+/* Hover like modern UI */
+.advantage-item:hover {
+  @apply -translate-y-0.5 shadow-[0_8px_20px_rgba(0,0,0,0.08)];
+}
+
+/* Description */
+.advantage-item p {
+  @apply !text-[15px] !text-[#847362] !leading-6;
+}
+
+/* Remove default paragraph spacing issue */
+.advantage-item p strong {
+  @apply !block !text-base !font-semibold !text-[#32261B] !mb-4 !pb-4 !border-b-[#84736226] !border-b !border-solid;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .insurance-advantage .advantage-list {
+    @apply grid-cols-[1fr];
+  }
+}
+@media (max-width: 575px) {
+  .insurance-advantage .advantage-item {
+    @apply p-5;
+  }
+  .insurance-advantage .advantage-list {
+    @apply gap-6;
+  }
+}
+
