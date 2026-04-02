@@ -3513,6 +3513,15 @@ body.page-insurers .faq-section .faq-content {
   @apply -translate-y-0.5 text-white;
   background: #8a640c;
 }
+
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled] {
+  @apply !cursor-pointer !opacity-100 !text-white;
+  padding-inline: 35px !important;
+  padding-block: calc(var(--spacing) * 3) !important;
+  background: #a17810 !important;
+}
+
 .woocommerce-form-login__rememberme {
   @apply text-sm text-[#847362];
 }
@@ -5698,4 +5707,8 @@ form.form-loading {
   .product-category-subtitle::after {
     @apply w-[200px];
   }
+}
+
+.woocommerce-lost-password .woocommerce {
+  @apply py-[60px] xl:py-[100px] px-5 lg:!px-7.5;
 }
