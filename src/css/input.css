@@ -1750,7 +1750,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
     .blog-card-grid .blog-card .blog-content p {
-        @apply text-sm leading-[23px] text-warmTaupe mb-1.5;
+        @apply text-sm leading-[23px] text-warmTaupe mb-1.5 mt-auto;
            overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 2; /* number of lines to show */
@@ -5592,3 +5592,4 @@ form.form-loading {
 .page-home input::placeholder {
   @apply text-[#847362] text-base;
 }
+

@@ -5133,6 +5133,7 @@
     font-weight: var(--font-weight-semibold);
   }
   .blog-card-grid .blog-card .blog-content p {
+    margin-top: auto;
     margin-bottom: calc(var(--spacing) * 1.5);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
