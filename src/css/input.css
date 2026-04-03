@@ -1686,7 +1686,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 .display-blog-grid .aritcle-box:not(:first-child) { 
     @apply mt-[24px];
 }
-.aritcle-box { 
+.display-blog-grid .aritcle-box { 
     @apply  bg-pureWhite lg:bg-transparent flex flex-col gap-4 border-0;
 }
 
@@ -1707,7 +1707,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 }
 
 @media(max-width:1023px){
-.aritcle-box { 
+.display-blog-grid .aritcle-box { 
     @apply p-7.5 md:pb-6 !border-1 !border-solid !border-[#ddd] rounded-[14px];
 }
 
@@ -3580,7 +3580,7 @@ body.page-insurers .faq-section .faq-content {
  
 /* Sidebar Navigation */
 .woocommerce-MyAccount-navigation {
-  @apply p-[25px];
+  @apply pl-[0] pr-[25px] py-[0];
 }
 .woocommerce-info::before {
   @apply text-[#a17810];
@@ -4729,7 +4729,7 @@ form.form-loading {
   @apply no-underline text-[#847362] text-[15px] inline-block transition-all duration-[0.3s] ease-[ease] hover:text-[#a17810] hover:translate-x-1;
 }
 .page-sitemap .sitemap-section ul ul {
-  @apply mt-[9px] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
+  @apply mt-[25pxpx] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
   list-style: none;
 }
 
