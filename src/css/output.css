@@ -5696,6 +5696,9 @@
     --tw-duration: ease;
     transition-duration: ease;
   }
+  .custom-date::-webkit-datetime-edit {
+    text-transform: uppercase;
+  }
   .alfa-modal .alfa-close svg path {
     stroke: var(--pure-white);
   }
@@ -8932,6 +8935,8 @@ body.page-insurers .faq-section .faq-content {
 }
 .woocommerce-info {
   margin-bottom: 25px;
+  display: flex;
+  align-items: center;
   border-radius: var(--radius-md);
   border-top-color: #a17810;
   color: #6B5A44;
@@ -9240,22 +9245,40 @@ body.page-insurers .faq-section .faq-content {
     float: none;
     width: 100%;
   }
+  .tax-short-description h3 {
+    font-size: 20px !important;
+  }
+}
+.tax-product_cat .faq-heading-wrapper {
+  margin-bottom: 34px;
+  @media (width >= 40rem) {
+    margin-bottom: 54px;
+  }
+  @media (width >= 64rem) {
+    margin-bottom: 74px;
+  }
 }
 .tax-short-description {
   margin: calc(var(--spacing) * 0);
   margin-inline: auto;
-  margin-block: 74px;
+  margin-block: 34px;
   border-radius: var(--radius-xl);
   padding: calc(var(--spacing) * 10);
   --tw-leading: 1.7;
   line-height: 1.7;
   --tw-shadow: 0 10px 30px var(--tw-shadow-color, rgba(0,0,0,0.06));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  @media (width >= 40rem) {
+    margin-block: calc(var(--spacing) * 13.5);
+  }
+  @media (width >= 64rem) {
+    margin-block: 74px;
+  }
   background: #ffffff;
 }
 .tax-short-description h3 {
   margin-bottom: calc(var(--spacing) * 5);
-  font-size: 28px;
+  font-size: 28px !important;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   color: #6F5F4E;
@@ -12540,9 +12563,38 @@ form.form-loading {
   border-top-color: #a17810 !important;
 }
 .woocommerce-info::before, .woocommerce-message::before {
+  top: auto !important;
   color: #a17810 !important;
   --tw-content: "\e015";
   content: var(--tw-content);
+}
+.woocommerce-MyAccount-content .woocommerce-info .button {
+  margin-left: auto;
+  border-radius: 999px;
+  padding-inline: calc(var(--spacing) * 5);
+  padding-block: calc(var(--spacing) * 3);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-white);
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.woocommerce-MyAccount-content .woocommerce-info .button {
+  background: #a17819;
+}
+.woocommerce-MyAccount-content .woocommerce-info .button:hover {
+  background: #a17810 !important;
 }
 .alfa-my-account .woocommerce-address-fields {
   margin-bottom: calc(var(--spacing) * 10) !important;
@@ -13018,6 +13070,9 @@ form.form-loading {
 @media (max-width: 1024px) {
   .insurance-advantage .advantage-list {
     grid-template-columns: 1fr;
+  }
+  .tax-short-description h3 {
+    font-size: 22px !important;
   }
 }
 @media (max-width: 575px) {

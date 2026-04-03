@@ -2049,6 +2049,9 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
         @apply transition-[0.3s] duration-[ease];
       }
 
+      .custom-date::-webkit-datetime-edit {
+         @apply uppercase;
+     }
 
     .alfa-modal .alfa-close svg path {
       @apply stroke-pureWhite;
@@ -3657,7 +3660,7 @@ body.page-insurers .faq-section .faq-content {
  
 /* Info Message */
 .woocommerce-info {
-  @apply text-[#6B5A44] mb-[25px] rounded-md border-t-[#a17810];
+  @apply text-[#6B5A44] mb-[25px] rounded-md border-t-[#a17810] flex items-center;
   background: #f7f3ea;
 }
  
@@ -3835,16 +3838,24 @@ body.page-insurers .faq-section .faq-content {
   .woocommerce-EditAccountForm .form-row-last {
     @apply w-full float-none;
   }
+  .tax-short-description h3 {
+     @apply !text-[20px];
+  }
+
+}
+
+.tax-product_cat .faq-heading-wrapper {
+  @apply mb-[34px] sm:mb-[54px] lg:mb-[74px];
 }
 
 /* tax-short-description */
 
 .tax-short-description {
-  @apply shadow-[0_10px_30px_rgba(0,0,0,0.06)] leading-[1.7] mx-auto my-[74px] m-0 p-10 rounded-xl;
+  @apply shadow-[0_10px_30px_rgba(0,0,0,0.06)] leading-[1.7] mx-auto my-[34px] sm:my-13.5 lg:my-[74px] m-0 p-10 rounded-xl;
   background: #ffffff;
 }
 .tax-short-description h3 {
-  @apply text-[28px] font-bold text-[#6F5F4E] mb-5;
+  @apply !text-[28px] font-bold text-[#6F5F4E] mb-5;
 }
 .tax-short-description h4 {
   @apply text-xl font-semibold text-[#A17810] mt-[25px] mb-[15px];
@@ -5452,8 +5463,19 @@ form.form-loading {
 
 .woocommerce-info::before,
 .woocommerce-message::before {
-  @apply content-["\e015"] !text-[#a17810];
+  @apply content-["\e015"] !text-[#a17810] !top-auto;
 }
+
+.woocommerce-MyAccount-content .woocommerce-info .button {
+  @apply  text-white text-sm font-medium ml-auto px-5 py-3 rounded-[999px] hover:shadow-[0_6px_0px_#dda619] hover:text-white;
+}
+.woocommerce-MyAccount-content .woocommerce-info .button {
+  background: #a17819;
+}
+.woocommerce-MyAccount-content .woocommerce-info .button:hover {
+  background: #a17810 !important;
+}
+
 
 .alfa-my-account .woocommerce-address-fields {
   @apply !shadow-[0_8px_30px_rgba(0,0,0,0.06)] !max-w-full !mb-10 !p-7 !rounded-2xl;
@@ -5715,6 +5737,10 @@ form.form-loading {
 @media (max-width: 1024px) {
   .insurance-advantage .advantage-list {
     @apply grid-cols-[1fr];
+  }
+
+  .tax-short-description h3 {
+    @apply !text-[22px];
   }
 }
 @media (max-width: 575px) {
