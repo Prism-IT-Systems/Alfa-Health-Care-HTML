@@ -1985,6 +1985,10 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
         @apply text-sm leading-[19px];
     }
 
+    .alfa-modal form .submit-btn input:hover {
+        @apply shadow-[0_6px_0px_#dda619];
+     }
+
     .alfa-modal form input:not([type="submit"],[type="checkbox"]),
     .alfa-modal form select {
       @apply h-13
@@ -2019,9 +2023,32 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
      .alfa-modal form .submit-btn input {
-        @apply p-4 w-full max-w-[315px] flex mx-auto !text-center text-[16px] font-[Inter];
+        @apply p-4 w-full max-w-[315px] flex mx-auto !text-center text-[16px] font-[Inter] transition-[0.3s] duration-[ease];
         background-color: #a17810 !important;
     }
+
+    #load-more:hover {
+        @apply shadow-[0_6px_0px_#dda619];
+     }
+
+     .alfar-refferals-form .submit-btn:hover {
+        @apply shadow-[0_6px_0px_#dda619];
+     }
+     .alfar-refferals-form .submit-btn {
+        @apply transition-[0.3s] duration-[ease];
+     }
+
+     #privacy-policy-form .agree-btn:hover {
+      @apply shadow-[0_6px_0px_#dda619];
+     }
+
+     .contact-form-card .form-row.submit-btn:hover {
+        @apply shadow-[0_6px_0px_#dda619];
+     }
+     .contact-form-card .form-row.submit-btn {
+        @apply transition-[0.3s] duration-[ease];
+      }
+
 
     .alfa-modal .alfa-close svg path {
       @apply stroke-pureWhite;

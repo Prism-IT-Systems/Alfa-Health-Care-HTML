@@ -5592,6 +5592,10 @@
     --tw-leading: 19px;
     line-height: 19px;
   }
+  .alfa-modal form .submit-btn input:hover {
+    --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .alfa-modal form input:not([type="submit"],[type="checkbox"]), .alfa-modal form select {
     height: calc(var(--spacing) * 13);
   }
@@ -5655,7 +5659,42 @@
     text-align: center !important;
     font-family: Inter;
     font-size: 16px;
+    transition-property: 0.3s;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: ease;
+    transition-duration: ease;
     background-color: #a17810 !important;
+  }
+  #load-more:hover {
+    --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .alfar-refferals-form .submit-btn:hover {
+    --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .alfar-refferals-form .submit-btn {
+    transition-property: 0.3s;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: ease;
+    transition-duration: ease;
+  }
+  #privacy-policy-form .agree-btn:hover {
+    --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .contact-form-card .form-row.submit-btn:hover {
+    --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .contact-form-card .form-row.submit-btn {
+    transition-property: 0.3s;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: ease;
+    transition-duration: ease;
   }
   .alfa-modal .alfa-close svg path {
     stroke: var(--pure-white);
