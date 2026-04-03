@@ -8998,10 +8998,13 @@ body.page-insurers .faq-section .faq-content {
   background: #ffffff;
 }
 .woocommerce-Address-title {
-  margin-bottom: calc(var(--spacing) * 5);
+  margin-bottom: 14px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: calc(var(--spacing) * 3);
+  @media (width >= 40rem) {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
 }
 .woocommerce-Address-title h2 {
   margin: calc(var(--spacing) * 0);
@@ -9037,6 +9040,40 @@ body.page-insurers .faq-section .faq-content {
 }
 .woocommerce-Address-title .edit:hover {
   background: #8b670d;
+}
+.alfa-my-account #place_order {
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.2s;
+  transition-duration: 0.2s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:hover {
+    @media (hover: hover) {
+      --tw-translate-y: calc(var(--spacing) * -0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.alfa-my-account #place_order:hover {
+  background: #a17810 !important;
+}
+#file-name {
+  margin-top: calc(var(--spacing) * 2);
+  display: block;
+  font-size: 13px;
+  color: #555;
+}
+.addresses .title::before {
+  --tw-content: none !important;
+  content: none !important;
 }
 .woocommerce-Address address {
   font-size: 15px;

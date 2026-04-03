@@ -3696,7 +3696,7 @@ body.page-insurers .faq-section .faq-content {
   background: #ffffff;
 }
 .woocommerce-Address-title {
-  @apply flex items-start gap-3 mb-5; /* justify-content: flex-start; */
+  @apply flex items-center gap-3 mb-[14px] sm:mb-5; /* justify-content: flex-start; */
 }
 .woocommerce-Address-title h2 {
   @apply text-xl text-[#32261B] font-semibold m-0;
@@ -3708,6 +3708,23 @@ body.page-insurers .faq-section .faq-content {
 .woocommerce-Address-title .edit:hover {
   background: #8b670d;
 }
+
+.alfa-my-account #place_order {
+  @apply transition-all duration-[0.2s] ease-[ease] hover:shadow-[0_6px_0px_#dda619] hover:-translate-y-0.5;
+}
+.alfa-my-account #place_order:hover {
+  background: #a17810 !important;
+}
+
+#file-name {
+  @apply block text-[13px] text-[#555] mt-2;
+}
+
+
+.addresses .title::before {
+  @apply !content-none;
+}
+
 .woocommerce-Address address {
   @apply text-[15px] text-[#7a6b59] leading-[1.6] not-italic empty:before:content-["No_address_added_yet."] empty:before:text-[#a69784];
 }
