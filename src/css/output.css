@@ -9273,7 +9273,11 @@ body.page-insurers .faq-section .faq-content {
 .tax-short-description p {
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
+  overflow-wrap: break-word;
   color: #6F5F4E;
+}
+.tax-product_cat .faq-heading-column {
+  text-align: center;
 }
 .tax-short-description a {
   --tw-font-weight: var(--font-weight-semibold);
@@ -12987,8 +12991,7 @@ form.form-loading {
   position: relative;
   margin-bottom: 54px;
   text-align: center;
-  font-size: var(--text-3xl);
-  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  font-size: 26px !important;
   --tw-leading: var(--leading-8);
   line-height: var(--leading-8);
   --tw-font-weight: var(--font-weight-bold);
@@ -13034,9 +13037,19 @@ form.form-loading {
 .product-category-subtitle span {
   color: #a17810;
 }
+@media (max-width: 768px) {
+  .product-category-subtitle::after {
+    width: 100px;
+  }
+}
 @media (max-width: 575px) {
   .product-category-subtitle::after {
     width: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .product-category-subtitle {
+    font-size: 22px !important;
   }
 }
 .woocommerce-lost-password .woocommerce {
