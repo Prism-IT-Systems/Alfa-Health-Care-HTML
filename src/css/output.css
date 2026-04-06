@@ -11306,7 +11306,7 @@ form.form-loading {
     font-size: 20px;
   }
 }
-.page-sitemap h1 {
+.page-sitemap .sitemap-heading {
   margin-bottom: 34px;
   text-align: center;
   font-size: 24px;

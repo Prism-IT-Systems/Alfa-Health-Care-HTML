@@ -4792,7 +4792,7 @@ form.form-loading {
   @apply font-bold text-[16px] sm:text-[20px] mt-[25px] font-bold text-[22px] mt-[25px];
 }
 
-.page-sitemap h1{
+.page-sitemap .sitemap-heading{
   @apply text-center text-[24px] sm:text-[30px] lg:text-[40px] mb-[34px] sm:mb-13.5 lg:mb-[74px];
 }
 
