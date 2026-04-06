@@ -9106,6 +9106,7 @@ body.page-insurers .faq-section .faq-content {
 @media (max-width: 768px) {
   .woocommerce-Address-title {
     flex-direction: column;
+    align-items: flex-start;
   }
   .woocommerce-Address {
     padding: 25px;
@@ -9201,12 +9202,16 @@ body.page-insurers .faq-section .faq-content {
   --tw-border-style: solid;
   border-style: solid;
   border-color: #E6E0D6;
-  padding: calc(var(--spacing) * 7);
+  padding: 20px;
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 7);
+  }
   background: #faf8f4;
 }
 .woocommerce-EditAccountForm fieldset legend {
   padding-inline: calc(var(--spacing) * 2.5);
   padding-block: calc(var(--spacing) * 0);
+  text-align: center;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-font-weight: var(--font-weight-semibold);
@@ -11284,7 +11289,7 @@ form.form-loading {
   }
 }
 .page-sitemap .sitemap-section ul ul {
-  margin-top: 25px;
+  margin-top: 18px;
   border-left-style: var(--tw-border-style);
   border-left-width: 2px;
   --tw-border-style: solid;
@@ -11297,12 +11302,14 @@ form.form-loading {
   list-style: none;
 }
 .page-sitemap .sitemap-section > ul > li {
-  margin-top: 25px;
-  font-size: 16px;
-  font-size: 22px;
+  margin-top: 18px;
+  font-size: 17px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   @media (width >= 40rem) {
+    font-size: 20px;
+  }
+  @media (width >= 48rem) {
     font-size: 20px;
   }
 }
@@ -12001,7 +12008,7 @@ form.form-loading {
   line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
 }
 .woocommerce-table--order-details thead {
-  background: #fcfaf8 !important;
+  background: #fff !important;
 }
 .woocommerce-table--order-details th {
   padding: calc(var(--spacing) * 4) !important;
@@ -12063,10 +12070,14 @@ form.form-loading {
   color: #a17810 !important;
 }
 .page-my-account .woocommerce table.shop_table {
+  overflow: hidden;
   @media (width < 80rem) {
     --tw-border-style: none;
     border-style: none;
   }
+}
+.woocommerce-orders-table thead tr {
+  background-color: var(--color-white);
 }
 .page-my-account .woocommerce-MyAccount-content {
   padding: calc(var(--spacing) * 0);
@@ -12547,9 +12558,16 @@ form.form-loading {
     width: 142px;
   }
 }
+th.woocommerce-table__product-table.product-total {
+  text-align: right;
+}
+.accordion-content {
+  display: none;
+}
 .woocommerce-order-downloads {
   margin-inline: calc(var(--spacing) * 0) !important;
   margin-block: 30px !important;
+  padding: 0 !important;
 }
 .woocommerce-order-downloads .woocommerce-table {
   width: 100% !important;

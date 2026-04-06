@@ -3741,7 +3741,7 @@ body.page-insurers .faq-section .faq-content {
 }
 @media (max-width: 768px) {
   .woocommerce-Address-title {
-    @apply flex-col;
+    @apply flex-col items-start;
   }
   .woocommerce-Address {
     @apply p-[25px];
@@ -3804,13 +3804,13 @@ body.page-insurers .faq-section .faq-content {
  
 /* Fieldset (Password section) */
 .woocommerce-EditAccountForm fieldset {
-  @apply border mt-[30px] p-7 rounded-[10px] border-solid border-[#E6E0D6];
+  @apply border mt-[30px] p-[20px] sm:p-7 rounded-[10px] border-solid border-[#E6E0D6];
   background: #faf8f4;
 }
  
 /* Fieldset Title */
 .woocommerce-EditAccountForm fieldset legend {
-  @apply text-base font-semibold text-[#5A4A3A] px-2.5 py-0;
+  @apply text-base font-semibold text-[#5A4A3A] px-2.5 py-0 text-center;
 }
  
 /* Password input wrapper */
@@ -4786,12 +4786,12 @@ form.form-loading {
 }
 
 .page-sitemap .sitemap-section ul ul {
-  @apply mt-[25px] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
+  @apply mt-[18px] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
   list-style: none;
 }
 
 .page-sitemap .sitemap-section > ul > li {
-  @apply font-bold text-[16px] sm:text-[20px] mt-[25px] font-bold text-[22px] mt-[25px];
+  @apply font-bold text-[17px] sm:text-[20px] font-bold md:text-[20px] mt-[18px];
 }
 
 .sitemap-section ul ul {
@@ -5131,7 +5131,7 @@ form.form-loading {
 
 /* HEADER */
 .woocommerce-table--order-details thead {
-  background: #fcfaf8 !important;
+  background: #fff !important;
 }
 .woocommerce-table--order-details th {
   @apply !text-left !font-semibold text-[#333] !p-4;
@@ -5181,8 +5181,13 @@ form.form-loading {
   @apply !text-[20px] font-semibold !text-[#a17810];
 }
 .page-my-account .woocommerce table.shop_table {
-  @apply max-xl:border-none;
+  @apply max-xl:border-none overflow-hidden;;
 }
+
+.woocommerce-orders-table thead tr {
+  @apply bg-white;
+}
+
 .page-my-account .woocommerce-MyAccount-content {
   @apply p-0;
 }
@@ -5435,10 +5440,18 @@ form.form-loading {
 
 }
 
+th.woocommerce-table__product-table.product-total {
+  @apply text-right;
+}
+
+.accordion-content {
+  @apply hidden;
+}
+
 /* Downloads */
 
 .woocommerce-order-downloads {
-  @apply !mx-0 !my-[30px];
+  @apply !mx-0 !my-[30px] !p-[0];
 }
 
 /* Table container */
