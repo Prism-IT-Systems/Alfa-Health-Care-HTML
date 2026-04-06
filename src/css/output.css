@@ -12082,6 +12082,12 @@ form.form-loading {
 .page-my-account .woocommerce-MyAccount-content {
   padding: calc(var(--spacing) * 0);
 }
+.page-sitemap .sitemap-section li:last-child {
+  margin-bottom: 0;
+}
+.page-sitemap .sitemap-posts > ul > li {
+  margin-top: 25px;
+}
 .woocommerce button.button:hover, .woocommerce .button:hover {
   --tw-translate-y: calc(var(--spacing) * -0.5);
   translate: var(--tw-translate-x) var(--tw-translate-y);

@@ -5192,6 +5192,14 @@ form.form-loading {
   @apply p-0;
 }
 
+.page-sitemap .sitemap-section li:last-child {
+  @apply mb-[0];
+}
+
+.page-sitemap .sitemap-posts > ul > li {
+  @apply mt-[25px];
+}
+
 .woocommerce button.button:hover,
 .woocommerce .button:hover {
   @apply shadow-[0_6px_0px_#dda619] -translate-y-0.5;
