@@ -4783,6 +4783,7 @@ form.form-loading {
 .page-sitemap .sitemap-section a {
   @apply no-underline text-[#847362] text-[15px] inline-block transition-all duration-[0.3s] ease-[ease] hover:text-[#a17810] hover:translate-x-1;
 }
+
 .page-sitemap .sitemap-section ul ul {
   @apply mt-[25px] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
   list-style: none;
@@ -4790,6 +4791,16 @@ form.form-loading {
 
 .page-sitemap .sitemap-section > ul > li {
   @apply font-bold text-[16px] sm:text-[20px] mt-[25px] font-bold text-[22px] mt-[25px];
+}
+
+.sitemap-section ul ul {
+  list-style: none !important;
+  counter-reset: item;
+}
+
+.sitemap-section ul ul li {
+  @apply relative pl-7 before:content-[counter(item)_"."] before:absolute before:text-[15px] before:left-0;
+  counter-increment: item;
 }
 
 .page-sitemap .sitemap-heading{

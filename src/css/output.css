@@ -11306,6 +11306,31 @@ form.form-loading {
     font-size: 20px;
   }
 }
+.sitemap-section ul ul {
+  list-style: none !important;
+  counter-reset: item;
+}
+.sitemap-section ul ul li {
+  position: relative;
+  padding-left: calc(var(--spacing) * 7);
+  &::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::before {
+    content: var(--tw-content);
+    left: calc(var(--spacing) * 0);
+  }
+  &::before {
+    content: var(--tw-content);
+    font-size: 15px;
+  }
+  &::before {
+    --tw-content: counter(item) ".";
+    content: var(--tw-content);
+  }
+  counter-increment: item;
+}
 .page-sitemap .sitemap-heading {
   margin-bottom: 34px;
   text-align: center;
