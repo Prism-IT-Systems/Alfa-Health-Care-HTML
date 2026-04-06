@@ -12078,6 +12078,17 @@ form.form-loading {
 .page-my-account .woocommerce-customer-details {
   padding: 0 !important;
 }
+.woocommerce-notices-wrapper:empty {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: calc(var(--spacing) * 3) !important;
+  }
+}
 * TABLE BASE */ .woocommerce-orders-table {
   width: 100% !important;
   border-collapse: collapse !important;
