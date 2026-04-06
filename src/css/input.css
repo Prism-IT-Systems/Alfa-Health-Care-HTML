@@ -5721,7 +5721,7 @@ form.form-loading {
 
 /* Heading */
 .insurance-advantage .main-heading {
-  @apply !text-center lg:text-[40px] lg:leading-[48px] md:text-3xl md:leading-[38px] text-2xl leading-[32px] !font-bold !text-[#32261B] !mb-[34px] sm:mb-13.5 lg:mb-[74px];
+  @apply !text-center lg:text-[40px] lg:leading-[48px] md:text-3xl md:leading-[38px] text-2xl leading-[32px] !font-bold !text-[#32261B] mb-[34px] sm:mb-13.5 lg:mb-[74px];
 }
 
 /* Grid Layout */
