@@ -5724,6 +5724,11 @@ form.form-loading {
   @apply !text-center lg:text-[40px] lg:leading-[48px] md:text-3xl md:leading-[38px] text-2xl leading-[32px] !font-bold !text-[#32261B] mb-[34px] sm:mb-13.5 lg:mb-[74px];
 }
 
+.partners-logo-img h4 {
+  @apply !text-2xl;
+}
+
+
 /* Grid Layout */
 .insurance-advantage .advantage-list {
   @apply grid grid-cols-[repeat(2,1fr)] gap-8;
