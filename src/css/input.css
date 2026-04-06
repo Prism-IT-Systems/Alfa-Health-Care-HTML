@@ -4784,7 +4784,7 @@ form.form-loading {
   @apply no-underline text-[#847362] text-[15px] inline-block transition-all duration-[0.3s] ease-[ease] hover:text-[#a17810] hover:translate-x-1;
 }
 .page-sitemap .sitemap-section ul ul {
-  @apply mt-[25pxpx] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
+  @apply mt-[25px] pl-[20px] sm:pl-[26px] border-l-2 border-l-[#f0f0f0] border-solid;
   list-style: none;
 }
 
@@ -4792,8 +4792,8 @@ form.form-loading {
   @apply font-bold text-[16px] sm:text-[20px] mt-[25px] font-bold text-[22px] mt-[25px];
 }
 
-.page-sitemap .wp-block-heading {
-  @apply text-center text-[40px] mb-[34px] sm:mb-13.5 lg:mb-[74px];
+.page-sitemap h1{
+  @apply text-center text-[24px] sm:text-[30px] lg:text-[40px] mb-[34px] sm:mb-13.5 lg:mb-[74px];
 }
 
 
