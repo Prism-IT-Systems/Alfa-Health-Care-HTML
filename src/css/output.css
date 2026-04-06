@@ -11351,7 +11351,7 @@ form.form-loading {
 .page-sitemap .sitemap-section ul ul li {
   margin-bottom: 9px;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1278px) {
   .page-sitemap .sitemap {
     grid-template-columns: 1fr;
   }

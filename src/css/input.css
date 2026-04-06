@@ -4773,6 +4773,7 @@ form.form-loading {
 .page-sitemap .sitemap-section h3 {
   @apply text-[19px] sm:text-[22px] font-semibold text-[#32261B] mb-[14px] sm:mb-5 pb-2.5 border-b-2 border-b-[#f0f0f0] border-solid;
 }
+
 .page-sitemap .sitemap-section ul {
   @apply m-0 pl-0;
   list-style: none;
@@ -4811,7 +4812,7 @@ form.form-loading {
 .page-sitemap .sitemap-section ul ul li {
   @apply mb-[9px];
 }
-@media (max-width: 1280px) {
+@media (max-width: 1278px) {
   .page-sitemap .sitemap {
     @apply grid-cols-[1fr];
   }
