@@ -5659,11 +5659,13 @@
     text-align: center !important;
     font-family: Inter;
     font-size: 16px;
-    transition-property: 0.3s;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: ease;
-    transition-duration: ease;
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
     background-color: #a17810 !important;
   }
   #load-more:hover {
@@ -5675,11 +5677,13 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .alfar-refferals-form .submit-btn {
-    transition-property: 0.3s;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: ease;
-    transition-duration: ease;
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
   }
   #privacy-policy-form .agree-btn:hover {
     --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
@@ -5690,11 +5694,13 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .contact-form-card .form-row.submit-btn {
-    transition-property: 0.3s;
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: ease;
-    transition-duration: ease;
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
   }
   .custom-date::-webkit-datetime-edit {
     text-transform: uppercase;
@@ -8916,6 +8922,7 @@ body.page-insurers .faq-section .faq-content {
   padding: calc(var(--spacing) * 10);
 }
 .woocommerce-MyAccount-content p {
+  padding-left: 30px;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: 1.7;
@@ -11080,11 +11087,13 @@ form.form-loading {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: var(--color-white);
-  transition-property: 0.3s;
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: ease-in-out;
-  transition-duration: ease-in-out;
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  --tw-ease: var(--ease-in-out);
+  transition-timing-function: var(--ease-in-out);
   background: #a17810;
 }
 #privacy-policy-form .agree-btn:hover {
@@ -11186,6 +11195,17 @@ form.form-loading {
     }
   }
   -webkit-appearance: none;
+}
+.woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+  background-color: transparent !important;
+}
+s .woocommerce-view-order .product-total .woocommerce-Price-amount {
+  font-size: 22px !important;
+  color: #a17810 !important;
+}
+.woocommerce-view-order .woocommerce-Price-amount {
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
 }
 #privacy-policy-form .consent-text input[type="checkbox"][name="sms_consent"]:not(:checked) {
   border-color: #a17810;
@@ -12574,6 +12594,9 @@ th.woocommerce-table__product-table.product-total {
   margin-inline: calc(var(--spacing) * 0) !important;
   margin-block: 30px !important;
   padding: 0 !important;
+}
+.woocommerce-downloads .woocommerce-order-downloads {
+  margin-block: 0 !important;
 }
 .woocommerce-order-downloads .woocommerce-table {
   width: 100% !important;
