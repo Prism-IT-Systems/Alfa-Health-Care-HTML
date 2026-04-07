@@ -4248,6 +4248,17 @@ body.page-insurers .faq-section .faq-content {
   background: #a17810;
 }
 
+.partners-logo-img:nth-child(5) .insurance-partners-logo {
+  @apply w-[130px] h-[130px];
+}
+.partners-logo-img:nth-child(9) .insurance-partners-logo {
+  @apply w-[250px] h-[23px];
+}
+.partners-logo-img:nth-child(20) .insurance-partners-logo {
+  @apply w-[200px] h-[30px];
+}
+
+
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
 }

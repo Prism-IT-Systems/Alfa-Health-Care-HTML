@@ -10021,6 +10021,18 @@ body.page-insurers .faq-section .faq-content {
   color: var(--color-white);
   background: #a17810;
 }
+.partners-logo-img:nth-child(5) .insurance-partners-logo {
+  height: 130px;
+  width: 130px;
+}
+.partners-logo-img:nth-child(9) .insurance-partners-logo {
+  height: 23px;
+  width: 250px;
+}
+.partners-logo-img:nth-child(20) .insurance-partners-logo {
+  height: 30px;
+  width: 200px;
+}
 [type="checkbox"] {
   height: 15px;
   width: 15px;
