@@ -8785,6 +8785,19 @@ body.page-insurers .faq-section .faq-content {
   padding-block: calc(var(--spacing) * 3) !important;
   background: #a17810 !important;
 }
+.woocommerce-account .woocommerce {
+  padding-bottom: 60px;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .woocommerce-account .woocommerce {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+}
+@media (max-width: 767px) {
+  .woocommerce-account .woocommerce {
+    padding-bottom: calc(var(--spacing) * 2.5);
+  }
+}
 .woocommerce-form-login__rememberme {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -8924,12 +8937,17 @@ body.page-insurers .faq-section .faq-content {
   padding: calc(var(--spacing) * 10);
 }
 .woocommerce-MyAccount-content p {
-  padding-left: 30px;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: 1.7;
   line-height: 1.7;
   color: #6F5F4E;
+}
+.woocommerce-view-order .woocommerce-MyAccount-content p {
+  padding-left: 30px;
+}
+.woocommerce-view-order .woocommerce-MyAccount-content .order-again {
+  padding-left: 0 !important;
 }
 .woocommerce-MyAccount-content a {
   --tw-font-weight: var(--font-weight-medium);
@@ -9983,6 +10001,26 @@ body.page-insurers .faq-section .faq-content {
 .woocommerce-view-order .woocommerce .button:hover {
   background: #a17810;
 }
+.woocommerce-orders .woocommerce .button {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-white);
+    }
+  }
+  background: #a17810;
+}
+.woocommerce-orders .woocommerce .button:hover {
+  background: #a17810;
+}
+.woocommerce-payment-methods .woocommerce .button {
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  background: #a17810;
+}
 [type="checkbox"] {
   height: 15px;
   width: 15px;
@@ -10678,6 +10716,7 @@ form.form-loading {
 }
 .alfar-refferals-form input[type="checkbox"] {
   border-radius: 3px;
+  padding: 0 !important;
 }
 [type="checkbox"] {
   height: 15px;
@@ -12065,7 +12104,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   color: #333;
 }
 .woocommerce-table--order-details tbody tr {
-  background: #fcfaf8 !important;
+  background: #fff !important;
 }
 .woocommerce-table--order-details td {
   padding: calc(var(--spacing) * 4) !important;

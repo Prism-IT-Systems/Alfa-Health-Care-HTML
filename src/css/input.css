@@ -3552,6 +3552,22 @@ body.page-insurers .faq-section .faq-content {
   background: #a17810 !important;
 }
 
+.woocommerce-account .woocommerce {
+  @apply pb-[60px];
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .woocommerce-account .woocommerce {
+    @apply pb-5;
+  }
+}
+
+@media (max-width: 767px) {
+  .woocommerce-account .woocommerce {
+    @apply pb-2.5;
+  }
+}
+
 .woocommerce-form-login__rememberme {
   @apply text-sm text-[#847362];
 }
@@ -3650,7 +3666,15 @@ body.page-insurers .faq-section .faq-content {
  
 /* Dashboard Text */
 .woocommerce-MyAccount-content p {
-  @apply text-base text-[#6F5F4E] leading-[1.7] pl-[30px];
+  @apply text-base text-[#6F5F4E] leading-[1.7] ;
+}
+
+.woocommerce-view-order .woocommerce-MyAccount-content p {
+  @apply pl-[30px]
+}
+
+.woocommerce-view-order .woocommerce-MyAccount-content .order-again {
+  @apply !pl-[0];
 }
  
 /* Dashboard Links */
@@ -4211,6 +4235,19 @@ body.page-insurers .faq-section .faq-content {
   background: #a17810;
 }
 
+.woocommerce-orders .woocommerce .button {
+  @apply text-white font-medium hover:text-white;
+  background: #a17810;
+}
+.woocommerce-orders .woocommerce .button:hover {
+  background: #a17810;
+}
+
+.woocommerce-payment-methods .woocommerce .button {
+  @apply text-white font-medium;
+  background: #a17810;
+}
+
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
 }
@@ -4460,6 +4497,7 @@ form.form-loading {
 .product-detail-page-section .buy-now-btn {
   @apply flex justify-center items-center flex justify-center items-center mb-0;
 }
+
 .woocommerce div.product form.cart .button {
   @apply text-[16.49px] leading-[23.6px] ;
 }
@@ -4550,7 +4588,7 @@ form.form-loading {
   @apply p-10;
 }
 .alfar-refferals-form input[type="checkbox"] {
-  @apply rounded-[3px];
+  @apply rounded-[3px] !p-[0];
 }
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
@@ -5168,7 +5206,7 @@ s
 
 /* ROW STYLE (like screenshot) */
 .woocommerce-table--order-details tbody tr {
-  background: #fcfaf8 !important;
+  background: #fff !important;
 }
 
 /* CELLS */
