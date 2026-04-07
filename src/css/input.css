@@ -3696,7 +3696,7 @@ body.page-insurers .faq-section .faq-content {
   background: #ffffff;
 }
 .woocommerce-Address-title {
-  @apply flex items-center gap-3 mb-[14px] sm:mb-5; /* justify-content: flex-start; */
+  @apply flex items-center gap-3 mb-[6px] sm:mb-5; /* justify-content: flex-start; */
 }
 .woocommerce-Address-title h2 {
   @apply text-xl text-[#32261B] font-semibold m-0;
@@ -4195,10 +4195,22 @@ body.page-insurers .faq-section .faq-content {
 .alfar-refferals-form .section {
   @apply p-[20px] sm:p-10;
 }
-.alfar-refferals-form input[type="checkbox"] {
-  @apply rounded-[3px] !p-[0] ;
-  background: url(data:image/svg+xml,%3csvg aria-hidden=true xmlns=http://www.w3.org/2000/svg width=24 height=24 fill=none viewBox=0 0 24 24%3e %3cpath stroke=white stroke-linecap=round stroke-linejoin=round stroke-width=2 d=M5 11.917 9.724 16.5 19 7.5/%3e %3c/svg%3e) !important;
+
+.alfar-refferals-form input[type="checkbox"]:checked {
+  @apply bg-amber-500 border-amber-500;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath stroke='white' stroke-width='3' fill='none' d='M5 12l4 4L19 7'/%3e%3c/svg%3e")
+    no-repeat center;
 }
+
+.woocommerce-view-order .woocommerce .button {
+  @apply text-white font-medium px-5 py-[15px] rounded-[999px] hover:text-white;
+  background: #a17810;
+  font-family: inter;
+}
+.woocommerce-view-order .woocommerce .button:hover {
+  background: #a17810;
+}
+
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
 }
@@ -5135,6 +5147,10 @@ s
   @apply !text-xl !font-semibold !mb-[15px];
 }
 
+.woocommerce-order-downloads__title {
+  @apply !text-xl !font-semibold !mb-[15px];
+}
+
 /* ========================= */
 /* TABLE BASE */
 /* ========================= */
@@ -5147,7 +5163,7 @@ s
   background: #fff !important;
 }
 .woocommerce-table--order-details th {
-  @apply !text-left !font-semibold text-[#333] !p-4;
+  @apply text-left !font-semibold text-[#333] !p-4;
 }
 
 /* ROW STYLE (like screenshot) */
@@ -5193,7 +5209,7 @@ s
   span.woocommerce-Price-amount.amount {
   @apply !text-[20px] font-semibold !text-[#a17810];
 }
-.page-my-account .woocommerce table.shop_table {
+.woocommerce-orders .woocommerce table.shop_table {
   @apply max-xl:border-none overflow-hidden;;
 }
 
@@ -5515,7 +5531,7 @@ th.woocommerce-table__product-table.product-total {
 
 /* Download button */
 .woocommerce-order-downloads .woocommerce-MyAccount-downloads-file.button {
-  @apply !inline-block !text-[13px] text-white !transition-all !duration-[0.3s] !ease-[ease] !px-4 !py-[7px] !rounded-[20px];
+  @apply !inline-block !text-[13px] text-white !transition-all !duration-[0.3s] !ease-[ease] !px-[14px] !py-[7px] !rounded-[20px];
   background: #a17810 !important;
 }
 
@@ -5649,9 +5665,7 @@ th.woocommerce-table__product-table.product-total {
 }
 
 /* Each Payment Option */
-.alfa-my-account .woocommerce-PaymentMethod {
-  @apply border transition-all duration-[0.3s] ease-[ease] cursor-pointer mb-4 p-4 rounded-xl border-solid border-[#eee] hover:shadow-[0_6px_20px_rgba(108,99,255,0.08)] hover:border-[#6c63ff];
-}
+
 
 /* Hover effect */
 
