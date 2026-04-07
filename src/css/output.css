@@ -75,6 +75,7 @@
   --color-gray-800: oklch(27.8% 0.033 256.848);
   --color-gray-900: oklch(21% 0.034 264.665);
   --color-gray-950: oklch(13% 0.028 261.692);
+  --color-neutral-50: oklch(98.5% 0 0);
   --color-neutral-200: oklch(92.2% 0 0);
   --color-black: #000;
   --color-white: #fff;
@@ -12890,6 +12891,202 @@ th.woocommerce-table__product-table.product-total {
   margin: calc(var(--spacing) * 0);
   padding: calc(var(--spacing) * 0);
   list-style: none !important;
+}
+.alfa-my-account .woocommerce-PaymentMethod {
+  margin-bottom: calc(var(--spacing) * 4);
+  cursor: pointer;
+  border-radius: var(--radius-xl);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: #eee;
+  padding: calc(var(--spacing) * 4);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:hover {
+    @media (hover: hover) {
+      border-color: #6c63ff;
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 6px 20px var(--tw-shadow-color, rgba(108,99,255,0.08));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods {
+  width: 100%;
+  border-collapse: separate;
+  --tw-border-spacing-x: calc(var(--spacing) * 0);
+  --tw-border-spacing-y: calc(var(--spacing) * 0);
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+  overflow: hidden;
+  border-radius: 10px;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: currentColor;
+  @supports (color: color-mix(in lab, red, red)) {
+    border-color: color-mix(in srgb,currentColor 20%,transparent);
+  }
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  background: #fff !important;
+}
+.woocommerce-payment-methods .alfa-my-account .woocommerce-PaymentMethod {
+  border-radius: initial !important;
+  border-color: none !important;
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods thead th {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-bottom-color: #eee;
+  background-color: var(--color-gray-50);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 3.5);
+  text-align: left;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+  color: #333;
+  &:first-child {
+    border-top-left-radius: 10px;
+  }
+  &:last-child {
+    border-top-right-radius: 10px;
+  }
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods tbody td {
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-bottom-color: #f1f1f1;
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 3.5);
+  color: #555;
+  transition-property: background;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods tbody tr:hover td {
+  background-color: var(--color-neutral-50);
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods tbody tr:last-child td {
+  border-bottom-color: none;
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods .button {
+  border-radius: 999px;
+  background-color: var(--color-amber-500);
+  padding-inline: calc(var(--spacing) * 5);
+  padding-block: calc(var(--spacing) * 3);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: var(--color-white);
+  text-decoration-line: none;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  --tw-ease: ease;
+  transition-timing-function: ease;
+  &:hover {
+    @media (hover: hover) {
+      --tw-translate-y: -1px;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      background-color: #a17810;
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: var(--color-white);
+    }
+  }
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods .button.delete {
+  background-color: #a17810;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  font-family: inter;
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods .payment-method-actions {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 600px) {
+  .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods thead {
+    display: none;
+  }
+  .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods tbody tr {
+    margin-bottom: calc(var(--spacing) * 3);
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #eee;
+  }
+  .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods tbody td {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: none;
+    border-bottom-color: #f1f1f1;
+    padding-inline: calc(var(--spacing) * 3);
+    padding-block: calc(var(--spacing) * 2.5);
+    &::before {
+      content: var(--tw-content);
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+    &::before {
+      content: var(--tw-content);
+      color: #333;
+    }
+    &::before {
+      --tw-content: attr(data-title);
+      content: var(--tw-content);
+    }
+    &:last-child {
+      border-bottom-color: none;
+    }
+  }
+  .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods .button {
+    margin-top: calc(var(--spacing) * 1.5);
+    width: 100%;
+    text-align: center;
+  }
 }
 .alfa-my-account .woocommerce-PaymentMethod label {
   display: flex;

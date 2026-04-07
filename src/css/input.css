@@ -5665,6 +5665,107 @@ th.woocommerce-table__product-table.product-total {
 }
 
 /* Each Payment Option */
+.alfa-my-account .woocommerce-PaymentMethod {
+  @apply border transition-all duration-[0.3s] ease-[ease] cursor-pointer mb-4 p-4 rounded-xl border-solid border-[#eee] hover:shadow-[0_6px_20px_rgba(108,99,255,0.08)] hover:border-[#6c63ff];
+}
+
+/* Wrapper for horizontal scroll on small screens */
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods {
+  @apply w-full border-spacing-0 overflow-hidden border border-[color-mix(in_srgb,currentColor_20%,transparent)] text-sm rounded-[10px] border-separate border-solid;
+  background: #fff !important;
+}
+.woocommerce-payment-methods .alfa-my-account .woocommerce-PaymentMethod {
+  @apply !rounded-[initial] !border-[none];
+}
+
+/* Header */
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods thead th {
+  @apply bg-gray-50 text-left font-semibold text-[#333] whitespace-nowrap px-4 py-3.5 border-b-[#eee] border-b border-solid first:rounded-tl-[10px] last:rounded-tr-[10px];
+}
+
+/* Body */
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods tbody td {
+  @apply text-[#555] transition-[background] duration-[0.3s] ease-[ease] px-4 py-3.5 border-b-[#f1f1f1] border-b border-solid;
+}
+
+/* Hover effect */
+.woocommerce-payment-methods
+  .woocommerce-MyAccount-paymentMethods
+  tbody
+  tr:hover
+  td {
+  @apply bg-neutral-50;
+}
+
+/* Remove last border */
+.woocommerce-payment-methods
+  .woocommerce-MyAccount-paymentMethods
+  tbody
+  tr:last-child
+  td {
+  @apply border-b-[none];
+}
+
+/* Rounded corners */
+
+/* Buttons */
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods .button {
+  @apply bg-amber-500 text-white text-sm no-underline transition-all duration-[0.3s] ease-[ease] px-5 py-3 rounded-[999px] hover:bg-[#a17810] hover:-translate-y-px hover:text-white;
+}
+
+/* Delete button */
+.woocommerce-payment-methods
+  .woocommerce-MyAccount-paymentMethods
+  .button.delete {
+  @apply bg-[#a17810] text-white font-medium;
+  font-family: inter;
+}
+
+/* Align actions */
+.woocommerce-payment-methods
+  .woocommerce-MyAccount-paymentMethods
+  .payment-method-actions {
+  @apply text-right;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods {
+    @apply block overflow-x-auto whitespace-nowrap;
+  }
+}
+
+/* Mobile (stack layout like WooCommerce responsive style) */
+@media (max-width: 600px) {
+  .woocommerce-MyAccount-paymentMethods
+    .woocommerce-MyAccount-paymentMethods
+    thead {
+    @apply hidden;
+  }
+  .woocommerce-MyAccount-paymentMethods
+    .woocommerce-MyAccount-paymentMethods
+    tbody
+    tr {
+    @apply block border overflow-hidden mb-3 rounded-lg border-solid border-[#eee];
+  }
+  .woocommerce-MyAccount-paymentMethods
+    .woocommerce-MyAccount-paymentMethods
+    tbody
+    td {
+    @apply flex justify-between px-3 py-2.5 border-b-[#f1f1f1] border-[none] border-b border-solid last:border-b-[none] before:content-[attr(data-title)] before:font-semibold before:text-[#333];
+  }
+
+  /* Show labels using data-title */
+
+  /* Button full width */
+  .woocommerce-MyAccount-paymentMethods
+    .woocommerce-MyAccount-paymentMethods
+    .button {
+    @apply w-full text-center mt-1.5;
+  }
+}
 
 
 /* Hover effect */
