@@ -3540,8 +3540,8 @@ body.page-insurers .faq-section .faq-content {
 
 .woocommerce button.button:hover,
 .woocommerce .button:hover {
-  @apply -translate-y-0.5 text-white;
-  background: #8a640c;
+  @apply -translate-y-0.5 !text-white;
+  background: #8a640c !important;
 }
 
 .woocommerce button.button:disabled,

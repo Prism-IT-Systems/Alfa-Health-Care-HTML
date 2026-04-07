@@ -8774,8 +8774,8 @@ body.page-insurers .faq-section .faq-content {
 .woocommerce button.button:hover, .woocommerce .button:hover {
   --tw-translate-y: calc(var(--spacing) * -0.5);
   translate: var(--tw-translate-x) var(--tw-translate-y);
-  color: var(--color-white);
-  background: #8a640c;
+  color: var(--color-white) !important;
+  background: #8a640c !important;
 }
 .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
   cursor: pointer !important;
