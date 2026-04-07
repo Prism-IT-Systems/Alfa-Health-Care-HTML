@@ -4177,9 +4177,7 @@ body.page-insurers .faq-section .faq-content {
 .patient-referral-heading {
   @apply text-center;
 }
-.patient-referral-heading h1 {
-  @apply  inline-block text-[20px] sm:text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] !mb-[30px] border-b border-solid;
-}
+
 .alfar-refferals-form .section-number {
   @apply text-[#32261B] w-8 h-8;
   background: rgba(223, 176, 58, 0.3);
@@ -4556,9 +4554,14 @@ form.form-loading {
 .patient-referral-heading {
   @apply text-center;
 }
-.patient-referral-heading h1 {
+.patient-referral-heading h2 {
   @apply inline-block text-[20px] sm:text-2xl leading-7 pb-2 border-b-[rgba(100,87,79,0.5)] !mb-[30px] border-b border-solid;
 }
+
+.alfar-refferals-form input[type="date"] {
+  @apply uppercase;
+}
+
 .alfar-refferals-form .section-number {
   @apply text-[#32261B] w-8 h-8;
   background: rgba(223, 176, 58, 0.3);

@@ -9875,23 +9875,6 @@ body.page-insurers .faq-section .faq-content {
 .patient-referral-heading {
   text-align: center;
 }
-.patient-referral-heading h1 {
-  margin-bottom: 30px !important;
-  display: inline-block;
-  border-bottom-style: var(--tw-border-style);
-  border-bottom-width: 1px;
-  --tw-border-style: solid;
-  border-style: solid;
-  border-bottom-color: rgba(100,87,79,0.5);
-  padding-bottom: calc(var(--spacing) * 2);
-  font-size: 20px;
-  --tw-leading: var(--leading-7);
-  line-height: var(--leading-7);
-  @media (width >= 40rem) {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-}
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
   width: calc(var(--spacing) * 8);
@@ -10623,7 +10606,7 @@ form.form-loading {
 .patient-referral-heading {
   text-align: center;
 }
-.patient-referral-heading h1 {
+.patient-referral-heading h2 {
   margin-bottom: 30px !important;
   display: inline-block;
   border-bottom-style: var(--tw-border-style);
@@ -10639,6 +10622,9 @@ form.form-loading {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+}
+.alfar-refferals-form input[type="date"] {
+  text-transform: uppercase;
 }
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
