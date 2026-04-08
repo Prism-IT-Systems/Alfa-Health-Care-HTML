@@ -117,6 +117,26 @@
       @apply p-4 min-h-[49px] bg-softIvory border border-solid border-sand rounded-[10px];
     }
 
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  --tw-ring-color: #dfb03a !important;
+}
+
+
     /* Checkbox */
     input[type="checkbox"],
     input[type='radio'] {
@@ -3496,7 +3516,7 @@ body.page-insurers .faq-section .faq-content {
 /* Login and Register Page */
 
 .alfa-my-account {
-  @apply pt-[70px] pb-[100px] px-5;
+  @apply pt-[100px] pb-[100px] px-5;
 }
 #customer_login {
   @apply flex gap-6 max-w-[1400px] m-auto;
@@ -3615,7 +3635,7 @@ body.page-insurers .faq-section .faq-content {
     @apply gap-6;
   }
   .alfa-my-account {
-    @apply pt-[30px] pb-[60px] px-5;
+    @apply pt-[60px] pb-[60px] px-5;
   }
 }
 @media (max-width: 992px) {
@@ -3959,6 +3979,11 @@ body.page-insurers .faq-section .faq-content {
 
 .woocommerce-pagination {
   @apply flex justify-center mt-10;
+}
+
+.woocommerce table.shop_table_responsive tr td::before,
+.woocommerce-page table.shop_table_responsive tr td::before {
+    content: attr(data-title) !important;
 }
 
 /* Pagination list */
