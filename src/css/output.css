@@ -7840,6 +7840,8 @@ body.page-insurers .faq-section .faq-content {
 .introduction-section .purpose-card h3 {
   margin: calc(var(--spacing) * 0);
   font-size: 18px;
+  --tw-leading: 30px !important;
+  line-height: 30px !important;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #32261B;
@@ -8282,6 +8284,8 @@ body.page-insurers .faq-section .faq-content {
 }
 .our-registry-section .info-title {
   font-size: 18px;
+  --tw-leading: 30px !important;
+  line-height: 30px !important;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {
@@ -8473,8 +8477,8 @@ body.page-insurers .faq-section .faq-content {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   font-size: 18px;
-  --tw-leading: 30px;
-  line-height: 30px;
+  --tw-leading: 30px !important;
+  line-height: 30px !important;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {

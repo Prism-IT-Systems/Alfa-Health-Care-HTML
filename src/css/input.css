@@ -3165,7 +3165,7 @@ body.page-insurers .faq-section .faq-content {
 
 /* Heading */
 .introduction-section .purpose-card h3 {
-  @apply text-[18px] sm:text-xl font-semibold text-[#32261B] m-0;
+  @apply text-[18px] sm:text-xl font-semibold text-[#32261B] m-0 !leading-[30px];
 }
 
 /* Paragraph */
@@ -3306,7 +3306,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .our-registry-section .info-title {
-    @apply text-[18px] sm:text-xl font-semibold
+    @apply text-[18px] sm:text-xl font-semibold !leading-[30px];
 }
 
 @media (min-width: 1024px) and (max-width: 1535px) {
@@ -3406,7 +3406,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .workflow-section .info-title {
-    @apply text-[18px] sm:text-[18px] text-xl font-semibold leading-[30px];
+    @apply text-[18px] sm:text-[18px] text-xl font-semibold !leading-[30px];
 }
 
 
