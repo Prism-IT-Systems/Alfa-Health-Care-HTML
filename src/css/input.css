@@ -148,8 +148,7 @@ select:focus {
        @apply !border-[#a37b12];
     }
 
-    input[type="checkbox"]:checked,
-    input[type="checkbox"]:focus  {
+    input[type="checkbox"]:checked {
         @apply !bg-[#a37b12] !border-[#a37b12] !shadow-[0_0_4px_#a37b12] ring-[0_0_4px_#a37b12];
     }
 

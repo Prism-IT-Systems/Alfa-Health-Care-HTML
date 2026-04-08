@@ -1774,7 +1774,7 @@
   input[type="checkbox"] {
     border-color: #a37b12 !important;
   }
-  input[type="checkbox"]:checked, input[type="checkbox"]:focus {
+  input[type="checkbox"]:checked {
     border-color: #a37b12 !important;
     background-color: #a37b12 !important;
     --tw-shadow: 0 0 4px var(--tw-shadow-color, #a37b12) !important;
