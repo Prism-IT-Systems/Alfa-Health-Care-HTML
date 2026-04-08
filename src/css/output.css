@@ -5661,10 +5661,12 @@
     display: flex;
     width: 100%;
     max-width: 315px;
+    align-items: center !important;
     padding: calc(var(--spacing) * 4);
     text-align: center !important;
     font-family: Inter;
     font-size: 16px;
+    text-transform: capitalize;
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
