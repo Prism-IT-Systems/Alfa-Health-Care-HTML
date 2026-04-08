@@ -1668,11 +1668,13 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 .wpcf7-submit {
   @apply relative;
 }
-.wpcf7-spinner {
-  @apply absolute right-[-30px] -translate-x-2/4 top-2/4;
-  /* button ni right side ma lai jase */
-}
 
+.wpcf7-submit {
+  @apply relative;
+}
+.wpcf7-spinner {
+  @apply !absolute translate-x-[300%] right-0 top-2/4;
+}
 
 /* Article Cards Widget */
 @layer components {
@@ -2038,7 +2040,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     }
 
     .alfa-modal form .wpcf7-list-item-label {
-        @apply text-sm sm:text-base text-left;
+        @apply text-sm sm:text-base text-left pointer-events-none cursor-default;
     }
 
      .alfa-modal form .submit-btn input {

@@ -4917,11 +4917,14 @@
 .wpcf7-submit {
   position: relative;
 }
+.wpcf7-submit {
+  position: relative;
+}
 .wpcf7-spinner {
-  position: absolute;
+  position: absolute !important;
   top: calc(2/4 * 100%);
-  right: -30px;
-  --tw-translate-x: calc(calc(2/4 * 100%) * -1);
+  right: calc(var(--spacing) * 0);
+  --tw-translate-x: 300%;
   translate: var(--tw-translate-x) var(--tw-translate-y);
 }
 @layer components {
@@ -5648,6 +5651,8 @@
     }
   }
   .alfa-modal form .wpcf7-list-item-label {
+    pointer-events: none;
+    cursor: default;
     text-align: left;
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
