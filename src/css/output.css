@@ -8473,6 +8473,8 @@ body.page-insurers .faq-section .faq-content {
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   font-size: 18px;
+  --tw-leading: 30px;
+  line-height: 30px;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   @media (width >= 40rem) {
