@@ -13400,6 +13400,13 @@ th.woocommerce-table__product-table.product-total {
   font-size: var(--text-2xl) !important;
   line-height: var(--tw-leading, var(--text-2xl--line-height)) !important;
 }
+.woocommerce-form .form-row .field-error {
+  margin-top: calc(var(--spacing) * 1.5);
+  display: block;
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: #d63638;
+}
 .insurance-advantage .advantage-list {
   display: grid;
   grid-template-columns: repeat(2,1fr);

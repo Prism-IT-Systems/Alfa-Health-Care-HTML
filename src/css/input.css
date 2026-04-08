@@ -5983,6 +5983,9 @@ th.woocommerce-table__product-table.product-total {
   @apply !text-2xl;
 }
 
+.woocommerce-form .form-row .field-error {
+  @apply text-[#d63638] text-sm block mt-1.5;
+}
 
 /* Grid Layout */
 .insurance-advantage .advantage-list {
