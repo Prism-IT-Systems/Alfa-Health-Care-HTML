@@ -4125,7 +4125,7 @@ body.page-insurers .faq-section .faq-content {
   @apply flex items-start gap-2.5;
 }
 .alfar-refferals-form .submit-btn {
-  @apply block text-white cursor-pointer !text-[16px] mt-[30px] mb-0 mx-auto !px-[40px] !py-[16px] border-[none];
+  @apply block text-white cursor-pointer !text-[16px] mt-[30px] mb-0 mx-auto !px-[36px] !py-[14px] border-[none];
   background: #a17608;
 }
 .alfar-refferals-form .submit-btn:hover {
