@@ -7627,7 +7627,8 @@ body.page-insurers .faq-section .faq-content {
   max-width: 1024px;
 }
 .faq-item .accordion-item.active .accordion-content p a {
-  font-family: bold;
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
   transition-property: color;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));

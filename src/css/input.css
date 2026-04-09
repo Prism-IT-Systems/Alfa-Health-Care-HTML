@@ -3049,7 +3049,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .faq-item .accordion-item.active .accordion-content p a {
-  @apply font-[bold] transition-[color] duration-[0.3s] hover:text-[color:var(--Sunlit-Gold)];
+  @apply font-bold transition-[color] duration-[0.3s] hover:text-[color:var(--Sunlit-Gold)];
 }
 
 .page-contact-us .wpcf7-form p {
