@@ -1777,8 +1777,6 @@
   input[type="checkbox"]:checked {
     border-color: #a37b12 !important;
     background-color: #a37b12 !important;
-    --tw-shadow: 0 0 4px var(--tw-shadow-color, #a37b12) !important;
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
     --tw-ring-color: 0 0 4px #a37b12;
   }
   input[type='radio'] {
@@ -9756,7 +9754,7 @@ body.page-insurers .faq-section .faq-content {
   border-color: none;
   padding-inline: 40px !important;
   padding-block: 16px !important;
-  font-size: 20px !important;
+  font-size: 16px !important;
   color: var(--color-white);
   background: #a17608;
 }
@@ -9853,9 +9851,14 @@ body.page-insurers .faq-section .faq-content {
 .upload-box {
   background: #f9f5ef;
 }
-@media (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .alfar-refferals-form .equipment-grid {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 767px) {
+  .alfar-refferals-form .equipment-grid {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 768px) {
@@ -9867,14 +9870,14 @@ body.page-insurers .faq-section .faq-content {
     padding-inline: 54px;
     padding-block: 16px;
     font-size: 16px;
-    --tw-leading: 22px;
-    line-height: 22px;
+    --tw-leading: 24px;
+    line-height: 24px;
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
   }
 }
 .alfar-refferals-form .error-message {
-  margin-top: 10px;
+  margin-top: 3px;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: red;
@@ -9906,11 +9909,6 @@ body.page-insurers .faq-section .faq-content {
   gap: calc(var(--spacing) * 4);
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
-}
-.alfar-refferals-form .form-row {
-  margin-bottom: 32px;
-  display: flex;
-  gap: 30px;
 }
 .alfar-refferals-form label {
   font-size: var(--text-base);
@@ -10129,9 +10127,9 @@ body.page-insurers .faq-section .faq-content {
   border-radius: 999px;
   padding-inline: 54px;
   padding-block: 23px;
-  font-size: 22px;
-  --tw-leading: 26px;
-  line-height: 26px;
+  font-size: 16px;
+  --tw-leading: 24px;
+  line-height: 24px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
 }
@@ -10662,6 +10660,7 @@ form.form-loading {
   font-weight: var(--font-weight-semibold);
 }
 .alfar-refferals-form .form-row {
+  margin-bottom: 32px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 30px;
@@ -10712,7 +10711,7 @@ form.form-loading {
 }
 .alfar-refferals-form .equipment-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: calc(var(--spacing) * 3);
   border-radius: var(--radius-xl);
   border-style: var(--tw-border-style);
@@ -10730,9 +10729,13 @@ form.form-loading {
   color: #32261B;
 }
 .alfar-refferals-form .section {
-  padding: calc(var(--spacing) * 10);
+  padding: 20px;
+  @media (width >= 40rem) {
+    padding: calc(var(--spacing) * 10);
+  }
 }
 .alfar-refferals-form input[type="checkbox"] {
+  margin-top: 3px;
   border-radius: 3px;
   padding: 0 !important;
 }
@@ -10749,7 +10752,7 @@ form.form-loading {
   gap: 25px;
 }
 .document-upload .upload-box-content h3 {
-  margin-bottom: calc(var(--spacing) * 4);
+  margin-bottom: 25px;
   font-size: var(--text-base);
   line-height: var(--tw-leading, var(--text-base--line-height));
   --tw-leading: 26px;
@@ -10819,19 +10822,23 @@ form.form-loading {
 .document-upload .upload-subtext {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  --tw-leading: var(--leading-4);
-  line-height: var(--leading-4);
+  --tw-leading: 20px;
+  line-height: 20px;
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
   color: #847362;
+  @media (width >= 40rem) {
+    --tw-leading: var(--leading-4);
+    line-height: var(--leading-4);
+  }
 }
 .alfar-refferals-form .submit-btn {
   border-radius: 999px;
   padding-inline: 54px;
   padding-block: 23px;
-  font-size: 22px;
-  --tw-leading: 26px;
-  line-height: 26px;
+  font-size: 16px;
+  --tw-leading: 24px;
+  line-height: 24px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
 }

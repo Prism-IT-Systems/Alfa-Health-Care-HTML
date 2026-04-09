@@ -149,7 +149,7 @@ select:focus {
     }
 
     input[type="checkbox"]:checked {
-        @apply !bg-[#a37b12] !border-[#a37b12] !shadow-[0_0_4px_#a37b12] ring-[0_0_4px_#a37b12];
+        @apply !bg-[#a37b12] !border-[#a37b12] ring-[0_0_4px_#a37b12];
     }
 
     /* Radio Button */
@@ -4125,7 +4125,7 @@ body.page-insurers .faq-section .faq-content {
   @apply flex items-start gap-2.5;
 }
 .alfar-refferals-form .submit-btn {
-  @apply block text-white cursor-pointer !text-[20px] mt-[30px] mb-0 mx-auto !px-[40px] !py-[16px] border-[none];
+  @apply block text-white cursor-pointer !text-[16px] mt-[30px] mb-0 mx-auto !px-[40px] !py-[16px] border-[none];
   background: #a17608;
 }
 .alfar-refferals-form .submit-btn:hover {
@@ -4173,11 +4173,17 @@ body.page-insurers .faq-section .faq-content {
   background: #f9f5ef;
 }
 
-@media (max-width: 1280px) {
-    .alfar-refferals-form .equipment-grid {
-    @apply grid-cols-[repeat(1,1fr)];
+@media (min-width: 768px) and (max-width: 1024px) {
+  .alfar-refferals-form .equipment-grid {
+    @apply grid-cols-[repeat(2,1fr)];
   }
 }
+@media (max-width: 767px) {
+  .alfar-refferals-form .equipment-grid {
+    @apply grid-cols-[1fr];
+  }
+}
+
 
 @media (max-width: 768px) {
   .alfar-refferals-form .form-row {
@@ -4185,12 +4191,12 @@ body.page-insurers .faq-section .faq-content {
   }
 
   .alfar-refferals-form .submit-btn {
-  @apply leading-[22px] text-[16px] font-medium px-[54px] py-[16px] rounded-[999px];
+  @apply leading-[24px] text-[16px] font-medium px-[54px] py-[16px] rounded-[999px];
 }
 }
 
 .alfar-refferals-form .error-message {
-  @apply text-[red] text-sm mt-[10px];
+  @apply text-[red] text-sm mt-[3px];
 }
 
 
@@ -4211,9 +4217,7 @@ body.page-insurers .faq-section .faq-content {
 .alfar-refferals-form .section-title {
   @apply text-lg mb-8 gap-4;
 }
-.alfar-refferals-form .form-row {
-  @apply flex gap-[30px] mb-[32px];
-}
+
 .alfar-refferals-form label {
   @apply text-base leading-5 text-[#64574F] font-semibold;
 }
@@ -4326,7 +4330,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-[#847362] text-sm font-normal leading-[20px] sm:leading-4;
 }
 .alfar-refferals-form .submit-btn {
-  @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
+  @apply leading-[24px] text-[16px] font-medium px-[54px] py-[23px] rounded-[999px];
 }
 
 .alfar-refferals-form .form-row:last-child {
@@ -4597,7 +4601,7 @@ form.form-loading {
 }
 
 .alfar-refferals-form .form-row {
-  @apply grid grid-cols-[repeat(2,1fr)] gap-[30px];
+  @apply grid grid-cols-[repeat(2,1fr)] gap-[30px] mb-[32px];
 }
 
 .alfar-refferals-form label {
@@ -4624,13 +4628,13 @@ form.form-loading {
   @apply text-sm leading-5 text-[#847362] mb-4;
 }
 .alfar-refferals-form .equipment-item {
-  @apply text-base leading-5 font-medium text-[#32261B] border flex items-center gap-3 p-5 rounded-xl border-solid border-[#CDBAA6];
+  @apply text-base leading-5 font-medium text-[#32261B] border flex items-start gap-3 p-5 rounded-xl border-solid border-[#CDBAA6];
 }
 .alfar-refferals-form .section {
-  @apply p-10;
+  @apply p-[20px] sm:p-10;
 }
 .alfar-refferals-form input[type="checkbox"] {
-  @apply rounded-[3px] !p-[0];
+  @apply rounded-[3px] !p-[0] mt-[3px];
 }
 [type="checkbox"] {
   @apply w-[15px] h-[15px];
@@ -4642,7 +4646,7 @@ form.form-loading {
   @apply flex flex-col gap-[25px];
 }
 .document-upload .upload-box-content h3 {
-  @apply text-base leading-[26px] mb-4;
+  @apply text-base leading-[26px] mb-[25px];
 }
 .document-upload .upload-box-content p {
   @apply text-left max-w-full mb-0 text-base font-medium leading-[26px] text-[#847362] font-inter;
@@ -4672,10 +4676,10 @@ form.form-loading {
   @apply mx-auto my-0;
 }
 .document-upload .upload-subtext {
-  @apply text-[#847362] text-sm font-normal leading-4;
+  @apply text-[#847362] text-sm font-normal leading-[20px] sm:leading-4;
 }
 .alfar-refferals-form .submit-btn {
-  @apply leading-[26px] text-[22px] font-medium px-[54px] py-[23px] rounded-[999px];
+  @apply leading-[24px] text-[16px] font-medium px-[54px] py-[23px] rounded-[999px];
 }
 
 .alfar-refferals-form .refferal-notes label {
