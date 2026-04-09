@@ -9860,7 +9860,7 @@ body.page-insurers .faq-section .faq-content {
 }
 @media (max-width: 768px) {
   .alfar-refferals-form .form-row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .alfar-refferals-form .submit-btn {
     border-radius: 999px;
@@ -10662,8 +10662,8 @@ form.form-loading {
   font-weight: var(--font-weight-semibold);
 }
 .alfar-refferals-form .form-row {
-  margin-bottom: 32px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap: 30px;
 }
 .alfar-refferals-form label {

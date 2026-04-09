@@ -4181,7 +4181,7 @@ body.page-insurers .faq-section .faq-content {
 
 @media (max-width: 768px) {
   .alfar-refferals-form .form-row {
-    @apply flex-col;
+    @apply grid-cols-[1fr];
   }
 
   .alfar-refferals-form .submit-btn {
@@ -4595,9 +4595,11 @@ form.form-loading {
 .alfar-refferals-form .section-title {
   @apply text-lg mb-8 gap-4 font-inter font-semibold ;
 }
+
 .alfar-refferals-form .form-row {
-  @apply flex gap-[30px] mb-[32px];
+  @apply grid grid-cols-[repeat(2,1fr)] gap-[30px];
 }
+
 .alfar-refferals-form label {
   @apply text-base leading-5 text-[#64574F] font-semibold;
 }
