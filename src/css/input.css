@@ -5135,7 +5135,7 @@ s
   font-family: "Inter";
 }
 .contact-info-wrapper .social-follow-card {
-  @apply box-border flex flex-col justify-center items-center gap-[14px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
+  @apply box-border flex flex-col justify-center items-center gap-[14px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
   background: #ffffff;
 }
 .contact-info-wrapper .social-follow-card h4 {
@@ -5199,7 +5199,7 @@ s
   @apply hidden;
 }
 .page-contact-us .contact-us-map-wrap {
-  @apply mb-[34px] sm:mb-13.5 lg:mb-[74px];
+  @apply mt-[34px] sm:mt-13.5 lg:mt-[74px];
 }
 .page-contact-us .custom-contact-form .form-row {
   @apply !mb-[25px];

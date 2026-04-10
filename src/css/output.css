@@ -12031,12 +12031,12 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   display: none;
 }
 .page-contact-us .contact-us-map-wrap {
-  margin-bottom: 34px;
+  margin-top: 34px;
   @media (width >= 40rem) {
-    margin-bottom: calc(var(--spacing) * 13.5);
+    margin-top: calc(var(--spacing) * 13.5);
   }
   @media (width >= 64rem) {
-    margin-bottom: 74px;
+    margin-top: 74px;
   }
 }
 .page-contact-us .custom-contact-form .form-row {
