@@ -5135,9 +5135,14 @@ s
   font-family: "Inter";
 }
 .contact-info-wrapper .social-follow-card {
-  @apply box-border flex flex-col justify-center items-center gap-[14px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
+  @apply box-border flex flex-col justify-center items-center gap-[14px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331];
   background: #ffffff;
 }
+
+.contact-info-wrapper .social-follow-card {
+  @apply !mb-[0];
+}
+
 .contact-info-wrapper .social-follow-card h4 {
   @apply not-italic font-bold text-base leading-5 flex items-center text-center text-[#32261B] gap-[7px];
   font-family: "Inter";
