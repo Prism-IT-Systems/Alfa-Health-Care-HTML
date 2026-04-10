@@ -1733,7 +1733,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 }
 
 .display-blog-grid .display-blog-img-big {
-  @apply rounded-[0_0_24px_24px];
+  @apply !rounded-[24px_24px_0_0];
 }
 
 }
