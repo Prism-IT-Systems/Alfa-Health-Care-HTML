@@ -7640,6 +7640,20 @@ body.page-insurers .faq-section .faq-content {
     }
   }
 }
+.faq-content .accordion-item.active .accordion-content p a {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  transition-property: color;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.3s;
+  transition-duration: 0.3s;
+  &:hover {
+    @media (hover: hover) {
+      color: var(--Sunlit-Gold);
+    }
+  }
+}
 .page-contact-us .wpcf7-form p {
   position: relative;
 }
@@ -8401,8 +8415,8 @@ body.page-insurers .faq-section .faq-content {
   color: #2E2415;
 }
 .faq-section .accordion-item .accordion-content {
-  padding-inline: 15px;
-  padding-block: 10px;
+  padding-inline: 18px;
+  padding-block: 12px;
   @media (width >= 40rem) {
     padding-inline: 25px;
   }
@@ -8426,6 +8440,7 @@ body.page-insurers .faq-section .faq-content {
 @media (max-width: 1280px) {
   .faq-content .faq-wrapper {
     flex-direction: column;
+    gap: 20px !important;
   }
 }
 @media (max-width: 1280px) {
