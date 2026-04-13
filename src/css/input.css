@@ -3082,6 +3082,18 @@ body.page-insurers .faq-section .faq-content {
   @apply opacity-50;
 }
 
+@media (max-width: 768px) and (min-width: 640px) {
+  .contact-info-wrapper .contact-info-card {
+    @apply !mt-8;
+  }
+}
+
+@media (max-width: 639px) {
+  .contact-info-wrapper .contact-info-card {
+    @apply !mt-[18px];
+  }
+}
+
 @media (max-width: 575px) {
   .blog-card-grid .blog-card .blog-content a.cta-link {
     @apply text-sm;
@@ -5588,10 +5600,6 @@ s
 
 th.woocommerce-table__product-table.product-total {
   @apply text-right;
-}
-
-.accordion-content {
-  @apply hidden;
 }
 
 /* Downloads */

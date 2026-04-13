@@ -7686,6 +7686,16 @@ body.page-insurers .faq-section .faq-content {
 .page-contact-us .wpcf7 form.submitting .wpcf7-spinner {
   opacity: 50%;
 }
+@media (max-width: 768px) and (min-width: 640px) {
+  .contact-info-wrapper .contact-info-card {
+    margin-top: calc(var(--spacing) * 8) !important;
+  }
+}
+@media (max-width: 639px) {
+  .contact-info-wrapper .contact-info-card {
+    margin-top: 18px !important;
+  }
+}
 @media (max-width: 575px) {
   .blog-card-grid .blog-card .blog-content a.cta-link {
     font-size: var(--text-sm);
@@ -12710,9 +12720,6 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 }
 th.woocommerce-table__product-table.product-total {
   text-align: right;
-}
-.accordion-content {
-  display: none;
 }
 .woocommerce-order-downloads {
   margin-inline: calc(var(--spacing) * 0) !important;
