@@ -3789,9 +3789,6 @@ body.page-insurers .faq-section .faq-content {
 .alfa-my-account #place_order {
   @apply transition-all duration-[0.2s] ease-[ease] hover:shadow-[0_6px_0px_#dda619] hover:-translate-y-0.5;
 }
-.alfa-my-account #place_order:hover {
-  background: #a17810 !important;
-}
 
 #file-name {
   @apply block text-[13px] text-[#555] mt-2;
@@ -5393,6 +5390,10 @@ s
   @apply !p-[0];
 }
 
+.alfa-my-account #place_order:hover {
+  @apply !bg-[#8b640c] !shadow-[0_6px_0_#dda619];
+}
+
 .woocommerce-notices-wrapper:empty {
   @apply !hidden;
 }
@@ -5946,9 +5947,7 @@ th.woocommerce-table__product-table.product-total {
 }
 
 /* Button hover */
-.alfa-my-account #place_order:hover {
-  background: #574fd6 !important;
-}
+
 @media (max-width: 768px) {
   .alfa-my-account .woocommerce-Payment {
     @apply p-4;

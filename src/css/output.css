@@ -9144,9 +9144,6 @@ body.page-insurers .faq-section .faq-content {
     }
   }
 }
-.alfa-my-account #place_order:hover {
-  background: #a17810 !important;
-}
 #file-name {
   margin-top: calc(var(--spacing) * 2);
   display: block;
@@ -12300,6 +12297,11 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 .page-my-account .woocommerce-customer-details {
   padding: 0 !important;
 }
+.alfa-my-account #place_order:hover {
+  background-color: #8b640c !important;
+  --tw-shadow: 0 6px 0 var(--tw-shadow-color, #dda619) !important;
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+}
 .woocommerce-notices-wrapper:empty {
   display: none !important;
 }
@@ -13298,9 +13300,6 @@ th.woocommerce-table__product-table.product-total {
     }
   }
   background: #a17810 !important;
-}
-.alfa-my-account #place_order:hover {
-  background: #574fd6 !important;
 }
 @media (max-width: 768px) {
   .alfa-my-account .woocommerce-Payment {
