@@ -12083,6 +12083,9 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 .page-contact-us .custom-contact-form .form-row {
   margin-bottom: 25px !important;
 }
+.page-contact-us .submit-btn input {
+  cursor: pointer !important;
+}
 .contact-info-wrapper .working-hours-card li {
   position: relative;
   padding-left: 18px;

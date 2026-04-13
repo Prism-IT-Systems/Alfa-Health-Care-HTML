@@ -5244,6 +5244,10 @@ s
   @apply !mb-[25px];
 }
 
+.page-contact-us .submit-btn input {
+  @apply !cursor-pointer;
+}
+
 .contact-info-wrapper .working-hours-card li {
   @apply relative pl-[18px] before:content-[""] before:absolute before:-translate-y-2/4 before:w-2 before:h-2 before:bg-[#C5A65E] before:rounded-[50%] before:left-0 before:top-2/4;
 }
