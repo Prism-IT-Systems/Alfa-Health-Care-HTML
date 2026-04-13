@@ -5057,7 +5057,17 @@ s
   filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
 }
 
-
+@media (max-width: 639px) {
+  .contact-info-wrapper .contact-info-card {
+    @apply p-7;
+  }
+  .contact-info-wrapper .working-hours-card {
+    @apply p-7;
+  }
+  .contact-info-wrapper .social-follow-card {
+    @apply p-7;
+  }
+}
 
 .contact-form-card .form-title {
   @apply not-italic font-semibold text-xl leading-[34px] flex items-center text-[#32261B] !mb-0 w-fit border-b border-[#a17810] ;
@@ -5075,7 +5085,7 @@ s
   @apply box-border mix-blend-normal mx-auto my-0 rounded-[10.5263px] border-[1.05263px] border-solid border-[#CDBAA6];
 }
 .contact-form-card .form-row {
-  @apply flex flex-col sm:flex-row justify-between items-start gap-[16.84px] p-0;
+  @apply flex flex-col sm:flex-row justify-between items-start gap-[25px] sm:gap-[16.84px] p-0;
 }
 .contact-form-card .form-row label {
   @apply not-italic font-semibold text-sm leading-[17px] flex items-center tracking-[0.631579px] text-[#8A8075] mx-auto my-0;
@@ -5120,7 +5130,7 @@ s
 }
 
 .contact-info-wrapper .contact-info-card {
-  @apply flex flex-col gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
+  @apply flex flex-col gap-[25px] sm:gap-[33.68px] px-8 py-[42px] rounded-[25.2632px] border-[1.05263px] border-solid border-[#C49331] !mb-[0];
   background: #ffffff;
 }
 .contact-info-wrapper .contact-info-card h4 {
@@ -5221,7 +5231,7 @@ s
 }
 
 .page-contact-us .wpcf7-not-valid-tip {
-  @apply text-sm mt-[8px];
+  @apply text-sm mt-[5px];
 }
 
 .page-contact-us .contact-form-card .form-group br {
@@ -5983,7 +5993,7 @@ th.woocommerce-table__product-table.product-total {
 }
 
 .page-contact-us .radio-group span {
-  @apply inline-flex;
+  @apply inline-flex flex-wrap;
 }
 
 /* Cart Page css */

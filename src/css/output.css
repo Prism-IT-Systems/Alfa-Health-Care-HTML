@@ -11677,6 +11677,17 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 .contact-us-map-wrap iframe {
   filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
 }
+@media (max-width: 639px) {
+  .contact-info-wrapper .contact-info-card {
+    padding: calc(var(--spacing) * 7);
+  }
+  .contact-info-wrapper .working-hours-card {
+    padding: calc(var(--spacing) * 7);
+  }
+  .contact-info-wrapper .social-follow-card {
+    padding: calc(var(--spacing) * 7);
+  }
+}
 .contact-form-card .form-title {
   margin-bottom: calc(var(--spacing) * 0) !important;
   display: flex;
@@ -11728,10 +11739,13 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 16.84px;
+  gap: 25px;
   padding: calc(var(--spacing) * 0);
   @media (width >= 40rem) {
     flex-direction: row;
+  }
+  @media (width >= 40rem) {
+    gap: 16.84px;
   }
 }
 .contact-form-card .form-row label {
@@ -11802,7 +11816,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   margin-bottom: 0 !important;
   display: flex;
   flex-direction: column;
-  gap: 33.68px;
+  gap: 25px;
   border-radius: 25.2632px;
   border-style: var(--tw-border-style);
   border-width: 1.05263px;
@@ -11811,6 +11825,9 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   border-color: #C49331;
   padding-inline: calc(var(--spacing) * 8);
   padding-block: 42px;
+  @media (width >= 40rem) {
+    gap: 33.68px;
+  }
   background: #ffffff;
 }
 .contact-info-wrapper .contact-info-card h4 {
@@ -12047,7 +12064,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   background: #a17810 !important;
 }
 .page-contact-us .wpcf7-not-valid-tip {
-  margin-top: 8px;
+  margin-top: 5px;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
 }
@@ -13384,6 +13401,7 @@ th.woocommerce-table__product-table.product-total {
 }
 .page-contact-us .radio-group span {
   display: inline-flex;
+  flex-wrap: wrap;
 }
 .page-cart .product-category-section , .page-checkout .product-category-section {
   background-color: var(--Off-White);
