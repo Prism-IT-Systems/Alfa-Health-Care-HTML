@@ -2007,6 +2007,16 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
         @apply w-[84px] h-px bg-goldenBrown block mx-auto mt-2;
     }
 
+    .alfa-shoe-size-form .wpcf7-acceptance label,
+    .alfa-csm-form .wpcf7-acceptance label {
+         pointer-events: none;
+    }
+ 
+    .alfa-shoe-size-form .wpcf7-acceptance input,
+    .alfa-csm-form .wpcf7-acceptance input {
+         pointer-events: auto;
+    }
+
     .alfa-modal .form-row  label,
     .alfa-modal .form-row  label + br,
     .alfa-modal .form-row .form-group label,

@@ -5594,6 +5594,12 @@
     width: 84px;
     background-color: var(--Golden-Brown);
   }
+  .alfa-shoe-size-form .wpcf7-acceptance label, .alfa-csm-form .wpcf7-acceptance label {
+    pointer-events: none;
+  }
+  .alfa-shoe-size-form .wpcf7-acceptance input, .alfa-csm-form .wpcf7-acceptance input {
+    pointer-events: auto;
+  }
   .alfa-modal .form-row label, .alfa-modal .form-row label + br, .alfa-modal .form-row .form-group label, .alfa-modal .form-row .form-group br {
     display: none;
   }
