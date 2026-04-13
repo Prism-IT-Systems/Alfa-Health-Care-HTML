@@ -1735,10 +1735,22 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 .display-blog-grid .display-blog-img-big {
   @apply !rounded-[24px_24px_0_0];
 }
-
+}
 }
 
+.display-blog-right-col.blogs-on-right .alfa-featured-content {
+  @apply overflow-hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
+
+@media (min-width: 1024px) {
+  .display-blog-left-col .aritcle-box {
+    @apply mt-6;
+  }
+}
+
 
 /* Blog Card Widget */
 @layer components {

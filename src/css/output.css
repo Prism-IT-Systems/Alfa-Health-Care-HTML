@@ -5067,6 +5067,17 @@
     }
   }
 }
+.display-blog-right-col.blogs-on-right .alfa-featured-content {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+@media (min-width: 1024px) {
+  .display-blog-left-col .aritcle-box {
+    margin-top: calc(var(--spacing) * 6);
+  }
+}
 @layer components {
   .blog-card-grid {
     display: grid;
