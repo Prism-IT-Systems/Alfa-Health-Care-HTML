@@ -3090,6 +3090,10 @@ body.page-insurers .faq-section .faq-content {
    @apply font-bold transition-[color] duration-[0.3s] hover:text-[color:var(--Sunlit-Gold)];
 }
 
+  .page-contact-us .wpcf7-not-valid-tip {
+  @apply w-full;
+}
+
 .page-contact-us .wpcf7-form p {
   @apply relative;
 }
@@ -5074,13 +5078,13 @@ s
 
 @media (max-width: 639px) {
   .contact-info-wrapper .contact-info-card {
-    @apply p-7;
+    @apply !p-7;
   }
   .contact-info-wrapper .working-hours-card {
-    @apply p-7;
+    @apply !p-7;
   }
   .contact-info-wrapper .social-follow-card {
-    @apply p-7;
+    @apply !p-7;
   }
 }
 
@@ -5246,7 +5250,7 @@ s
 }
 
 .page-contact-us .wpcf7-not-valid-tip {
-  @apply text-sm mt-[5px];
+  @apply text-sm mt-[10px];
 }
 
 .page-contact-us .contact-form-card .form-group br {
@@ -6014,7 +6018,7 @@ th.woocommerce-table__product-table.product-total {
 }
 
 .page-contact-us .radio-group span {
-  @apply inline-flex flex-wrap;
+  @apply inline-flex ;
 }
 
 /* Cart Page css */

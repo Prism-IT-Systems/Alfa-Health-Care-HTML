@@ -7691,6 +7691,9 @@ body.page-insurers .faq-section .faq-content {
     }
   }
 }
+.page-contact-us .wpcf7-not-valid-tip {
+  width: 100%;
+}
 .page-contact-us .wpcf7-form p {
   position: relative;
 }
@@ -11699,13 +11702,13 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 }
 @media (max-width: 639px) {
   .contact-info-wrapper .contact-info-card {
-    padding: calc(var(--spacing) * 7);
+    padding: calc(var(--spacing) * 7) !important;
   }
   .contact-info-wrapper .working-hours-card {
-    padding: calc(var(--spacing) * 7);
+    padding: calc(var(--spacing) * 7) !important;
   }
   .contact-info-wrapper .social-follow-card {
-    padding: calc(var(--spacing) * 7);
+    padding: calc(var(--spacing) * 7) !important;
   }
 }
 .contact-form-card .form-title {
@@ -12084,7 +12087,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   background: #a17810 !important;
 }
 .page-contact-us .wpcf7-not-valid-tip {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
 }
@@ -13426,7 +13429,6 @@ th.woocommerce-table__product-table.product-total {
 }
 .page-contact-us .radio-group span {
   display: inline-flex;
-  flex-wrap: wrap;
 }
 .page-cart .product-category-section , .page-checkout .product-category-section {
   background-color: var(--Off-White);
