@@ -4140,7 +4140,7 @@ body.page-insurers .faq-section .faq-content {
   @apply text-center mb-10;
 }
 .alfar-refferals-form .section-title {
-  @apply font-[bold] flex items-start;
+  @apply font-[bold] flex items-center sm:items-start;
 }
 
 .alfar-refferals-form .checkbox-row {

@@ -9761,8 +9761,11 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfar-refferals-form .section-title {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-family: bold;
+  @media (width >= 40rem) {
+    align-items: flex-start;
+  }
 }
 .alfar-refferals-form .checkbox-row {
   display: flex;
