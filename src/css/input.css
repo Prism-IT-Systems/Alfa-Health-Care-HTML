@@ -5076,6 +5076,11 @@ s
   filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
 }
 
+.page-contact-us span.wpcf7-form-control-wrap {
+  @apply !block;
+}
+
+
 @media (max-width: 639px) {
   .contact-info-wrapper .contact-info-card {
     @apply !p-7;

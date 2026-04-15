@@ -11700,6 +11700,9 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 .contact-us-map-wrap iframe {
   filter: drop-shadow(0px 4px 26px rgba(0, 0, 0, 0.1));
 }
+.page-contact-us span.wpcf7-form-control-wrap {
+  display: block !important;
+}
 @media (max-width: 639px) {
   .contact-info-wrapper .contact-info-card {
     padding: calc(var(--spacing) * 7) !important;
