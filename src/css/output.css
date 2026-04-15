@@ -9761,8 +9761,18 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfar-refferals-form .section-title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-family: bold;
+}
+.alfar-refferals-form .checkbox-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.alfar-refferals-form .checkbox-row span {
+  flex: 1;
+}
+.alfar-refferals-form .checkbox-row .error-message {
+  width: 100%;
 }
 .alfar-refferals-form .section-number {
   display: flex;
@@ -9941,6 +9951,7 @@ body.page-insurers .faq-section .faq-content {
 }
 .alfar-refferals-form .error-message {
   margin-top: 3px;
+  width: 100%;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: red;
@@ -9964,6 +9975,7 @@ body.page-insurers .faq-section .faq-content {
 .alfar-refferals-form .section-number {
   height: calc(var(--spacing) * 8);
   width: calc(var(--spacing) * 8);
+  flex-shrink: 0;
   color: #32261B;
   background: rgba(223, 176, 58, 0.3);
 }
