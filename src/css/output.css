@@ -6463,6 +6463,23 @@
     top: calc(var(--spacing) * 1);
     flex-shrink: 0;
   }
+  .wpcf7-form-control.wpcf7-select {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    align-items: center;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #ccc;
+    --tw-leading: 19px !important;
+    line-height: 19px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
   @media (max-width:1279px) {
     .wc-block-components-totals-coupon__form .wc-block-components-totals-coupon__button {
       min-height: calc(var(--spacing) * 12) !important;

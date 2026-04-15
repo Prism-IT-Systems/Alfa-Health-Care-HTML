@@ -2430,6 +2430,14 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     @apply relative top-1 shrink-0;;
   }
 
+  .wpcf7-form-control.wpcf7-select {
+       @apply w-full border appearance-none flex items-center !leading-[19px] box-border cursor-pointer border-solid border-[#ccc];
+       -webkit-appearance: none;
+       -moz-appearance: none;
+  }  
+
+
+
   @media(max-width:1279px){
     .wc-block-components-totals-coupon__form .wc-block-components-totals-coupon__button {
       @apply !min-h-12 !p-3;
