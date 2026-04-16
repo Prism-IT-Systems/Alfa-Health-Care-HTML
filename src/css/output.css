@@ -5685,6 +5685,7 @@
     width: 100%;
     max-width: 315px;
     align-items: center !important;
+    justify-content: center !important;
     padding: calc(var(--spacing) * 4);
     text-align: center !important;
     font-family: Inter;
@@ -8879,6 +8880,34 @@ body.page-insurers .faq-section .faq-content {
     padding-bottom: calc(var(--spacing) * 2.5);
   }
 }
+@media (max-width: 768px) {
+  .shop_table_responsive {
+    border-color: none !important;
+  }
+  .shop_table_responsive tbody {
+    display: block !important;
+  }
+  .shop_table_responsive tbody tr {
+    margin-bottom: calc(var(--spacing) * 4) !important;
+    display: block !important;
+    overflow: hidden;
+    border-radius: var(--radius-xl) !important;
+    border-style: var(--tw-border-style) !important;
+    border-width: 1px !important;
+    --tw-border-style: solid !important;
+    border-style: solid !important;
+    background: #fff !important;
+  }
+  .woocommerce-order-downloads .woocommerce-table {
+    --tw-shadow: 0 0 #0000 !important;
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+    background: transparent !important;
+  }
+  .woocommerce table.shop_table_responsive tbody tr td:first-child, .woocommerce-page table.shop_table_responsive tbody tr td:first-child {
+    border-top-style: var(--tw-border-style) !important;
+    border-top-width: 0px !important;
+  }
+}
 .woocommerce-form-login__rememberme {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -9573,9 +9602,6 @@ body.page-insurers .faq-section .faq-content {
   margin-top: calc(var(--spacing) * 10);
   display: flex;
   justify-content: center;
-}
-.woocommerce table.shop_table_responsive tr td::before, .woocommerce-page table.shop_table_responsive tr td::before {
-  content: attr(data-title) !important;
 }
 .woocommerce-pagination ul.page-numbers {
   margin: calc(var(--spacing) * 0);
