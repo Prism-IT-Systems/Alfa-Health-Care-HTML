@@ -3656,7 +3656,7 @@ body.page-insurers .faq-section .faq-content {
     background: #fff !important;
   }
   .woocommerce-order-downloads .woocommerce-table {
-    @apply !shadow-none;
+    @apply !shadow-none !border-0;
     background: transparent !important;
   }
   .woocommerce table.shop_table_responsive tbody tr td:first-child,
@@ -4054,11 +4054,6 @@ body.page-insurers .faq-section .faq-content {
 .woocommerce-pagination {
   @apply flex justify-center mt-10;
 }
-
-/* .woocommerce table.shop_table_responsive tr td::before,
-.woocommerce-page table.shop_table_responsive tr td::before {
-    content: attr(data-title) !important;
-} */
 
 /* Pagination list */
 .woocommerce-pagination ul.page-numbers {
@@ -5407,6 +5402,13 @@ s
   @apply max-xl:border-none overflow-hidden;;
 }
 
+@media only screen and (max-width: 768px) {
+  .woocommerce table.shop_table_responsive tr td::before,
+  .woocommerce-page table.shop_table_responsive tr td::before {
+    @apply content-[attr(data-title)];
+  }
+}
+
 .woocommerce-orders-table thead tr {
   @apply bg-white;
 }
@@ -5537,12 +5539,11 @@ s
 
    /* LABEL (from data-title) */
 
-@media (max-width: 768px) {
   .woocommerce-orders-table td::before,
   .woocommerce-orders-table th[scope="row"]::before {
     @apply !content-[attr(data-title)] !font-semibold !text-[#333];
   }
-}
+
 
   /* Fix order number (th doesn't always have data-title) */
 
@@ -5693,8 +5694,8 @@ th.woocommerce-table__product-table.product-total {
 
 /* Table container */
 .woocommerce-order-downloads .woocommerce-table {
-  @apply !w-full !overflow-hidden !shadow-[0_6px_24px_rgba(0,0,0,0.06)] !rounded-[14px];
-  background: #ffffff !important;
+  @apply !w-full !overflow-hidden shadow-[0_6px_24px_rgba(0,0,0,0.06)] !rounded-[14px];
+  background: #ffffff;
 }
 
 /* Header */

@@ -8899,6 +8899,8 @@ body.page-insurers .faq-section .faq-content {
     background: #fff !important;
   }
   .woocommerce-order-downloads .woocommerce-table {
+    border-style: var(--tw-border-style) !important;
+    border-width: 0px !important;
     --tw-shadow: 0 0 #0000 !important;
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
     background: transparent !important;
@@ -12319,6 +12321,12 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
     border-style: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .woocommerce table.shop_table_responsive tr td::before, .woocommerce-page table.shop_table_responsive tr td::before {
+    --tw-content: attr(data-title);
+    content: var(--tw-content);
+  }
+}
 .woocommerce-orders-table thead tr {
   background-color: var(--color-white);
 }
@@ -12506,14 +12514,12 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   .woocommerce-orders-table td:last-child {
     border-bottom-color: none !important;
   }
-  @media (max-width: 768px) {
-    .woocommerce-orders-table td::before, .woocommerce-orders-table th[scope="row"]::before {
-      --tw-font-weight: var(--font-weight-semibold) !important;
-      font-weight: var(--font-weight-semibold) !important;
-      color: #333 !important;
-      --tw-content: attr(data-title) !important;
-      content: var(--tw-content) !important;
-    }
+  .woocommerce-orders-table td::before, .woocommerce-orders-table th[scope="row"]::before {
+    --tw-font-weight: var(--font-weight-semibold) !important;
+    font-weight: var(--font-weight-semibold) !important;
+    color: #333 !important;
+    --tw-content: attr(data-title) !important;
+    content: var(--tw-content) !important;
   }
   .woocommerce-orders-table th[scope="row"]::before {
     --tw-content: "Order" !important;
@@ -12829,9 +12835,9 @@ th.woocommerce-table__product-table.product-total {
   width: 100% !important;
   overflow: hidden !important;
   border-radius: 14px !important;
-  --tw-shadow: 0 6px 24px var(--tw-shadow-color, rgba(0,0,0,0.06)) !important;
-  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
-  background: #ffffff !important;
+  --tw-shadow: 0 6px 24px var(--tw-shadow-color, rgba(0,0,0,0.06));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  background: #ffffff;
 }
 .woocommerce-order-downloads thead {
   background: #f9fafb !important;
