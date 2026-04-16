@@ -5645,7 +5645,7 @@
     }
   }
   .alfa-modal form input[type="checkbox"] {
-    margin-top: 6px !important;
+    margin-top: 3px !important;
     height: 19px !important;
     width: 19px !important;
     flex-shrink: 0;
