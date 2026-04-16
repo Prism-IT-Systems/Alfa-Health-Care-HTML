@@ -4358,7 +4358,7 @@ body.page-insurers .faq-section .faq-content {
   @apply bg-[#a17810];
 }
 .document-upload {
-  @apply flex flex-col gap-[25px];
+  @apply flex flex-col gap-[25px] !mb-[0];
 }
 .document-upload .upload-box-content h3 {
   @apply text-base leading-[26px] mb-[25px];
@@ -4707,7 +4707,7 @@ form.form-loading {
   @apply bg-[#a17810];
 }
 .document-upload {
-  @apply flex flex-col gap-[25px];
+  @apply flex flex-col gap-[25px] !mb-[0];
 }
 .document-upload .upload-box-content h3 {
   @apply text-base leading-[26px] mb-[25px];

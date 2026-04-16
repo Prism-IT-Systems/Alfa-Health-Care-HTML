@@ -10120,6 +10120,7 @@ body.page-insurers .faq-section .faq-content {
   background-color: #a17810;
 }
 .document-upload {
+  margin-bottom: 0 !important;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -10825,6 +10826,7 @@ form.form-loading {
   background-color: #a17810;
 }
 .document-upload {
+  margin-bottom: 0 !important;
   display: flex;
   flex-direction: column;
   gap: 25px;
