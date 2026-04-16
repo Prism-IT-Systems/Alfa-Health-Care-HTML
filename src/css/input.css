@@ -5515,10 +5515,12 @@ s
 
    /* LABEL (from data-title) */
 
+@media (max-width: 768px) {
   .woocommerce-orders-table td::before,
   .woocommerce-orders-table th[scope="row"]::before {
     @apply !content-[attr(data-title)] !font-semibold !text-[#333];
-  } 
+  }
+}
 
   /* Fix order number (th doesn't always have data-title) */
 

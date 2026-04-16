@@ -12478,12 +12478,14 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   .woocommerce-orders-table td:last-child {
     border-bottom-color: none !important;
   }
-  .woocommerce-orders-table td::before, .woocommerce-orders-table th[scope="row"]::before {
-    --tw-font-weight: var(--font-weight-semibold) !important;
-    font-weight: var(--font-weight-semibold) !important;
-    color: #333 !important;
-    --tw-content: attr(data-title) !important;
-    content: var(--tw-content) !important;
+  @media (max-width: 768px) {
+    .woocommerce-orders-table td::before, .woocommerce-orders-table th[scope="row"]::before {
+      --tw-font-weight: var(--font-weight-semibold) !important;
+      font-weight: var(--font-weight-semibold) !important;
+      color: #333 !important;
+      --tw-content: attr(data-title) !important;
+      content: var(--tw-content) !important;
+    }
   }
   .woocommerce-orders-table th[scope="row"]::before {
     --tw-content: "Order" !important;
