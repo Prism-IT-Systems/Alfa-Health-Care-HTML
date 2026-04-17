@@ -13179,7 +13179,7 @@ th.woocommerce-table__product-table.product-total {
   border-bottom-width: 1px;
   --tw-border-style: solid;
   border-style: solid;
-  border-bottom-color: #f1f1f1;
+  border-color: transparent;
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 3.5);
   color: #555;
@@ -13398,6 +13398,12 @@ th.woocommerce-table__product-table.product-total {
     padding: calc(var(--spacing) * 3);
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
+@media (max-width: 768px) {
+  .woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods {
+    background: transparent !important;
+    border: none !important;
   }
 }
 .page-wishlist .woocommerce-message {

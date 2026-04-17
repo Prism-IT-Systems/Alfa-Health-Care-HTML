@@ -5882,7 +5882,7 @@ th.woocommerce-table__product-table.product-total {
 
 /* Body */
 .woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods tbody td {
-  @apply text-[#555] transition-[background] duration-[0.3s] ease-[ease] px-4 py-3.5 border-b-[#f1f1f1] border-b border-solid;
+  @apply text-[#555] transition-[background] duration-[0.3s] ease-[ease] px-4 py-3.5 border-b border-transparent border-solid;
 }
 
 /* Hover effect */
@@ -6025,6 +6025,13 @@ th.woocommerce-table__product-table.product-total {
   }
   .alfa-my-account #place_order {
     @apply text-sm p-3;
+  }
+}
+
+@media (max-width: 768px) {
+  .woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods {
+    background: transparent !important;
+    border: none !important;
   }
 }
 
