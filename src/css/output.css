@@ -8867,16 +8867,16 @@ body.page-insurers .faq-section .faq-content {
   padding-block: calc(var(--spacing) * 3) !important;
   background: #a17810 !important;
 }
-.woocommerce-account .woocommerce {
+.admin-bar .woocommerce {
   padding-bottom: 60px;
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-  .woocommerce-account .woocommerce {
+  .admin-bar .woocommerce {
     padding-bottom: calc(var(--spacing) * 5);
   }
 }
 @media (max-width: 767px) {
-  .woocommerce-account .woocommerce {
+  .admin-bar .woocommerce {
     padding-bottom: calc(var(--spacing) * 2.5);
   }
 }
