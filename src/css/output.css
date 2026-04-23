@@ -8868,16 +8868,16 @@ body.page-insurers .faq-section .faq-content {
   background: #a17810 !important;
 }
 .admin-bar .woocommerce {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .admin-bar .woocommerce {
-    padding-bottom: calc(var(--spacing) * 5);
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 767px) {
   .admin-bar .woocommerce {
-    padding-bottom: calc(var(--spacing) * 2.5);
+    padding-bottom: 0;
   }
 }
 @media (max-width: 768px) {
@@ -9060,7 +9060,10 @@ body.page-insurers .faq-section .faq-content {
   color: #6F5F4E;
 }
 .woocommerce-view-order .woocommerce-MyAccount-content p {
-  padding-left: 30px;
+  padding-left: 0;
+  @media (width >= 48rem) {
+    padding-left: 30px;
+  }
 }
 .woocommerce-view-order .woocommerce-MyAccount-content .order-again {
   padding-left: 0 !important;
@@ -9175,14 +9178,16 @@ body.page-insurers .faq-section .faq-content {
   transition-timing-function: ease;
   &:hover {
     @media (hover: hover) {
-      --tw-translate-y: calc(var(--spacing) * -0.5);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
+      text-decoration-line: none;
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   background: #a17810;
-}
-.woocommerce-Address-title .edit:hover {
-  background: #8b670d;
 }
 .alfa-my-account #place_order {
   transition-property: all;
@@ -9192,12 +9197,6 @@ body.page-insurers .faq-section .faq-content {
   transition-duration: 0.2s;
   --tw-ease: ease;
   transition-timing-function: ease;
-  &:hover {
-    @media (hover: hover) {
-      --tw-translate-y: calc(var(--spacing) * -0.5);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
   &:hover {
     @media (hover: hover) {
       --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
@@ -13129,11 +13128,6 @@ th.woocommerce-table__product-table.product-total {
   transition-duration: 0.3s;
   --tw-ease: ease;
   transition-timing-function: ease;
-  &:hover {
-    @media (hover: hover) {
-      border-color: #6c63ff;
-    }
-  }
   &:hover {
     @media (hover: hover) {
       --tw-shadow: 0 6px 20px var(--tw-shadow-color, rgba(108,99,255,0.08));

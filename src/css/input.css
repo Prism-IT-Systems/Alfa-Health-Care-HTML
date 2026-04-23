@@ -3628,18 +3628,18 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .admin-bar .woocommerce {
-  @apply pb-[60px];
+  @apply pb-[100px];
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .admin-bar .woocommerce {
-    @apply pb-5;
+    @apply pb-[60px];
   }
 }
 
 @media (max-width: 767px) {
   .admin-bar .woocommerce {
-    @apply pb-2.5;
+    @apply pb-[0];
   }
 }
 
@@ -3767,7 +3767,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .woocommerce-view-order .woocommerce-MyAccount-content p {
-  @apply pl-[30px]
+  @apply pl-[0] md:pl-[30px]
 }
 
 .woocommerce-view-order .woocommerce-MyAccount-content .order-again {
@@ -3823,15 +3823,12 @@ body.page-insurers .faq-section .faq-content {
   @apply text-xl text-[#32261B] font-semibold m-0;
 }
 .woocommerce-Address-title .edit {
-  @apply text-white no-underline text-[13px] font-medium transition-all duration-[0.25s] ease-[ease] px-[18px] py-2 rounded-[50px] hover:-translate-y-0.5;
+  @apply text-white no-underline text-[13px] font-medium transition-all duration-[0.25s] ease-[ease] px-[18px] py-2 rounded-[50px] hover:shadow-[0_6px_0px_#dda619] hover:no-underline ;
   background: #a17810;
-}
-.woocommerce-Address-title .edit:hover {
-  background: #8b670d;
 }
 
 .alfa-my-account #place_order {
-  @apply transition-all duration-[0.2s] ease-[ease] hover:shadow-[0_6px_0px_#dda619] hover:-translate-y-0.5;
+  @apply transition-all duration-[0.2s] ease-[ease] hover:shadow-[0_6px_0px_#dda619];
 }
 
 #file-name {
@@ -5864,7 +5861,7 @@ th.woocommerce-table__product-table.product-total {
 
 /* Each Payment Option */
 .alfa-my-account .woocommerce-PaymentMethod {
-  @apply border transition-all duration-[0.3s] ease-[ease] cursor-pointer mb-4 p-4 rounded-xl border-solid border-[#eee] hover:shadow-[0_6px_20px_rgba(108,99,255,0.08)] hover:border-[#6c63ff];
+  @apply border transition-all duration-[0.3s] ease-[ease] cursor-pointer mb-4 p-4 rounded-xl border-solid border-[#eee] hover:shadow-[0_6px_20px_rgba(108,99,255,0.08)];
 }
 
 /* Wrapper for horizontal scroll on small screens */
