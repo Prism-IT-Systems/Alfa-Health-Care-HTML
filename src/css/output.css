@@ -9088,6 +9088,16 @@ body.page-insurers .faq-section .faq-content {
   color: #6B5A44;
   background: #f7f3ea;
 }
+@media (max-width: 490px) {
+  .woocommerce-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: calc(var(--spacing) * 3);
+  }
+  .woocommerce-MyAccount-content .woocommerce-info .button {
+    margin-left: 0 !important;
+  }
+}
 .woocommerce-notices-wrapper {
   margin-bottom: calc(var(--spacing) * 5);
 }
@@ -12343,6 +12353,9 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   }
 }
 .woocommerce-orders-table thead tr {
+  background: rgb(0 0 0 / 3%);
+}
+.woocommerce-orders-table tbody tr {
   background-color: var(--color-white);
 }
 .page-my-account .woocommerce-MyAccount-content {

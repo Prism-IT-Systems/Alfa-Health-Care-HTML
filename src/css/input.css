@@ -3784,6 +3784,16 @@ body.page-insurers .faq-section .faq-content {
   @apply text-[#6B5A44] mb-[25px] rounded-md border-t-[#a17810] flex items-center;
   background: #f7f3ea;
 }
+
+@media (max-width: 490px) {
+  .woocommerce-info {
+    @apply flex-col items-start gap-3;
+  }
+  .woocommerce-MyAccount-content .woocommerce-info .button {
+    @apply !ml-[0];
+  }
+}
+
  
 /* Notice Wrapper */
 .woocommerce-notices-wrapper {
@@ -5408,6 +5418,10 @@ s
 }
 
 .woocommerce-orders-table thead tr {
+  background: rgb(0 0 0 / 3%);
+}
+
+.woocommerce-orders-table tbody tr {
   @apply bg-white;
 }
 
