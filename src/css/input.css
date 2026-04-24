@@ -3601,7 +3601,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 #customer_login label {
-  @apply order-1 flex items-center gap-1.5 mb-2;
+  @apply order-1 flex items-center gap-1.5 ;
 }
 .ahs-login-actions {
   @apply flex flex-row flex-wrap items-center gap-0;
