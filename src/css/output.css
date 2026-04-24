@@ -13385,12 +13385,6 @@ th.woocommerce-table__product-table.product-total {
   transition-timing-function: ease;
   &:hover {
     @media (hover: hover) {
-      --tw-translate-y: -1px;
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
       --tw-shadow: 0 6px 18px var(--tw-shadow-color, rgba(108,99,255,0.2));
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
@@ -13398,7 +13392,7 @@ th.woocommerce-table__product-table.product-total {
   background: #a17810 !important;
 }
 .woocommerce-Input::placeholder {
-  transition-property: none;
+  transition-property: none !important;
 }
 @media (max-width: 768px) {
   .alfa-my-account .woocommerce-Payment {
