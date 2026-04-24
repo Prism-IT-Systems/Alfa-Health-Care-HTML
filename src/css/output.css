@@ -12333,9 +12333,11 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 }
 .woocommerce-orders .woocommerce table.shop_table {
   overflow: hidden;
-  @media (width < 80rem) {
-    --tw-border-style: none;
-    border-style: none;
+}
+@media (max-width: 1282px) {
+  .woocommerce-orders .woocommerce table.shop_table {
+    --tw-border-style: none !important;
+    border-style: none !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -13366,6 +13368,9 @@ th.woocommerce-table__product-table.product-total {
   margin-top: calc(var(--spacing) * 3);
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.woocommerce table.shop_table tbody th {
+  border-top-color: transparent !important;
 }
 .alfa-my-account #place_order {
   width: 100%;

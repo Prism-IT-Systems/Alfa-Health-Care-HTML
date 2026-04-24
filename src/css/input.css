@@ -5407,7 +5407,13 @@ s
   @apply !text-[20px] font-semibold !text-[#a17810];
 }
 .woocommerce-orders .woocommerce table.shop_table {
-  @apply max-xl:border-none overflow-hidden;;
+  @apply overflow-hidden;;
+}
+
+@media (max-width: 1282px) {
+  .woocommerce-orders .woocommerce table.shop_table {
+    @apply !border-none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -6031,6 +6037,10 @@ th.woocommerce-table__product-table.product-total {
 /* Save card checkbox */
 .alfa-my-account .woocommerce-SavedPaymentMethods-saveNew {
   @apply text-sm mt-3;
+}
+
+.woocommerce table.shop_table tbody th {
+  @apply !border-t-transparent;
 }
 
 /* Submit Button */
