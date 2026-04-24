@@ -12278,7 +12278,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
 }
 .woocommerce-table--order-details thead {
-  background: #fff !important;
+  background: rgb(0 0 0 / 3%) !important;
 }
 .woocommerce-table--order-details th {
   padding: calc(var(--spacing) * 4) !important;
@@ -12354,6 +12354,12 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 }
 .woocommerce-orders-table thead tr {
   background: rgb(0 0 0 / 3%);
+}
+@media (max-width: 1280px) {
+  .woocommerce-account .woocommerce-MyAccount-content, .woocommerce-account .woocommerce-MyAccount-navigation {
+    float: none !important;
+    width: 100% !important;
+  }
 }
 .woocommerce-orders-table tbody tr {
   background-color: var(--color-white);
@@ -12863,10 +12869,12 @@ th.woocommerce-table__product-table.product-total {
   border-radius: 14px !important;
   --tw-shadow: 0 6px 24px var(--tw-shadow-color, rgba(0,0,0,0.06));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  background: #ffffff;
 }
 .woocommerce-order-downloads thead {
-  background: #f9fafb !important;
+  background: rgb(0 0 0 / 3%) !important;
+}
+.woocommerce-payment-methods .woocommerce-notices-wrapper {
+  margin-top: calc(var(--spacing) * 0) !important;
 }
 .woocommerce-order-downloads th {
   padding-inline: 18px !important;

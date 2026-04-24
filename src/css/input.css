@@ -5357,7 +5357,7 @@ s
 
 /* HEADER */
 .woocommerce-table--order-details thead {
-  background: #fff !important;
+  background: rgb(0 0 0 / 3%) !important;
 }
 .woocommerce-table--order-details th {
   @apply text-left !font-semibold text-[#333] !p-4;
@@ -5419,6 +5419,13 @@ s
 
 .woocommerce-orders-table thead tr {
   background: rgb(0 0 0 / 3%);
+}
+
+@media (max-width: 1280px) {
+  .woocommerce-account .woocommerce-MyAccount-content,
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    @apply !float-none !w-full;
+  }
 }
 
 .woocommerce-orders-table tbody tr {
@@ -5707,12 +5714,15 @@ th.woocommerce-table__product-table.product-total {
 /* Table container */
 .woocommerce-order-downloads .woocommerce-table {
   @apply !w-full !overflow-hidden shadow-[0_6px_24px_rgba(0,0,0,0.06)] !rounded-[14px];
-  background: #ffffff;
 }
 
 /* Header */
 .woocommerce-order-downloads thead {
-  background: #f9fafb !important;
+  background: rgb(0 0 0 / 3%) !important;
+}
+
+.woocommerce-payment-methods .woocommerce-notices-wrapper {
+  @apply !mt-0;
 }
 
 .woocommerce-order-downloads th {
