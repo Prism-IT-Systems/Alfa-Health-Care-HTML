@@ -8840,6 +8840,7 @@ body.page-insurers .faq-section .faq-content {
 }
 #customer_login label {
   order: 1;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
   gap: calc(var(--spacing) * 1.5);
