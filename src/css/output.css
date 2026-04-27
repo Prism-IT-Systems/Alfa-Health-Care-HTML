@@ -13107,15 +13107,6 @@ th.woocommerce-table__product-table.product-total {
   transition-duration: 0.3s !important;
   --tw-ease: ease !important;
   transition-timing-function: ease !important;
-  &:hover {
-    @media (hover: hover) {
-      --tw-translate-y: -1px;
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
-}
-.alfa-my-account .woocommerce-address-fields button.button:hover {
-  background: #6a4f0a !important;
 }
 .woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
   width: 100% !important;

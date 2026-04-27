@@ -5877,11 +5877,9 @@ th.woocommerce-table__product-table.product-total {
 
 /* Button */
 .alfa-my-account .woocommerce-address-fields button.button {
-  @apply !text-white !text-sm !cursor-pointer !transition-all !duration-[0.3s] !ease-[ease] !mt-6 !px-[22px] !py-3 !rounded-[10px] !border-[none] hover:-translate-y-px;
+  @apply !text-white !text-sm !cursor-pointer !transition-all !duration-[0.3s] !ease-[ease] !mt-6 !px-[22px] !py-3 !rounded-[10px] !border-[none] ;
 }
-.alfa-my-account .woocommerce-address-fields button.button:hover {
-  background: #6a4f0a !important;
-}
+
 .woocommerce form .form-row-first,
 .woocommerce form .form-row-last,
 .woocommerce-page form .form-row-first,
