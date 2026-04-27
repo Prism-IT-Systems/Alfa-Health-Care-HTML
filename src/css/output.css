@@ -8871,17 +8871,9 @@ body.page-insurers .faq-section .faq-content {
   padding-block: calc(var(--spacing) * 3) !important;
   background: #a17810 !important;
 }
-.logged-in .woocommerce {
-  padding-bottom: 100px;
-}
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (min-width:1281px) {
   .logged-in .woocommerce {
-    padding-bottom: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .logged-in .woocommerce {
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 768px) {
@@ -13382,8 +13374,10 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
 }
-.woocommerce table.shop_table tbody th {
-  border-top-color: transparent !important;
+@media (min-width: 1281px) {
+  .woocommerce table.shop_table tbody th {
+    border-top-color: transparent !important;
+  }
 }
 .alfa-my-account #place_order {
   width: 100%;
