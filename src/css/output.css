@@ -13123,6 +13123,9 @@ th.woocommerce-table__product-table.product-total {
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   background: #fff !important;
 }
+label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+  margin-bottom: calc(var(--spacing) * 0) !important;
+}
 .alfa-my-account .woocommerce-PaymentMethods {
   margin: calc(var(--spacing) * 0);
   padding: calc(var(--spacing) * 0);

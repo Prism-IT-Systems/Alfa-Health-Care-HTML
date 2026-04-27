@@ -5894,6 +5894,11 @@ th.woocommerce-table__product-table.product-total {
   background: #fff !important;
 }
 
+label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+  @apply !mb-0;
+}
+
+
 /* Payment Method List */
 .alfa-my-account .woocommerce-PaymentMethods {
   @apply m-0 p-0;
