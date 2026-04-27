@@ -13126,6 +13126,18 @@ th.woocommerce-table__product-table.product-total {
 label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
   margin-bottom: calc(var(--spacing) * 0) !important;
 }
+.woocommerce-lost-password .woocommerce-login-link:hover {
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: #a17810;
+}
+.woocommerce-lost-password .woocommerce-login-link {
+  transition-property: 0.2s;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: ease-in-out;
+  transition-duration: ease-in-out;
+}
 .alfa-my-account .woocommerce-PaymentMethods {
   margin: calc(var(--spacing) * 0);
   padding: calc(var(--spacing) * 0);

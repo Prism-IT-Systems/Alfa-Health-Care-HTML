@@ -5898,6 +5898,12 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   @apply !mb-0;
 }
 
+.woocommerce-lost-password .woocommerce-login-link:hover {
+  @apply text-[#a17810] font-semibold;
+}
+.woocommerce-lost-password .woocommerce-login-link {
+  @apply transition-[0.2s] duration-[ease-in-out];
+}
 
 /* Payment Method List */
 .alfa-my-account .woocommerce-PaymentMethods {
