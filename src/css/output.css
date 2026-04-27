@@ -12411,7 +12411,6 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   padding: 0 !important;
 }
 .alfa-my-account #place_order:hover {
-  background-color: #8b640c !important;
   --tw-shadow: 0 6px 0 var(--tw-shadow-color, #dda619) !important;
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
 }
@@ -12944,9 +12943,6 @@ th.woocommerce-table__product-table.product-total {
   transition-timing-function: ease !important;
   background: #a17810 !important;
 }
-.woocommerce-order-downloads .woocommerce-MyAccount-downloads-file.button:hover {
-  background: rgb(110, 82, 5) !important;
-}
 .download-remaining {
   --tw-font-weight: var(--font-weight-semibold) !important;
   font-weight: var(--font-weight-semibold) !important;
@@ -13268,6 +13264,10 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 }
 .woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods .payment-method-actions {
   text-align: right;
+}
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods tbody tr:last-child td {
+  margin-bottom: calc(var(--spacing) * 0) !important;
+  border-bottom-color: transparent !important;
 }
 @media (max-width: 768px) {
   .woocommerce-MyAccount-paymentMethods .woocommerce-MyAccount-paymentMethods {

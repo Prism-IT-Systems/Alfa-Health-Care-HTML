@@ -5486,7 +5486,7 @@ s
 }
 
 .alfa-my-account #place_order:hover {
-  @apply !bg-[#8b640c] !shadow-[0_6px_0_#dda619];
+  @apply !shadow-[0_6px_0_#dda619];
 }
 
 .woocommerce-notices-wrapper:empty {
@@ -5774,11 +5774,6 @@ th.woocommerce-table__product-table.product-total {
   background: #a17810 !important;
 }
 
-.woocommerce-order-downloads
-  .woocommerce-MyAccount-downloads-file.button:hover {
-  background: rgb(110, 82, 5) !important;
-}
-
 /* Special values styling */
 .download-remaining {
   @apply !font-semibold text-emerald-600;
@@ -5973,6 +5968,15 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   .payment-method-actions {
   @apply text-right;
 }
+
+.woocommerce-payment-methods
+  .woocommerce-MyAccount-paymentMethods
+  tbody
+  tr:last-child
+  td {
+  @apply !mb-0 !border-b-transparent;
+}
+
 
 /* ------------------ RESPONSIVE ------------------ */
 
