@@ -3607,6 +3607,12 @@ body.page-insurers .faq-section .faq-content {
   @apply flex flex-row flex-wrap items-center gap-0;
 }
 
+.woocommerce-payment-methods
+  .woocommerce-MyAccount-paymentMethods
+  .button.delete {
+  @apply px-5 py-3;
+}
+
 .woocommerce form.checkout_coupon,
 .woocommerce form.login,
 .woocommerce form.register {
@@ -5404,7 +5410,7 @@ s
 .page-my-account
   .woocommerce-orders-table
   span.woocommerce-Price-amount.amount {
-  @apply !text-[20px] font-semibold !text-[#a17810];
+  @apply !text-[20px] font-semibold !text-[#a17810] ml-auto mr-1.5;
 }
 .woocommerce-orders .woocommerce table.shop_table {
   @apply overflow-hidden;;

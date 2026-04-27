@@ -8852,6 +8852,10 @@ body.page-insurers .faq-section .faq-content {
   align-items: center;
   gap: calc(var(--spacing) * 0);
 }
+.woocommerce-payment-methods .woocommerce-MyAccount-paymentMethods .button.delete {
+  padding-inline: calc(var(--spacing) * 5);
+  padding-block: calc(var(--spacing) * 3);
+}
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
   margin: calc(var(--spacing) * 0) !important;
 }
@@ -12327,6 +12331,8 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   color: #555;
 }
 .page-my-account .woocommerce-orders-table span.woocommerce-Price-amount.amount {
+  margin-right: calc(var(--spacing) * 1.5);
+  margin-left: auto;
   font-size: 20px !important;
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
