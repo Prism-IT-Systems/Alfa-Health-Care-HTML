@@ -106,7 +106,7 @@
 
     /*Section Gloabl Spacing */
      section,footer {
-        @apply py-[60px] xl:py-[100px] px-5 lg:!px-7.5;
+        @apply py-[60px] xl:py-[100px] px-5 lg:px-7.5;
     }
 
     /* Global Field css */
@@ -3763,7 +3763,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .woocommerce-view-order .woocommerce-MyAccount-content p {
-  @apply pl-[0] md:pl-[30px]
+  @apply !pl-[16px];
 }
 
 .woocommerce-view-order .woocommerce-MyAccount-content .order-again {
@@ -5400,7 +5400,7 @@ s
 .page-my-account
   .woocommerce-orders-table
   span.woocommerce-Price-amount.amount {
-  @apply !text-[20px] font-semibold !text-[#a17810] ml-auto mr-1.5;
+  @apply !text-[20px] font-semibold !text-[#a17810] ml-auto mr-[4px];
 }
 .woocommerce-orders .woocommerce table.shop_table {
   @apply overflow-hidden;;
@@ -5469,10 +5469,10 @@ s
   background: #fff;
 }
 .page-my-account .woocommerce-order-details {
-  @apply !p-[0];
+  @apply !px-[16px] !py-[0];
 }
 .page-my-account .woocommerce-customer-details {
-  @apply !p-[0];
+  @apply !px-[16px] !py-[0];
 }
 
 .alfa-my-account #place_order:hover {
@@ -5555,7 +5555,7 @@ s
     @apply !flex !justify-between !items-center !px-0 !py-2.5 !border-b-[#eee] !border-[none] !border-b !border-dashed;
   }
   .woocommerce-orders-table td:last-child {
-    @apply !border-b-[none];
+    @apply !border-b-transparent;
   }
 
    /* LABEL (from data-title) */
@@ -5564,6 +5564,13 @@ s
   .woocommerce-orders-table th[scope="row"]::before {
     @apply !content-[attr(data-title)] !font-semibold !text-[#333];
   }
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+  .woocommerce table.shop_table td {
+    @apply w-[50px];
+  }
+}
+
 
 
   /* Fix order number (th doesn't always have data-title) */
@@ -5714,7 +5721,7 @@ th.woocommerce-table__product-table.product-total {
 /* Downloads */
 
 .woocommerce-order-downloads {
-  @apply !mx-0 !my-[30px] !p-[0];
+  @apply !mx-0 !my-[30px] !px-[16px] !py-[0];
 }
 
 .woocommerce-downloads .woocommerce-order-downloads {

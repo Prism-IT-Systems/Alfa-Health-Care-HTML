@@ -1743,7 +1743,7 @@
     padding-inline: calc(var(--spacing) * 5);
     padding-block: 60px;
     @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 7.5) !important;
+      padding-inline: calc(var(--spacing) * 7.5);
     }
     @media (width >= 80rem) {
       padding-block: 100px;
@@ -9056,10 +9056,7 @@ body.page-insurers .faq-section .faq-content {
   color: #6F5F4E;
 }
 .woocommerce-view-order .woocommerce-MyAccount-content p {
-  padding-left: 0;
-  @media (width >= 48rem) {
-    padding-left: 30px;
-  }
+  padding-left: 16px !important;
 }
 .woocommerce-view-order .woocommerce-MyAccount-content .order-again {
   padding-left: 0 !important;
@@ -12323,7 +12320,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   color: #555;
 }
 .page-my-account .woocommerce-orders-table span.woocommerce-Price-amount.amount {
-  margin-right: calc(var(--spacing) * 1.5);
+  margin-right: 4px;
   margin-left: auto;
   font-size: 20px !important;
   --tw-font-weight: var(--font-weight-semibold);
@@ -12397,10 +12394,12 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
   background: #fff;
 }
 .page-my-account .woocommerce-order-details {
-  padding: 0 !important;
+  padding-inline: 16px !important;
+  padding-block: 0 !important;
 }
 .page-my-account .woocommerce-customer-details {
-  padding: 0 !important;
+  padding-inline: 16px !important;
+  padding-block: 0 !important;
 }
 .alfa-my-account #place_order:hover {
   --tw-shadow: 0 6px 0 var(--tw-shadow-color, #dda619) !important;
@@ -12536,7 +12535,7 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
     padding-block: calc(var(--spacing) * 2.5) !important;
   }
   .woocommerce-orders-table td:last-child {
-    border-bottom-color: none !important;
+    border-bottom-color: transparent !important;
   }
   .woocommerce-orders-table td::before, .woocommerce-orders-table th[scope="row"]::before {
     --tw-font-weight: var(--font-weight-semibold) !important;
@@ -12544,6 +12543,11 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
     color: #333 !important;
     --tw-content: attr(data-title) !important;
     content: var(--tw-content) !important;
+  }
+  @media (min-width: 769px) and (max-width: 1440px) {
+    .woocommerce table.shop_table td {
+      width: 50px;
+    }
   }
   .woocommerce-orders-table th[scope="row"]::before {
     --tw-content: "Order" !important;
@@ -12856,7 +12860,8 @@ th.woocommerce-table__product-table.product-total {
 .woocommerce-order-downloads {
   margin-inline: calc(var(--spacing) * 0) !important;
   margin-block: 30px !important;
-  padding: 0 !important;
+  padding-inline: 16px !important;
+  padding-block: 0 !important;
 }
 .woocommerce-downloads .woocommerce-order-downloads {
   margin-block: 0 !important;
