@@ -2316,7 +2316,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   }
 
   .wc-block-cart .wc-block-cart__main table td .wc-block-components-product-metadata__description p {
-    @apply !text-sm leading-5 mb-[12px];
+    @apply !text-sm leading-5 !mb-[12px];
   }
 
   .wc-block-cart .wc-block-cart__main table td .wc-block-components-quantity-selector {
@@ -2410,7 +2410,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   }
 
   .wc-block-cart .wc-block-components-sidebar .wc-block-cart__submit {
-    @apply py-3.5 sm:px-8;
+    @apply !pl-[24px] !pr-[24px] !pt-[0] !pb-[24px] sm:!pb-[0];
   }
 
   .wc-block-cart  .wc-block-cart__submit-container .wc-block-cart__submit-button{
@@ -2751,7 +2751,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   }
 
   .woocommerce-order-overview {
-    @apply !m-0 !border flex;
+    @apply !m-0 !border flex rounded-[0_0_12px_12px];
   }
 
   .woocommerce-order-overview li {
@@ -2774,6 +2774,17 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   .woocommerce-order p {
     @apply p-[24px];
   }
+
+@media (max-width: 768px) {
+  .woocommerce-order-overview.order_details {
+    @apply flex overflow-x-auto;
+  }
+  .woocommerce-order-overview.order_details li {
+    @apply min-w-[200px] shrink-0 p-2.5;
+    background: #f9f9f9;
+  }
+}
+
 
   @media (max-width: 1024px) {
   .woocommerce-order .woocommerce-order-overview li {
@@ -5736,7 +5747,7 @@ th.woocommerce-table__product-table.product-total {
 }
 
 .page-checkout .woocommerce-order-downloads {
-  @apply !px-[0] !py-[0]
+  @apply !px-[0] !py-[0];
 }
 
 .woocommerce-downloads .woocommerce-order-downloads {
@@ -6070,7 +6081,7 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   @apply text-sm mt-3;
 }
 
-@media (min-width: 1281px) {
+@media (max-width: 1281px) {
 .woocommerce table.shop_table tbody th {
   @apply !border-t-transparent;
 }
@@ -6155,8 +6166,8 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 
 @media (max-width: 575px) {
   .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
-    @apply w-[3.5em] h-[3.5em];
-    mask-size: 3.5em;
+    @apply !w-[3.5em] !h-[3.5em];
+    mask-size: 3.5em !important;
   }
 }
 
