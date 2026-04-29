@@ -2543,11 +2543,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
   .wc-block-checkout__payment-method .wc-block-components-radio-control__label>span {
     @apply justify-between gap-4 text-base font-semibold shrink-0;
-  }
-
-  .wc-block-checkout__payment-method .wc-block-components-radio-control__label > span > span {
-      @apply !w-10 !h-10;
-  }  
+  } 
 
   .wc-block-checkout__payment-method .wc-block-components-radio-control-accordion-option .wc-block-components-radio-control__label img {
     @apply shrink-0 !object-center !w-full !h-full !max-h-none !object-cover border border-black/10 flex-1 rounded-md;
@@ -2594,12 +2590,12 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   }
 
   .wc-block-checkout__actions {
-    @apply bg-white px-10 pt-6 pb-6 rounded-b-xl border !border-solid !border-lightBeige !mb-0;
+    @apply bg-white  px-[0] sm:px-10 pt-6 pb-6 rounded-b-xl border !border-solid !border-lightBeige !mb-0;
   }
 
   .wc-block-components-checkout-place-order-button {
     @apply !py-3.5 !px-[36px] leading-5 inline-flex items-center justify-center gap-[5px] rounded-full text-base leading-6 font-medium cursor-pointer
-           duration-300 ease-in-out bg-SunlitGold hover:bg-WarmMarigold max-w-[200px] flex-1;
+           duration-300 ease-in-out bg-SunlitGold hover:shadow-[0_6px_0px_#dda619] max-w-[200px] flex-1;
     @apply after:content-[""] after:bg-[url(../images/arrow-right-02-stroke-rounded.svg)] after:bg-no-repeat after:bg-size-[24px] after:w-6 after:h-6;
   }
 
@@ -2750,7 +2746,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
   .woocommerce-order p.woocommerce-thankyou-order-received {
     @apply relative pl-10 gap-3;
-    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center shrink-0 ;
+    @apply before:content-[''] before:inline-block before:w-9 before:h-9 before:rounded-full before:bg-green-600 before:bg-no-repeat before:bg-center before:shrink-0 ;
     @apply before:bg-[length:18px_18px] before:bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222.5%22%3E%3Cpolyline%20points%3D%2220%206%209%2017%204%2012%22%2F%3E%3C%2Fsvg%3E')];
   }
 
@@ -2764,7 +2760,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
   .woocommerce ul.order_details li strong,
   .page-checkout .product-category-section .woocommerce-Price-amount {
-    @apply !text-[26px] leading-[30px] break-words break-all;
+    @apply !text-[18px] leading-[26px] break-words break-all;
   }
 
   .woocommerce-order-overview + p {
@@ -2772,7 +2768,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   }
 
   .woocommerce-order-overview li {
-    @apply gap-[10px];
+    @apply gap-[6px] lg:gap-[10px];
   }
 
   .woocommerce-order p {
@@ -2813,11 +2809,11 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
 
 
   .woocommerce-order .woocommerce-order-details {
-    @apply !px-0 !py-10;
+    @apply !px-[0] !py-[0];
   }
 
   .woocommerce-order .woocommerce-customer-details {
-    @apply !px-0 !py-10;
+    @apply !px-[0] !py-[0];
   }
 
    .woocommerce-order .woocommerce-customer-details h2.woocommerce-column__title {
@@ -5737,6 +5733,10 @@ th.woocommerce-table__product-table.product-total {
 
 .woocommerce-order-downloads {
   @apply !mx-0 !my-[30px] !px-[16px] !py-[0];
+}
+
+.page-checkout .woocommerce-order-downloads {
+  @apply !px-[0] !py-[0]
 }
 
 .woocommerce-downloads .woocommerce-order-downloads {
