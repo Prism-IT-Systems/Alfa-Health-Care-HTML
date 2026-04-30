@@ -9334,8 +9334,8 @@ body.page-insurers .faq-section .faq-content {
   --tw-border-style: solid;
   border-style: solid;
   border-color: #DDD5C9;
-  padding-inline: calc(var(--spacing) * 3.5);
-  padding-block: 13px;
+  padding-inline: calc(var(--spacing) * 3.5) !important;
+  padding-block: 13px !important;
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   transition-property: all;
