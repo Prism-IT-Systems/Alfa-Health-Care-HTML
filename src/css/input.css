@@ -6173,6 +6173,12 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   @apply !px-[26px];
 }
 
+@media (min-width: 1282px) and (max-width: 1440px) {
+  .woocommerce-orders .woocommerce table.shop_table tbody th {
+    @apply w-[50px];
+  }
+}
+
 .woocommerce-checkout .woocommerce {
   @apply !pb-[0];
 }

@@ -13580,6 +13580,11 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 .woocommerce-checkout .wc-block-components-totals-wrapper {
   padding-inline: 26px !important;
 }
+@media (min-width: 1282px) and (max-width: 1440px) {
+  .woocommerce-orders .woocommerce table.shop_table tbody th {
+    width: 50px;
+  }
+}
 .woocommerce-checkout .woocommerce {
   padding-bottom: 0 !important;
 }
