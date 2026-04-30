@@ -12399,6 +12399,13 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
 .page-my-account .woocommerce-MyAccount-content {
   padding: calc(var(--spacing) * 0);
 }
+@media (max-width: 1280px) {
+  .page-my-account .woocommerce-MyAccount-content {
+    padding-block: calc(var(--spacing) * 0) !important;
+    padding-right: calc(var(--spacing) * 0) !important;
+    padding-left: calc(var(--spacing) * 4) !important;
+  }
+}
 .page-sitemap .sitemap-section li:last-child {
   margin-bottom: 0;
 }
@@ -12586,17 +12593,17 @@ s .woocommerce-view-order .product-total .woocommerce-Price-amount {
     --tw-content: attr(data-title) !important;
     content: var(--tw-content) !important;
   }
-  @media (min-width: 769px) and (max-width: 1440px) {
-    .woocommerce table.shop_table td {
-      width: 50px;
-    }
-  }
   .woocommerce-orders-table th[scope="row"]::before {
     --tw-content: "Order" !important;
     content: var(--tw-content) !important;
   }
   .woocommerce-orders-table__cell-order-actions {
     justify-content: flex-start !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .woocommerce table.shop_table td {
+    width: 50px;
   }
 }
 .mobility-aid-comparison {
@@ -12902,7 +12909,7 @@ th.woocommerce-table__product-table.product-total {
 .woocommerce-order-downloads {
   margin-inline: calc(var(--spacing) * 0) !important;
   margin-block: 30px !important;
-  padding-inline: 16px !important;
+  padding-inline: 0 !important;
   padding-block: 0 !important;
 }
 .page-checkout .woocommerce-order-downloads {
