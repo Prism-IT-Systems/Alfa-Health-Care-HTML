@@ -5784,7 +5784,7 @@ th.woocommerce-table__product-table.product-total {
 
 /* Row hover */
 .woocommerce-order-downloads tbody tr {
-  @apply !transition-[background] !duration-[0.25s] !ease-[ease];
+  @apply !transition-[background] !duration-[0.25s] !ease-[ease] !bg-white;
 }
 
 .woocommerce-order-downloads tbody tr:hover {
@@ -6167,6 +6167,14 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 
 :root :where(.wp-block-separator.is-style-dots):before {
   @apply !hidden;
+}
+
+.woocommerce-checkout .wc-block-components-totals-wrapper {
+  @apply !px-[26px];
+}
+
+.woocommerce-checkout .woocommerce {
+  @apply !pb-[0];
 }
 
 @media (max-width: 575px) {

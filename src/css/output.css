@@ -12955,6 +12955,7 @@ th.woocommerce-table__product-table.product-total {
   color: var(--color-gray-600);
 }
 .woocommerce-order-downloads tbody tr {
+  background-color: var(--color-white) !important;
   transition-property: background !important;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function)) !important;
   transition-duration: var(--tw-duration, var(--default-transition-duration)) !important;
@@ -13575,6 +13576,12 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 }
 :root :where(.wp-block-separator.is-style-dots):before {
   display: none !important;
+}
+.woocommerce-checkout .wc-block-components-totals-wrapper {
+  padding-inline: 26px !important;
+}
+.woocommerce-checkout .woocommerce {
+  padding-bottom: 0 !important;
 }
 @media (max-width: 575px) {
   .wc-block-cart__empty-cart__title.with-empty-cart-icon:before {
