@@ -2609,6 +2609,11 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   @apply !text-[#a17810];
   }
 
+  .woocommerce-cart .empty-cart-btn:hover {
+     @apply shadow-[var(--tw-inset-shadow),var(--tw-inset-ring-shadow),var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)];
+     --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+  }
+
   .wc-block-components-checkout-return-to-cart-button:hover::before {
   @apply brightness-0 saturate-[100%] invert-[56%] sepia-[52%] saturate-[520%] hue-rotate-[7deg] brightness-[95%] contrast-[90%];
   }

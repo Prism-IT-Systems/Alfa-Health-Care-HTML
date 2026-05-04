@@ -6872,6 +6872,11 @@
   .wc-block-components-checkout-return-to-cart-button:hover {
     color: #a17810 !important;
   }
+  .woocommerce-cart .empty-cart-btn:hover {
+    --tw-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    --tw-shadow: 0 6px 0px var(--tw-shadow-color, #dda619);
+  }
   .wc-block-components-checkout-return-to-cart-button:hover::before {
     --tw-brightness: brightness(0%);
     --tw-brightness: brightness(95%);
