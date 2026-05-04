@@ -6829,6 +6829,13 @@
     line-height: var(--leading-6) !important;
     --tw-font-weight: var(--font-weight-medium) !important;
     font-weight: var(--font-weight-medium) !important;
+    transition-property: 0.3s;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: all;
+    transition-duration: all;
+    --tw-ease: ease-in-out;
+    transition-timing-function: ease-in-out;
     &::before {
       content: var(--tw-content);
       display: inline-block;
@@ -6861,6 +6868,20 @@
       content: var(--tw-content);
       rotate: 180deg;
     }
+  }
+  .wc-block-components-checkout-return-to-cart-button:hover {
+    color: #a17810 !important;
+  }
+  .wc-block-components-checkout-return-to-cart-button:hover::before {
+    --tw-brightness: brightness(0%);
+    --tw-brightness: brightness(95%);
+    --tw-contrast: contrast(90%);
+    --tw-hue-rotate: hue-rotate(7deg);
+    --tw-invert: invert(56%);
+    --tw-saturate: saturate(100%);
+    --tw-saturate: saturate(520%);
+    --tw-sepia: sepia(52%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .wc-block-components-checkout-return-to-cart-button svg, .wc-blocks-components-select .wc-blocks-components-select__expand {
     display: none;
@@ -13663,6 +13684,12 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: #d63638;
+}
+.wc-block-cart .wc-block-cart__main table td .wc-block-cart-item__quantity .wc-block-cart-item__remove-link:hover::before {
+  --tw-brightness: brightness(0%) !important;
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,) !important;
+  --tw-invert: invert(1);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 }
 .insurance-advantage .advantage-list {
   display: grid;
