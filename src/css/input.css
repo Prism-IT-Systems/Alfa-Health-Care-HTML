@@ -33,7 +33,7 @@
     }
 
     html,body{
-        @apply overflow-x-hidden;
+        @apply overflow-x-clip;
     }
 
     body{
@@ -404,7 +404,7 @@ select:focus {
 @layer components {
 
 header.main-header {
-  @apply relative top-0 z-[99999]; 
+  @apply sticky top-0 z-[99999]; 
 }
 
  header.main-header * {
