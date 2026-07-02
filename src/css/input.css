@@ -6364,3 +6364,46 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   }
 }
 
+/* latest changes */
+
+.product-category-section .alfa-product-card {
+  @apply relative bg-pureWhite flex flex-col h-full shadow-[0px_2px_12px_-2px_rgba(66,51,36,0.06)] rounded-2xl overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0px_2px_24px_-2px_rgba(66,51,36,0.25)] ;
+}
+
+.product-category-section .alfa-product-detail {
+  @apply  relative px-[20px] py-[20px] w-full bg-[#fff];
+}
+
+.product-category-section .alfa-product-desc {
+  @apply flex justify-between items-center border-b border-b-[rgba(132,115,98,0.35)] mb-[18px] pb-[16px];
+}
+
+.product-category-section .alfa-product-desc {
+  @apply capitalize tracking-wide text-lg font-bold;
+}
+
+.product-category-section .alfa-add-to-cart {
+  @apply inline-flex items-center justify-center w-full
+          sm:w-[238px]
+          bg-[#A17810] hover:bg-yellow-600
+          text-white
+          px-[32px]
+          lg:px-[64px] py-[8px]
+          rounded-full
+          text-sm font-medium
+          transition gap-[8px];
+}
+
+.product-category-section .alfa-view-detail {
+  @apply inline-flex items-center justify-center
+          w-full
+          sm:w-[142px]
+          bg-white
+          text-[#a17810]
+          pt-[8px] pb-[8px]
+          pl-[30px] pr-[30px]
+          rounded-full
+          text-sm font-medium
+          hover:bg-gray-200
+          transition gap-[8px] border border-[#a17810];
+}
