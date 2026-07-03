@@ -13995,19 +13995,18 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 }
 .product-category-section .alfa-product-detail {
   position: relative;
+  display: flex;
   width: 100%;
+  flex: 1;
+  flex-direction: column;
   background-color: #fff;
   padding-inline: 20px;
   padding-block: 20px;
 }
 .product-category-section .alfa-product-desc {
-  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom-style: var(--tw-border-style);
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(132,115,98,0.35);
   padding-bottom: 16px;
 }
 .product-category-section .alfa-product-desc {
@@ -14079,6 +14078,20 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   }
   @media (width >= 40rem) {
     width: 142px;
+  }
+}
+.product-category-section .alfa-product-btn {
+  margin-top: auto !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  border-top-style: var(--tw-border-style);
+  border-top-width: 1px;
+  border-top-color: rgba(132,115,98,0.35);
+  padding-top: 16px;
+  @media (width >= 40rem) {
+    flex-direction: row;
   }
 }
 @layer base {

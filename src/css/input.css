@@ -6371,11 +6371,11 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 }
 
 .product-category-section .alfa-product-detail {
-  @apply  relative px-[20px] py-[20px] w-full bg-[#fff];
+  @apply  relative px-[20px] py-[20px] w-full bg-[#fff] flex flex-col flex-1;
 }
 
 .product-category-section .alfa-product-desc {
-  @apply flex justify-between items-center border-b border-b-[rgba(132,115,98,0.35)] mb-[18px] pb-[16px];
+  @apply flex justify-between items-center pb-[16px];
 }
 
 .product-category-section .alfa-product-desc {
@@ -6406,4 +6406,8 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
           text-sm font-medium
           hover:bg-gray-200
           transition gap-[8px] border border-[#a17810];
+}
+
+.product-category-section .alfa-product-btn {
+  @apply flex flex-col sm:flex-row gap-[7px] justify-center pt-[16px] !mt-auto border-t border-t-[rgba(132,115,98,0.35)];
 }
