@@ -4183,7 +4183,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .woocommerce a.added_to_cart {
-   @apply flex text-[14px] order-1 text-white border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-[30px] py-[8px] rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
+   @apply flex text-[14px] order-1 text-[#a17810] border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-[30px] py-[8px] rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
 }
 
 /* Referrals Page */
@@ -6409,5 +6409,5 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 }
 
 .product-category-section .alfa-product-btn {
-  @apply flex flex-col sm:flex-row gap-[7px] justify-center pt-[16px] !mt-auto border-t border-t-[rgba(132,115,98,0.35)];
+  @apply flex flex-col sm:flex-row gap-[7px] justify-center pt-[16px] !mt-auto border-t border-t-[rgba(132,115,98,0.35)] flex-wrap;
 }
