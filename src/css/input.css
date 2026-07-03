@@ -4183,7 +4183,7 @@ body.page-insurers .faq-section .faq-content {
 }
 
 .woocommerce a.added_to_cart {
-   @apply flex text-[14px] order-1 text-[#a17810] border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-[30px] py-[8px] rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
+   @apply flex text-[14px] order-1 !text-[#a17810] border w-full sm:w-fit items-center transition-[0.2s] duration-[ease-in-out] justify-center px-[30px] py-[8px] rounded-full border-solid border-[#a17810] hover:bg-[#a17810] ;
 }
 
 /* Referrals Page */

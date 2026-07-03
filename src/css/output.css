@@ -9840,7 +9840,7 @@ body.page-insurers .faq-section .faq-content {
   padding-inline: 30px;
   padding-block: 8px;
   font-size: 14px;
-  color: #a17810;
+  color: #a17810 !important;
   transition-property: 0.2s;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
