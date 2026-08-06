@@ -14095,6 +14095,63 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
     flex-direction: row;
   }
 }
+.product-detail-page-section .woocommerce-variation-add-to-cart {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: calc(var(--spacing) * 4);
+}
+.product-detail-page-section div.product form.cart div.quantity {
+  margin-right: calc(var(--spacing) * 0) !important;
+}
+.product-detail-page-section div.product form.cart .variations select {
+  margin-right: calc(var(--spacing) * 0) !important;
+  min-width: 100% !important;
+  border-radius: 7px;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: #cfc6b8;
+  background: #f5f1ea !important;
+}
+.product-detail-page-section div.product form.cart .variations {
+  margin-bottom: calc(var(--spacing) * 0) !important;
+}
+.product-detail-page-section div.product form.cart .variations tr, .product-detail-page-section div.product form.cart .variations td {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(var(--spacing) * 4);
+}
+.product-detail-page-section .woocommerce-variation-price {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+.product-detail-page-section div.product form.cart .variations th.label {
+  white-space: nowrap;
+}
+.product-detail-page-section div.product form.cart .value .reset_variations {
+  border-radius: var(--radius-md);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: #a17810;
+  padding-inline: calc(var(--spacing) * 3);
+  padding-block: calc(var(--spacing) * 2);
+}
+@media (max-width: 1290px) {
+  .product-detail-page-section div.product form.cart .variations tr, .product-detail-page-section div.product form.cart .variations td {
+    flex-wrap: wrap;
+  }
+}
+@media only (max-width: 1024px) {
+  .product-detail-page-section div.product form.cart .button {
+    padding: calc(var(--spacing) * 3) !important;
+  }
+}
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
     position: absolute;
