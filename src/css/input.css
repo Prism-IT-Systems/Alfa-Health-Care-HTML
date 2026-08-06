@@ -6440,6 +6440,11 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 .product-detail-page-section div.product form.cart .value .reset_variations {
   @apply border px-3 py-2 rounded-md border-solid border-[#a17810];
 }
+
+.product-detail-page-section .single_variation_wrap {
+  @apply !w-full;
+}
+
 @media (max-width: 1290px) {
   .product-detail-page-section div.product form.cart .variations tr,
   .product-detail-page-section div.product form.cart .variations td {

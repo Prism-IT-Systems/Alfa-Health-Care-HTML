@@ -14142,6 +14142,9 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   padding-inline: calc(var(--spacing) * 3);
   padding-block: calc(var(--spacing) * 2);
 }
+.product-detail-page-section .single_variation_wrap {
+  width: 100% !important;
+}
 @media (max-width: 1290px) {
   .product-detail-page-section div.product form.cart .variations tr, .product-detail-page-section div.product form.cart .variations td {
     flex-wrap: wrap;
