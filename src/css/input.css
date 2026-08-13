@@ -6456,3 +6456,15 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
     @apply !p-3;
   }
 }
+
+
+/* 13-08-2026 */
+
+.main-footer .footer-bottom {
+  @apply flex justify-between items-center flex-col sm:flex-row;
+}
+
+.main-footer .footer-bottom .website-credit p {
+  @apply text-sm font-normal leading-5;
+}
+

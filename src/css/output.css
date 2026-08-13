@@ -14155,6 +14155,23 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
     padding: calc(var(--spacing) * 3) !important;
   }
 }
+.main-footer .footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media (width >= 40rem) {
+    flex-direction: row;
+  }
+}
+.main-footer .footer-bottom .website-credit p {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  --tw-leading: var(--leading-5);
+  line-height: var(--leading-5);
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+}
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
     position: absolute;
