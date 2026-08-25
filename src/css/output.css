@@ -10724,6 +10724,9 @@ form.form-loading {
   --tw-leading: 23.6px;
   line-height: 23.6px;
 }
+.product-detail-page-section div.product form.cart .value .reset_variations[style*="visibility: hidden"] {
+  display: none;
+}
 .woocommerce div.product form.cart {
   margin-bottom: 0 !important;
 }
@@ -14107,6 +14110,7 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
 }
 .product-detail-page-section div.product form.cart .variations select {
   margin-right: calc(var(--spacing) * 0) !important;
+  width: 75%;
   min-width: 100% !important;
   border-radius: 7px;
   border-style: var(--tw-border-style);
