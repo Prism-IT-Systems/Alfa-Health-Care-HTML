@@ -2865,6 +2865,120 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     @apply mb-6 sm:mb-[38px];
 }
 
+/* 14-09-2026 */
+/* By Namrata */
+/* =========================================
+   THERAPEUTIC FOOTWEAR
+   ========================================= */
+.therapeutic-footwear-section .text-badge {
+  @apply inline-block text-lg leading-[1.2] px-4 py-2; /* margin-bottom: 12px; */
+}
+
+/* =========================================
+   MAIN HEADING
+   ========================================= */
+.therapeutic-footwear-section .heading-wrap h2 {
+  @apply text-[clamp(32px,3.2vw,45px)] leading-[1.15] font-bold; /* margin-bottom: 15px; */
+}
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+.therapeutic-footwear-section .heading-wrap p {
+  @apply text-[#222] text-lg leading-[1.6];
+}
+
+/* =========================================
+   PROPET / DR. COMFORT / ANODYNE
+   ========================================= */
+.therapeutic-footwear-section .tabs-links {
+  @apply flex justify-center items-center flex-wrap gap-4;
+}
+.therapeutic-footwear-section .tabs-links .cta {
+  @apply min-w-[125px] min-h-[48px] text-xl leading-[1.2] font-bold;
+}
+
+/* =========================================
+   SHOE SIZE FORM BUTTON
+   ========================================= */
+.therapeutic-footwear-section .action-cta-wrap {
+  @apply mt-[30px];
+}
+.therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+  @apply min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
+}
+.therapeutic-footwear-section .action-cta-wrap .open-shoe-popup svg {
+  @apply w-6 h-6 shrink-0;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+@media (max-width: 991px) {
+  .therapeutic-footwear-section .text-badge {
+    @apply text-[15px] px-[15px] py-[7px];
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    @apply text-[38px];
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    @apply text-[17px];
+  }
+  .therapeutic-footwear-section .tabs-links {
+    @apply gap-3;
+  }
+  .therapeutic-footwear-section .tabs-links .cta {
+    @apply min-w-[140px] min-h-[55px] text-[17px];
+  }
+  .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+    @apply min-h-[58px] text-[17px];
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+@media (max-width: 767px) {
+  .therapeutic-footwear-section .text-badge {
+    @apply text-sm px-3.5 py-[7px]; /* margin-bottom: 10px; */
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    @apply text-3xl leading-[1.2]; /* margin-bottom: 12px; */
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    @apply text-base leading-normal text-[#222]; /* margin-bottom: 22px; */
+  } /* Brand buttons */
+  .therapeutic-footwear-section .tabs-links {
+    @apply w-full flex-col gap-3;
+  }
+  .therapeutic-footwear-section .tabs-links .cta {
+    @apply min-w-full min-h-[46px] text-[15px];
+  } /* Shoe Size Form Button */
+  .therapeutic-footwear-section .action-cta-wrap {
+    @apply mt-[25px];
+  }
+  .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+    @apply w-full min-h-[58px] text-[17px];
+  }
+}
+@media (max-width: 480px) {
+  .therapeutic-footwear-section .text-badge {
+    @apply text-[13px] px-3 py-1.5;
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    @apply text-[27px];
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    @apply text-[15px];
+  }
+  .therapeutic-footwear-section .tabs-links .cta {
+    @apply max-w-full min-h-[54px] text-base;
+  }
+  .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+    @apply min-h-[56px] text-base;
+  }
+}
+
 .split-info-wrap {  
     @apply gap-8.5 sm:gap-16 justify-between flex-col xl:flex-row;
 }
