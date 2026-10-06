@@ -14325,6 +14325,105 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   --tw-font-weight: var(--font-weight-normal);
   font-weight: var(--font-weight-normal);
 }
+.alternative-payment-buttons {
+  margin-bottom: calc(var(--spacing) * 3);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 3);
+}
+.payment-wallet-button {
+  box-sizing: border-box;
+  display: flex;
+  height: 52px;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  --tw-border-style: solid;
+  border-style: solid;
+  border-color: #dadce0;
+  padding-inline: calc(var(--spacing) * 3);
+  padding-block: calc(var(--spacing) * 2);
+  text-decoration-line: none;
+  --tw-shadow: 0 1px 3px var(--tw-shadow-color, rgba(0,0,0,0.15));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.2s;
+  transition-duration: 0.2s;
+  --tw-ease: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #fff;
+}
+.payment-wallet-button:hover, .payment-wallet-button:focus-visible {
+  --tw-shadow: 0 2px 6px var(--tw-shadow-color, rgba(0,0,0,0.25));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  background: #f6f6f6;
+}
+.payment-wallet-button svg {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+}
+.google-pay-button svg {
+  height: 34px;
+}
+.apple-pay-button svg {
+  height: calc(var(--spacing) * 10);
+}
+.amazon-pay-button {
+  padding-inline: calc(var(--spacing) * 3);
+  padding-block: 3px;
+}
+.amazon-pay-button svg {
+  height: 100%;
+  width: auto;
+}
+.footer-pay-button {
+  display: flex;
+  height: calc(var(--spacing) * 12);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-black);
+  text-decoration-line: none;
+  transition-property: background-color;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 0.2s;
+  transition-duration: 0.2s;
+  --tw-ease: ease-in-out;
+  transition-timing-function: ease-in-out;
+  background: #dfb03a;
+}
+.footer-pay-button:hover, .footer-pay-button:focus {
+  color: var(--color-black);
+  background: #c99d2e;
+}
+.footer-pay-note {
+  margin-top: calc(var(--spacing) * 2);
+}
+.screen-reader-text {
+  position: absolute;
+  margin: -1px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  border-style: var(--tw-border-style);
+  border-width: 0px;
+  padding: calc(var(--spacing) * 0);
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
 @layer base {
   .tooltip-arrow,.tooltip-arrow:before {
     position: absolute;
