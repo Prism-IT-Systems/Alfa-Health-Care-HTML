@@ -6631,8 +6631,476 @@ label.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-f
   @apply mt-2;
 }
 
-
 .screen-reader-text {
   @apply absolute w-px h-px overflow-hidden whitespace-nowrap -m-px p-0 border-0;
   clip: rect(0, 0, 0, 0);
+}
+
+body.postid-14046 .variations tr + tr .label,
+body.postid-14046 .variations tr + tr .value {
+  @apply pt-2;
+}
+
+/* =========================================
+   HEADER LOGIN BUTTON - RIGHT OF SEARCH
+   ========================================= */
+.navigation-bar-inner {
+  @apply relative flex items-center;
+}
+
+/* Login item */
+.navigation-menu-list .login-menu-item {
+  @apply absolute -translate-y-2/4 m-0 p-0 right-0 top-2/4;
+  list-style: none !important;
+}
+
+/* Login button */
+.navigation-menu-list .login-menu-item > a {
+  @apply inline-flex items-center justify-center min-w-[86px] h-12 text-white border text-base font-semibold leading-none no-underline shadow-none m-0 px-5 py-0 rounded-3xl border-solid border-[#B8890B];
+  background: #b8890b !important;
+}
+
+/* Remove theme underline */
+.navigation-menu-list .login-menu-item::before,
+.navigation-menu-list .login-menu-item::after,
+.navigation-menu-list .login-menu-item > a::before,
+.navigation-menu-list .login-menu-item > a::after {
+  @apply hidden content-none;
+}
+
+/* Hover */
+.navigation-menu-list .login-menu-item > a:hover,
+.navigation-menu-list .login-menu-item > a:focus {
+  @apply text-white shadow-none border-[#9F7608];
+  background: #9f7608 !important;
+  transform: none !important;
+}
+
+/* =========================================
+   SEARCH
+   ========================================= */
+.navigation-bar-inner .search-form {
+  @apply ml-4 mr-[100px];
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+.mobile-menu-list .login-menu-item {
+  @apply static mt-3 mb-2.5 mx-0 p-0;
+  transform: none !important;
+}
+.mobile-menu-list .login-menu-item > a {
+  @apply flex items-center justify-center w-[calc(100%_-_30px)] min-h-[46px] text-white border text-base font-semibold leading-none text-center mx-[15px] my-0 px-5 py-0 rounded-3xl border-solid border-[#B8890B];
+  background: #b8890b !important;
+}
+.mobile-menu-list .login-menu-item::before,
+.mobile-menu-list .login-menu-item::after,
+.mobile-menu-list .login-menu-item > a::before,
+.mobile-menu-list .login-menu-item > a::after {
+  @apply hidden content-none;
+}
+.mobile-menu-list .login-menu-item > a:hover,
+.mobile-menu-list .login-menu-item > a:focus {
+  @apply text-white border-[#9F7608];
+  background: #9f7608 !important;
+}
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  @apply float-none w-[48%];
+}
+
+/* =========================================
+   THERAPEUTIC FOOTWEAR
+   ========================================= */
+.therapeutic-footwear-section .text-badge {
+  @apply inline-block text-lg leading-[1.2] px-4 py-2 inline-block text-lg leading-[1.2] px-4 py-2;
+
+  /* margin-bottom: 12px; */
+}
+
+/* =========================================
+   MAIN HEADING
+   ========================================= */
+.therapeutic-footwear-section .heading-wrap h2 {
+  @apply text-[clamp(32px,3.2vw,45px)] leading-[1.15] font-bold text-[clamp(32px,3.2vw,45px)] leading-[1.15] font-bold;
+
+  /* margin-bottom: 15px; */
+}
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+.therapeutic-footwear-section .heading-wrap p {
+  @apply text-[#222] text-lg leading-[1.6] text-[#222] text-lg leading-[1.6];
+}
+
+/* =========================================
+   PROPET / DR. COMFORT / ANODYNE
+   ========================================= */
+.therapeutic-footwear-section .tabs-links {
+  @apply flex justify-center items-center flex-wrap gap-4 flex justify-center items-center flex-wrap gap-4;
+}
+.therapeutic-footwear-section .tabs-links .cta {
+  @apply min-w-[125px] min-h-[48px] text-xl leading-[1.2] font-bold min-w-[125px] min-h-[48px] text-xl leading-[1.2] font-bold;
+}
+
+/* =========================================
+   SHOE SIZE FORM BUTTON
+   ========================================= */
+.therapeutic-footwear-section .action-cta-wrap {
+  @apply mt-[30px] mt-[30px];
+}
+.therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+  @apply min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5 min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
+}
+.therapeutic-footwear-section .action-cta-wrap .open-shoe-popup svg {
+  @apply w-6 h-6 shrink-0 w-6 h-6 shrink-0;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+@media (max-width: 991px) {
+  .therapeutic-footwear-section .text-badge {
+    @apply text-[15px] px-[15px] py-[7px] text-[15px] px-[15px] py-[7px];
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    @apply text-[38px] text-[38px];
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    @apply text-[17px] text-[17px];
+  }
+  .therapeutic-footwear-section .tabs-links {
+    @apply gap-3 gap-3;
+  }
+  .therapeutic-footwear-section .tabs-links .cta {
+    @apply min-w-[140px] min-h-[55px] text-[17px] min-w-[140px] min-h-[55px] text-[17px];
+  }
+  .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+    @apply min-h-[58px] text-[17px] min-h-[58px] text-[17px];
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+@media (max-width: 767px) {
+  .therapeutic-footwear-section .text-badge {
+    @apply text-sm px-3.5 py-[7px] text-sm px-3.5 py-[7px];
+
+    /* margin-bottom: 10px; */
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    @apply text-3xl leading-[1.2] text-3xl leading-[1.2];
+
+    /* margin-bottom: 12px; */
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    @apply text-base leading-normal text-[#222] text-base leading-normal text-[#222];
+
+    /* margin-bottom: 22px; */
+  }
+
+  /* Brand buttons */
+  .therapeutic-footwear-section .tabs-links {
+    @apply w-full flex-col gap-3 w-full flex-col gap-3;
+  }
+  .therapeutic-footwear-section .tabs-links .cta {
+    @apply min-w-full min-h-[46px] text-[15px] min-w-full min-h-[46px] text-[15px];
+  }
+
+  /* Shoe Size Form Button */
+  .therapeutic-footwear-section .action-cta-wrap {
+    @apply mt-[25px] mt-[25px];
+  }
+  .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+    @apply w-full min-h-[58px] text-[17px] w-full min-h-[58px] text-[17px];
+  }
+}
+@media (max-width: 480px) {
+  .therapeutic-footwear-section .text-badge {
+    @apply text-[13px] px-3 py-1.5 text-[13px] px-3 py-1.5;
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    @apply text-[27px] text-[27px];
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    @apply text-[15px] text-[15px];
+  }
+  .therapeutic-footwear-section .tabs-links .cta {
+    @apply max-w-full min-h-[54px] text-base max-w-full min-h-[54px] text-base;
+  }
+  .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
+    @apply min-h-[56px] text-base min-h-[56px] text-base;
+  }
+}
+
+/* =========================================
+   COMPRESSION THERAPY
+   ========================================= */
+
+/* Badge */
+.compression-therapy-section .text-badge {
+  @apply inline-block text-lg leading-[1.2] px-4 py-2 inline-block text-lg leading-[1.2] px-4 py-2;
+}
+
+/* Main Heading */
+.compression-therapy-section .heading-wrap h2 {
+  @apply text-[clamp(32px,3.2vw,45px)] leading-[1.15] font-bold text-[clamp(32px,3.2vw,45px)] leading-[1.15] font-bold;
+}
+
+/* Description */
+.compression-therapy-section .heading-wrap p {
+  @apply text-[#222] text-lg leading-[1.6] text-[#222] text-lg leading-[1.6];
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+@media (max-width: 991px) {
+  .compression-therapy-section .text-badge {
+    @apply text-[15px] px-[15px] py-[7px] text-[15px] px-[15px] py-[7px];
+  }
+  .compression-therapy-section .heading-wrap h2 {
+    @apply text-[38px] text-[38px];
+  }
+  .compression-therapy-section .heading-wrap p {
+    @apply text-[17px] text-[17px];
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+@media (max-width: 767px) {
+  .compression-therapy-section .text-badge {
+    @apply text-sm px-3.5 py-[7px] text-sm px-3.5 py-[7px];
+  }
+  .compression-therapy-section .heading-wrap h2 {
+    @apply text-3xl leading-[1.2] text-3xl leading-[1.2];
+  }
+  .compression-therapy-section .heading-wrap p {
+    @apply text-base leading-normal text-[#222] text-base leading-normal text-[#222];
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+@media (max-width: 480px) {
+  .compression-therapy-section .text-badge {
+    @apply text-[13px] px-3 py-1.5 text-[13px] px-3 py-1.5;
+  }
+  .compression-therapy-section .heading-wrap h2 {
+    @apply text-[27px] text-[27px];
+  }
+  .compression-therapy-section .heading-wrap p {
+    @apply text-[15px] text-[15px];
+  }
+}
+
+/* =========================================
+   COMPRESSION THERAPY BUTTONS
+   ========================================= */
+.compression-therapy-section .action-cta-wrap {
+  @apply flex gap-[15px] flex-wrap flex gap-[15px] flex-wrap flex items-stretch gap-3.5 w-full flex-nowrap;
+}
+.compression-therapy-section .action-cta-wrap a,
+.compression-therapy-section .action-cta-wrap button {
+  @apply text-base leading-[1.2] min-h-[50px] inline-flex items-center justify-center transition-all duration-[0.3s] ease-[ease] px-6 py-3.5 text-base leading-[1.2] min-h-[50px] inline-flex items-center justify-center transition-all duration-[0.3s] ease-[ease] px-6 py-3.5;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .compression-therapy-section .action-cta-wrap a,
+  .compression-therapy-section .action-cta-wrap button {
+    @apply text-[15px] min-h-[48px] px-[22px] py-[13px] text-[15px] min-h-[48px] px-[22px] py-[13px];
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .compression-therapy-section .action-cta-wrap {
+    @apply gap-2.5 gap-2.5 flex-col gap-3 w-full;
+  }
+  .compression-therapy-section .action-cta-wrap a,
+  .compression-therapy-section .action-cta-wrap button {
+    @apply text-sm min-h-[46px] px-5 py-3 text-sm min-h-[46px] px-5 py-3;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .compression-therapy-section .action-cta-wrap {
+    @apply flex-col w-full flex-col w-full;
+  }
+  .compression-therapy-section .action-cta-wrap a,
+  .compression-therapy-section .action-cta-wrap button {
+    @apply w-full w-full;
+  }
+}
+
+/* =========================================
+   THERAPEUTIC FOOTWEAR
+   ========================================= */
+.therapeutic-footwear-section .text-badge {
+  /* margin-bottom: 12px; */
+}
+
+/* =========================================
+   MAIN HEADING
+   ========================================= */
+.therapeutic-footwear-section .heading-wrap h2 {
+  /* margin-bottom: 15px; */
+}
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+/* =========================================
+   PROPET / DR. COMFORT / ANODYNE
+   ========================================= */
+
+/* =========================================
+   SHOE SIZE FORM BUTTON
+   ========================================= */
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+/* =========================================
+   MOBILE
+   ========================================= */
+@media (max-width: 767px) {
+  .therapeutic-footwear-section .text-badge {
+    /* margin-bottom: 10px; */
+  }
+  .therapeutic-footwear-section .heading-wrap h2 {
+    /* margin-bottom: 12px; */
+  }
+  .therapeutic-footwear-section .heading-wrap p {
+    /* margin-bottom: 22px; */
+  }
+
+  /* Brand buttons */
+
+  /* Shoe Size Form Button */
+}
+
+/* =========================================
+   COMPRESSION THERAPY
+   ========================================= */
+
+/* Badge */
+
+/* Main Heading */
+
+/* Description */
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+/* =========================================
+   COMPRESSION THERAPY BUTTONS
+   ========================================= */
+
+/* Tablet */
+
+/* Mobile */
+
+/* Small Mobile */
+
+/* =========================================
+   COMPRESSION THERAPY - CTA BUTTON FIX
+   ========================================= */
+.compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
+  @apply items-center text-center;
+}
+
+/* Measurement Form */
+.compression-therapy-section .action-cta-wrap .alfa-csm-open {
+  @apply flex-[1.8_1_0] min-w-0 whitespace-normal;
+}
+
+/* Referrals */
+.compression-therapy-section .action-cta-wrap .referrals-cta {
+  @apply flex-[0.9_1_0] min-w-[140px] whitespace-nowrap;
+}
+
+/* View Products */
+.compression-therapy-section .action-cta-wrap .cta-outline {
+  @apply flex-[1_1_0] min-w-[160px] whitespace-nowrap;
+}
+
+/* All CTA buttons */
+.compression-therapy-section .action-cta-wrap .cta {
+  @apply min-h-[55px] inline-flex items-center justify-center gap-2 box-border text-center leading-tight px-[35px] py-3;
+  margin-inline: auto;
+}
+
+/* Measurement form icon */
+.compression-therapy-section .action-cta-wrap .alfa-csm-open svg {
+  @apply w-[22px] h-[22px] shrink-0;
+}
+
+/* View Products icon */
+.compression-therapy-section .action-cta-wrap .cta-outline svg {
+  @apply w-[22px] h-[22px] shrink-0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .compression-therapy-section .action-cta-wrap {
+    @apply gap-2.5;
+  }
+  .compression-therapy-section .action-cta-wrap .cta {
+    @apply min-h-[52px] text-sm px-[18px] py-2.5;
+  }
+  .compression-therapy-section .action-cta-wrap .referrals-cta {
+    @apply min-w-[120px];
+  }
+  .compression-therapy-section .action-cta-wrap .cta-outline {
+    @apply min-w-[140px];
+  }
+}
+
+/* =========================================
+   MOBILE
+   Up to 767px
+   ========================================= */
+@media (max-width: 767px) {
+  .compression-therapy-section .action-cta-wrap .cta,
+  .compression-therapy-section .action-cta-wrap .alfa-csm-open,
+  .compression-therapy-section .action-cta-wrap .referrals-cta,
+  .compression-therapy-section .action-cta-wrap .cta-outline {
+    @apply w-full min-w-full flex-none min-h-[52px] whitespace-normal box-border justify-center items-center text-center px-7 py-2.5;
+  }
+  .compression-therapy-section .action-cta-wrap .cta {
+    @apply text-sm leading-[1.3];
+  }
+  .compression-therapy-section .action-cta-wrap .alfa-csm-open svg,
+  .compression-therapy-section .action-cta-wrap .cta-outline svg {
+    @apply w-[22px] h-[22px] shrink-0;
+  }
+}
+.navigation-bar .nav-logo img {
+  @apply h-20;
+}
+
+/* Mobile CSS (767px screen) */
+@media (max-width: 767px) {
+  .hero-section {
+    @apply bg-[url('https://alfahealthcaresupplyinc.com//wp-content/uploads/2026/10/mobile\_banner1-.png')] bg-cover bg-[center_top];
+    padding-block: calc(var(--spacing) * 5);
+  }
 }
