@@ -3011,6 +3011,10 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
     @apply text-center sm:text-left mb-8;
 }
 
+.therapeutic-footwear-section .split-info-wrap .content-media-col-right > .heading4 {
+   @apply text-center sm:text-left mb-8;
+}
+
 /* .split-info-wrap .content-media-col-right h4 {
     @apply text-base font-semibold leading-6;
 } */

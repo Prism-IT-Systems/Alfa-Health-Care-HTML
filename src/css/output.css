@@ -7485,6 +7485,13 @@
     text-align: left;
   }
 }
+.therapeutic-footwear-section .split-info-wrap .content-media-col-right > .heading4 {
+  margin-bottom: calc(var(--spacing) * 8);
+  text-align: center;
+  @media (width >= 40rem) {
+    text-align: left;
+  }
+}
 .split-info-wrap .action-cta-wrap {
   margin-top: calc(var(--spacing) * 6);
   @media (width >= 40rem) {
