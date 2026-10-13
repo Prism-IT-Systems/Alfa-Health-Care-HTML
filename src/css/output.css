@@ -1564,7 +1564,7 @@
   h1,h2,h3,h4,h5,h6 {
     color: var(--Deep-Brown);
   }
-  h1 {
+  h1, .heading1 {
     font-family: Montserrat, sans-serif;
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -1589,7 +1589,7 @@
       line-height: 58px;
     }
   }
-  h2 {
+  h2, .heading2 {
     font-family: Montserrat, sans-serif;
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1613,7 +1613,7 @@
       line-height: 48px;
     }
   }
-  h3 {
+  h3, .heading3 {
     font-family: Inter, sans-serif;
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -1637,7 +1637,7 @@
       line-height: var(--leading-9);
     }
   }
-  h4 {
+  h4, .heading4 {
     font-family: Inter, sans-serif;
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -1654,7 +1654,7 @@
       line-height: var(--leading-8);
     }
   }
-  h5 {
+  h5, .heading5 {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
     --tw-leading: var(--leading-6);
@@ -1670,7 +1670,7 @@
       line-height: var(--leading-7);
     }
   }
-  h6 {
+  h6, .heading6 {
     font-family: Inter, sans-serif;
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));

@@ -51,35 +51,35 @@
         @apply text-deepBrown;
     }
 
-    h1 {
+    h1, .heading1 {
     @apply text-3xl leading-[40px] font-Montserrat font-bold;
     @apply md:text-4xl md:leading-[48px];
     @apply xl:text-5xl xl:leading-[58px];
     }
 
-    h2 {
+    h2, .heading2 {
     @apply text-2xl leading-[32px] font-Montserrat font-bold;
     @apply md:text-3xl md:leading-[38px];
     @apply lg:text-[40px] lg:leading-[48px];
     }
 
-   h3 {
+   h3, .heading3 {
     @apply text-xl leading-7 font-inter font-bold;
     @apply md:text-2xl md:leading-8;
     @apply lg:text-[28px] lg:leading-9;
     }
 
-    h4 {
+    h4, .heading4 {
     @apply text-xl leading-7 font-inter font-bold;
     @apply md:text-2xl md:leading-8;
     }
 
-    h5 {
+    h5, .heading5 {
     @apply text-base leading-6 font-bold;
     @apply md:text-lg md:leading-7;
     }
 
-    h6 {
+    h6, .heading6 {
     @apply text-sm leading-5 font-semibold font-inter;
     @apply md:text-base md:leading-6;
     }
