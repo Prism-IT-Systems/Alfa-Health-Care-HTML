@@ -14446,8 +14446,6 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
   top: calc(2/4 * 100%);
   right: calc(var(--spacing) * 0);
   margin: calc(var(--spacing) * 0);
-  --tw-translate-y: calc(calc(2/4 * 100%) * -1);
-  translate: var(--tw-translate-x) var(--tw-translate-y);
   padding: calc(var(--spacing) * 0);
   list-style: none !important;
 }
@@ -14491,9 +14489,11 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
   background: #9f7608 !important;
   transform: none !important;
 }
-.navigation-bar-inner .search-form {
-  margin-right: 100px;
-  margin-left: calc(var(--spacing) * 4);
+@media (min-width: 575px) {
+  .navigation-bar-inner .search-form {
+    margin-right: 100px;
+    margin-left: calc(var(--spacing) * 4);
+  }
 }
 .mobile-menu-list .login-menu-item {
   position: static;
@@ -14542,6 +14542,9 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
 .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
   float: none;
   width: 48%;
+}
+.woocommerce-account.woocommerce-page .alfa-my-account .u-columns .u-column2 {
+  width: 100% !important;
 }
 .therapeutic-footwear-section .text-badge {
   display: inline-block;
