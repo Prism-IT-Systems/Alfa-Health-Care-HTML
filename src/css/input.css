@@ -6654,7 +6654,7 @@ body.postid-14046 .variations tr + tr .value {
 
 /* Login item */
 .navigation-menu-list .login-menu-item {
-  @apply absolute -translate-y-2/4 m-0 p-0 right-0 top-2/4;
+  @apply absolute  m-0 p-0 right-0 top-2/4;
   list-style: none !important;
 }
 
@@ -6683,8 +6683,11 @@ body.postid-14046 .variations tr + tr .value {
 /* =========================================
    SEARCH
    ========================================= */
+
+@media (min-width: 575px) {   
 .navigation-bar-inner .search-form {
   @apply ml-4 mr-[100px];
+}
 }
 
 /* =========================================
@@ -6756,7 +6759,7 @@ body.postid-14046 .variations tr + tr .value {
   @apply mt-[30px] mt-[30px];
 }
 .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
-  @apply min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5 min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
+  @apply min-h-[60px] text-xl leading-[1.2] text-[#fff] bg-[#A17810] font-bold inline-flex items-center justify-center gap-2.5 min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
 }
 .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup svg {
   @apply w-6 h-6 shrink-0 w-6 h-6 shrink-0;
@@ -7030,7 +7033,7 @@ body.postid-14046 .variations tr + tr .value {
    COMPRESSION THERAPY - CTA BUTTON FIX
    ========================================= */
 .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
-  @apply items-center text-center;
+  @apply items-center text-center bg-[#A17810] text-[#fff];
 }
 
 /* Measurement Form */
