@@ -6717,6 +6717,10 @@ body.postid-14046 .variations tr + tr .value {
   @apply float-none w-[48%];
 }
 
+.woocommerce-account.woocommerce-page .alfa-my-account .u-columns .u-column2 {
+   @apply !w-[100%];
+} 
+
 /* =========================================
    THERAPEUTIC FOOTWEAR
    ========================================= */
