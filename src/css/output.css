@@ -14957,9 +14957,6 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
     flex-shrink: 0;
   }
 }
-.navigation-bar .nav-logo img {
-  height: calc(var(--spacing) * 20);
-}
 @media (max-width: 767px) {
   .hero-section {
     background-image: url('https://alfahealthcaresupplyinc.com//wp-content/uploads/2026/10/mobile\_banner1-.png');
