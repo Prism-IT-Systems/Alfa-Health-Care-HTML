@@ -6658,6 +6658,14 @@ body.postid-14046 .variations tr + tr .value {
   list-style: none !important;
 }
 
+.single-blog-grid .content-box h2.wp-block-heading {
+  @apply text-[24px] leading-[32px] md:text-[26px] md:leading-[32px] lg:text-[30px] lg:leading-[42px] font-semibold;
+}
+
+.single-blog-grid .content-box :where(h3) {
+  @apply  text-[18px] leading-[26px] md:text-[24px] md:leading-[32px] lg:text-[28px] lg:leading-[32px] font-semibold;
+}
+
 /* Login button */
 .navigation-menu-list .login-menu-item > a {
   @apply inline-flex items-center justify-center min-w-[86px] h-12 text-white border text-base font-semibold leading-none no-underline shadow-none m-0 px-5 py-0 rounded-3xl border-solid border-[#B8890B];

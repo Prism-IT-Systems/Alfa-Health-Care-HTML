@@ -14448,6 +14448,48 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
   padding: calc(var(--spacing) * 0);
   list-style: none !important;
 }
+.single-blog-grid .content-box h2.wp-block-heading {
+  font-size: 24px;
+  --tw-leading: 32px;
+  line-height: 32px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  @media (width >= 48rem) {
+    font-size: 26px;
+  }
+  @media (width >= 48rem) {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
+  @media (width >= 64rem) {
+    font-size: 30px;
+  }
+  @media (width >= 64rem) {
+    --tw-leading: 42px;
+    line-height: 42px;
+  }
+}
+.single-blog-grid .content-box :where(h3) {
+  font-size: 18px;
+  --tw-leading: 26px;
+  line-height: 26px;
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  @media (width >= 48rem) {
+    font-size: 24px;
+  }
+  @media (width >= 48rem) {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
+  @media (width >= 64rem) {
+    font-size: 28px;
+  }
+  @media (width >= 64rem) {
+    --tw-leading: 32px;
+    line-height: 32px;
+  }
+}
 .navigation-menu-list .login-menu-item > a {
   margin: calc(var(--spacing) * 0);
   display: inline-flex;
