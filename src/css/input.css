@@ -7113,9 +7113,9 @@ body.postid-14046 .variations tr + tr .value {
     @apply w-[22px] h-[22px] shrink-0;
   }
 }
-/* .navigation-bar .nav-logo img {
+.navigation-bar .nav-logo img {
   @apply h-20;
-} */
+}
 
 /* Mobile CSS (767px screen) */
 @media (max-width: 767px) {
