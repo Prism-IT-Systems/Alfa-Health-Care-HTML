@@ -6654,7 +6654,7 @@ body.postid-14046 .variations tr + tr .value {
 
 /* Login item */
 .navigation-menu-list .login-menu-item {
-  @apply absolute  m-0 p-0 right-0 top-2/4;
+  @apply absolute  m-0 p-0 right-0 ;
   list-style: none !important;
 }
 

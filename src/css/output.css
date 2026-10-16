@@ -14443,7 +14443,6 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
 }
 .navigation-menu-list .login-menu-item {
   position: absolute;
-  top: calc(2/4 * 100%);
   right: calc(var(--spacing) * 0);
   margin: calc(var(--spacing) * 0);
   padding: calc(var(--spacing) * 0);
