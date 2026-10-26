@@ -2287,6 +2287,7 @@
     left: calc(var(--spacing) * 0);
   }
   .navigation-bar .nav-logo {
+    display: block;
     height: 70px;
     width: 70px;
     @media (width >= 48rem) {

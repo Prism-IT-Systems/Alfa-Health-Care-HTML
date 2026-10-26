@@ -470,7 +470,7 @@ header.main-header {
 }
 
 .navigation-bar .nav-logo {
-    @apply w-[70px] h-[70px] md:w-[80px] md:h-[80px];
+    @apply block w-[70px] h-[70px] md:w-[80px] md:h-[80px];
 }
 
 .navigation-bar .nav-logo img {
