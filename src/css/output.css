@@ -2747,9 +2747,6 @@
     --tw-translate-x: calc(var(--spacing) * 0);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  html:has(.mobile-menu-toggle .mobile-menu-wrapper.active), body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
-    overflow: hidden;
-  }
   .mobile-menu-toggle .mobile-menu-header {
     display: flex;
     align-items: center;
@@ -7325,6 +7322,7 @@
   height: calc(var(--spacing) * 6);
   width: calc(var(--spacing) * 6);
   flex-shrink: 0;
+  stroke: #fff;
 }
 @media (max-width: 991px) {
   .therapeutic-footwear-section .text-badge {
@@ -14637,14 +14635,12 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
   align-items: center;
   justify-content: center;
   gap: calc(var(--spacing) * 2.5);
-  background-color: #A17810;
   font-size: var(--text-xl);
   line-height: var(--tw-leading, var(--text-xl--line-height));
   --tw-leading: 1.2;
   line-height: 1.2;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
-  color: #fff;
 }
 .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup svg {
   height: calc(var(--spacing) * 6);
@@ -14871,9 +14867,7 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
 }
 .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
   align-items: center;
-  background-color: #A17810;
   text-align: center;
-  color: #fff;
 }
 .compression-therapy-section .action-cta-wrap .alfa-csm-open {
   min-width: calc(var(--spacing) * 0);
@@ -14908,6 +14902,7 @@ body.postid-14046 .variations tr + tr .label, body.postid-14046 .variations tr +
   height: 22px;
   width: 22px;
   flex-shrink: 0;
+  stroke: #fff;
 }
 .compression-therapy-section .action-cta-wrap .cta-outline svg {
   height: 22px;

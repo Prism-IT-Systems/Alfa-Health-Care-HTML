@@ -622,10 +622,7 @@ header.main-header {
 .mobile-menu-toggle .mobile-menu-wrapper.active {
   @apply translate-x-0;
 }
-html:has(.mobile-menu-toggle .mobile-menu-wrapper.active),
-body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
-  @apply overflow-hidden;
-}
+
 
 /* ===============================
    MENU HEADER
@@ -2908,7 +2905,7 @@ body:has(.mobile-menu-toggle .mobile-menu-wrapper.active) {
   @apply min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
 }
 .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup svg {
-  @apply w-6 h-6 shrink-0;
+  @apply w-6 h-6 shrink-0 stroke-[#fff];
 }
 
 /* =========================================
@@ -6772,7 +6769,7 @@ body.postid-14046 .variations tr + tr .value {
   @apply mt-[30px] mt-[30px];
 }
 .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup {
-  @apply min-h-[60px] text-xl leading-[1.2] text-[#fff] bg-[#A17810] font-bold inline-flex items-center justify-center gap-2.5 min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
+  @apply min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5 min-h-[60px] text-xl leading-[1.2] font-bold inline-flex items-center justify-center gap-2.5;
 }
 .therapeutic-footwear-section .action-cta-wrap .open-shoe-popup svg {
   @apply w-6 h-6 shrink-0 w-6 h-6 shrink-0;
@@ -7046,7 +7043,7 @@ body.postid-14046 .variations tr + tr .value {
    COMPRESSION THERAPY - CTA BUTTON FIX
    ========================================= */
 .compression-therapy-section .action-cta-wrap .cta.bg-SunlitGold {
-  @apply items-center text-center bg-[#A17810] text-[#fff];
+  @apply items-center text-center;
 }
 
 /* Measurement Form */
@@ -7072,7 +7069,7 @@ body.postid-14046 .variations tr + tr .value {
 
 /* Measurement form icon */
 .compression-therapy-section .action-cta-wrap .alfa-csm-open svg {
-  @apply w-[22px] h-[22px] shrink-0;
+  @apply w-[22px] h-[22px] shrink-0 stroke-[#fff];
 }
 
 /* View Products icon */
